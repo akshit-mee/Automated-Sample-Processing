@@ -7,6 +7,7 @@ import RPi.GPIO as GPIO
 ######################### Send to Display ######################################
 display_url = "http://127.0.0.1:5000/update_status"
 def update_gripper_status(new_status):
+
     message = {
         "gripper_status": new_status,
         "timestamp": time.strftime('%Y-%m-%d %H-%M-%S')
@@ -14,7 +15,8 @@ def update_gripper_status(new_status):
     try:
         response = requests.post(display_url, json=message)
         if response.status_code == 200:
-            print("Gripper Status Updates", new_status)
+            s = 1
+            # print("Gripper Status Updates", new_status)
         else:
             print("Failed to update status", response.json())
     except requests.exceptions.RequestException as e:
@@ -50,7 +52,7 @@ def manage_gripper():
                 pwm.ChangeDutyCycle(0)
                 
             time.sleep(0.1)
-            # update_gripper_status(gripper_state)
+            update_gripper_status(gripper_state)
             
     except KeyboardInterrupt:
         pwm.stop()
