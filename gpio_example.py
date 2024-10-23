@@ -5,7 +5,6 @@ import RPi.GPIO as GPIO
 
 mc = MyCobot("/dev/ttyAMA0", 1000000)
 
-mc.release_all_servos()
 red_led = 19
 servo = 19
 
@@ -14,20 +13,33 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(servo, GPIO.OUT)
 
 pwm = GPIO.PWM(servo, 50)
-pwm.start(0)
 
 def SetAngle(angle):
-    duty = angle / 18 + 2
-    GPIO.output(servo, 1)
-    pwm.ChangeDutyCycle(duty)
-    time.sleep(1)
-    GPIO.output(servo, 0)
-    pwm.ChangeDutyCycle(0)
+    try:
+        duty = angle / 18 + 2
+        pwm.start(duty)
+        print("servo")
+        while True:
+            time.sleep(0.1)
+    except KeyboardInterrupt:
+        pwm.stop()
+        GPIO.cleanup()
 
-SetAngle(180)
+def servo():
+    SetAngle(180)
+    
+servo_thread = threading.Thread(target=servo, daemon = True)
+servo_thread.start()
 
-while True:
-    GPIO.output(red_led, 0)
-    time.sleep(1)
-    GPIO.output(red_led,1)
-    time.sleep(1)
+try:
+    for i in range(10):
+        print(f"moving to point {i}")
+        time.sleep(1)
+except KeyboardInterrupt:
+     print("Program terminated")
+        
+pwm.stop()
+GPIO.cleanup()
+    
+
+
