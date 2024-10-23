@@ -1,7 +1,17 @@
+from pymycobot.mycobot import MyCobot
 import time
 import threading
 import requests
 import RPi.GPIO as GPIO
+
+
+#################### Innitialising myCobot #####################################
+mc = MyCobot("/dev/ttyAMA0", 1000000)
+
+p1 = [113.2, -65.3, -28.56, 4.04, -2.81, 57.39]
+p2 = [113.2, -27.07, -28.47, -28.3, 1.31, 68.99]
+p3 = [161.71, -30.32, -28.56, -25.92, -1.31, 129.46]
+p4 = [162.15, -63.54, -28.56, 7.2, 1.93, 136.23]
 
 
 ######################### Send to Display ######################################
@@ -28,7 +38,7 @@ def update_gripper_status(new_status):
 
 ############ Innitialising ###############
 gripper_pin = 19 #Change for different pin for make a config file
-gripper_open = 8 #Completle open, can change for less opening
+gripper_open = 6.5 #Completle open, can change for less opening
 gripper_closed = 12
 
 GPIO.setmode(GPIO.BCM)
@@ -63,22 +73,43 @@ gripper_thread.start()
 
 
 ########################## Testing ############################################
-try:
-    while True:
-        command = input("gripper ??").strip().lower()
-        if command == "grip":
-            gripper_state = "GRIP"
-        if command == "open":
-            gripper_state = "OPEN"
-        if command == "STOP":
-            gripper_state = "STOP"
-        if command == "quit":
-            break
-        else:
-            print("invalid command")
-            
-except KeyboardInterrupt:
-    print("program interrupted")
+#try:
+#    while True:
+#        command = input("gripper ??").strip().lower()
+#        if command == "grip":
+#            gripper_state = "GRIP"
+#        if command == "open":
+#            gripper_state = "OPEN"
+#        if command == "STOP":
+#            gripper_state = "STOP"
+#        if command == "quit":
+#            break
+#        else:
+#            print("invalid command")
+#            
+#except KeyboardInterrupt:
+#    print("program interrupted")
+ 
+ 
+while True:
+    mc.send_angles(p1, 50)
+    time.sleep(1)
+    gripper_state = "GRIP"
+    time.sleep(0.5)
+    mc.send_angles(p2, 50)
+    time.sleep(1)
+    mc.send_angles(p3, 50)
+    time.sleep(1)
+    mc.send_angles(p4, 50)
+    time.sleep(1)
+    gripper_state = "OPEN"
+    time.sleep(0.5)
+    gripper_state = "STOP"
+    mc.send_angles(p3, 50)
+    time.sleep(1)
+    mc.send_angles(p2, 50)
+    time.sleep(1) 
+ 
     
     
     
