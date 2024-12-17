@@ -20,12 +20,17 @@ robot_log = {
 }
 
 ## robot actions standarized
-robot_actions = ['Wainting', 'Place Sample in Thermomixer', 
+robot_actions = ['Innitial Setting Updated',
+                 'Wainting', 
+                 'Place Sample in Thermomixer', 
                  'Place Sample in Liquid Nitrogen', 
                  'Pick up Sample from Thermomixer', 
                  'Pick up Sample from Liquid Nitrogen',
                  'Moving Sample to Thermomixer', 
-                 'Moving Sample to Liquid Nitrogen']
+                 'Moving Sample to Liquid Nitrogen'
+                 'Completed'
+                 'Stopped by User'
+                 'Restarted by User']
 
 
 robot_setting = {
@@ -38,6 +43,8 @@ robot_setting = {
                 'update_time': None             
                 }
 
+
+robot_control = {"running": False}
 
 @app.route('/')
 def home():
@@ -80,6 +87,20 @@ def update_status():
 @app.route('/get_status', methods=['GET'])
 def get_status():
     return jsonify(gripper_status), 200
+
+@app.route('/control', methods=['GET', 'POST'])
+def control():
+    return render_template('control.html', robot_control = robot_control)
+
+@app.route('/control_robot', methods=['POST'])
+def control_robot():
+    global robot_control
+    action = request.form.get('action')
+    if action == 'start':
+        robot_control['running'] = True
+    if action == 'stop':
+        robot_control['running'] = False
+    return redirect(url_for('control'))
     
 if __name__ == "__main__":
     app.run(debug = True)

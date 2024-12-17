@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content%}
+
+<div class="container">
+    <h2>Current Status</h2>
+    <div class="status">
+        <p>Status: <span>{{ robot_control['running'] }}</span></p>
+    </div>
+    <div class="controls">
+        <form method="post" action="/control_robot">
+            <button type="submit" name="action" value="start">Start Robot</button>
+            
+            <button type="submit" name="action" value="stop" class="stop">Stop Robot</button>
+        </form>
+    </div>
+</div>
+
+{%endblock%}
