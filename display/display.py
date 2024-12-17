@@ -4,7 +4,8 @@ from datetime import datetime
 app = Flask(__name__)
 
 gripper_status = {"gripper_status": "no status", "last_updated": None}
-robot_setting = {'project_name': None,
+robot_setting = {'project_id': None,
+                 'project_name': None,
                  'person_responsible': None,              
                  'thermomixer_time_s': 60,
                  'liquid_nitrogen_time_s': 60,
@@ -20,12 +21,15 @@ def home():
 def settings():
     global robot_setting
     if request.method == 'POST':
+        project_id = request.form.get('project_id', type = str)
         project_name = request.form.get('project_name', type = str)
         person_responsible = request.form.get('person_responsible', type = str)
         thermomixer_time_s = request.form.get('thermomixer_time_s', type = int)
         liquid_nitrogen_time_s = request.form.get('liquid_nitrogen_time_s', type = int)
         number_of_cycles = request.form.get('number_of_cycles', type = int)
         if project_name is not None or person_responsible is not None or thermomixer_time_s is not None or liquid_nitrogen_time_s is not None or number_of_cycles is not None:
+            if project_id is not None:
+                robot_setting['project_id'] = project_id
             robot_setting['project_name'] = project_name
             robot_setting['person_responsible'] = person_responsible
             robot_setting['thermomixer_time_s'] = thermomixer_time_s
