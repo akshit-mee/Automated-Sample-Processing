@@ -4,12 +4,38 @@ from datetime import datetime
 app = Flask(__name__)
 
 gripper_status = {"gripper_status": "no status", "last_updated": None}
-robot_setting = {'project_id': None,
-                 'project_name': None,
-                 'person_responsible': None,              
-                 'thermomixer_time_s': 60,
-                 'liquid_nitrogen_time_s': 60,
-                 'number_of_cycles': 20                
+
+## Griper status standarized
+gripper_status_posible = ['CLOSE', 'OPEN', 'STOP', ]
+
+
+robot_log = {
+            "project_id": None,
+            "project_name": None,
+            "action_start": None,
+            "cycle_number": None,
+            "gripper_status": None,
+            "time_stamp": None,
+            "error": None
+}
+
+## robot actions standarized
+robot_actions = ['Wainting', 'Place Sample in Thermomixer', 
+                 'Place Sample in Liquid Nitrogen', 
+                 'Pick up Sample from Thermomixer', 
+                 'Pick up Sample from Liquid Nitrogen',
+                 'Moving Sample to Thermomixer', 
+                 'Moving Sample to Liquid Nitrogen']
+
+
+robot_setting = {
+                'project_id': None,
+                'project_name': None,
+                'person_responsible': None,              
+                'thermomixer_time_s': 60,
+                'liquid_nitrogen_time_s': 60,
+                'number_of_cycles': 20,
+                'update_time': None             
                 }
 
 
@@ -35,6 +61,7 @@ def settings():
             robot_setting['thermomixer_time_s'] = thermomixer_time_s
             robot_setting['liquid_nitrogen_time_s'] = liquid_nitrogen_time_s
             robot_setting['number_of_cycles'] = number_of_cycles
+            robot_setting['update_time'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         return redirect(url_for('settings'))
     return render_template('settings.html', title = 'Robot Settings', settings = robot_setting)
 
