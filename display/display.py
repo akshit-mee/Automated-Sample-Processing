@@ -33,7 +33,7 @@ robot_actions = ['Innitial Setting Updated',
                  'Restarted by User']
 
 
-robot_setting = {
+project_setting = {
                 'project_id': None,
                 'project_name': None,
                 'person_responsible': None,              
@@ -52,7 +52,7 @@ def home():
 
 @app.route('/settings', methods =['GET','POST'])
 def settings():
-    global robot_setting
+    global project_setting
     if request.method == 'POST':
         project_id = request.form.get('project_id', type = str)
         project_name = request.form.get('project_name', type = str)
@@ -62,15 +62,15 @@ def settings():
         number_of_cycles = request.form.get('number_of_cycles', type = int)
         if project_name is not None or person_responsible is not None or thermomixer_time_s is not None or liquid_nitrogen_time_s is not None or number_of_cycles is not None:
             if project_id is not None:
-                robot_setting['project_id'] = project_id
-            robot_setting['project_name'] = project_name
-            robot_setting['person_responsible'] = person_responsible
-            robot_setting['thermomixer_time_s'] = thermomixer_time_s
-            robot_setting['liquid_nitrogen_time_s'] = liquid_nitrogen_time_s
-            robot_setting['number_of_cycles'] = number_of_cycles
-            robot_setting['update_time'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                project_setting['project_id'] = project_id
+            project_setting['project_name'] = project_name
+            project_setting['person_responsible'] = person_responsible
+            project_setting['thermomixer_time_s'] = thermomixer_time_s
+            project_setting['liquid_nitrogen_time_s'] = liquid_nitrogen_time_s
+            project_setting['number_of_cycles'] = number_of_cycles
+            project_setting['update_time'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         return redirect(url_for('settings'))
-    return render_template('settings.html', title = 'Robot Settings', settings = robot_setting)
+    return render_template('settings.html', title = 'Robot Settings', settings = project_setting)
 
 
 @app.route('/update_status', methods=['POST'])
