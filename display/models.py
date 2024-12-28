@@ -7,21 +7,23 @@ from app import db
 class ExperimentSetting(db.Model):
     __tablename__ = 'experiment_settings'
     
-    id = sa.Column(sa.Integer, primary_key=True)
-    project_id = sa.Column(sa.String, nullable=False)
-    project_name = sa.Column(sa.String, nullable=False)
+    experiment_id = sa.Column(sa.Integer, primary_key=True)
+    experiemnt_name = sa.Column(sa.String, nullable=False)
     person_responsible = sa.Column(sa.String, nullable=True)
+    experiment_discription = sa.Column(sa.String, nullable=False)
+    number_of_samples = sa.Column(sa.Integer, nullable=False, default=0)
     thermomixer_time_s = sa.Column(sa.Integer, nullable=False, default=60)
     liquid_nitrogen_time_s = sa.Column(sa.Integer, nullable=False, default=60)
     number_of_cycles = sa.Column(sa.Integer, nullable=False, default=20)
+    additional_notes = sa.Column(sa.String, nullable=True)
     update_time = sa.Column(sa.DateTime, default=datetime.timezone.utcnow)
 
 class RobotLog(db.Model):
     __tablename__ = 'robot_logs'
     
     id = sa.Column(sa.Integer, primary_key=True)
-    project_id = sa.Column(sa.String, sa.ForeignKey('experiment_settings.project_id'), nullable=False)
-    project_name = sa.Column(sa.String, sa.ForeignKey('experiment_settings.project_name'), nullable=False)
+    experiment_id = sa.Column(sa.String, sa.ForeignKey('experiment_settings.project_id'), nullable=True)
+    experiment_name = sa.Column(sa.String, sa.ForeignKey('experiment_settings.project_name'), nullable=False)
     action_start = sa.Column(sa.String, nullable=True)
     cycle_number = sa.Column(sa.Integer, nullable=True)
     gripper_status = sa.Column(sa.String, nullable=True)

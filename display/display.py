@@ -33,13 +33,17 @@ robot_actions = ['Innitial Setting Updated',
                  'Restarted by User']
 
 
-project_setting = {
-                'project_id': None,
-                'project_name': None,
-                'person_responsible': None,              
+
+experiment_setting = {
+                'experiment_id': None,
+                'experiment_name': "Name of the Experiment",
+                'person_responsible': None,
+                'experiment_description': "Write a brief description of the experiment here (mandatory)",
+                'number_of_samples': 0,            
                 'thermomixer_time_s': 60,
                 'liquid_nitrogen_time_s': 60,
                 'number_of_cycles': 20,
+                'additional_notes': "Type any additional notes here (optional)",
                 'update_time': None             
                 }
 
@@ -52,25 +56,30 @@ def home():
 
 @app.route('/settings', methods =['GET','POST'])
 def settings():
-    global project_setting
+    global experiment_setting
     if request.method == 'POST':
-        project_id = request.form.get('project_id', type = str)
-        project_name = request.form.get('project_name', type = str)
+        experiment_name = request.form.get('experiment_name', type = str)
         person_responsible = request.form.get('person_responsible', type = str)
+        experiment_description = request.form.get('experiment_description', type = str)
+        number_of_samples = request.form.get('number_of_samples', type = int)
         thermomixer_time_s = request.form.get('thermomixer_time_s', type = int)
         liquid_nitrogen_time_s = request.form.get('liquid_nitrogen_time_s', type = int)
         number_of_cycles = request.form.get('number_of_cycles', type = int)
-        if project_name is not None or person_responsible is not None or thermomixer_time_s is not None or liquid_nitrogen_time_s is not None or number_of_cycles is not None:
-            if project_id is not None:
-                project_setting['project_id'] = project_id
-            project_setting['project_name'] = project_name
-            project_setting['person_responsible'] = person_responsible
-            project_setting['thermomixer_time_s'] = thermomixer_time_s
-            project_setting['liquid_nitrogen_time_s'] = liquid_nitrogen_time_s
-            project_setting['number_of_cycles'] = number_of_cycles
-            project_setting['update_time'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        additional_notes = request.form.get('additional_notes', type = str)
+        
+        ## Can add aditional validation for the inputs here 
+        experiment_setting['project_name'] = experiment_name
+        experiment_setting['person_responsible'] = person_responsible
+        experiment_setting['experiment_description'] = experiment_description
+        experiment_setting['number_of_samples'] = number_of_samples
+        experiment_setting['thermomixer_time_s'] = thermomixer_time_s
+        experiment_setting['liquid_nitrogen_time_s'] = liquid_nitrogen_time_s
+        experiment_setting['number_of_cycles'] = number_of_cycles
+        experiment_setting['additional_notes'] = additional_notes
+        experiment_setting['update_time'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         return redirect(url_for('settings'))
-    return render_template('settings.html', title = 'Robot Settings', settings = project_setting)
+    
+    return render_template('settings.html', title = 'Robot Settings', settings = experiment_setting)
 
 
 @app.route('/update_status', methods=['POST'])
