@@ -39,13 +39,28 @@ robot_control = {"running": False}
 def home():
     return render_template('index.html', status = gripper_status)
 
+@app.route('/start', methods=['GET'])
+def start():
+    search_query = request.args.get('search')
+    selected_project_id = request.args.get('project')
+    settings = None
+
+    if search_query:
+        settings = ExperimentSetting.query.filter(
+            (ExperimentSetting.experiment_id == search_query) | 
+            (ExperimentSetting.experiment_name.ilike(f"%{search_query}%"))
+        ).first()
+    elif selected_project_id:
+        settings = ExperimentSetting.query.get(selected_project_id)
+
+    projects = ExperimentSetting.query.all()
+    return render_template('start.html', projects=projects, settings=settings)
+
 @app.route('/settings', methods=['GET', 'POST'])
 def settings():
     global experiment_setting
     form = ExperimentSettingForm()
     if form.validate_on_submit():
-        # Assuming you have a SQLAlchemy model named Experiment
-
         experiment = ExperimentSetting(
             experiment_name=form.experiment_name.data,
             person_responsible=form.person_responsible.data,

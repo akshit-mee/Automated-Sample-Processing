@@ -86,6 +86,27 @@
             margin-top: 2rem;
             color: #777;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
     </style>
 </head>
 <body>
@@ -95,6 +116,7 @@
             <a href="/settings">Innitial Settings</a>
             <a href="/control" >Control</a>
             <a href="/view_experiment_settings">View Experiment Settings</a>
+            <a href="/start">Start</a>
         </nav>
         {%if title%}
             <h1>{{ title }} </h1>

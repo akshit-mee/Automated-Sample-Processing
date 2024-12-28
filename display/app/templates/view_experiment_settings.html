@@ -1,13 +1,8 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>View Experiment Settings</title>
-</head>
-<body>
-    <h1>Experiment Settings</h1>
-    <table border="1">
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <h2>Experiment Settings</h2>
+    <table>
         <tr>
             <th>ID</th>
             <th>Name</th>
@@ -35,5 +30,5 @@
         </tr>
         {% endfor %}
     </table>
-</body>
-</html>
+</div>
+{% endblock %}
