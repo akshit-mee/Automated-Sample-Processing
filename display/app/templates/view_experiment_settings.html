@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Experiment Settings</title>
+</head>
+<body>
+    <h1>Experiment Settings</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Person Responsible</th>
+            <th>Description</th>
+            <th>Number of Samples</th>
+            <th>Thermomixer Time (s)</th>
+            <th>Liquid Nitrogen Time (s)</th>
+            <th>Number of Cycles</th>
+            <th>Additional Notes</th>
+            <th>Update Time</th>
+        </tr>
+        {% for setting in experiment_settings %}
+        <tr>
+            <td>{{ setting.experiment_id }}</td>
+            <td>{{ setting.experiment_name }}</td>
+            <td>{{ setting.person_responsible }}</td>
+            <td>{{ setting.experiment_description }}</td>
+            <td>{{ setting.number_of_samples }}</td>
+            <td>{{ setting.thermomixer_time_s }}</td>
+            <td>{{ setting.liquid_nitrogen_time_s }}</td>
+            <td>{{ setting.number_of_cycles }}</td>
+            <td>{{ setting.additional_notes }}</td>
+            <td>{{ setting.update_time }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

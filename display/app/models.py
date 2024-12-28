@@ -16,6 +16,7 @@ class ExperimentSetting(db.Model):
     number_of_cycles = sa.Column(sa.Integer, nullable=False, default=20)
     additional_notes = sa.Column(sa.String, nullable=True)
     update_time = sa.Column(sa.DateTime, default=datetime.utcnow)
+    robot_logs = so.relationship('RobotLog', order_by='RobotLog.id', back_populates='experiment_setting', foreign_keys='RobotLog.experiment_id')
 
 class RobotLog(db.Model):
     __tablename__ = 'robot_logs'
@@ -29,6 +30,4 @@ class RobotLog(db.Model):
     time_stamp = sa.Column(sa.DateTime, default=datetime.utcnow)
     error = sa.Column(sa.String, nullable=True)
 
-    experiment_setting = so.relationship('ExperimentSetting', back_populates='robot_logs')
-
-ExperimentSetting.robot_logs = so.relationship('RobotLog', order_by=RobotLog.id, back_populates='experiment_setting')
+    experiment_setting = so.relationship('ExperimentSetting', back_populates='robot_logs', foreign_keys=[experiment_id])

@@ -6,47 +6,32 @@
         <form method="post" action="{{ url_for('settings') }}">
             {{ form.hidden_tag() }}
             
-            <div class="form-group">
-                {{ form.experiment_name.label }}
-                {{ form.experiment_name(class="form-control") }}
-            </div>
+            {{ form.experiment_name.label }}
+            {{ form.experiment_name }}
+                   
+            {{ form.person_responsible.label }}
+            {{ form.person_responsible }}
+ 
+            {{ form.experiment_description.label }}
+            {{ form.experiment_description(rows=4) }}
+             
+            {{ form.number_of_samples.label }}
+            {{ form.number_of_samples }}
+
+            {{ form.thermomixer_time_s.label }}
+            {{ form.thermomixer_time_s }}
+
+            {{ form.liquid_nitrogen_time_s.label }}
+            {{ form.liquid_nitrogen_time_s }}
+
+            {{ form.number_of_cycles.label }}
+            {{ form.number_of_cycles }}
+
+            {{ form.additional_notes.label }}
+            {{ form.additional_notes }}
+
             
-            <div class="form-group">
-                {{ form.person_responsible.label }}
-                {{ form.person_responsible(class="form-control") }}
-            </div>
-            
-            <div class="form-group">
-                {{ form.experiment_description.label }}
-                {{ form.experiment_description(class="form-control") }}
-            </div>
-            
-            <div class="form-group">
-                {{ form.number_of_samples.label }}
-                {{ form.number_of_samples(class="form-control") }}
-            </div>
-            
-            <div class="form-group">
-                {{ form.thermomixer_time_s.label }}
-                {{ form.thermomixer_time_s(class="form-control") }}
-            </div>
-            
-            <div class="form-group">
-                {{ form.liquid_nitrogen_time_s.label }}
-                {{ form.liquid_nitrogen_time_s(class="form-control") }}
-            </div>
-            
-            <div class="form-group">
-                {{ form.number_of_cycles.label }}
-                {{ form.number_of_cycles(class="form-control") }}
-            </div>
-            
-            <div class="form-group">
-                {{ form.additional_notes.label }}
-                {{ form.additional_notes(class="form-control") }}
-            </div>
-            
-            <button type="submit" class="btn btn-primary">Save Settings</button>
+            <button type="submit">Save Settings</button>
         </form>
     </div>
 {% endblock %}
