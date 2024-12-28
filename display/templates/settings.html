@@ -3,33 +3,50 @@
 
     <div class="container">
         <h2>Modify Initial Conditions</h2>
-        <form method="post">
-
-            <label for="experiment_name">Experiment Name:</label>
-            <input type="text" id="experiment_name" name="experiment_name" placeholder="{{ settings['experiment_name'] }}" required>
+        <form method="post" action="{{ url_for('settings') }}">
+            {{ form.hidden_tag() }}
             
-            <label for="person_responsible">Person Responsible:</label>
-            <input type="text" id="person_responsible" name="person_responsible" placeholder="{{ settings['person_responsible'] }}" required>
+            <div class="form-group">
+                {{ form.experiment_name.label }}
+                {{ form.experiment_name(class="form-control") }}
+            </div>
             
-            <label for="experiment_description">Experiment Description:</label>
-            <textarea id="experiment_description" rows="4" name="experiment_description" placeholder="{{ settings['experiment_description'] }}" required> </textarea>
-
-            <label for="number_of_samples">Number of Samples:</label>
-            <input type="number" id="number_of_samples" name="number_of_samples" value="{{ settings['number_of_samples'] }}" min="1" required>
-        
-            <label for="thermomixer_time_s">Thermomixer Time (seconds):</label>
-            <input type="number" id="thermomixer_time_s" name="thermomixer_time_s" value="{{ settings['thermomixer_time_s'] }}" min="1" required>
+            <div class="form-group">
+                {{ form.person_responsible.label }}
+                {{ form.person_responsible(class="form-control") }}
+            </div>
             
-            <label for="liquid_nitrogen_time_s">LN2 Time:</label>
-            <input type="number" id="liquid_nitrogen_time_s" name="liquid_nitrogen_time_s" value="{{ settings['liquid_nitrogen_time_s'] }}" min="1" required>
+            <div class="form-group">
+                {{ form.experiment_description.label }}
+                {{ form.experiment_description(class="form-control") }}
+            </div>
             
-            <label for="number_of_cycles">Number of Cycles:</label>
-            <input type="number" id="number_of_cycles" name="number_of_cycles" value="{{ settings['number_of_cycles'] }}" min="1" required>
-
-            <label for="additional_notes">Additional Notes:</label>
-            <textarea id="additional_notes" rows="2" name="additional_notes" placeholder="{{ settings['additional_notes'] }}"> </textarea>
+            <div class="form-group">
+                {{ form.number_of_samples.label }}
+                {{ form.number_of_samples(class="form-control") }}
+            </div>
             
-            <button type="submit">Save Settings</button>
+            <div class="form-group">
+                {{ form.thermomixer_time_s.label }}
+                {{ form.thermomixer_time_s(class="form-control") }}
+            </div>
+            
+            <div class="form-group">
+                {{ form.liquid_nitrogen_time_s.label }}
+                {{ form.liquid_nitrogen_time_s(class="form-control") }}
+            </div>
+            
+            <div class="form-group">
+                {{ form.number_of_cycles.label }}
+                {{ form.number_of_cycles(class="form-control") }}
+            </div>
+            
+            <div class="form-group">
+                {{ form.additional_notes.label }}
+                {{ form.additional_notes(class="form-control") }}
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Save Settings</button>
         </form>
     </div>
-{%endblock%}
+{% endblock %}

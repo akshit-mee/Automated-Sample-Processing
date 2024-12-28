@@ -1,5 +1,6 @@
-from flask import Flask, request, jsonify, render_template, redirect, url_for
+from flask import Flask, request, jsonify, render_template, redirect, url_for, flash
 from datetime import datetime
+from forms import ExperimentSettingForm
 
 app = Flask(__name__)
 
@@ -54,33 +55,34 @@ robot_control = {"running": False}
 def home():
     return render_template('index.html', status = gripper_status)
 
-@app.route('/settings', methods =['GET','POST'])
+@app.route('/settings', methods=['GET', 'POST'])
 def settings():
     global experiment_setting
-    if request.method == 'POST':
-        experiment_name = request.form.get('experiment_name', type = str)
-        person_responsible = request.form.get('person_responsible', type = str)
-        experiment_description = request.form.get('experiment_description', type = str)
-        number_of_samples = request.form.get('number_of_samples', type = int)
-        thermomixer_time_s = request.form.get('thermomixer_time_s', type = int)
-        liquid_nitrogen_time_s = request.form.get('liquid_nitrogen_time_s', type = int)
-        number_of_cycles = request.form.get('number_of_cycles', type = int)
-        additional_notes = request.form.get('additional_notes', type = str)
-        
-        ## Can add aditional validation for the inputs here 
-        experiment_setting['project_name'] = experiment_name
-        experiment_setting['person_responsible'] = person_responsible
-        experiment_setting['experiment_description'] = experiment_description
-        experiment_setting['number_of_samples'] = number_of_samples
-        experiment_setting['thermomixer_time_s'] = thermomixer_time_s
-        experiment_setting['liquid_nitrogen_time_s'] = liquid_nitrogen_time_s
-        experiment_setting['number_of_cycles'] = number_of_cycles
-        experiment_setting['additional_notes'] = additional_notes
+    form = ExperimentSettingForm()
+    if form.validate_on_submit():
+        experiment_setting['experiment_name'] = form.experiment_name.data
+        experiment_setting['person_responsible'] = form.person_responsible.data
+        experiment_setting['experiment_description'] = form.experiment_description.data
+        experiment_setting['number_of_samples'] = form.number_of_samples.data
+        experiment_setting['thermomixer_time_s'] = form.thermomixer_time_s.data
+        experiment_setting['liquid_nitrogen_time_s'] = form.liquid_nitrogen_time_s.data
+        experiment_setting['number_of_cycles'] = form.number_of_cycles.data
+        experiment_setting['additional_notes'] = form.additional_notes.data
         experiment_setting['update_time'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        flash('Settings updated successfully!', 'success')
         return redirect(url_for('settings'))
     
-    return render_template('settings.html', title = 'Robot Settings', settings = experiment_setting)
-
+    # Pre-fill form with current settings
+    form.experiment_name.data = experiment_setting['experiment_name']
+    form.person_responsible.data = experiment_setting['person_responsible']
+    form.experiment_description.data = experiment_setting['experiment_description']
+    form.number_of_samples.data = experiment_setting['number_of_samples']
+    form.thermomixer_time_s.data = experiment_setting['thermomixer_time_s']
+    form.liquid_nitrogen_time_s.data = experiment_setting['liquid_nitrogen_time_s']
+    form.number_of_cycles.data = experiment_setting['number_of_cycles']
+    form.additional_notes.data = experiment_setting['additional_notes']
+    
+    return render_template('settings.html', title='Robot Settings', form=form)
 
 @app.route('/update_status', methods=['POST'])
 def update_status():
