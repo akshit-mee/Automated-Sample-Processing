@@ -22,8 +22,8 @@ class RobotLog(db.Model):
     __tablename__ = 'robot_logs'
     
     id = sa.Column(sa.Integer, primary_key=True)
-    experiment_id = sa.Column(sa.Integer, sa.ForeignKey('experiment_settings.experiment_id'), nullable=True)
-    experiment_name = sa.Column(sa.String, sa.ForeignKey('experiment_settings.experiment_name'), nullable=False)
+    experiment_id = sa.Column(sa.Integer, sa.ForeignKey('experiment_settings.experiment_id'), nullable=False)
+    experiment_name = sa.Column(sa.String, sa.ForeignKey('experiment_settings.experiment_name'), nullable=True)
     action_start = sa.Column(sa.String, nullable=True)
     cycle_number = sa.Column(sa.Integer, nullable=True)
     gripper_status = sa.Column(sa.String, nullable=True)

@@ -1,14 +1,17 @@
 from flask import request, jsonify, render_template, redirect, url_for, flash
 from app import app, db
-from datetime import datetime
+from datetime import datetime, timedelta
 from app.forms import ExperimentSettingForm
-from app.models import ExperimentSetting
+from app.models import ExperimentSetting, RobotLog
 
 gripper_status = {"gripper_status": "no status", "last_updated": None}
 
 ## Griper status standarized
 gripper_status_posible = ['CLOSE', 'OPEN', 'STOP', ]
 
+
+current_experiment_id = None
+current_robot_log_id = None
 
 robot_log = {
             "project_id": None,
@@ -37,24 +40,59 @@ robot_control = {"running": False}
 
 @app.route('/')
 def home():
-    return render_template('index.html', status = gripper_status)
-
-@app.route('/start', methods=['GET'])
-def start():
-    search_query = request.args.get('search')
-    selected_project_id = request.args.get('project')
     settings = None
+    robot_log = None
+    time_difference = None
+    if current_experiment_id != None:
+        settings = ExperimentSetting.query.get(current_experiment_id)
+    if current_robot_log_id != None:
+        robot_log = RobotLog.query.get(current_robot_log_id)
+        if robot_log and robot_log.time_stamp:
+            time_difference = datetime.now() - robot_log.time_stamp
+    return render_template('index.html', status=gripper_status, settings=settings, robot_logs=robot_log, time_difference=time_difference)
 
-    if search_query:
-        settings = ExperimentSetting.query.filter(
-            (ExperimentSetting.experiment_id == search_query) | 
-            (ExperimentSetting.experiment_name.ilike(f"%{search_query}%"))
-        ).first()
-    elif selected_project_id:
-        settings = ExperimentSetting.query.get(selected_project_id)
+@app.route('/start', methods=['GET', 'POST'])
+def start():
 
-    projects = ExperimentSetting.query.all()
-    return render_template('start.html', projects=projects, settings=settings)
+    global current_experiment_id, current_robot_log_id, robot_control
+    if request.method == 'GET':
+        search_query = request.args.get('search')
+        selected_project_id = request.args.get('project')
+        settings = None
+
+        if search_query:
+            settings = ExperimentSetting.query.filter(
+                (ExperimentSetting.experiment_id == search_query) | 
+                (ExperimentSetting.experiment_name.ilike(f"%{search_query}%"))
+            ).first()
+        elif selected_project_id:
+            settings = ExperimentSetting.query.get(selected_project_id)
+        
+        projects = ExperimentSetting.query.all()
+        return render_template('start.html', projects=projects, settings=settings)
+    
+    elif request.method == 'POST':
+        action = request.form.get('action')
+        experiment_id = request.form.get('experiment_id')
+        settings = ExperimentSetting.query.get(experiment_id)
+        
+        if action == "Start" and settings:
+            log = RobotLog(
+                experiment_id=settings.experiment_id,
+                experiment_name=settings.experiment_name,
+                action_start="Start",
+                cycle_number=0,
+                time_stamp=datetime.now(),
+                experiment_setting=settings
+            )
+            db.session.add(log)
+            db.session.commit()
+            current_experiment_id = settings.experiment_id
+            current_robot_log_id = log.id
+            robot_control['running'] = True
+            flash('Experiment started successfully!', 'success')
+        
+        return redirect(url_for('home'))
 
 @app.route('/settings', methods=['GET', 'POST'])
 def settings():
@@ -74,16 +112,6 @@ def settings():
         )
         db.session.add(experiment)
         db.session.commit()
-
-        # experiment_setting['experiment_name'] = form.experiment_name.data
-        # experiment_setting['person_responsible'] = form.person_responsible.data
-        # experiment_setting['experiment_description'] = form.experiment_description.data
-        # experiment_setting['number_of_samples'] = form.number_of_samples.data
-        # experiment_setting['thermomixer_time_s'] = form.thermomixer_time_s.data
-        # experiment_setting['liquid_nitrogen_time_s'] = form.liquid_nitrogen_time_s.data
-        # experiment_setting['number_of_cycles'] = form.number_of_cycles.data
-        # experiment_setting['additional_notes'] = form.additional_notes.data
-        # experiment_setting['update_time'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         flash('Settings updated successfully!', 'success')
         return redirect(url_for('settings'))
     
@@ -121,7 +149,8 @@ def control_robot():
 @app.route('/view_experiment_settings', methods=['GET'])
 def view_experiment_settings():
     experiment_settings = ExperimentSetting.query.all()
-    return render_template('view_experiment_settings.html', experiment_settings=experiment_settings)
+    robot_logs = RobotLog.query.all()
+    return render_template('view_experiment_settings.html', experiment_settings=experiment_settings, robot_logs=robot_logs)
     
 if __name__ == "__main__":
     app.run(debug = True)
