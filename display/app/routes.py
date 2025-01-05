@@ -177,6 +177,19 @@ def update_robot_log():
         robot_control['running'] = False
     return jsonify({"message": "Robot log updated successfully"}), 200
 
+@app.route('/update_process_details', methods=['POST'])
+def update_process_details():
+    global current_robot_log_id
+    process_details = request.form.get('process_details')
+    if current_robot_log_id is not None:
+        log = RobotLog.query.get(current_robot_log_id)
+        if log:
+            log.action_start = "Completed: details - " + process_details
+            db.session.commit()
+            flash('Process details updated successfully!', 'success')
+    return redirect(url_for('home'))
+
+
 @app.route('/get_robot_control', methods=['GET'])
 def get_robot_control():
     return jsonify(robot_control), 200

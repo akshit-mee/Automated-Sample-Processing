@@ -31,6 +31,14 @@
                 <div class="progress-bar">
                     <div class="progress" style="width: {{ (robot_logs.cycle_number/settings.number_of_cycles)*100 }}%;"></div>
                 </div>
+                {% if robot_logs.action_start == "Completed" %}
+                    <form method="post" action="/update_process_details">
+                        <p> The Experiment is now completed. If you would like to add any further details about it to the log, kindly add it to the textbox below</p>
+                        <label for="process_details">Post Experiment Information:</label>
+                        <textarea id="process_details" name="process_details" rows="4" cols="50"></textarea>
+                        <button type="submit">Update</button>
+                    </form>
+                {% endif %}
             {% endif %}
 
             {% if running_status %}
