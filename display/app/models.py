@@ -45,3 +45,17 @@ class RobotLog(db.Model):
     error = sa.Column(sa.String, nullable=True)
 
     experiment_setting = so.relationship('ExperimentSetting', back_populates='robot_logs', foreign_keys=[experiment_id])
+
+# # To add the following table for sumarising??
+# class ExperimentCompleted (db.Model):
+#     __tablename__ = 'experiment_completed'
+    
+#     id = sa.Column(sa.Integer, primary_key=True)
+#     experiment_id = sa.Column(sa.Integer, sa.ForeignKey('experiment_settings.experiment_id'), nullable=False)
+#     experiment_name = sa.Column(sa.String, sa.ForeignKey('experiment_settings.experiment_name'), nullable=True)
+#     start_time = sa.Column(sa.DateTime, nullable=False)
+#     end_time = sa.Column(sa.DateTime, nullable=False)
+#     Robot_log_start_id = sa.Column(sa.Integer, sa.ForeignKey('robot_logs.id'), nullable=False)
+#     Robot_log_end_id = sa.Column(sa.Integer, sa.ForeignKey('robot_logs.id'), nullable=False)
+#     post_experiment_notes = sa.Column(sa.String, nullable=True)
+    

@@ -107,6 +107,9 @@
         tr:hover {
             background-color: #f1f1f1;
         }
+        .highlight-row {
+            background-color: #1b8101; /* Light red background */
+        }
 
         .progress-bar {
             width: 100%;
@@ -126,11 +129,11 @@
 <body>
     <header>
         <nav>
-            <a href="/">Status</a>
-            <a href="/settings">Innitial Settings</a>
-            <a href="/control" >Control</a>
-            <a href="/view_experiment_settings">View Experiment Settings</a>
-            <a href="/start">Start</a>
+            <a href="{{ url_for('home') }}">Status</a>
+            <a href="{{ url_for('settings') }}">Initial Settings</a>
+            <a href="{{ url_for('control') }}">Control</a>
+            <a href="{{ url_for('view_experiment_settings') }}">View Experiment Settings</a>
+            <a href="{{ url_for('start') }}">Start</a>
         </nav>
         {%if title%}
             <h1>{{ title }} </h1>

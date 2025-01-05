@@ -118,6 +118,10 @@ def settings():
     
     return render_template('settings.html', title='Robot Settings', form=form)
 
+@app.route('/control', methods=['GET', 'POST'])
+def control():
+    return render_template('control.html', robot_control = robot_control)
+
 @app.route('/update_status', methods=['POST'])
 def update_status():
     global gripper_staus
@@ -133,9 +137,6 @@ def update_status():
 def get_status():
     return jsonify(gripper_status), 200
 
-@app.route('/control', methods=['GET', 'POST'])
-def control():
-    return render_template('control.html', robot_control = robot_control)
 
 @app.route('/control_robot', methods=['POST'])
 def control_robot():

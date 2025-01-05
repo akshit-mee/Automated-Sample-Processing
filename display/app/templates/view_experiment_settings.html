@@ -15,7 +15,7 @@
             <th>Additional Notes</th>
             <th>Update Time</th>
         </tr>
-        {% for setting in experiment_settings %}
+        {% for setting in experiment_settings|reverse %}
         <tr>
             <td>{{ setting.experiment_id }}</td>
             <td>{{ setting.experiment_name }}</td>
@@ -42,8 +42,8 @@
             <th>Timestamp</th>
             <th>Error</th>
         </tr>
-        {% for log in robot_logs %}
-        <tr>
+        {% for log in robot_logs|reverse %}
+        <tr class="{% if log.action_start == 'Start' %}highlight-row{% endif %}">
             <td>{{ log.id }}</td>
             <td>{{ log.experiment_id }}</td>
             <td>{{ log.experiment_name }}</td>
