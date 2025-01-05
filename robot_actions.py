@@ -12,7 +12,7 @@ robot_actions = ['Innitial Setting Updated',
 
 class RobotActions:
 
-    def __init__(self, myCobot):
+    def __init__(self):
         self.thermomixer = [0,0,0]   #add coordinates of thermomixer
         self.liquid_nitrogen = [0,0,0] #add coordinates of liquid nitrogen
         self.current_cycle = 0

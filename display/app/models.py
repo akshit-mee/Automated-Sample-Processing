@@ -15,8 +15,22 @@ class ExperimentSetting(db.Model):
     liquid_nitrogen_time_s = sa.Column(sa.Integer, nullable=False, default=60)
     number_of_cycles = sa.Column(sa.Integer, nullable=False, default=20)
     additional_notes = sa.Column(sa.String, nullable=True)
-    update_time = sa.Column(sa.DateTime, default=datetime.utcnow)
+    update_time = sa.Column(sa.DateTime, default=datetime.now)
     robot_logs = so.relationship('RobotLog', order_by='RobotLog.id', back_populates='experiment_setting', foreign_keys='RobotLog.experiment_id')
+
+    def to_dict(self):
+        return {
+            'experiment_id': self.experiment_id,
+            'experiment_name': self.experiment_name,
+            'person_responsible': self.person_responsible,
+            'experiment_description': self.experiment_description,
+            'number_of_samples': self.number_of_samples,
+            'thermomixer_time_s': self.thermomixer_time_s,
+            'liquid_nitrogen_time_s': self.liquid_nitrogen_time_s,
+            'number_of_cycles': self.number_of_cycles,
+            'additional_notes': self.additional_notes,
+            'update_time': self.update_time.isoformat() if self.update_time else None
+        }
 
 class RobotLog(db.Model):
     __tablename__ = 'robot_logs'
@@ -27,7 +41,7 @@ class RobotLog(db.Model):
     action_start = sa.Column(sa.String, nullable=True)
     cycle_number = sa.Column(sa.Integer, nullable=True)
     gripper_status = sa.Column(sa.String, nullable=True)
-    time_stamp = sa.Column(sa.DateTime, default=datetime.utcnow)
+    time_stamp = sa.Column(sa.DateTime, default=datetime.now)
     error = sa.Column(sa.String, nullable=True)
 
     experiment_setting = so.relationship('ExperimentSetting', back_populates='robot_logs', foreign_keys=[experiment_id])

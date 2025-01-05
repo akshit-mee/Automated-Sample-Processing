@@ -151,6 +151,39 @@ def view_experiment_settings():
     experiment_settings = ExperimentSetting.query.all()
     robot_logs = RobotLog.query.all()
     return render_template('view_experiment_settings.html', experiment_settings=experiment_settings, robot_logs=robot_logs)
-    
+
+@app.route('/update_robot_log', methods=['POST'])
+def update_robot_log():
+    global current_experiment_id, current_robot_log_id
+    data = request.get_json()
+    if not data or 'action' not in data or 'cycle_number' not in data or 'gripper_status' not in data:
+        return jsonify({"error": "Invalid data"}), 400
+
+    log = RobotLog(
+        experiment_id=current_experiment_id,
+        experiment_name=ExperimentSetting.query.get(current_experiment_id).experiment_name,
+        action_start=data["action"],
+        cycle_number=data["cycle_number"],
+        gripper_status=data["gripper_status"],
+        time_stamp=datetime.now(),
+        error=data.get("error")
+    )
+    db.session.add(log)
+    db.session.commit()
+    current_robot_log_id = log.id
+    return jsonify({"message": "Robot log updated successfully"}), 200
+
+@app.route('/get_robot_control', methods=['GET'])
+def get_robot_control():
+    return jsonify(robot_control), 200
+
+@app.route('/get_experiment_settings', methods=['GET'])
+def get_experiment_settings():
+    global current_experiment_id
+    if current_experiment_id is not None:
+        settings = ExperimentSetting.query.get(current_experiment_id)
+        return jsonify(settings.to_dict()), 200
+    return jsonify({"error": "No experiment settings found"}), 404
+
 if __name__ == "__main__":
     app.run(debug = True)
