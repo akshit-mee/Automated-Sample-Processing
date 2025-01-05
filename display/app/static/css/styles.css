@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+h1, h2 {
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+label {
+    font-weight: bold;
+}
+input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    padding: 0.7rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.status {
+    text-align: center;
+    margin-top: 1rem;
+}
+.status span {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #4CAF50;
+}
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: #777;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}
+tr.highlight-row {
+    background-color: #1b8101;
+}
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.progress {
+    height: 20px;
+    background-color: #007BFF;
+    width: 0%;
+}
