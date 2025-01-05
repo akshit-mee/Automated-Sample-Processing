@@ -6,12 +6,13 @@ from app.models import ExperimentSetting, RobotLog
 
 gripper_status = {"gripper_status": "no status", "last_updated": None}
 
-## Griper status standarized
-gripper_status_posible = ['CLOSE', 'OPEN', 'STOP', ]
 
 
 current_experiment_id = None
 current_robot_log_id = None
+update_flag = False
+robot_control = {"running": False}
+
 
 robot_log = {
             "project_id": None,
@@ -36,20 +37,20 @@ robot_actions = ['Innitial Setting Updated',
                  'Stopped by User'
                  'Restarted by User']
 
-robot_control = {"running": False}
 
 @app.route('/')
 def home():
     settings = None
     robot_log = None
     time_difference = None
+    global robot_control, current_experiment_id, current_robot_log_id
     if current_experiment_id != None:
         settings = ExperimentSetting.query.get(current_experiment_id)
     if current_robot_log_id != None:
         robot_log = RobotLog.query.get(current_robot_log_id)
         if robot_log and robot_log.time_stamp:
             time_difference = datetime.now() - robot_log.time_stamp
-    return render_template('index.html', status=gripper_status, settings=settings, robot_logs=robot_log, time_difference=time_difference)
+    return render_template('index.html', settings=settings, robot_logs=robot_log, time_difference=time_difference, running_status = robot_control['running'])
 
 @app.route('/start', methods=['GET', 'POST'])
 def start():
@@ -154,7 +155,7 @@ def view_experiment_settings():
 
 @app.route('/update_robot_log', methods=['POST'])
 def update_robot_log():
-    global current_experiment_id, current_robot_log_id
+    global current_experiment_id, current_robot_log_id, update_flag
     data = request.get_json()
     if not data or 'action' not in data or 'cycle_number' not in data or 'gripper_status' not in data:
         return jsonify({"error": "Invalid data"}), 400
@@ -171,6 +172,9 @@ def update_robot_log():
     db.session.add(log)
     db.session.commit()
     current_robot_log_id = log.id
+    update_flag = True
+    if data["action"] == "Completed":
+        robot_control['running'] = False
     return jsonify({"message": "Robot log updated successfully"}), 200
 
 @app.route('/get_robot_control', methods=['GET'])
@@ -184,6 +188,14 @@ def get_experiment_settings():
         settings = ExperimentSetting.query.get(current_experiment_id)
         return jsonify(settings.to_dict()), 200
     return jsonify({"error": "No experiment settings found"}), 404
+
+
+@app.route("/status_page_update")
+def status_page_update():
+    global update_flag
+    response = {"reload": update_flag}
+    update_flag = False
+    return jsonify(response)
 
 if __name__ == "__main__":
     app.run(debug = True)

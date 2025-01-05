@@ -69,10 +69,10 @@ if __name__ == "__main__":
             time.sleep(1)
             update_robot_log("Place Sample in Thermomixer", cycle_number, "OPEN")
             time.sleep(1)
-            cycle_number += 1
             if cycle_number == settings['number_of_cycles']:
                 update_robot_log("Completed", cycle_number, "OPEN")
                 break
+            cycle_number += 1
 
 
         
