@@ -151,7 +151,7 @@ def control_robot():
         robot_control['running'] = True
     if action == 'stop':
         robot_control['running'] = False
-    return redirect(url_for('control'))
+    return redirect(url_for('home'))
 
 @app.route('/view_experiment_settings', methods=['GET'])
 def view_experiment_settings():
