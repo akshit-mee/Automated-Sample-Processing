@@ -46,6 +46,17 @@ class RobotLog(db.Model):
 
     experiment_setting = so.relationship('ExperimentSetting', back_populates='robot_logs', foreign_keys=[experiment_id])
 
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'experiment_id': self.experiment_id,
+            'experiment_name': self.experiment_name,
+            'action_start': self.action_start,
+            'cycle_number': self.cycle_number,
+            'gripper_status': self.gripper_status,
+            'time_stamp': self.time_stamp.isoformat() if self.time_stamp else None,
+            'error': self.error
+        }
 # # To add the following table for sumarising??
 # class ExperimentCompleted (db.Model):
 #     __tablename__ = 'experiment_completed'

@@ -1,15 +1,19 @@
-from flask import request, jsonify, render_template, redirect, url_for, flash
+from flask import request, jsonify, render_template, redirect, url_for, flash, send_file
 from app import app, db
 from datetime import datetime, timedelta
 from app.forms import ExperimentSettingForm
 from app.models import ExperimentSetting, RobotLog
+import json
+import os
 
 gripper_status = {"gripper_status": "no status", "last_updated": None}
 
 
 
 current_experiment_id = None
+experiment_start_robot_log_id = None
 current_robot_log_id = None
+experiment_end_robot_log_id = None
 update_flag = False
 robot_control = {"running": False}
 
@@ -32,30 +36,31 @@ robot_actions = ['Innitial Setting Updated',
                  'Pick up Sample from Thermomixer', 
                  'Pick up Sample from Liquid Nitrogen',
                  'Moving Sample to Thermomixer', 
-                 'Moving Sample to Liquid Nitrogen'
-                 'Completed'
-                 'Stopped by User'
+                 'Moving Sample to Liquid Nitrogen',
+                 'Completed',
+                 'Stopped by User',
                  'Restarted by User']
 
 
 @app.route('/')
 def home():
     settings = None
-    robot_log = None
+    current_robot_log = None
     time_difference = None
-    global robot_control, current_experiment_id, current_robot_log_id
-    if current_experiment_id != None:
+    global robot_control, current_experiment_id, current_robot_log_id, experiment_end_robot_log_id, experiment_start_robot_log_id
+    if current_experiment_id is not None:
         settings = ExperimentSetting.query.get(current_experiment_id)
-    if current_robot_log_id != None:
-        robot_log = RobotLog.query.get(current_robot_log_id)
-        if robot_log and robot_log.time_stamp:
-            time_difference = datetime.now() - robot_log.time_stamp
-    return render_template('index.html', settings=settings, robot_logs=robot_log, time_difference=time_difference, running_status = robot_control['running'])
+    if current_robot_log_id is not None:
+        experiment_end_robot_log_id = current_robot_log_id
+        current_robot_log = RobotLog.query.get(current_robot_log_id)
+        if current_robot_log and current_robot_log.time_stamp:
+            time_difference = datetime.now() - current_robot_log.time_stamp
+    return render_template('index.html', settings=settings, robot_logs=current_robot_log, time_difference=time_difference, running_status = robot_control['running'])
 
 @app.route('/start', methods=['GET', 'POST'])
 def start():
 
-    global current_experiment_id, current_robot_log_id, robot_control
+    global current_experiment_id, current_robot_log_id, robot_control, experiment_start_robot_log_id
     if request.method == 'GET':
         search_query = request.args.get('search')
         selected_project_id = request.args.get('project')
@@ -88,6 +93,7 @@ def start():
             )
             db.session.add(log)
             db.session.commit()
+            experiment_start_robot_log_id = log.id
             current_experiment_id = settings.experiment_id
             current_robot_log_id = log.id
             robot_control['running'] = True
@@ -97,7 +103,6 @@ def start():
 
 @app.route('/settings', methods=['GET', 'POST'])
 def settings():
-    global experiment_setting
     form = ExperimentSettingForm()
     if form.validate_on_submit():
         experiment = ExperimentSetting(
@@ -124,14 +129,14 @@ def control():
 
 @app.route('/update_status', methods=['POST'])
 def update_status():
-    global gripper_staus
+    global gripper_status
     data = request.get_json()
     if not data or 'gripper_status' not in data:
         return jsonify({"error": "Invalid data"}), 400
         
     gripper_status["gripper_status"] = data["gripper_status"]
     gripper_status["last_updated"] = data.get('timestamp')
-    return jsonify({"message": "Status updated sucessfully"}), 200
+    return jsonify({"message": "Status updated successfully"}), 200
     
 @app.route('/get_status', methods=['GET'])
 def get_status():
@@ -180,8 +185,11 @@ def update_robot_log():
 
 @app.route('/update_process_details', methods=['POST'])
 def update_process_details():
-    global current_robot_log_id
+    global current_robot_log_id, experiment_end_robot_log_id
     process_details = request.form.get('process_details')
+    if not process_details:
+        process_details = "No details provided"
+    experiment_end_robot_log_id = current_robot_log_id
     if current_robot_log_id is not None:
         log = RobotLog.query.get(current_robot_log_id)
         if log:
@@ -210,6 +218,28 @@ def status_page_update():
     response = {"reload": update_flag}
     update_flag = False
     return jsonify(response)
+
+@app.route('/download_experiment_data', methods=['GET'])
+def download_experiment_data():
+    global current_experiment_id, experiment_start_robot_log_id, experiment_end_robot_log_id
+
+    if current_experiment_id is None or experiment_start_robot_log_id is None or experiment_end_robot_log_id is None:
+        flash('No experiment data available for download.', 'error')
+        return redirect(url_for('home'))
+
+    settings = ExperimentSetting.query.get(current_experiment_id)
+    logs = RobotLog.query.filter(RobotLog.id.between(experiment_start_robot_log_id, experiment_end_robot_log_id)).all()
+
+    data = {
+        'settings': settings.to_dict(),
+        'logs': [log.to_dict() for log in logs]
+    }
+
+    file_path = f'/tmp/experiment_{settings.experiment_id}_{settings.experiment_name}_data.json'
+    with open(file_path, 'w') as f:
+        json.dump(data, f)
+
+    return send_file(file_path, as_attachment=True, download_name=f'experiment_{settings.experiment_id}_{settings.experiment_name}_data.json')
 
 if __name__ == "__main__":
     app.run(debug = True)
