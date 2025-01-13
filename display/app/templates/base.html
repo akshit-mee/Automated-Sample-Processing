@@ -21,11 +21,14 @@
             <a href="{{ url_for('start') }}">Start</a>
             <a href="{{ url_for('contact') }}">Contact</a>
         </nav>
-        {%if title%}
-            <h1>{{ title }} </h1>
-        {% else %}
-            <h1>Robot Controller</h1>
-        {% endif %}
+        <div style="display: flex; align-items: center; justify-content: center; position: relative;">
+            <img src="{{ url_for('static', filename='dwi_logo.svg') }}" alt="DWI Logo" style="position: absolute; left: 0;">
+            {%if title%}
+                <h1 style="margin: 0 auto;">{{ title }} </h1>
+            {% else %}
+                <h1 style="margin: 0 auto;">Robot Controller</h1>
+            {% endif %}
+        </div>
     </header>
 
 {% block content %} {% endblock%}

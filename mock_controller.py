@@ -71,6 +71,7 @@ if __name__ == "__main__":
             time.sleep(1)
             if cycle_number == settings['number_of_cycles']:
                 update_robot_log("Completed", cycle_number, "OPEN")
+                cycle_number = 1
                 break
             cycle_number += 1
     time.sleep(2)
