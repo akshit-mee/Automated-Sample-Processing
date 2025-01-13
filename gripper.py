@@ -19,19 +19,20 @@ cobot_speed = 100
 display_url = "http://127.0.0.1:5000/update_status"
 def update_gripper_status(new_status):
 
-    message = {
-        "gripper_status": new_status,
-        "timestamp": time.strftime('%Y-%m-%d %H-%M-%S')
-        }
-    try:
-        response = requests.post(display_url, json=message)
-        if response.status_code == 200:
-            s = 1
-            # print("Gripper Status Updates", new_status)
-        else:
-            print("Failed to update status", response.json())
-    except requests.exceptions.RequestException as e:
-        print("Error connecting to the server", e)
+    #message = {
+    #    "gripper_status": new_status,
+    #    "timestamp": time.strftime('%Y-%m-%d %H-%M-%S')
+    #    }
+    #try:
+    #    response = requests.post(display_url, json=message)
+    #    if response.status_code == 200:
+    #        s = 1
+    #        # print("Gripper Status Updates", new_status)
+    #    else:
+    #        print("Failed to update status", response.json())
+    #except requests.exceptions.RequestException as e:
+    #    print("Error connecting to the server", e)
+    print("server not needed")
 
 
 ######################### Gripper Manager ######################################
@@ -93,23 +94,29 @@ gripper_thread.start()
  
  
 while True:
-    mc.send_angles(p1, cobot_speed)
-    time.sleep(1)
+    while not mc.is_in_position(p1, 0):
+        mc.send_angles(p1, cobot_speed)
+    
     gripper_state = "GRIP"
     time.sleep(0.5)
-    mc.send_angles(p2, cobot_speed)
-    time.sleep(1)
-    mc.send_angles(p3, cobot_speed)
-    time.sleep(1)
-    mc.send_angles(p4, cobot_speed)
-    time.sleep(1)
+    while not mc.is_in_position(p1, 0):
+        mc.send_angles(p2, cobot_speed)
+    
+    while not mc.is_in_position(p1, 0):
+        mc.send_angles(p3, cobot_speed)
+    
+    while not mc.is_in_position(p1, 0):
+        mc.send_angles(p4, cobot_speed)
+    
     gripper_state = "OPEN"
     time.sleep(0.5)
     gripper_state = "STOP"
-    mc.send_angles(p3, cobot_speed)
-    time.sleep(1)
-    mc.send_angles(p2, cobot_speed)
-    time.sleep(1) 
+    while not mc.is_in_position(p1, 0):
+        mc.send_angles(p3, cobot_speed)
+    
+    while not mc.is_in_position(p1, 0):
+        mc.send_angles(p2, cobot_speed)
+     
  
     
     
