@@ -1,0 +1,17 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h2>Contact Us</h2>
+    <div class="contacts">
+        {% for contact in contacts %}
+        <div class="contact-card">
+            <h3>{{ contact.name }}</h3>
+            <p>Email: <a href="mailto:{{ contact.email }}">{{ contact.email }}</a></p>
+            <p>Room: {{ contact.room }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

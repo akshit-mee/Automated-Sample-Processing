@@ -151,13 +151,18 @@ def control_robot():
         robot_control['running'] = True
     if action == 'stop':
         robot_control['running'] = False
+        
     return redirect(url_for('home'))
 
 @app.route('/view_experiment_settings', methods=['GET'])
 def view_experiment_settings():
     experiment_settings = ExperimentSetting.query.all()
+    return render_template('view_experiment_settings.html', experiment_settings=experiment_settings)
+
+@app.route('/view_robot_logs', methods=['GET'])
+def view_robot_logs():
     robot_logs = RobotLog.query.all()
-    return render_template('view_experiment_settings.html', experiment_settings=experiment_settings, robot_logs=robot_logs)
+    return render_template('view_robot_logs.html', robot_logs=robot_logs)
 
 @app.route('/update_robot_log', methods=['POST'])
 def update_robot_log():
@@ -240,6 +245,15 @@ def download_experiment_data():
         json.dump(data, f)
 
     return send_file(file_path, as_attachment=True, download_name=f'experiment_{settings.experiment_id}_{settings.experiment_name}_data.json')
+
+@app.route('/contact')
+def contact():
+    contacts = [
+        {"name": "Akshit Gupta, B. Tech.", "email": "gupta@dwi.rwth-aachen.de", "room": "Technikum"},
+        {"name": "Till Hülsmann, M.Sc", "email": "huelsmann@dwi.rwth-aachen.de", "room": "B3.56"},
+        {"name": "Johannes Hahmann, M.Sc.", "email": "hahmann@dwi.rwth-aachen.de", "room": "A0.14|0.18"}
+    ]
+    return render_template('contact.html', contacts=contacts)
 
 if __name__ == "__main__":
     app.run(debug = True)

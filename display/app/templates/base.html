@@ -16,8 +16,10 @@
             <a href="{{ url_for('home') }}">Status</a>
             <a href="{{ url_for('settings') }}">Initial Settings</a>
             <a href="{{ url_for('control') }}">Control</a>
-            <a href="{{ url_for('view_experiment_settings') }}">View Experiment Settings</a>
+            <a href="{{ url_for('view_experiment_settings') }}">Experiment Settings</a>
+            <a href="{{ url_for('view_robot_logs') }}">Robot Logs</a>
             <a href="{{ url_for('start') }}">Start</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
         </nav>
         {%if title%}
             <h1>{{ title }} </h1>
