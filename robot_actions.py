@@ -161,12 +161,45 @@ class RobotActions:
                     mc.send_angles(p2, cobot_speed)
             
             case 'liquid_nitrogen':
-                update_robot_log("Moving Sample to Liquid Nitrogen", self.current_cycle, gripper_state)
+                global gripper_state
+                if gripper_state != "GRIP":
+                    update_robot_log("Moving Sample to Liquid Nitrogen", self.current_cycle, gripper_state, "Gripper not holding is open")
+                else:             
+                    update_robot_log("Moving Sample to Liquid Nitrogen", self.current_cycle, gripper_state)
                 while mc.is_in_position(p3, 0) == 0:
                     mc.send_angles(p3, cobot_speed)
 
     def place_sample_in(self, location):
-        pass
+        match location:
+            case 'thermomixer':
+                global gripper_state
+
+                while mc.is_in_position(p2, 0) == 0:
+                    mc.send_angles(p2, cobot_speed)
+
+                if gripper_state != "GRIP":
+                    update_robot_log("Place Sample in Thermomixer", self.current_cycle, gripper_state, "Gripper not holding is open")
+                else:
+                    update_robot_log("Place Sample in Thermomixer", self.current_cycle, gripper_state)
+                while mc.is_in_position(p1, 0) == 0:
+                    mc.send_angles(p1, cobot_speed)
+                gripper_state = "STOP"
+                while mc.is_in_position(p2, 0) == 0:
+                    mc.send_angles(p2, cobot_speed)
+            
+            case 'liquid_nitrogen':
+                global gripper_state
+                while mc.is_in_position(p3, 0) == 0:
+                    mc.send_angles(p3, cobot_speed)
+                if gripper_state != "GRIP":
+                    update_robot_log("Place Sample in Liquid Nitrogen", self.current_cycle, gripper_state, "Gripper not holding is open")
+                else:
+                    update_robot_log("Place Sample in Liquid Nitrogen", self.current_cycle, gripper_state)
+                while mc.is_in_position(p4, 0) == 0:
+                    mc.send_angles(p4, cobot_speed)
+                gripper_state = "STOP"
+                while mc.is_in_position(p3, 0) == 0:
+                    mc.send_angles(p3, cob
 
     def complete(self):
         pass

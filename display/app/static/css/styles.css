@@ -9,8 +9,8 @@ header {
     background-color: White;
     color: black;
     text-align: center;
+    align-items:normal;
     padding: 1rem;
-    width: 80%;
     margin: 0 auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -22,8 +22,12 @@ header {
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     border-radius: 0px;
 }
-h1, h2 {
+h1{
     text-align: center;
+}
+h2 {
+    text-align: left;
+    font-weight: bold;
 }
 form {
     display: flex;
@@ -34,6 +38,9 @@ header nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 80%;
+    padding-top: 0.8cm;
+    padding-left: 5cm;
     font-weight: bold;
 }
 header nav a {
@@ -51,9 +58,10 @@ label {
 input {
     padding: 0.5rem;
     font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 2px solid Black;
+    border-radius: 0px;
 }
+
 button {
     padding: 0.7rem;
     font-size: 1rem;
@@ -125,9 +133,9 @@ tr.highlight-row {
 .contact-card {
     padding: 1rem;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 0px;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 .contact-card h3 {
     margin-top: 0;
