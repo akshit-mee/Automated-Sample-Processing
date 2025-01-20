@@ -15,8 +15,9 @@ p3 = [161.71, -30.32, -28.56, -25.92, -1.31, 129.46]
 p4 = [167.34, -69.59, -28.56, 11.68, 2.37, 132.53]
 
 cobot_speed = 70
+
 gripper_pin = 19 #Change for different pin for make a config file
-gripper_open = 6.5 #Completle open, can change for less opening
+gripper_open = 2 #Completle open, can change for less opening
 gripper_closed = 12
 
 GPIO.setmode(GPIO.BCM)
@@ -53,6 +54,9 @@ gripper_thread.start()
 
 ################ Code ################################
 mc.send_angles(p2, cobot_speed)
+gripper_state = "OPEN"
+time.sleep(0.5)
+gripper_state = "STOP"
 time.sleep(2)
 
 
@@ -74,11 +78,25 @@ while True:
     gripper_state = "OPEN"
     time.sleep(0.5)
     gripper_state = "STOP"
-    mc.send_angles(p3, cobot_speed)
+    mc.send_angles(p4, cobot_speed)
+    print("P4")
+    time.sleep(0.5)
+    gripper_state = "GRIP"
+    time.sleep(0.5)
     print("P3")
     time.sleep(1.5)
     mc.send_angles(p2, cobot_speed)
     print("P2")
     time.sleep(1.5)
+    mc.send_angles(p1, cobot_speed)
+    print("P1")
+    time.sleep(1.5)
+    gripper_state = "OPEN"
+    time.sleep(0.5)
+    gripper_state = "STOP"
+    mc.send_angles(p2, cobot_speed)
+    print("P2")
+    time.sleep(1.5)
+    
      
 
