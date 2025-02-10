@@ -24,16 +24,28 @@
 
             <a href="{{ url_for('home') }}">Status</a>
             <a href="{{ url_for('settings') }}">Initial Settings</a>
-            <a href="{{ url_for('control') }}">Control</a>
             <a href="{{ url_for('view_experiment_settings') }}">Experiment Settings</a>
             <a href="{{ url_for('view_robot_logs') }}">Robot Logs</a>
+            <a href="{{ url_for('view_completed_experiments') }}">Completed Experiments</a>
             <a href="{{ url_for('start') }}">Start</a>
             <a href="{{ url_for('contact') }}">Contact</a>
     
         </nav>
     </header>
 
-{% block content %} {% endblock%}
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="container">
+                {% for category, message in messages %}
+                    <div class="alert">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+
+    {% block content %} {% endblock%}
 
     <footer>
         &copy; 2025 Robot Controll and Monitoring System
