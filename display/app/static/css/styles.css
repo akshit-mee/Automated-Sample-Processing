@@ -149,3 +149,32 @@ tr.highlight-row {
     text-underline-offset: 8px;
     transition: text-underline-offset 0.3s ease-in-out;
 }
+table td a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 0.75rem;
+    margin: -0.75rem;
+}
+
+.flash-messages {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.alert {
+    padding: 0.7rem;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: black;
+    background-color: white;
+    border: 2px solid #00cf70;
+    border-radius: 0px;
+    text-align: center;
+}
+
+.alert:hover {
+    background-color: #00cf70;
+    color: white;
+    transition: all 0.3s ease;
+}

@@ -16,7 +16,10 @@ class ExperimentSetting(db.Model):
     number_of_cycles = sa.Column(sa.Integer, nullable=False, default=20)
     additional_notes = sa.Column(sa.String, nullable=True)
     update_time = sa.Column(sa.DateTime, default=datetime.now)
+
     robot_logs = so.relationship('RobotLog', order_by='RobotLog.id', back_populates='experiment_setting', foreign_keys='RobotLog.experiment_id')
+    experiment_completed = so.relationship('ExperimentCompleted', back_populates='experiment_setting', foreign_keys='ExperimentCompleted.experiment_id')
+    current_active = so.relationship('CurrentActive', back_populates='experiment_setting', foreign_keys='CurrentActive.experiment_id')
 
     def to_dict(self):
         return {
@@ -45,6 +48,8 @@ class RobotLog(db.Model):
     error = sa.Column(sa.String, nullable=True)
 
     experiment_setting = so.relationship('ExperimentSetting', back_populates='robot_logs', foreign_keys=[experiment_id])
+    current_active = so.relationship('CurrentActive', back_populates='robot_log', foreign_keys='CurrentActive.robotlog_id')
+    experiment_completed = so.relationship('ExperimentCompleted', back_populates='robot_log', foreign_keys='ExperimentCompleted.Robot_log_start_id')
 
     def to_dict(self):
         return {
@@ -57,16 +62,34 @@ class RobotLog(db.Model):
             'time_stamp': self.time_stamp.isoformat() if self.time_stamp else None,
             'error': self.error
         }
-# # To add the following table for sumarising??
-# class ExperimentCompleted (db.Model):
-#     __tablename__ = 'experiment_completed'
+# # To add the following table for sumarising
+class ExperimentCompleted (db.Model):
+    __tablename__ = 'experiment_completed'
     
-#     id = sa.Column(sa.Integer, primary_key=True)
-#     experiment_id = sa.Column(sa.Integer, sa.ForeignKey('experiment_settings.experiment_id'), nullable=False)
-#     experiment_name = sa.Column(sa.String, sa.ForeignKey('experiment_settings.experiment_name'), nullable=True)
-#     start_time = sa.Column(sa.DateTime, nullable=False)
-#     end_time = sa.Column(sa.DateTime, nullable=False)
-#     Robot_log_start_id = sa.Column(sa.Integer, sa.ForeignKey('robot_logs.id'), nullable=False)
-#     Robot_log_end_id = sa.Column(sa.Integer, sa.ForeignKey('robot_logs.id'), nullable=False)
-#     post_experiment_notes = sa.Column(sa.String, nullable=True)
+    id = sa.Column(sa.Integer, primary_key=True)
+    experiment_id = sa.Column(sa.Integer, sa.ForeignKey('experiment_settings.experiment_id'), nullable=False)
+    experiment_name = sa.Column(sa.String, sa.ForeignKey('experiment_settings.experiment_name'), nullable=True)
+    start_time = sa.Column(sa.DateTime, nullable=False)
+    end_time = sa.Column(sa.DateTime, nullable=False)
+    Robot_log_start_id = sa.Column(sa.Integer, sa.ForeignKey('robot_logs.id'), default=None)
+    Robot_log_end_id = sa.Column(sa.Integer, sa.ForeignKey('robot_logs.id'), default=None)
+    post_experiment_notes = sa.Column(sa.String, nullable=True)
+
+    experiment_setting = so.relationship('ExperimentSetting', back_populates='experiment_completed', foreign_keys=[experiment_id])
+    robot_log = so.relationship('RobotLog', back_populates='experiment_completed', foreign_keys=[Robot_log_start_id])
+    currently_active = so.relationship('CurrentActive', back_populates='experiment_completed', foreign_keys='CurrentActive.experimet_completed_id')
     
+
+class CurrentActive(db.Model):
+    __tablename__ = 'current_active'
+
+    id = sa.Column(sa.Integer, primary_key=True)
+    experiment_id = sa.Column(sa.Integer, sa.ForeignKey('experiment_settings.experiment_id'), nullable=False)
+    experiment_name = sa.Column(sa.String, sa.ForeignKey('experiment_settings.experiment_name'), nullable=True)
+    robotlog_id = sa.Column(sa.Integer, sa.ForeignKey('robot_logs.id'), nullable=False)
+    cycle_number = sa.Column(sa.Integer, nullable=False)
+    experimet_completed_id = sa.Column(sa.Integer, sa.ForeignKey('experiment_completed.id'), nullable=True)
+
+    experiment_setting = so.relationship('ExperimentSetting', back_populates='current_active', foreign_keys=[experiment_id])
+    robot_log = so.relationship('RobotLog', back_populates='current_active', foreign_keys=[robotlog_id])
+    experiment_completed = so.relationship('ExperimentCompleted', back_populates='currently_active', foreign_keys=[experimet_completed_id])
