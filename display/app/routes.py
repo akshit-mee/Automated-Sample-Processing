@@ -206,8 +206,8 @@ def show_completed_experiment(experiment_id):
     logs = RobotLog.query.filter(RobotLog.id.between(completed_experiment.Robot_log_start_id, completed_experiment.Robot_log_end_id)).all()
     return render_template('completed_expriment.html', log=logs)
  
-
-e = ExperimentCompleted(experiment_id = 11, experiment_name = 'New Experiment', start_time = datetime.strptime('2025-01-10 12:00:37.553810', "%Y-%m-%d %H:%M:%S.%f"), end_time = datetime.strptime('2025-01-10 12:00:56.789757', "%Y-%m-%d %H:%M:%S.%f"), Robot_log_start_id = 536, Robot_log_end_id = 555, post_experiment_notes = 'completed sucessfully')
+from datetime import datetime
+e = ExperimentCompleted(experiment_id = 1, experiment_name = 'Demostration', start_time = datetime.strptime('2025-01-13 14:53:31.363247', "%Y-%m-%d %H:%M:%S.%f"), end_time = datetime.strptime('2025-01-13 14:54:15.835216', "%Y-%m-%d %H:%M:%S.%f"), Robot_log_start_id = 1, Robot_log_end_id = 44, post_experiment_notes = None)
 
 ##################################################
 @app.route('/contact')
