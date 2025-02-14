@@ -113,13 +113,19 @@ class RobotActions:
     def __init__(self, mc):
         self.thermomixer = [0,0,0]   #add coordinates of thermomixer
         self.liquid_nitrogen = [0,0,0] #add coordinates of liquid nitrogen
-        self.current_cycle = 0
-        self.thermomixer_time = 60
-        self.liquid_nitrogen_time = 60
+        self.current_cycle = 1
+        self.number_of_cycles = None
+        self.thermomixer_time = None
+        self.liquid_nitrogen_time = None
         self.p1 = [113.2, -65.3, -28.56, 4.04, -2.81, 57.39] #in thermo mixer
         self.p2 = [113.2, -27.07, -28.47, -28.3, 1.31, 68.99] #above thermo mixer
         self.p3 = [161.71, -30.32, -28.56, -25.92, -1.31, 129.46] #above liquid nitrogen
         self.p4 = [162.15, -63.54, -28.56, 7.2, 1.93, 136.23] #in liquid nitrogen
+        
+    def update_settings(self, settings):
+        self.thermomixer_time = settings['thermomixer_time_s']
+        self.liquid_nitrogen_time = settings['liquid_nitrogen_time_s']
+        self.number_of_cycles = settings['thermomixer_time_s']
 
     def sample_position(self):
         pass
@@ -224,4 +230,16 @@ class RobotActions:
             self.place_sample_in(self.thermomixer)
             self.current_cycle += 1
         self.complete()
+        
+if __name__ = "__main__":
+    settings = get_experiment_settings()
+    ra = RobotAction()
+    while True:
+        controll = get_robot_controll()
+        settings = get_expeiment_settings()
+        ra.update_settings()        
+        
+        while control['running'] and settigns is not None and cycle_number-1 < settings['number_of_cycles']:
+            ra.cycle()
+            
         
