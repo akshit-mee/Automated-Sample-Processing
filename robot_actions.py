@@ -4,6 +4,8 @@ import threading
 import requests
 import RPi.GPIO as GPIO
 
+setting_flag = 0
+
 robot_actions = ['Innitial Setting Updated',
                  'Wainting', 
                  'Place Sample in Thermomixer', 
@@ -93,10 +95,12 @@ def get_robot_control():
         return None
 
 def get_experiment_settings():
+    global setting_flag
     try:
         response = requests.get(display_url + "get_experiment_settings")
         print(response.status_code)
         if response.status_code == 200:
+            setting_flag = 1
             return response.json()
         else:
             
@@ -114,18 +118,21 @@ class RobotActions:
         self.thermomixer = [0,0,0]   #add coordinates of thermomixer
         self.liquid_nitrogen = [0,0,0] #add coordinates of liquid nitrogen
         self.current_cycle = 1
-        self.number_of_cycles = None
-        self.thermomixer_time = None
-        self.liquid_nitrogen_time = None
+        self.number_of_cycles = 1
+        self.thermomixer_time = 1
+        self.liquid_nitrogen_time = 1
         self.p1 = [113.2, -65.3, -28.56, 4.04, -2.81, 57.39] #in thermo mixer
         self.p2 = [113.2, -27.07, -28.47, -28.3, 1.31, 68.99] #above thermo mixer
         self.p3 = [161.71, -30.32, -28.56, -25.92, -1.31, 129.46] #above liquid nitrogen
         self.p4 = [162.15, -63.54, -28.56, 7.2, 1.93, 136.23] #in liquid nitrogen
         
     def update_settings(self, settings):
-        self.thermomixer_time = settings['thermomixer_time_s']
-        self.liquid_nitrogen_time = settings['liquid_nitrogen_time_s']
-        self.number_of_cycles = settings['thermomixer_time_s']
+        global setting_flag
+        if setting_flag:
+            self.thermomixer_time = settings['thermomixer_time_s']
+            self.liquid_nitrogen_time = settings['liquid_nitrogen_time_s']
+            self.number_of_cycles = settings['number_of_cycles']
+            print('updated')
 
     def sample_position(self):
         pass
@@ -136,14 +143,14 @@ class RobotActions:
     def pick_up_sample_from(self, location):
         global gripper_state
         if location == 'thermomixer':
-            while mc.is_in_position(p2, 0) == 0:
+            while mc.is_in_position(p2, 0) != 1:
                 mc.send_angles(p2, cobot_speed)
             update_robot_log("Pick up Sample from Thermomixer", self.current_cycle, gripper_state)
-            while mc.is_in_position(p1, 0) == 0:
+            while mc.is_in_position(p1, 0) != 1:
                 mc.send_angles(p1, cobot_speed)
             with gripper_lock:
                 gripper_state = "GRIP"
-            while mc.is_in_position(p2, 0) == 0:
+            while mc.is_in_position(p2, 0) != 1:
                 mc.send_angles(p2, cobot_speed)
         elif location == 'liquid_nitrogen':
             while mc.is_in_position(p3, 0) == 0:
@@ -219,27 +226,38 @@ class RobotActions:
         pass
 
     def cycle(self):
-        while self.current_cycle < self.number_of_cycles:
+        while self.current_cycle-1 < self.number_of_cycles:
             self.wait(self.thermomixer_time)
-            self.pick_up_sample_from(self.thermomixer)
-            self.move_sample_to(self.liquid_nitrogen)
-            self.place_sample_in(self.liquid_nitrogen)
-            self.wait(self.liquid_nitrogen_time)
-            self.pick_up_sample_from(self.liquid_nitrogen)
-            self.move_sample_to(self.thermomixer)
-            self.place_sample_in(self.thermomixer)
+            print(1)
+            self.pick_up_sample_from('thermomixer')
+            print(2)
+            self.move_sample_to('liquid_nitrogen')
+            print(3)
+            self.place_sample_in('liquid_nitrogen')
+            print(4)
+            self.wait('liquid_nitrogen_time')
+            print(5)            
+            self.pick_up_sample_from('liquid_nitrogen')
+            print(6)
+            self.move_sample_to('thermomixer')
+            print(7)
+            self.place_sample_in('thermomixer')
+            print(8)
             self.current_cycle += 1
         self.complete()
         
-if __name__ = "__main__":
+if __name__ == "__main__":
     settings = get_experiment_settings()
-    ra = RobotAction()
+    ra = RobotActions(mc)
     while True:
-        controll = get_robot_controll()
-        settings = get_expeiment_settings()
-        ra.update_settings()        
+        controll = get_robot_control()
+        settings = get_experiment_settings()
+        ra.update_settings(settings)
+        ra.current_cycle = 1
+        print(ra.current_cycle)
+        print(ra.number_of_cycles)        
         
-        while control['running'] and settigns is not None and cycle_number-1 < settings['number_of_cycles']:
+        while controll['running'] and setting_flag:
             ra.cycle()
             
         

@@ -128,20 +128,20 @@ def start():
                 experiment_setting=settings
             )            
             db.session.add(log)
-            cur_active = CurrentActive(
-                id = 1,
-                experiment_id=settings.experiment_id,
-                experiment_name=settings.experiment_name,
-                robotlog_id=log.id,
-                cycle_number=0
-            )
-            db.session.add(cur_active)
-            db.session.commit()
+            # cur_active = CurrentActive(
+            #     id = 1,
+            #     experiment_id=settings.experiment_id,
+            #     experiment_name=settings.experiment_name,
+            #     robotlog_id=log.id,
+            #     cycle_number=0
+            # )
+            # db.session.add(cur_active)
+            # db.session.commit()
  
 
-            experiment_start_robot_log_id = cur_active.robotlog_id
-            current_experiment_id = cur_active.experiment_id
-            current_robot_log_id = cur_active.robotlog_id
+            experiment_start_robot_log_id = log.id
+            current_experiment_id = settings.experiment_id
+            current_robot_log_id = log.id
             robot_control['running'] = True
             flash('Experiment started successfully!', 'success')
         
