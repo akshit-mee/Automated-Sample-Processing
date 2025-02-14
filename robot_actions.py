@@ -35,7 +35,7 @@ GPIO.setup(gripper_pin, GPIO.OUT)
 pwm = GPIO.PWM(gripper_pin, 50)
 
 gripper_state = "STOP" #Possible values "STOP" "CLOSE" "OPEN"
-
+gripper_lock = threading.Lock()
 def manage_gripper():
     global gripper_state
     pwm.start(0)
@@ -135,7 +135,8 @@ class RobotActions:
             update_robot_log("Pick up Sample from Thermomixer", self.current_cycle, gripper_state)
             while mc.is_in_position(p1, 0) == 0:
                 mc.send_angles(p1, cobot_speed)
-            gripper_state = "GRIP"
+            with gripper_lock:
+                gripper_state = "GRIP"
             while mc.is_in_position(p2, 0) == 0:
                 mc.send_angles(p2, cobot_speed)
         elif location == 'liquid_nitrogen':
@@ -144,7 +145,8 @@ class RobotActions:
             update_robot_log("Pick up Sample from Liquid Nitrogen", self.current_cycle, gripper_state)
             while mc.is_in_position(p4, 0) == 0:
                 mc.send_angles(p4, cobot_speed)
-            gripper_state = "GRIP"
+            with gripper_lock:
+                gripper_state = "GRIP"
             while mc.is_in_position(p3, 0) == 0:
                 mc.send_angles(p3, cobot_speed)
 
@@ -160,6 +162,7 @@ class RobotActions:
                 mc.send_angles(p2, cobot_speed)
             
         elif location == 'liquid_nitrogen':
+         
             if gripper_state != "GRIP":
                 update_robot_log("Moving Sample to Liquid Nitrogen", self.current_cycle, gripper_state, "Gripper not holding is open")
             else:             
@@ -180,10 +183,12 @@ class RobotActions:
                 update_robot_log("Place Sample in Thermomixer", self.current_cycle, gripper_state)
             while mc.is_in_position(p1, 0) == 0:
                 mc.send_angles(p1, cobot_speed)
-            gripper_state = "OPEN"
+            with gripper_lock:
+                gripper_state = "OPEN"
             while mc.is_in_position(p2, 0) == 0:
                 mc.send_angles(p2, cobot_speed)
-            gripper_state = "STOP"
+            with gripper_lock:
+                gripper_state = "STOP"
             
         elif location == 'liquid_nitrogen':
             while mc.is_in_position(p3, 0) == 0:
@@ -194,10 +199,12 @@ class RobotActions:
                 update_robot_log("Place Sample in Liquid Nitrogen", self.current_cycle, gripper_state)
             while mc.is_in_position(p4, 0) == 0:
                 mc.send_angles(p4, cobot_speed)
-            gripper_state = "OPEN"
+            with gripper_lock:
+                gripper_state = "OPEN"
             while mc.is_in_position(p3, 0) == 0:
                 mc.send_angles(p3, cobot_speed)
-            gripper_state = "STOP"
+            with gripper_lock:
+                gripper_state = "STOP"
 
     def complete(self):
         pass
