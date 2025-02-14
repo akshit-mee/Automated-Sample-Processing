@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h2>Robot Status Dashboard</h2>
+    <table class="status-table">
+        <tr>
+            <th>Parameter</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Power</td>
+            <td class="status-value {% if robot_status.power %}status-on{% else %}status-off{% endif %}">
+                {{ "ON" if robot_status.power else "OFF" }}
+            </td>
+        </tr>
+        <tr>
+            <td>Connection</td>
+            <td class="status-value {% if robot_status.connected %}status-on{% else %}status-off{% endif %}">
+                {{ "Connected" if robot_status.connected else "Disconnected" }}
+            </td>
+        </tr>
+        <tr>
+            <td>Error Status</td>
+            <td class="status-value {% if robot_status.error %}status-error{% else %}status-ok{% endif %}">
+                {{ robot_status.error or "No Errors" }}
+            </td>
+        </tr>
+    </table>
+</div>
+{% endblock %}

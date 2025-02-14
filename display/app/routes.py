@@ -28,20 +28,6 @@ robot_log = {
             "error": None
 }
 
-## robot actions standarized
-robot_actions = ['Innitial Setting Updated',
-                 'Wainting', 
-                 'Place Sample in Thermomixer', 
-                 'Place Sample in Liquid Nitrogen', 
-                 'Pick up Sample from Thermomixer', 
-                 'Pick up Sample from Liquid Nitrogen',
-                 'Moving Sample to Thermomixer', 
-                 'Moving Sample to Liquid Nitrogen',
-                 'Completed',
-                 'Stopped by User',
-                 'Restarted by User']
-
-
 @app.route('/')
 def home():
     settings = None
@@ -80,6 +66,31 @@ def download_experiment_data():
         json.dump(data, f)
 
     return send_file(file_path, as_attachment=True, download_name=f'experiment_{settings.experiment_id}_{settings.experiment_name}_data.json')
+
+##################################################
+@app.route('/robot_status', methods=['GET', 'POST'])
+def robot_status():
+    # gripper and robot_contoller threads active?
+    # robot on
+    # controller connected
+    # test gripper
+    # modify gripper open and close
+    # robot home position
+    # safe shut down
+
+    robot_status.power = True
+    robot_status.connected = True
+    robot_status.error = False
+
+
+    return render_template('robot_status.html', robot_status=robot_status)
+
+##################################################
+@app.route('/help', methods=['GET', 'POST'])
+def help():
+
+    return render_template('help.html')
+
 
 ##################################################
 @app.route('/start', methods=['GET', 'POST'])
