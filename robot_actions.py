@@ -183,9 +183,10 @@ class RobotActions:
                     update_robot_log("Place Sample in Thermomixer", self.current_cycle, gripper_state)
                 while mc.is_in_position(p1, 0) == 0:
                     mc.send_angles(p1, cobot_speed)
-                gripper_state = "STOP"
+                gripper_state = "OPEN"
                 while mc.is_in_position(p2, 0) == 0:
                     mc.send_angles(p2, cobot_speed)
+                gripper_state = "STOP"
             
             case 'liquid_nitrogen':
                 global gripper_state
@@ -197,9 +198,10 @@ class RobotActions:
                     update_robot_log("Place Sample in Liquid Nitrogen", self.current_cycle, gripper_state)
                 while mc.is_in_position(p4, 0) == 0:
                     mc.send_angles(p4, cobot_speed)
-                gripper_state = "STOP"
+                gripper_state = "OPEN"
                 while mc.is_in_position(p3, 0) == 0:
-                    mc.send_angles(p3, cob
+                    mc.send_angles(p3, cobot_speed)
+                gripper_state = "STOP"
 
     def complete(self):
         pass
