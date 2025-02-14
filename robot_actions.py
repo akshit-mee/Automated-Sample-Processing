@@ -128,6 +128,7 @@ class RobotActions:
         pass
 
     def pick_up_sample_from(self, location):
+        global gripper_state
         if location == 'thermomixer':
             while mc.is_in_position(p2, 0) == 0:
                 mc.send_angles(p2, cobot_speed)
@@ -148,8 +149,9 @@ class RobotActions:
                 mc.send_angles(p3, cobot_speed)
 
     def move_sample_to(self, location):
+        global gripper_state
         if location == 'thermomixer':
-            global gripper_state
+            
             if gripper_state != "GRIP":
                 update_robot_log("Moving Sample to Thermomixer", self.current_cycle, gripper_state, "Gripper not holding is open")
             else:
@@ -158,7 +160,6 @@ class RobotActions:
                 mc.send_angles(p2, cobot_speed)
             
         elif location == 'liquid_nitrogen':
-            global gripper_state
             if gripper_state != "GRIP":
                 update_robot_log("Moving Sample to Liquid Nitrogen", self.current_cycle, gripper_state, "Gripper not holding is open")
             else:             
@@ -167,9 +168,9 @@ class RobotActions:
                 mc.send_angles(p3, cobot_speed)
 
     def place_sample_in(self, location):
+        global gripper_state
         if location == 'thermomixer':
-            global gripper_state
-
+            
             while mc.is_in_position(p2, 0) == 0:
                 mc.send_angles(p2, cobot_speed)
 
@@ -185,7 +186,6 @@ class RobotActions:
             gripper_state = "STOP"
             
         elif location == 'liquid_nitrogen':
-            global gripper_state
             while mc.is_in_position(p3, 0) == 0:
                 mc.send_angles(p3, cobot_speed)
             if gripper_state != "GRIP":
