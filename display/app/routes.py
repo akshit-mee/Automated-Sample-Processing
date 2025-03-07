@@ -205,9 +205,30 @@ def show_completed_experiment(experiment_id):
     
     logs = RobotLog.query.filter(RobotLog.id.between(completed_experiment.Robot_log_start_id, completed_experiment.Robot_log_end_id)).all()
     return render_template('completed_expriment.html', log=logs)
+
+@app.route('/download_completed_data', methods=['GET'])
+def download_experiment_data():
+    
+    if current_experiment_id is None or experiment_start_robot_log_id is None or experiment_end_robot_log_id is None:
+        flash('No experiment data available for download.', 'error')
+        return redirect(url_for('home'))
+
+    settings = ExperimentSetting.query.get(current_experiment_id)
+    logs = RobotLog.query.filter(RobotLog.id.between(experiment_start_robot_log_id, experiment_end_robot_log_id)).all()
+
+    data = {
+        'settings': settings.to_dict(),
+        'logs': [log.to_dict() for log in logs]
+    }
+
+    file_path = f'/tmp/experiment_{settings.experiment_id}_{settings.experiment_name}_data.json'
+    with open(file_path, 'w') as f:
+        json.dump(data, f)
+
+    return send_file(file_path, as_attachment=True, download_name=f'experiment_{settings.experiment_id}_{settings.experiment_name}_data.json')
  
-from datetime import datetime
-e = ExperimentCompleted(experiment_id = 1, experiment_name = 'Demostration', start_time = datetime.strptime('2025-01-13 14:53:31.363247', "%Y-%m-%d %H:%M:%S.%f"), end_time = datetime.strptime('2025-01-13 14:54:15.835216', "%Y-%m-%d %H:%M:%S.%f"), Robot_log_start_id = 1, Robot_log_end_id = 44, post_experiment_notes = None)
+
+e = ExperimentCompleted(experiment_id = 11, experiment_name = 'New Experiment', start_time = datetime.strptime('2025-01-10 12:00:37.553810', "%Y-%m-%d %H:%M:%S.%f"), end_time = datetime.strptime('2025-01-10 12:00:56.789757', "%Y-%m-%d %H:%M:%S.%f"), Robot_log_start_id = 536, Robot_log_end_id = 555, post_experiment_notes = 'completed sucessfully')
 
 ##################################################
 @app.route('/contact')
