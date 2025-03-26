@@ -9,7 +9,7 @@ mc = MyCobot("/dev/ttyAMA0", 1000000)
 
 cobot_speed = 100
 
-c1 = [181.0, -161.8, 150, 176.08, 0, 45.13] #thermomixer
+c1 = [181.0, -161.8, 180, 176.08, 0, 45.13] #thermomixer
 c2 = [181.0, -161.8, 235, 176.08, 0, 45.13]
 
 
@@ -19,6 +19,13 @@ cm2 = [134.4, -1.3, 298.7, 170.73, -8.85, 55.61]
 
 c3 = [164.3, 35.5, 261.3, 175.61, -6.06, 68.85]
 c4 = [193.7, 54.5, 200.3, 177.28, -0.41, 66.07] # LN2
+
+cn = [151.1, 7.3, 210.7, 172.35, -6.58, 56.28]
+an = [29.79, 20.74, -103.97, 2.1, -3.6, -116.45]
+
+ce1 = [97.7, -125.6, 298.1, 167.36, -6.7, 14.91]
+ce2 = [-34.7, -145.0, 260, 172.11, -1.88, -10.06]
+
 
 a2 = [34.98, -14.15, -52.91, -21.18, -2.1, -121.11] # LN2
 
@@ -57,31 +64,67 @@ def move(coordinate, speed = cobot_speed, mode = 1, mc = mc):
         try:
             print(distance(coordinate,mc.get_coords()))
         except:
-            print(distance(coordinate,mc.get_coords()))
+            try:
+                print(distance(coordinate,mc.get_coords()))
+            except:
+                print("Error")
     else:
          print(f'\033[31m{mc.get_coords() = } FALIURE \033[0m')
          
          try:
             print(distance(coordinate,mc.get_coords()))
          except:
-            print(distance(coordinate,mc.get_coords()))
+            try:
+                print(distance(coordinate,mc.get_coords()))
+            except:
+                print("Error")
 
 #mc.send_angles([0,0,0,0,0,0], cobot_speed)
 #time.sleep(2)
 
+for i in range(3):
+    if i == 0:
+        move(ce1)
+        time.sleep(1)
+    
+    move(c2)
+    move(c1)
+    move(c2)
+    move(cm)
+    move(cm2)
+    mc.send_angles(an, cobot_speed)
+    time.sleep(5)
+    move(cm2)
+    move(cm)
+    move(c2)
+    print(f"###################### {i} ######################" )
+    if i == 4:
+        move(ce1)
+        time.sleep(1)
+        move(ce2)
+        time.sleep(1)
+        mc.release_all_servos()
+        
+    
+    
+
 try:
-    for x in range(5):
-        move(c1)
+    for x in range(15):
         move(c2)
-        time.sleep(Thermomixer_Time)  # ~2s in the move function
+        move(c1)
+        time.sleep(LN2_Time)  # ~2s in the move function
+        move(c2)
+        move(cm)
         move(cm2)
-        move(c3)
-        move(c4)
-        time.sleep(LN2_Time)
+        mc.send_angles(an, cobot_speed)
+        #move(c3)
+        #move(c4)
+        time.sleep(Thermomixer_Time)
         move(cm2)
+        move(cm)
         move(c2)
         time.sleep(Waiting_Time)
-        move(c1)
+        #move(c1)
         print(f'Cycle Number: {x}')
 except KeyboardInterrupt:
         mc.stop()
