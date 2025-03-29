@@ -1,0 +1,35 @@
+2025-03-29 16:05:21,104 - INFO - Starting Experiment
+2025-03-29 16:05:21,105 - INFO - Experiment Parameters
+2025-03-29 16:05:21,105 - INFO - Experiment Name: Name
+2025-03-29 16:05:21,105 - INFO - Person Responsible: Person
+2025-03-29 16:05:21,106 - INFO - Thermomixer Time: 3
+2025-03-29 16:05:21,106 - INFO - Liquid Nitrogen Time: 3
+2025-03-29 16:05:21,106 - INFO - Waiting Time 3
+2025-03-29 16:05:21,106 - INFO - Number of Cycles 1
+2025-03-29 16:05:21,107 - INFO - Robot Speed 100
+2025-03-29 16:05:23,173 - INFO - distance error 3.446737587922808 mm
+2025-03-29 16:05:26,249 - INFO - distance error 1.886796226411343 mm
+2025-03-29 16:05:29,325 - INFO - distance error 13.28984574778804 mm
+2025-03-29 16:05:29,332 - INFO - Moving inside LN2
+2025-03-29 16:05:31,393 - INFO - distance error 4.763402145525821 mm
+2025-03-29 16:05:32,401 - INFO - Outside LN2
+2025-03-29 16:05:34,457 - INFO - distance error 13.261221663180214 mm
+2025-03-29 16:05:36,533 - INFO - distance error 2.0712315177207885 mm
+2025-03-29 16:05:38,605 - INFO - distance error 2.0124611797498013 mm
+2025-03-29 16:05:38,611 - INFO - Moving Inside Water Bath
+2025-03-29 16:05:39,625 - WARNING - Bug, can't find distance error
+2025-03-29 16:05:40,626 - INFO - Moving outside Water Bath
+2025-03-29 16:05:42,689 - INFO - distance error 1.0816653826391747 mm
+2025-03-29 16:05:44,753 - INFO - distance error 1.3892443989449772 mm
+2025-03-29 16:05:44,767 - INFO - Waiting
+2025-03-29 16:05:49,829 - INFO - distance error 11.642164747159352 mm
+2025-03-29 16:05:49,844 - INFO - ##### Cycle Completed: 1 ################
+2025-03-29 16:05:51,905 - INFO - distance error 3.038091506192664 mm
+2025-03-29 16:05:54,973 - INFO - distance error 2.7730849247723857 mm
+2025-03-29 16:05:55,981 - INFO - Completed and relesed motors
+2025-03-29 16:05:55,982 - ERROR - Experiment encountered an error: module 'logger' has no attribute 'info'
+Traceback (most recent call last):
+  File "run.py", line 187, in <module>
+    logger.info("Operation Completed Sucessfully")
+AttributeError: module 'logger' has no attribute 'info'
+2025-03-29 16:05:55,984 - INFO - Programmed execution completed

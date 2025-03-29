@@ -43,7 +43,7 @@ time.sleep(1)
 Thermomixer_Time = 5 ;
 LN2_Time = 2;
 Waiting_Time = 5;
-
+Number_of_Cycles = 5
 #########################################################################
 
 def distance(point1, point2):
@@ -82,23 +82,26 @@ def move(coordinate, speed = cobot_speed, mode = 1, mc = mc):
 #mc.send_angles([0,0,0,0,0,0], cobot_speed)
 #time.sleep(2)
 
-for i in range(3):
+for i in range(Number_of_Cycles):
     if i == 0:
         move(ce1)
         time.sleep(1)
     
     move(c2)
     move(c1)
+    time.sleep(LN2_Time - 2)
     move(c2)
     move(cm)
     move(cm2)
     mc.send_angles(an, cobot_speed)
-    time.sleep(5)
+    time.sleep(1)
+    time.sleep(Thermomixer_Time -2)
     move(cm2)
     move(cm)
+    time.sleep(Waiting_Time)
     move(c2)
-    print(f"###################### {i} ######################" )
-    if i == 4:
+    print(f"###################### {i + 1} ######################" )
+    if i == Number_of_Cycles -1:
         move(ce1)
         time.sleep(1)
         move(ce2)
