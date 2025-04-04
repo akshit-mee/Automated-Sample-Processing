@@ -1,0 +1,33 @@
+2025-04-01 17:07:31,024 - INFO - Starting Experiment
+2025-04-01 17:07:31,025 - INFO - Experiment Parameters
+2025-04-01 17:07:31,025 - INFO - Experiment Name: MLB-BQ-022-2_15cyc
+2025-04-01 17:07:31,026 - INFO - Person Responsible: Ben Quach
+2025-04-01 17:07:31,026 - INFO - Thermomixer Time: 5
+2025-04-01 17:07:31,026 - INFO - Liquid Nitrogen Time: 5
+2025-04-01 17:07:31,026 - INFO - Waiting Time 5
+2025-04-01 17:07:31,026 - INFO - Number of Cycles 5
+2025-04-01 17:07:31,027 - INFO - Robot Speed 100
+2025-04-01 17:07:31,027 - INFO - Run Number 7
+2025-04-01 17:07:33,090 - INFO - distance error 2.2113344387495792 mm
+2025-04-01 17:07:36,157 - INFO - distance error 2.7892651361962995 mm
+2025-04-01 17:07:39,224 - INFO - distance error 12.956079653969406 mm
+2025-04-01 17:07:39,238 - INFO - Moving inside LN2
+2025-04-01 17:07:41,292 - INFO - distance error 4.312771730569575 mm
+2025-04-01 17:07:44,308 - INFO - Outside LN2
+2025-04-01 17:07:46,370 - INFO - distance error 13.193180056377614 mm
+2025-04-01 17:07:48,437 - INFO - distance error 2.1400934559032754 mm
+2025-04-01 17:07:50,504 - INFO - distance error 1.9646882704388249 mm
+2025-04-01 17:07:50,518 - INFO - Moving Inside Water Bath
+2025-04-01 17:07:51,529 - WARNING - Bug, can't find distance error
+2025-04-01 17:07:54,532 - INFO - Moving outside Water Bath
+2025-04-01 17:07:56,960 - ERROR - Error
+2025-04-01 17:07:57,062 - ERROR - Experiment encountered an error: list index out of range
+Traceback (most recent call last):
+  File "run.py", line 176, in <module>
+    move(cm2)
+  File "run.py", line 150, in move
+    return distance(coordinate,mc.get_coords())
+  File "run.py", line 116, in distance
+    sum = sum + (point1[i] - point2[i])**2
+IndexError: list index out of range
+2025-04-01 17:07:57,063 - INFO - Programmed execution completed

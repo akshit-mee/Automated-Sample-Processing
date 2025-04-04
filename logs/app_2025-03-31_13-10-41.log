@@ -1,0 +1,32 @@
+2025-03-31 13:10:41,583 - INFO - Starting Experiment
+2025-03-31 13:10:41,584 - INFO - Experiment Parameters
+2025-03-31 13:10:41,584 - INFO - Experiment Name: Name
+2025-03-31 13:10:41,585 - INFO - Person Responsible: Person
+2025-03-31 13:10:41,585 - INFO - Thermomixer Time: 3
+2025-03-31 13:10:41,585 - INFO - Liquid Nitrogen Time: 3
+2025-03-31 13:10:41,585 - INFO - Waiting Time 3
+2025-03-31 13:10:41,585 - INFO - Number of Cycles 1
+2025-03-31 13:10:41,586 - INFO - Robot Speed 100
+2025-03-31 13:10:41,586 - INFO - Run Number 0
+2025-03-31 13:10:43,651 - INFO - distance error 3.472751070837069 mm
+2025-03-31 13:10:46,727 - INFO - distance error 2.343074902772043 mm
+2025-03-31 13:10:49,799 - INFO - distance error 13.28984574778804 mm
+2025-03-31 13:10:49,807 - INFO - Moving inside LN2
+2025-03-31 13:10:51,867 - INFO - distance error 3.9370039370058976 mm
+2025-03-31 13:10:52,875 - INFO - Outside LN2
+2025-03-31 13:10:54,935 - INFO - distance error 13.072872675888817 mm
+2025-03-31 13:10:57,011 - INFO - distance error 2.1047565179849266 mm
+2025-03-31 13:10:59,079 - INFO - distance error 1.726267650163199 mm
+2025-03-31 13:10:59,095 - INFO - Moving Inside Water Bath
+2025-03-31 13:11:00,107 - WARNING - Bug, can't find distance error
+2025-03-31 13:11:01,109 - INFO - Moving outside Water Bath
+2025-03-31 13:11:03,171 - INFO - distance error 0.7681145747868438 mm
+2025-03-31 13:11:05,243 - INFO - distance error 1.1357816691600588 mm
+2025-03-31 13:11:05,250 - INFO - Waiting
+2025-03-31 13:11:10,315 - INFO - distance error 11.63314230979747 mm
+2025-03-31 13:11:10,327 - INFO - ##### Cycle Completed: 1 ################
+2025-03-31 13:11:12,388 - INFO - distance error 2.7276363393971685 mm
+2025-03-31 13:11:15,455 - INFO - distance error 2.5475478405713785 mm
+2025-03-31 13:11:16,473 - INFO - Completed and relesed motors
+2025-03-31 13:11:16,473 - INFO - Operation Completed Sucessfully
+2025-03-31 13:11:16,473 - INFO - Programmed execution completed

@@ -12,13 +12,14 @@ mc = MyCobot("/dev/ttyAMA0", 1000000)
 #################### Experimet Parameter ###############################
 ########################################################################
 
-
-Experiment_Name = "Name"
-Person_Responsible = "Person"
-Thermomixer_Time = 3 
-LN2_Time = 3
-Waiting_Time = 3
-Number_of_Cycles = 1
+# Time is in seconds (minimum time 2s)
+Experiment_Name = "MLB-BQ-022-2_15cyc"
+Person_Responsible = "Ben Quach"
+Thermomixer_Time = 5  #240 (for medium size vials)
+LN2_Time = 5          #60
+Waiting_Time = 5        #3
+Number_of_Cycles = 30   #43 total
+Run_Number = 30
 
 Robot_speed = 100
 
@@ -27,7 +28,7 @@ Robot_speed = 100
 
 cobot_speed = Robot_speed
 
-c1 = [181.0, -161.8, 180, 176.08, 0, 45.13]             #LN2
+c1 = [181.0, -161.8, 210, 176.08, 0, 45.13]             #LN2 (Fully sumbersed is [181.0, -161.8, 180, 176.08, 0, 45.13])
 c2 = [181.0, -161.8, 235, 176.08, 0, 45.13]             #Above LN2
 
 
@@ -35,8 +36,9 @@ cm = [152.7, -81.7, 267.2, 167.92, -3.03, 59.48]        #Between c2 and cm2 to p
 cm2 = [134.4, -1.3, 298.7, 170.73, -8.85, 55.61]        #Above Water-Bath
 
 
-cn = [151.1, 7.3, 210.7, 172.35, -6.58, 56.28]          #Water Bath
-an = [29.79, 20.74, -103.97, 2.1, -3.6, -116.45]        #Water Bath !! Uee this as the adjecent solution form coordinates has different robot pose 
+cn = [151.1, 7.3, 210.7, 172.35, -6.58, 56.28]          #Water Bath [151.4, 7.7, 238.3, 172.22, -6.34, 56.17]
+#an = [29.79, 20.74, -103.97, 2.1, -3.6, -116.45]
+an = [29.61, 17.22, -83.93, -14.5, -4.13, -116.45]      #Water Bath !! Uee this as the adjecent solution form coordinates has different robot pose 
 
 ce1 = [97.7, -125.6, 298.1, 167.36, -6.7, 14.91]        #Between 
 ce2 = [-34.7, -145.0, 260, 172.11, -1.88, -10.06]       #Stop position after experiment to easily remove vial
@@ -100,6 +102,7 @@ log.info(f"Liquid Nitrogen Time: {LN2_Time}")
 log.info(f"Waiting Time {Waiting_Time}")
 log.info(f"Number of Cycles {Number_of_Cycles}")
 log.info(f"Robot Speed {Robot_speed}")
+log.info(f"Run Number {Run_Number}")
 
 
 
@@ -132,9 +135,9 @@ def move(coordinate, speed = cobot_speed, mode = 1, mc = mc):
             try:
                 log.info(f"distance error {distance(coordinate,mc.get_coords())} mm")
             except:
-                print("Error")
+                log.error("Error")
     else:
-         print(f'\033[31m{mc.get_coords() = } FALIURE \033[0m')
+         print(f'\033[31m{mc.get_coords() = } \033[0m')
          
          try:
             log.info(f"distance error {distance(coordinate,mc.get_coords())} mm")
@@ -144,7 +147,7 @@ def move(coordinate, speed = cobot_speed, mode = 1, mc = mc):
                 return distance(coordinate,mc.get_coords())
             except:
                 log.error("Can't calculate distance error")
-    return distance(coordinate,mc.get_coords())
+    #return distance(coordinate,mc.get_coords())
 
 
 
@@ -175,7 +178,7 @@ try:
         log.info("Waiting")
         time.sleep(Waiting_Time)
         move(c2)
-        log.info(f"##### Cycle Completed: {i + 1} ################" )
+        log.info(f"###################################### Cycle Completed: {i + 1} ####################################################" )
     
     move(ce1)
     time.sleep(1)
@@ -184,11 +187,13 @@ try:
     mc.release_all_servos()
     log.info ("Completed and relesed motors")
 
-    logger.info("Operation Completed Sucessfully")
+    log.info("Operation Completed Sucessfully")
 
 except KeyboardInterrupt:
     log.error("Experiment manually stooped with Keyboard Interrupt (crtl + c)")
     mc.stop()
+    time.sleep(5)
+    mc.release_all_servos()
     
 except Exception as e:
     log.error(f"Experiment encountered an error: {str(e)}", exc_info = True)

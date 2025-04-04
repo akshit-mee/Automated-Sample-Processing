@@ -1,0 +1,32 @@
+2025-04-01 16:58:43,649 - INFO - Starting Experiment
+2025-04-01 16:58:43,650 - INFO - Experiment Parameters
+2025-04-01 16:58:43,651 - INFO - Experiment Name: MLB-BQ-022-2_15cyc
+2025-04-01 16:58:43,651 - INFO - Person Responsible: Ben Quach
+2025-04-01 16:58:43,651 - INFO - Thermomixer Time: 200
+2025-04-01 16:58:43,651 - INFO - Liquid Nitrogen Time: 60
+2025-04-01 16:58:43,652 - INFO - Waiting Time 3
+2025-04-01 16:58:43,652 - INFO - Number of Cycles 1
+2025-04-01 16:58:43,652 - INFO - Robot Speed 100
+2025-04-01 16:58:43,653 - INFO - Run Number 7
+2025-04-01 16:58:45,722 - INFO - distance error 2.8354893757515542 mm
+2025-04-01 16:58:48,802 - INFO - distance error 1.6552945357247222 mm
+2025-04-01 16:58:51,882 - INFO - distance error 13.24424403278648 mm
+2025-04-01 16:58:51,893 - INFO - Moving inside LN2
+2025-04-01 16:58:53,962 - INFO - distance error 4.636809247747832 mm
+2025-04-01 16:59:51,986 - INFO - Outside LN2
+2025-04-01 16:59:54,049 - INFO - distance error 13.312024639400292 mm
+2025-04-01 16:59:56,134 - INFO - distance error 2.2045407685048497 mm
+2025-04-01 16:59:58,424 - INFO - distance error 2.0124611797498013 mm
+2025-04-01 16:59:58,441 - INFO - Moving Inside Water Bath
+2025-04-01 16:59:59,455 - WARNING - Bug, can't find distance error
+2025-04-01 17:03:17,556 - INFO - Moving outside Water Bath
+2025-04-01 17:03:19,621 - INFO - distance error 1.3601470508735385 mm
+2025-04-01 17:03:21,702 - INFO - distance error 0.4123105625617495 mm
+2025-04-01 17:03:21,717 - INFO - Waiting
+2025-04-01 17:03:26,785 - INFO - distance error 11.753297409663409 mm
+2025-04-01 17:03:26,797 - INFO - ###################################### Cycle Completed: 1 ####################################################
+2025-04-01 17:03:28,862 - INFO - distance error 3.6742346141747735 mm
+2025-04-01 17:03:31,945 - INFO - distance error 2.7073972741361545 mm
+2025-04-01 17:03:32,960 - INFO - Completed and relesed motors
+2025-04-01 17:03:32,961 - INFO - Operation Completed Sucessfully
+2025-04-01 17:03:32,961 - INFO - Programmed execution completed

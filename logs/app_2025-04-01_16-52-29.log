@@ -1,0 +1,29 @@
+2025-04-01 16:52:29,068 - INFO - Starting Experiment
+2025-04-01 16:52:29,069 - INFO - Experiment Parameters
+2025-04-01 16:52:29,070 - INFO - Experiment Name: MLB-BQ-022-2_15cyc
+2025-04-01 16:52:29,070 - INFO - Person Responsible: Ben Quach
+2025-04-01 16:52:29,070 - INFO - Thermomixer Time: 200
+2025-04-01 16:52:29,071 - INFO - Liquid Nitrogen Time: 60
+2025-04-01 16:52:29,071 - INFO - Waiting Time 3
+2025-04-01 16:52:29,071 - INFO - Number of Cycles 2
+2025-04-01 16:52:29,071 - INFO - Robot Speed 100
+2025-04-01 16:52:29,072 - INFO - Run Number 7
+2025-04-01 16:52:31,142 - INFO - distance error 3.077336510685813 mm
+2025-04-01 16:52:34,221 - INFO - distance error 1.630950643030026 mm
+2025-04-01 16:52:37,301 - INFO - distance error 13.170421405558745 mm
+2025-04-01 16:52:37,315 - INFO - Moving inside LN2
+2025-04-01 16:52:39,381 - INFO - distance error 4.419275958796868 mm
+2025-04-01 16:53:37,455 - INFO - Outside LN2
+2025-04-01 16:53:39,522 - INFO - distance error 13.205301965498565 mm
+2025-04-01 16:53:41,606 - INFO - distance error 2.2045407685048497 mm
+2025-04-01 16:53:43,685 - INFO - distance error 2.0124611797498013 mm
+2025-04-01 16:53:43,800 - ERROR - Experiment encountered an error: list index out of range
+Traceback (most recent call last):
+  File "run.py", line 169, in <module>
+    move(cm2)
+  File "run.py", line 150, in move
+    return distance(coordinate,mc.get_coords())
+  File "run.py", line 116, in distance
+    sum = sum + (point1[i] - point2[i])**2
+IndexError: list index out of range
+2025-04-01 16:53:43,801 - INFO - Programmed execution completed
