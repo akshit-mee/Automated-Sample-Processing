@@ -320,8 +320,6 @@ class RobotActions:
 
     def run_cycle(self):
 
-        self.init_experiment()
-
         while self.current_cycle-1 < self.number_of_cycles:   
             self.move(self.c2)
             update_robot_log("Moving inside LN2", self.current_cycle, gripper_state, mc.get_error_information())
@@ -392,7 +390,6 @@ class RobotActions:
             self.place_sample_in('thermomixer')
             print(8)
             self.current_cycle += 1
-        self.complete()
         
 if __name__ == "__main__":
     settings = get_experiment_settings()
@@ -406,7 +403,9 @@ if __name__ == "__main__":
         print(ra.number_of_cycles)        
         
         while controll['running'] and setting_flag:
+            ra.init_experiment()
             ra.run_cycle()
+            ra.complete()
             break
             
             
