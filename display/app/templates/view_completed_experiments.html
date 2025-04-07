@@ -15,10 +15,10 @@
         <tr>
             <td><a href="{{ url_for('show_completed_experiment', experiment_id=experiment.id) }}">{{ experiment.id }}</a></td>
             <td><a href="{{ url_for('show_completed_experiment', experiment_id=experiment.id) }}">{{ experiment.experiment_id }}</a></td>
-            <td><a href="{{ url_for('show_completed_experiment', experiment_id=experiment.id) }}">{{ experiment.experiment_name }}</a></td>
-            <td><a href="{{ url_for('show_completed_experiment', experiment_id=experiment.id) }}">{{ experiment.start_time }}</a></td>
-            <td><a href="{{ url_for('show_completed_experiment', experiment_id=experiment.id) }}">{{ experiment.end_time }}</a></td>
-            <td><a href="{{ url_for('show_completed_experiment', experiment_id=experiment.id) }}">{{ experiment.post_experiment_notes }}</a></td>
+            <td>{{ experiment.experiment_name }}</td>
+            <td>{{ experiment.start_time }}</td>
+            <td>{{ experiment.end_time }}</td>
+            <td>{{ experiment.post_experiment_notes }}</td>
         </tr>
         {% endfor %}
     </table>

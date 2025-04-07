@@ -195,7 +195,21 @@ def view_robot_logs():
 @app.route('/view_completed_experiments', methods=['GET'])
 def view_completed_experiments():
     completed_experiments = ExperimentCompleted.query.all()
-    return render_template('view_completed_experiments.html', completed_experiments=completed_experiments)
+    data = []
+    for experiment in completed_experiments:
+        start_log = RobotLog.query.get(experiment.Robot_log_start_id)
+        end_log = RobotLog.query.get(experiment.Robot_log_end_id)
+        experiment_data = {
+            'id': experiment.id,
+            'experiment_id': experiment.experiment_id,
+            'experiment_name': experiment.experiment_setting.experiment_name if experiment.experiment_setting else "N/A",
+            'start_time': start_log.time_stamp if start_log else "N/A",
+            'end_time': end_log.time_stamp if end_log else "N/A",
+            'post_experiment_notes': experiment.post_experiment_notes
+        }
+        data.append(experiment_data)
+    return render_template('view_completed_experiments.html', completed_experiments=data)
+
 
 @app.route('/view_completed_experiments/<int:experiment_id>', methods=['GET'])
 def show_completed_experiment(experiment_id):
@@ -311,6 +325,16 @@ def update_process_details():
             log.action_start = "Completed: details - " + process_details
             db.session.commit()
             flash('Process details updated successfully!', 'success')
+        experimet_completed = ExperimentCompleted(
+            experiment_id=current_experiment_id,
+            # experiment_name=ExperimentSetting.query.get(current_experiment_id).experiment_name,
+            Robot_log_start_id=experiment_start_robot_log_id,
+            Robot_log_end_id=experiment_end_robot_log_id,
+            post_experiment_notes=process_details
+        )
+        db.session.add(experimet_completed)
+        db.session.commit()
+        flash('Experiment completed successfully!', 'success')
     return redirect(url_for('home'))
 
 
