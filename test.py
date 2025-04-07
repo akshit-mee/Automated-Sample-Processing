@@ -153,7 +153,7 @@ try:
         mc.send_angles(an, cobot_speed)
         time.sleep(1)
         is_correct_position(cn)
-        time.sleep(Thermomixer_Time -2)
+        time.sleep(Thermomixer_Time -1)
         end_water_bath_time = time.monotonic()
         water_bath_time = start_water_bath_time - end_water_bath_time
         log.info("Moving outside Water Bath")
