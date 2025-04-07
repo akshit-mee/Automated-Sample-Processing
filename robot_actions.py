@@ -296,7 +296,32 @@ class RobotActions:
     #         with gripper_lock:
     #             gripper_state = "STOP"
 
+    def init_experiment(self):
+        update_robot_log("Start", self.current_cycle, gripper_state)
+        self.move(self.ce2)
+        time.sleep(1)    
+        self.move(self.ce1)
+        time.sleep(1)
+
+    def end_experiment(self):
+        # update_robot_log("End of Experiment", self.current_cycle, gripper_state)
+        update_robot_log("Completed", self.current_cycle, gripper_state)
+        self.move(self.ce1)
+        time.sleep(1)
+        self.move(self.ce2)
+        time.sleep(0.5)
+        self.move(self.ce3, 20)
+        time.sleep(1)
+        mc.release_all_servos()
+        log.info ("Completed and relesed motors")
+        update_robot_log("Completed and released motors", self.current_cycle, gripper_state)
+
+
+
     def run_cycle(self):
+
+        self.init_experiment()
+
         while self.current_cycle-1 < self.number_of_cycles:   
             self.move(self.c2)
             update_robot_log("Moving inside LN2", self.current_cycle, gripper_state)
@@ -339,29 +364,7 @@ class RobotActions:
             log.info(f"Water Bath = {water_bath_time} ")
             log.info("######################################################################################################################")
 
-    #####################################################################################
-
-
-    def init_experiment(self):
-        update_robot_log("Start", self.current_cycle, gripper_state)
-        self.move(self.ce2)
-        time.sleep(1)    
-        self.move(self.ce1)
-        time.sleep(1)
-
-    def end_experiment(self):
-        # update_robot_log("End of Experiment", self.current_cycle, gripper_state)
-        update_robot_log("Completed", self.current_cycle, gripper_state)
-        self.move(self.ce1)
-        time.sleep(1)
-        self.move(self.ce2)
-        time.sleep(0.5)
-        self.move(self.ce3, 20)
-        time.sleep(1)
-        mc.release_all_servos()
-        log.info ("Completed and relesed motors")
-        update_robot_log("Completed and released motors", self.current_cycle, gripper_state)
-
+        self.end_experiment()
     ################################################################################
 
 
@@ -404,8 +407,6 @@ if __name__ == "__main__":
         print(ra.number_of_cycles)        
         
         while controll['running'] and setting_flag:
-            ra.init_experiment()
             ra.run_cycle()
-            ra.end_experiment()
             
         
