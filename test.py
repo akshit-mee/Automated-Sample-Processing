@@ -25,6 +25,7 @@ Robot_speed = 100
 
 #########################################################################
 #########################################################################
+#########################################################################
 
 cobot_speed = Robot_speed
 
@@ -122,20 +123,10 @@ log.info(f"Number of Cycles {Number_of_Cycles}")
 log.info(f"Robot Speed {Robot_speed}")
 log.info(f"Run Number {Run_Number}")
 
-
-
-
 ################################################################################
 
-
-try:
-    
-    move(ce2)
-    time.sleep(1)    
-    move(ce1)
-    time.sleep(1)
-    
-    for i in range(Number_of_Cycles):   
+def run_cycle(number_of_cycles):
+    for i in range(number_of_cycles):   
         move(c2)
         log.info("Moving inside LN2")
         start_ln2_time = time.monotonic()
@@ -152,7 +143,8 @@ try:
         start_water_bath_time = time.monotonic()
         mc.send_angles(an, cobot_speed)
         time.sleep(1)
-        is_correct_position(cn)
+        while( not is_correct_position(cn)):
+            mc.send_angles(an, cobot_speed)
         time.sleep(Thermomixer_Time -1)
         end_water_bath_time = time.monotonic()
         water_bath_time = start_water_bath_time - end_water_bath_time
@@ -167,7 +159,17 @@ try:
         log.info(f"LN2 Time = {ln2_time} ")
         log.info(f"Water Bath = {water_bath_time} ")
         log.info("######################################################################################################################")
-    
+
+#####################################################################################
+
+
+def init_experiment():
+    move(ce2)
+    time.sleep(1)    
+    move(ce1)
+    time.sleep(1)
+
+def end_experiment():
     move(ce1)
     time.sleep(1)
     move(ce2)
@@ -176,6 +178,16 @@ try:
     time.sleep(1)
     mc.release_all_servos()
     log.info ("Completed and relesed motors")
+
+################################################################################
+
+try:
+    
+    init_experiment()
+    
+    run_cycle(Number_of_Cycles)
+    
+    end_experiment()
 
     log.info("Operation Completed Sucessfully")
 
