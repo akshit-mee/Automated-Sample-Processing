@@ -160,6 +160,7 @@ def settings():
             number_of_samples=form.number_of_samples.data,
             thermomixer_time_s=form.thermomixer_time_s.data,
             liquid_nitrogen_time_s=form.liquid_nitrogen_time_s.data,
+            waiting_time_s=form.waiting_time_s.data,
             number_of_cycles=form.number_of_cycles.data,
             additional_notes=form.additional_notes.data,
             update_time=datetime.now()
