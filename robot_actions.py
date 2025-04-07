@@ -350,7 +350,8 @@ class RobotActions:
         time.sleep(1)
 
     def end_experiment(self):
-        update_robot_log("End of Experiment", self.current_cycle, gripper_state)
+        # update_robot_log("End of Experiment", self.current_cycle, gripper_state)
+        update_robot_log("Completed", self.cycle_number, "OPEN")
         self.move(self.ce1)
         time.sleep(1)
         self.move(self.ce2)
