@@ -139,10 +139,11 @@ def start():
             # db.session.commit()
  
 
-            experiment_start_robot_log_id = log.id
+            
             current_experiment_id = settings.experiment_id
             current_robot_log_id = log.id
             robot_control['running'] = True
+            experiment_start_robot_log_id = current_experiment_id
             flash('Experiment started successfully!', 'success')
         
         return redirect(url_for('home'))
@@ -332,11 +333,11 @@ def update_process_details():
             db.session.commit()
             flash('Process details updated successfully!', 'success')
         experimet_completed = ExperimentCompleted(
-            experiment_id=current_experiment_id,
+            experiment_id = current_experiment_id,
             # experiment_name=ExperimentSetting.query.get(current_experiment_id).experiment_name,
-            Robot_log_start_id=experiment_start_robot_log_id,
-            Robot_log_end_id=experiment_end_robot_log_id,
-            post_experiment_notes=process_details
+            Robot_log_start_id = experiment_start_robot_log_id,
+            Robot_log_end_id = experiment_end_robot_log_id,
+            post_experiment_notes = process_details
         )
         db.session.add(experimet_completed)
         db.session.commit()
