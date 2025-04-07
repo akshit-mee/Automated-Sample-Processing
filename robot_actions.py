@@ -407,9 +407,7 @@ if __name__ == "__main__":
         
         while controll['running'] and setting_flag:
             ra.run_cycle()
-            if ra.cycle_number == settings['number_of_cycles']:
-                cycle_number = 1
-                break
+            break
             
             
         
