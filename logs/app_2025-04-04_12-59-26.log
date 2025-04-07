@@ -1,0 +1,21 @@
+2025-04-04 12:59:26,951 - INFO - Starting Experiment
+2025-04-04 12:59:26,953 - INFO - Experiment Parameters
+2025-04-04 12:59:26,955 - INFO - Experiment Name: MLB-BQ-022-2_15cyc
+2025-04-04 12:59:26,956 - INFO - Person Responsible: Ben Quach
+2025-04-04 12:59:26,958 - INFO - Thermomixer Time: 5
+2025-04-04 12:59:26,960 - INFO - Liquid Nitrogen Time: 5
+2025-04-04 12:59:26,962 - INFO - Waiting Time 5
+2025-04-04 12:59:26,964 - INFO - Number of Cycles 5
+2025-04-04 12:59:26,966 - INFO - Robot Speed 100
+2025-04-04 12:59:26,968 - INFO - Run Number 30
+2025-04-04 12:59:49,574 - INFO - distance error 3.9496835316263086 mm
+2025-04-04 15:11:00,627 - INFO - distance error 2.4351591323771924 mm
+2025-04-04 15:11:23,579 - INFO - distance error 3.013303834663872 mm
+2025-04-04 15:12:20,895 - INFO - distance error 2.823118842698613 mm
+2025-04-04 15:12:35,975 - INFO - distance error 2.8319604517012515 mm
+2025-04-04 15:13:14,166 - INFO - distance error 2.5317977802344376 mm
+2025-04-04 15:19:17,399 - INFO - distance error 0.6708203932499496 mm
+2025-04-04 15:21:56,802 - INFO - distance error 103.39347174749479 mm
+2025-04-04 15:22:39,466 - ERROR - Error
+2025-04-04 15:22:45,887 - ERROR - Error
+2025-04-04 15:22:55,258 - ERROR - Error

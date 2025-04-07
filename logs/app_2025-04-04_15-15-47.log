@@ -1,0 +1,39 @@
+2025-04-04 15:15:47,969 - INFO - Starting Experiment
+2025-04-04 15:15:47,969 - INFO - Experiment Parameters
+2025-04-04 15:15:47,969 - INFO - Experiment Name: Error_Testing
+2025-04-04 15:15:47,970 - INFO - Person Responsible: Akshit
+2025-04-04 15:15:47,970 - INFO - Thermomixer Time: 5
+2025-04-04 15:15:47,970 - INFO - Liquid Nitrogen Time: 5
+2025-04-04 15:15:47,970 - INFO - Waiting Time 5
+2025-04-04 15:15:47,970 - INFO - Number of Cycles 30
+2025-04-04 15:15:47,971 - INFO - Robot Speed 100
+2025-04-04 15:15:47,971 - INFO - Run Number 1
+2025-04-04 15:15:55,122 - ERROR - Timeout, cannot detect current position
+2025-04-04 15:16:03,161 - ERROR - Timeout, cannot detect current position
+2025-04-04 15:16:11,318 - ERROR - Timeout, cannot detect current position
+2025-04-04 15:16:11,318 - INFO - Moving inside LN2
+2025-04-04 15:16:14,370 - ERROR - Distance Error is 287.1630373150416
+2025-04-04 15:16:17,374 - INFO - Outside LN2
+2025-04-04 15:16:19,403 - ERROR - Distance Error is 42.30496424770974
+2025-04-04 15:16:21,428 - INFO - Distance Error is 3.987480407475352
+2025-04-04 15:16:23,453 - INFO - Distance Error is 2.054263858417393
+2025-04-04 15:16:23,453 - INFO - Moving Inside Water Bath
+2025-04-04 15:16:24,478 - INFO - Distance Error is 1.8867962264113143
+2025-04-04 15:16:27,481 - INFO - Moving outside Water Bath
+2025-04-04 15:16:29,503 - INFO - Distance Error is 0.7681145747868438
+2025-04-04 15:16:31,528 - INFO - Distance Error is 0.3741657386773766
+2025-04-04 15:16:31,528 - INFO - Waiting
+2025-04-04 15:16:38,555 - WARNING - Distance Error is 11.67090399240781
+2025-04-04 15:16:38,555 - INFO - ###################################### Cycle Completed: 1 ####################################################
+2025-04-04 15:16:40,578 - WARNING - Distance Error is 11.836384583140257
+2025-04-04 15:16:40,579 - INFO - Moving inside LN2
+2025-04-04 15:16:42,604 - WARNING - Distance Error is 6.319810123729979
+2025-04-04 15:16:45,608 - INFO - Outside LN2
+2025-04-04 15:16:47,630 - WARNING - Distance Error is 11.788129622633097
+2025-04-04 15:16:49,656 - INFO - Distance Error is 1.9899748742132282
+2025-04-04 15:16:51,682 - INFO - Distance Error is 1.7029386365926356
+2025-04-04 15:16:51,683 - INFO - Moving Inside Water Bath
+2025-04-04 15:16:52,707 - INFO - Distance Error is 1.5684387141358116
+2025-04-04 15:16:55,711 - INFO - Moving outside Water Bath
+2025-04-04 15:16:56,970 - ERROR - Experiment manually stooped with Keyboard Interrupt (crtl + c)
+2025-04-04 15:17:01,976 - INFO - Programmed execution completed

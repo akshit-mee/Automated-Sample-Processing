@@ -1,0 +1,182 @@
+2025-03-31 15:49:58,095 - INFO - Starting Experiment
+2025-03-31 15:49:58,095 - INFO - Experiment Parameters
+2025-03-31 15:49:58,096 - INFO - Experiment Name: MLB-BQ-022_15cyc
+2025-03-31 15:49:58,096 - INFO - Person Responsible: Ben Quach
+2025-03-31 15:49:58,096 - INFO - Thermomixer Time: 3
+2025-03-31 15:49:58,096 - INFO - Liquid Nitrogen Time: 3
+2025-03-31 15:49:58,096 - INFO - Waiting Time 3
+2025-03-31 15:49:58,097 - INFO - Number of Cycles 11
+2025-03-31 15:49:58,097 - INFO - Robot Speed 100
+2025-03-31 15:49:58,097 - INFO - Run Number 1
+2025-03-31 15:50:00,159 - INFO - distance error 3.446737587922808 mm
+2025-03-31 15:50:03,227 - INFO - distance error 1.8867962264113416 mm
+2025-03-31 15:50:06,299 - INFO - distance error 13.318408313308314 mm
+2025-03-31 15:50:06,315 - INFO - Moving inside LN2
+2025-03-31 15:50:08,375 - INFO - distance error 4.727578661429127 mm
+2025-03-31 15:50:09,383 - INFO - Outside LN2
+2025-03-31 15:50:11,443 - INFO - distance error 13.103053079339938 mm
+2025-03-31 15:50:13,519 - INFO - distance error 2.034698994937573 mm
+2025-03-31 15:50:15,587 - INFO - distance error 2.0124611797498013 mm
+2025-03-31 15:50:15,603 - INFO - Moving Inside Water Bath
+2025-03-31 15:50:16,615 - WARNING - Bug, can't find distance error
+2025-03-31 15:50:17,616 - INFO - Moving outside Water Bath
+2025-03-31 15:50:19,679 - INFO - distance error 1.0816653826391747 mm
+2025-03-31 15:50:21,751 - INFO - distance error 1.063014581273466 mm
+2025-03-31 15:50:21,758 - INFO - Waiting
+2025-03-31 15:50:26,823 - INFO - distance error 11.642164747159352 mm
+2025-03-31 15:50:26,835 - INFO - ##### Cycle Completed: 1 ################
+2025-03-31 15:50:28,895 - INFO - distance error 11.786008654332498 mm
+2025-03-31 15:50:28,902 - INFO - Moving inside LN2
+2025-03-31 15:50:30,964 - INFO - distance error 7.1847059786744305 mm
+2025-03-31 15:50:31,980 - INFO - Outside LN2
+2025-03-31 15:50:34,039 - INFO - distance error 11.595688854052625 mm
+2025-03-31 15:50:36,108 - INFO - distance error 2.111871208194276 mm
+2025-03-31 15:50:38,176 - INFO - distance error 1.9949937343259907 mm
+2025-03-31 15:50:38,183 - INFO - Moving Inside Water Bath
+2025-03-31 15:50:39,195 - WARNING - Bug, can't find distance error
+2025-03-31 15:50:40,196 - INFO - Moving outside Water Bath
+2025-03-31 15:50:42,260 - INFO - distance error 1.0816653826391747 mm
+2025-03-31 15:50:44,332 - INFO - distance error 0.9695359714832723 mm
+2025-03-31 15:50:44,340 - INFO - Waiting
+2025-03-31 15:50:49,403 - INFO - distance error 11.69487067051192 mm
+2025-03-31 15:50:49,417 - INFO - ##### Cycle Completed: 2 ################
+2025-03-31 15:50:51,480 - INFO - distance error 11.759676866308872 mm
+2025-03-31 15:50:51,495 - INFO - Moving inside LN2
+2025-03-31 15:50:53,556 - INFO - distance error 7.2062472896786005 mm
+2025-03-31 15:50:54,573 - INFO - Outside LN2
+2025-03-31 15:50:56,631 - INFO - distance error 11.553787257864846 mm
+2025-03-31 15:50:58,700 - INFO - distance error 2.111871208194276 mm
+2025-03-31 15:51:00,767 - INFO - distance error 1.9949937343259907 mm
+2025-03-31 15:51:00,775 - INFO - Moving Inside Water Bath
+2025-03-31 15:51:01,787 - WARNING - Bug, can't find distance error
+2025-03-31 15:51:02,789 - INFO - Moving outside Water Bath
+2025-03-31 15:51:04,852 - INFO - distance error 1.0816653826391747 mm
+2025-03-31 15:51:06,923 - INFO - distance error 0.8185352771872454 mm
+2025-03-31 15:51:06,932 - INFO - Waiting
+2025-03-31 15:51:11,995 - INFO - distance error 11.568059474259295 mm
+2025-03-31 15:51:12,010 - INFO - ##### Cycle Completed: 3 ################
+2025-03-31 15:51:14,072 - INFO - distance error 11.734564329364778 mm
+2025-03-31 15:51:14,087 - INFO - Moving inside LN2
+2025-03-31 15:51:16,148 - INFO - distance error 7.2346388990743735 mm
+2025-03-31 15:51:17,165 - INFO - Outside LN2
+2025-03-31 15:51:19,228 - INFO - distance error 11.588356225108019 mm
+2025-03-31 15:51:21,300 - INFO - distance error 2.09045449603667 mm
+2025-03-31 15:51:23,367 - INFO - distance error 2.0124611797498013 mm
+2025-03-31 15:51:23,377 - INFO - Moving Inside Water Bath
+2025-03-31 15:51:24,391 - WARNING - Bug, can't find distance error
+2025-03-31 15:51:25,393 - INFO - Moving outside Water Bath
+2025-03-31 15:51:27,456 - INFO - distance error 1.0816653826391747 mm
+2025-03-31 15:51:29,527 - INFO - distance error 1.1832159566199039 mm
+2025-03-31 15:51:29,544 - INFO - Waiting
+2025-03-31 15:51:34,607 - INFO - distance error 11.642164747159352 mm
+2025-03-31 15:51:34,621 - INFO - ##### Cycle Completed: 4 ################
+2025-03-31 15:51:36,683 - INFO - distance error 11.786008654332498 mm
+2025-03-31 15:51:36,698 - INFO - Moving inside LN2
+2025-03-31 15:51:38,760 - INFO - distance error 7.2062472896786005 mm
+2025-03-31 15:51:39,776 - INFO - Outside LN2
+2025-03-31 15:51:41,836 - INFO - distance error 11.495216396397238 mm
+2025-03-31 15:51:43,903 - INFO - distance error 2.0688160865577068 mm
+2025-03-31 15:51:45,972 - INFO - distance error 1.9949937343259907 mm
+2025-03-31 15:51:45,979 - INFO - Moving Inside Water Bath
+2025-03-31 15:51:46,991 - WARNING - Bug, can't find distance error
+2025-03-31 15:51:47,992 - INFO - Moving outside Water Bath
+2025-03-31 15:51:50,055 - INFO - distance error 1.0816653826391747 mm
+2025-03-31 15:51:52,128 - INFO - distance error 1.3490737563232096 mm
+2025-03-31 15:51:52,135 - INFO - Waiting
+2025-03-31 15:51:57,199 - INFO - distance error 11.56330402609912 mm
+2025-03-31 15:51:57,212 - INFO - ##### Cycle Completed: 5 ################
+2025-03-31 15:51:59,276 - INFO - distance error 11.734990413289655 mm
+2025-03-31 15:51:59,289 - INFO - Moving inside LN2
+2025-03-31 15:52:01,352 - INFO - distance error 7.1847059786744305 mm
+2025-03-31 15:52:02,368 - INFO - Outside LN2
+2025-03-31 15:52:04,427 - INFO - distance error 11.465164630305155 mm
+2025-03-31 15:52:06,495 - INFO - distance error 2.09045449603667 mm
+2025-03-31 15:52:08,563 - INFO - distance error 2.0124611797498013 mm
+2025-03-31 15:52:08,571 - INFO - Moving Inside Water Bath
+2025-03-31 15:52:09,583 - WARNING - Bug, can't find distance error
+2025-03-31 15:52:10,585 - INFO - Moving outside Water Bath
+2025-03-31 15:52:12,647 - INFO - distance error 1.0816653826391747 mm
+2025-03-31 15:52:14,719 - INFO - distance error 1.1045361017187314 mm
+2025-03-31 15:52:14,728 - INFO - Waiting
+2025-03-31 15:52:19,791 - INFO - distance error 11.69487067051192 mm
+2025-03-31 15:52:19,805 - INFO - ##### Cycle Completed: 6 ################
+2025-03-31 15:52:21,867 - INFO - distance error 11.759676866308872 mm
+2025-03-31 15:52:21,881 - INFO - Moving inside LN2
+2025-03-31 15:52:23,943 - INFO - distance error 7.295203903935798 mm
+2025-03-31 15:52:24,960 - INFO - Outside LN2
+2025-03-31 15:52:27,019 - INFO - distance error 11.48085362679972 mm
+2025-03-31 15:52:29,091 - INFO - distance error 2.736786436680793 mm
+2025-03-31 15:52:31,163 - INFO - distance error 1.9949937343259907 mm
+2025-03-31 15:52:31,172 - INFO - Moving Inside Water Bath
+2025-03-31 15:52:32,183 - WARNING - Bug, can't find distance error
+2025-03-31 15:52:33,185 - INFO - Moving outside Water Bath
+2025-03-31 15:52:35,248 - INFO - distance error 1.0816653826391747 mm
+2025-03-31 15:52:37,320 - INFO - distance error 1.3490737563232096 mm
+2025-03-31 15:52:37,329 - INFO - Waiting
+2025-03-31 15:52:42,391 - INFO - distance error 11.568059474259295 mm
+2025-03-31 15:52:42,406 - INFO - ##### Cycle Completed: 7 ################
+2025-03-31 15:52:44,468 - INFO - distance error 11.734564329364778 mm
+2025-03-31 15:52:44,483 - INFO - Moving inside LN2
+2025-03-31 15:52:46,544 - INFO - distance error 7.1847059786744305 mm
+2025-03-31 15:52:47,561 - INFO - Outside LN2
+2025-03-31 15:52:49,623 - INFO - distance error 11.465164630305155 mm
+2025-03-31 15:52:51,696 - INFO - distance error 2.09045449603667 mm
+2025-03-31 15:52:53,763 - INFO - distance error 2.0124611797498013 mm
+2025-03-31 15:52:53,771 - INFO - Moving Inside Water Bath
+2025-03-31 15:52:54,783 - WARNING - Bug, can't find distance error
+2025-03-31 15:52:55,784 - INFO - Moving outside Water Bath
+2025-03-31 15:52:57,848 - INFO - distance error 1.0816653826391747 mm
+2025-03-31 15:52:59,914 - INFO - distance error 1.2845232578665196 mm
+2025-03-31 15:52:59,928 - INFO - Waiting
+2025-03-31 15:53:04,991 - INFO - distance error 11.61851969916995 mm
+2025-03-31 15:53:05,006 - INFO - ##### Cycle Completed: 8 ################
+2025-03-31 15:53:07,068 - INFO - distance error 11.734564329364778 mm
+2025-03-31 15:53:07,083 - INFO - Moving inside LN2
+2025-03-31 15:53:09,136 - INFO - distance error 7.214568594171109 mm
+2025-03-31 15:53:10,152 - INFO - Outside LN2
+2025-03-31 15:53:12,212 - INFO - distance error 11.423659658795863 mm
+2025-03-31 15:53:14,288 - INFO - distance error 2.765863337187851 mm
+2025-03-31 15:53:16,359 - INFO - distance error 2.0124611797498013 mm
+2025-03-31 15:53:16,375 - INFO - Moving Inside Water Bath
+2025-03-31 15:53:17,387 - WARNING - Bug, can't find distance error
+2025-03-31 15:53:18,389 - INFO - Moving outside Water Bath
+2025-03-31 15:53:20,452 - INFO - distance error 1.0816653826391747 mm
+2025-03-31 15:53:22,519 - INFO - distance error 1.4899664425751102 mm
+2025-03-31 15:53:22,529 - INFO - Waiting
+2025-03-31 15:53:27,592 - INFO - distance error 11.568059474259295 mm
+2025-03-31 15:53:27,606 - INFO - ##### Cycle Completed: 9 ################
+2025-03-31 15:53:29,667 - INFO - distance error 11.734564329364778 mm
+2025-03-31 15:53:29,683 - INFO - Moving inside LN2
+2025-03-31 15:53:31,744 - INFO - distance error 7.214568594171109 mm
+2025-03-31 15:53:32,751 - INFO - Outside LN2
+2025-03-31 15:53:34,812 - INFO - distance error 11.48085362679972 mm
+2025-03-31 15:53:36,887 - INFO - distance error 2.09045449603667 mm
+2025-03-31 15:53:38,956 - INFO - distance error 2.0124611797498013 mm
+2025-03-31 15:53:38,971 - INFO - Moving Inside Water Bath
+2025-03-31 15:53:39,983 - WARNING - Bug, can't find distance error
+2025-03-31 15:53:40,985 - INFO - Moving outside Water Bath
+2025-03-31 15:53:43,047 - INFO - distance error 1.0816653826391747 mm
+2025-03-31 15:53:45,127 - INFO - distance error 1.170469991071964 mm
+2025-03-31 15:53:45,140 - INFO - Waiting
+2025-03-31 15:53:50,203 - INFO - distance error 11.568059474259295 mm
+2025-03-31 15:53:50,218 - INFO - ##### Cycle Completed: 10 ################
+2025-03-31 15:53:52,280 - INFO - distance error 11.734564329364778 mm
+2025-03-31 15:53:52,296 - INFO - Moving inside LN2
+2025-03-31 15:53:54,356 - INFO - distance error 7.164495795239196 mm
+2025-03-31 15:53:55,364 - INFO - Outside LN2
+2025-03-31 15:53:57,423 - INFO - distance error 11.48085362679972 mm
+2025-03-31 15:53:59,500 - INFO - distance error 2.09045449603667 mm
+2025-03-31 15:54:01,568 - INFO - distance error 2.0124611797498013 mm
+2025-03-31 15:54:01,584 - INFO - Moving Inside Water Bath
+2025-03-31 15:54:02,595 - WARNING - Bug, can't find distance error
+2025-03-31 15:54:03,596 - INFO - Moving outside Water Bath
+2025-03-31 15:54:05,660 - INFO - distance error 1.0816653826391747 mm
+2025-03-31 15:54:07,735 - INFO - distance error 1.2845232578665196 mm
+2025-03-31 15:54:07,752 - INFO - Waiting
+2025-03-31 15:54:12,815 - INFO - distance error 11.568059474259295 mm
+2025-03-31 15:54:12,830 - INFO - ##### Cycle Completed: 11 ################
+2025-03-31 15:54:14,892 - INFO - distance error 3.809199390948182 mm
+2025-03-31 15:54:17,959 - INFO - distance error 2.687005768508858 mm
+2025-03-31 15:54:18,976 - INFO - Completed and relesed motors
+2025-03-31 15:54:18,977 - INFO - Operation Completed Sucessfully
+2025-03-31 15:54:18,977 - INFO - Programmed execution completed

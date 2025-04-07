@@ -1,0 +1,28 @@
+2025-04-04 15:07:34,300 - INFO - Starting Experiment
+2025-04-04 15:07:34,301 - INFO - Experiment Parameters
+2025-04-04 15:07:34,301 - INFO - Experiment Name: Error_Testing
+2025-04-04 15:07:34,301 - INFO - Person Responsible: Akshit
+2025-04-04 15:07:34,301 - INFO - Thermomixer Time: 5
+2025-04-04 15:07:34,302 - INFO - Liquid Nitrogen Time: 5
+2025-04-04 15:07:34,302 - INFO - Waiting Time 5
+2025-04-04 15:07:34,302 - INFO - Number of Cycles 30
+2025-04-04 15:07:34,302 - INFO - Robot Speed 100
+2025-04-04 15:07:34,302 - INFO - Run Number 1
+2025-04-04 15:07:36,328 - INFO - Distance Error is 1.5165750888103133
+2025-04-04 15:07:39,353 - INFO - Distance Error is 1.529705854077844
+2025-04-04 15:07:42,378 - WARNING - Distance Error is 13.28984574778804
+2025-04-04 15:07:42,378 - INFO - Moving inside LN2
+2025-04-04 15:07:44,404 - INFO - Distance Error is 4.641120554348924
+2025-04-04 15:07:47,407 - INFO - Outside LN2
+2025-04-04 15:07:49,430 - WARNING - Distance Error is 13.278930679840158
+2025-04-04 15:07:51,456 - INFO - Distance Error is 2.1400934559032754
+2025-04-04 15:07:53,482 - INFO - Distance Error is 1.7029386365926356
+2025-04-04 15:07:53,482 - INFO - Moving Inside Water Bath
+2025-04-04 15:07:54,506 - ERROR - Experiment encountered an error: name 'current_positon' is not defined
+Traceback (most recent call last):
+  File "test.py", line 147, in <module>
+    is_correct_position(cn)
+  File "test.py", line 93, in is_correct_position
+    print(f'\033[31m{current_positon = } \033[0m')
+NameError: name 'current_positon' is not defined
+2025-04-04 15:07:54,508 - INFO - Programmed execution completed

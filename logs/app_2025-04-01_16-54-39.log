@@ -1,0 +1,32 @@
+2025-04-01 16:54:39,117 - INFO - Starting Experiment
+2025-04-01 16:54:39,118 - INFO - Experiment Parameters
+2025-04-01 16:54:39,118 - INFO - Experiment Name: MLB-BQ-022-2_15cyc
+2025-04-01 16:54:39,118 - INFO - Person Responsible: Ben Quach
+2025-04-01 16:54:39,119 - INFO - Thermomixer Time: 200
+2025-04-01 16:54:39,119 - INFO - Liquid Nitrogen Time: 4
+2025-04-01 16:54:39,119 - INFO - Waiting Time 3
+2025-04-01 16:54:39,119 - INFO - Number of Cycles 1
+2025-04-01 16:54:39,120 - INFO - Robot Speed 100
+2025-04-01 16:54:39,120 - INFO - Run Number 7
+2025-04-01 16:54:41,186 - INFO - distance error 2.7092434368288068 mm
+2025-04-01 16:54:44,270 - INFO - distance error 3.0149626863362884 mm
+2025-04-01 16:54:47,350 - INFO - distance error 13.069429979918791 mm
+2025-04-01 16:54:47,370 - INFO - Moving inside LN2
+2025-04-01 16:54:49,437 - INFO - distance error 4.623851208678749 mm
+2025-04-01 16:54:51,452 - INFO - Outside LN2
+2025-04-01 16:54:53,514 - INFO - distance error 13.130118049735882 mm
+2025-04-01 16:54:55,598 - INFO - distance error 2.2045407685048497 mm
+2025-04-01 16:54:57,678 - INFO - distance error 2.0124611797498013 mm
+2025-04-01 16:54:57,691 - INFO - Moving Inside Water Bath
+2025-04-01 16:54:58,703 - WARNING - Bug, can't find distance error
+2025-04-01 16:58:16,786 - INFO - Moving outside Water Bath
+2025-04-01 16:58:18,851 - INFO - distance error 1.3892443989449612 mm
+2025-04-01 16:58:20,934 - INFO - distance error 0.7348469228349426 mm
+2025-04-01 16:58:20,947 - INFO - Waiting
+2025-04-01 16:58:26,020 - INFO - distance error 11.590081966923258 mm
+2025-04-01 16:58:26,037 - INFO - ###################################### Cycle Completed: 1 ####################################################
+2025-04-01 16:58:28,102 - INFO - distance error 3.1968734726291643 mm
+2025-04-01 16:58:31,182 - INFO - distance error 2.687005768508858 mm
+2025-04-01 16:58:32,197 - INFO - Completed and relesed motors
+2025-04-01 16:58:32,197 - INFO - Operation Completed Sucessfully
+2025-04-01 16:58:32,197 - INFO - Programmed execution completed

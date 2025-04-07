@@ -1,0 +1,13 @@
+2025-03-31 15:49:12,118 - INFO - Starting Experiment
+2025-03-31 15:49:12,118 - INFO - Experiment Parameters
+2025-03-31 15:49:12,119 - INFO - Experiment Name: MLB-BQ-022_15cyc
+2025-03-31 15:49:12,119 - INFO - Person Responsible: Ben Quach
+2025-03-31 15:49:12,119 - INFO - Thermomixer Time: 240
+2025-03-31 15:49:12,119 - INFO - Liquid Nitrogen Time: 60
+2025-03-31 15:49:12,120 - INFO - Waiting Time 3
+2025-03-31 15:49:12,120 - INFO - Number of Cycles 11
+2025-03-31 15:49:12,120 - INFO - Robot Speed 100
+2025-03-31 15:49:12,120 - INFO - Run Number 1
+2025-03-31 15:49:14,179 - INFO - distance error 2.934280150224268 mm
+2025-03-31 15:49:14,963 - ERROR - Experiment manually stooped with Keyboard Interrupt (crtl + c)
+2025-03-31 15:49:19,969 - INFO - Programmed execution completed

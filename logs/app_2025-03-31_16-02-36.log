@@ -1,0 +1,25 @@
+2025-03-31 16:02:36,471 - INFO - Starting Experiment
+2025-03-31 16:02:36,473 - INFO - Experiment Parameters
+2025-03-31 16:02:36,473 - INFO - Experiment Name: MLB-BQ-022_15cyc
+2025-03-31 16:02:36,473 - INFO - Person Responsible: Ben Quach
+2025-03-31 16:02:36,473 - INFO - Thermomixer Time: 3
+2025-03-31 16:02:36,474 - INFO - Liquid Nitrogen Time: 3
+2025-03-31 16:02:36,474 - INFO - Waiting Time 3
+2025-03-31 16:02:36,474 - INFO - Number of Cycles 11
+2025-03-31 16:02:36,474 - INFO - Robot Speed 100
+2025-03-31 16:02:36,475 - INFO - Run Number 1
+2025-03-31 16:02:38,535 - INFO - distance error 3.6687872655688234 mm
+2025-03-31 16:02:41,604 - INFO - distance error 1.5842979517754983 mm
+2025-03-31 16:02:44,671 - INFO - distance error 13.277801022759762 mm
+2025-03-31 16:02:44,678 - INFO - Moving inside LN2
+2025-03-31 16:02:46,743 - INFO - distance error 4.636809247747832 mm
+2025-03-31 16:02:47,756 - INFO - Outside LN2
+2025-03-31 16:02:49,816 - INFO - distance error 13.373481222179967 mm
+2025-03-31 16:02:51,891 - INFO - distance error 2.111871208194276 mm
+2025-03-31 16:02:53,959 - INFO - distance error 1.9949937343259907 mm
+2025-03-31 16:02:53,966 - INFO - Moving Inside Water Bath
+2025-03-31 16:02:54,979 - WARNING - Bug, can't find distance error
+2025-03-31 16:02:55,981 - INFO - Moving outside Water Bath
+2025-03-31 16:02:58,044 - INFO - distance error 1.0816653826391747 mm
+2025-03-31 16:02:59,141 - ERROR - Experiment manually stooped with Keyboard Interrupt (crtl + c)
+2025-03-31 16:03:04,147 - INFO - Programmed execution completed
