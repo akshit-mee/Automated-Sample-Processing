@@ -297,7 +297,7 @@ class RobotActions:
     #             gripper_state = "STOP"
 
     def init_experiment(self):
-        update_robot_log("Start", self.current_cycle, gripper_state)
+        update_robot_log("Start", self.current_cycle, gripper_state, mc.get_error_information())
         self.move(self.ce2)
         time.sleep(1)    
         self.move(self.ce1)
@@ -305,7 +305,7 @@ class RobotActions:
 
     def end_experiment(self):
         # update_robot_log("End of Experiment", self.current_cycle, gripper_state)
-        update_robot_log("Completed", self.current_cycle, gripper_state)
+        update_robot_log("Completed", self.current_cycle, gripper_state, mc.get_error_information())
         self.move(self.ce1)
         time.sleep(1)
         self.move(self.ce2)
@@ -314,7 +314,7 @@ class RobotActions:
         time.sleep(1)
         mc.release_all_servos()
         log.info ("Completed and relesed motors")
-        update_robot_log("Completed and released motors", self.current_cycle, gripper_state)
+        update_robot_log("Completed and released motors", self.current_cycle, gripper_state, mc.get_error_information())
 
 
 
@@ -324,7 +324,7 @@ class RobotActions:
 
         while self.current_cycle-1 < self.number_of_cycles:   
             self.move(self.c2)
-            update_robot_log("Moving inside LN2", self.current_cycle, gripper_state)
+            update_robot_log("Moving inside LN2", self.current_cycle, gripper_state, mc.get_error_information())
             log.info("Moving inside LN2")
             start_ln2_time = time.monotonic()
             self.move(self.c1)
@@ -333,14 +333,14 @@ class RobotActions:
             ln2_time = {start_ln2_time - end_ln2_time}
             log.info("Outside LN2")
             print(f"LN2 time = {ln2_time}")
-            update_robot_log("Outside outside LN2", self.current_cycle, gripper_state)
+            update_robot_log("Outside outside LN2", self.current_cycle, gripper_state, mc.get_error_information())
             self.move(self.c2)
-            update_robot_log("Moving sample to Water Bath", self.current_cycle, gripper_state)
+            update_robot_log("Moving sample to Water Bath", self.current_cycle, gripper_state, mc.get_error_information())
             self.move(self.cm)
             self.move(self.cm2)
             log.info("Moving Inside Water Bath")
             start_water_bath_time = time.monotonic()
-            update_robot_log("Moving Inside Water Bath", self.current_cycle, gripper_state)
+            update_robot_log("Moving Inside Water Bath", self.current_cycle, gripper_state, mc.get_error_information())
             mc.send_angles(self.an, cobot_speed)
             time.sleep(1)
             while( not self.is_correct_position(self.cn) and time.monotonic() - start_water_bath_time < 5):
@@ -350,15 +350,14 @@ class RobotActions:
             water_bath_time = start_water_bath_time - end_water_bath_time
             log.info("Moving outside Water Bath")
             print(f"Water Bath time = {water_bath_time}")
-            update_robot_log("Moving outside Water Bath", self.current_cycle, gripper_state)
+            update_robot_log("Moving outside Water Bath", self.current_cycle, gripper_state, mc.get_error_information())
             self.move(self.cm2)
             self.move(self.cm)
             log.info("Waiting")
-            update_robot_log("Waiting", self.current_cycle, gripper_state)
+            update_robot_log("Waiting", self.current_cycle, gripper_state, mc.get_error_information())
             time.sleep(self.waiting_time)
-            update_robot_log("Moving to Liuid Nitrogen", self.current_cycle, gripper_state)
+            update_robot_log("Moving to Liuid Nitrogen", self.current_cycle, gripper_state, mc.get_error_information())
             self.move(self.c2)
-            self.current_cycle += 1
             log.info(f"###################################### Cycle Completed: {self.current_cycle} ####################################################" )
             log.info(f"LN2 Time = {ln2_time} ")
             log.info(f"Water Bath = {water_bath_time} ")
@@ -408,5 +407,9 @@ if __name__ == "__main__":
         
         while controll['running'] and setting_flag:
             ra.run_cycle()
+            if ra.cycle_number == settings['number_of_cycles']:
+                cycle_number = 1
+                break
+            
             
         
