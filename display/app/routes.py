@@ -128,15 +128,15 @@ def start():
                 experiment_setting=settings
             )            
             db.session.add(log)
-            cur_active = CurrentActive(
-                id = 1,
-                experiment_id=settings.experiment_id,
-                # experiment_name=settings.experiment_name,
-                robotlog_id=log.id,
-                cycle_number=0
-            )
-            db.session.add(cur_active)
-            db.session.commit()
+            # cur_active = CurrentActive(
+            #     id = 1,
+            #     experiment_id=settings.experiment_id,
+            #     # experiment_name=settings.experiment_name,
+            #     robotlog_id=log.id,
+            #     cycle_number=0
+            # )
+            # db.session.add(cur_active)
+            # db.session.commit()
  
 
             experiment_start_robot_log_id = log.id
@@ -229,7 +229,7 @@ def show_completed_experiment(experiment_id):
 #     return send_file(file_path, as_attachment=True, download_name=f'experiment_{settings.experiment_id}_{settings.experiment_name}_data.json')
  
 
-e = ExperimentCompleted(experiment_id = 11, experiment_name = 'New Experiment', start_time = datetime.strptime('2025-01-10 12:00:37.553810', "%Y-%m-%d %H:%M:%S.%f"), end_time = datetime.strptime('2025-01-10 12:00:56.789757', "%Y-%m-%d %H:%M:%S.%f"), Robot_log_start_id = 536, Robot_log_end_id = 555, post_experiment_notes = 'completed sucessfully')
+# e = ExperimentCompleted(experiment_id = 11, experiment_name = 'New Experiment', start_time = datetime.strptime('2025-01-10 12:00:37.553810', "%Y-%m-%d %H:%M:%S.%f"), end_time = datetime.strptime('2025-01-10 12:00:56.789757', "%Y-%m-%d %H:%M:%S.%f"), Robot_log_start_id = 536, Robot_log_end_id = 555, post_experiment_notes = 'completed sucessfully')
 
 ##################################################
 @app.route('/contact')
