@@ -151,6 +151,8 @@ def move(coordinate, speed = cobot_speed, mode = 1, mc = mc):
 
 
 
+
+
 try:
     
     move(ce2)
