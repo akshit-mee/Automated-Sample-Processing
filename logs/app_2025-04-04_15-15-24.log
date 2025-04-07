@@ -1,0 +1,20 @@
+2025-04-04 15:15:24,681 - INFO - Starting Experiment
+2025-04-04 15:15:24,682 - INFO - Experiment Parameters
+2025-04-04 15:15:24,682 - INFO - Experiment Name: Error_Testing
+2025-04-04 15:15:24,682 - INFO - Person Responsible: Akshit
+2025-04-04 15:15:24,683 - INFO - Thermomixer Time: 5
+2025-04-04 15:15:24,683 - INFO - Liquid Nitrogen Time: 5
+2025-04-04 15:15:24,683 - INFO - Waiting Time 5
+2025-04-04 15:15:24,683 - INFO - Number of Cycles 30
+2025-04-04 15:15:24,683 - INFO - Robot Speed 100
+2025-04-04 15:15:24,684 - INFO - Run Number 1
+2025-04-04 15:15:31,854 - ERROR - Experiment encountered an error: name 'info' is not defined
+Traceback (most recent call last):
+  File "test.py", line 130, in <module>
+    move(ce2)
+  File "test.py", line 107, in move
+    is_correct_position(coordinate)
+  File "test.py", line 100, in is_correct_position
+    info.error("Timeout, cannot detect current position")
+NameError: name 'info' is not defined
+2025-04-04 15:15:31,855 - INFO - Programmed execution completed

@@ -1,0 +1,18 @@
+2025-04-04 15:02:50,621 - INFO - Starting Experiment
+2025-04-04 15:02:50,622 - INFO - Experiment Parameters
+2025-04-04 15:02:50,622 - INFO - Experiment Name: Error_Testing
+2025-04-04 15:02:50,622 - INFO - Person Responsible: Akshit
+2025-04-04 15:02:50,623 - INFO - Thermomixer Time: 5
+2025-04-04 15:02:50,623 - INFO - Liquid Nitrogen Time: 5
+2025-04-04 15:02:50,623 - INFO - Waiting Time 5
+2025-04-04 15:02:50,623 - INFO - Number of Cycles 30
+2025-04-04 15:02:50,623 - INFO - Robot Speed 100
+2025-04-04 15:02:50,624 - INFO - Run Number 1
+2025-04-04 15:02:52,635 - ERROR - Experiment encountered an error: name 'is_correct_positon' is not defined
+Traceback (most recent call last):
+  File "test.py", line 129, in <module>
+    move(ce2)
+  File "test.py", line 106, in move
+    is_correct_positon(coordinate)
+NameError: name 'is_correct_positon' is not defined
+2025-04-04 15:02:52,636 - INFO - Programmed execution completed
