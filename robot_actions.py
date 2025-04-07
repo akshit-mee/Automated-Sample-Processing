@@ -305,7 +305,7 @@ class RobotActions:
 
     def end_experiment(self):
         # update_robot_log("End of Experiment", self.current_cycle, gripper_state)
-        update_robot_log("Completed", self.current_cycle, gripper_state, mc.get_error_information())
+        update_robot_log("Completed", self.current_cycle-1, gripper_state, mc.get_error_information())
         self.move(self.ce1)
         time.sleep(1)
         self.move(self.ce2)
@@ -314,7 +314,7 @@ class RobotActions:
         time.sleep(1)
         mc.release_all_servos()
         log.info ("Completed and relesed motors")
-        update_robot_log("Completed and released motors", self.current_cycle, gripper_state, mc.get_error_information())
+        
 
 
 
@@ -356,12 +356,12 @@ class RobotActions:
             time.sleep(self.waiting_time)
             update_robot_log("Moving to Liuid Nitrogen", self.current_cycle, gripper_state, mc.get_error_information())
             self.move(self.c2)
-            self.current_cycle += 1
             log.info(f"###################################### Cycle Completed: {self.current_cycle} ####################################################" )
             log.info(f"LN2 Time = {ln2_time} ")
             log.info(f"Water Bath = {water_bath_time} ")
             log.info("######################################################################################################################")
-
+            self.current_cycle += 1
+            
         self.end_experiment()
     ################################################################################
 
