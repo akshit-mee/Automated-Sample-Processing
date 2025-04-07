@@ -219,7 +219,13 @@ def show_completed_experiment(experiment_id):
         return redirect(url_for('view_completed_experiments'))
     
     logs = RobotLog.query.filter(RobotLog.id.between(completed_experiment.Robot_log_start_id, completed_experiment.Robot_log_end_id)).all()
-    return render_template('completed_expriment.html', log=logs)
+    experiment_name = completed_experiment.experiment_setting.experiment_name if completed_experiment.experiment_setting else "N/A"
+    return render_template(
+        'completed_expriment.html',
+        logs=logs,
+        experiment_name=experiment_name,
+        experiment_id=completed_experiment.experiment_id
+    )
 
 # @app.route('/download_completed_data', methods=['GET'])
 # def download_experiment_data():
@@ -314,7 +320,7 @@ def update_robot_log():
 
 @app.route('/update_process_details', methods=['POST'])
 def update_process_details():
-    global current_robot_log_id, experiment_end_robot_log_id
+    global current_robot_log_id, experiment_end_robot_log_id, experiment_start_robot_log_id
     process_details = request.form.get('process_details')
     if not process_details:
         process_details = "No details provided"
