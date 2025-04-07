@@ -356,6 +356,7 @@ class RobotActions:
             time.sleep(self.waiting_time)
             update_robot_log("Moving to Liuid Nitrogen", self.current_cycle, gripper_state, mc.get_error_information())
             self.move(self.c2)
+            self.current_cycle += 1
             log.info(f"###################################### Cycle Completed: {self.current_cycle} ####################################################" )
             log.info(f"LN2 Time = {ln2_time} ")
             log.info(f"Water Bath = {water_bath_time} ")
