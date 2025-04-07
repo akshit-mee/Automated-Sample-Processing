@@ -343,7 +343,7 @@ class RobotActions:
 
 
     def init_experiment(self):
-        update_robot_log("Initialization", self.current_cycle, gripper_state)
+        update_robot_log("Start", self.current_cycle, gripper_state)
         self.move(self.ce2)
         time.sleep(1)    
         self.move(self.ce1)
