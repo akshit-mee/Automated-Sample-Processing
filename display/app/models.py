@@ -31,6 +31,7 @@ class ExperimentSetting(db.Model):
             'number_of_samples': self.number_of_samples,
             'thermomixer_time_s': self.thermomixer_time_s,
             'liquid_nitrogen_time_s': self.liquid_nitrogen_time_s,
+            'waiting_time_s': self.waiting_time_s,
             'number_of_cycles': self.number_of_cycles,
             'additional_notes': self.additional_notes,
             'update_time': self.update_time.isoformat() if self.update_time else None
