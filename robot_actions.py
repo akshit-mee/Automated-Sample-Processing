@@ -404,7 +404,7 @@ if __name__ == "__main__":
         
         while controll['running'] and setting_flag:
             ra.init_experiment()
-            ra.run_cycle(ra.number_of_cycles)
+            ra.run_cycle()
             ra.end_experiment()
             
         
