@@ -1,0 +1,30 @@
+2025-04-07 18:19:22,967 - INFO - Starting Experiment
+2025-04-07 18:19:22,968 - INFO - Experiment Parameters
+2025-04-07 18:19:22,968 - INFO - Experiment Name: MLB-BQ-022-2_15cyc
+2025-04-07 18:19:22,968 - INFO - Person Responsible: Ben Quach
+2025-04-07 18:19:22,968 - INFO - Thermomixer Time: 5
+2025-04-07 18:19:22,969 - INFO - Liquid Nitrogen Time: 5
+2025-04-07 18:19:22,969 - INFO - Waiting Time 5
+2025-04-07 18:19:22,969 - INFO - Number of Cycles 5
+2025-04-07 18:19:22,969 - INFO - Robot Speed 100
+2025-04-07 18:19:22,969 - INFO - Run Number 30
+2025-04-07 18:19:25,393 - ERROR - Error
+2025-04-07 18:19:28,843 - ERROR - Error
+2025-04-07 18:19:32,280 - ERROR - Error
+2025-04-07 18:19:32,280 - INFO - Moving inside LN2
+2025-04-07 18:19:34,727 - ERROR - Error
+2025-04-07 18:19:37,731 - INFO - Outside LN2
+2025-04-07 18:19:39,806 - INFO - distance error 12.92632971883357 mm
+2025-04-07 18:19:41,868 - INFO - distance error 3.116087290176557 mm
+2025-04-07 18:19:43,939 - INFO - distance error 2.1236760581595124 mm
+2025-04-07 18:19:43,939 - INFO - Moving Inside Water Bath
+2025-04-07 18:19:44,952 - WARNING - Bug, can't find distance error
+2025-04-07 18:19:47,955 - INFO - Moving outside Water Bath
+2025-04-07 18:19:50,126 - INFO - distance error 1.0816653826391747 mm
+2025-04-07 18:19:52,197 - INFO - distance error 0.7810249675906539 mm
+2025-04-07 18:19:52,198 - INFO - Waiting
+2025-04-07 18:19:59,270 - INFO - distance error 11.734990413289655 mm
+2025-04-07 18:19:59,271 - INFO - ###################################### Cycle Completed: 1 ####################################################
+2025-04-07 18:20:01,338 - INFO - distance error 11.822436297142819 mm
+2025-04-07 18:20:01,339 - INFO - Moving inside LN2
+2025-04-07 18:20:03,406 - INFO - distance error 7.45117440407888 mm
