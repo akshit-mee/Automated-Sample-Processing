@@ -18,7 +18,7 @@ Person_Responsible = "Akshit"
 Thermomixer_Time = 5  #240 (for medium size vials)
 LN2_Time = 5          #60
 Waiting_Time = 5        #3
-Number_of_Cycles = 30   #43 total
+Number_of_Cycles = 5   #43 total
 Run_Number = 1
 
 Robot_speed = 100
@@ -130,6 +130,8 @@ log.info(f"Run Number {Run_Number}")
 
 def run_cycle(number_of_cycles):
     for i in range(number_of_cycles):   
+        mc.send_angles(a2, 100)
+        time.sleep(1)
         move(c2)
         log.info("Moving inside LN2")
         start_ln2_time = time.monotonic()
@@ -144,10 +146,7 @@ def run_cycle(number_of_cycles):
         log.info("Moving Inside Water Bath")
         start_water_bath_time = time.monotonic()
         move(c4)
-        time.sleep(1)
-        while( not is_correct_position(cn)):
-            mc.send_angles(an, cobot_speed)
-        time.sleep(Thermomixer_Time -1)
+        time.sleep(Thermomixer_Time - 2)
         end_water_bath_time = time.monotonic()
         water_bath_time = start_water_bath_time - end_water_bath_time
         log.info("Moving outside Water Bath")

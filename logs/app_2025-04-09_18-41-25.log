@@ -1,0 +1,20 @@
+2025-04-09 18:41:25,404 - INFO - Starting Experiment
+2025-04-09 18:41:25,404 - INFO - Experiment Parameters
+2025-04-09 18:41:25,405 - INFO - Experiment Name: Error_Testing
+2025-04-09 18:41:25,405 - INFO - Person Responsible: Akshit
+2025-04-09 18:41:25,405 - INFO - Thermomixer Time: 5
+2025-04-09 18:41:25,405 - INFO - Liquid Nitrogen Time: 5
+2025-04-09 18:41:25,405 - INFO - Waiting Time 5
+2025-04-09 18:41:25,406 - INFO - Number of Cycles 10
+2025-04-09 18:41:25,406 - INFO - Robot Speed 100
+2025-04-09 18:41:25,406 - INFO - Run Number 1
+2025-04-09 18:41:28,452 - WARNING - Distance Error is 9.786725703727466
+2025-04-09 18:41:28,453 - INFO - Moving inside LN2
+2025-04-09 18:41:35,624 - ERROR - Timeout, cannot detect current position
+2025-04-09 18:41:35,725 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-09 18:41:40,871 - ERROR - Timeout, cannot detect current position
+2025-04-09 18:41:40,972 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-09 18:41:41,832 - INFO - Distance Error is 3.293933818400126
+2025-04-09 18:41:44,835 - INFO - Outside LN2
+2025-04-09 18:41:46,272 - ERROR - Experiment manually stooped with Keyboard Interrupt (crtl + c)
+2025-04-09 18:41:51,278 - INFO - Programmed execution completed
