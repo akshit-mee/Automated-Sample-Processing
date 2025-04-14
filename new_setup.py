@@ -64,8 +64,11 @@ cr = [104.0, 187.1, 245.3, -175.69, -0.98, -52.58]
 
 ###############################Progress Bar Timer ###################################
 def sleep_progress(duration_s, cycle_name = "Waiting"):
+    increment = 40
     with tqdm(total = duration_s, desc = cycle_name, unit = "s") as pbar:
         for i in range(duration_s):
+            mc.jog_increment(6, increment, 70)
+            increment = - increment
             time.sleep(1)
             pbar.update(1)
             
