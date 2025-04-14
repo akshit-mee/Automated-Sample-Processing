@@ -1,0 +1,13 @@
+add the samples to the vial
+plave it on the golden lifting platform
+open terminal in the code folder (right click > open terminal here)
+type python new_setup.py
+press enter after comfiming the vials are secure and on the goldern lifter
+
+let the experiment run
+
+if there is any error and you want to stop the experiment, ctrl + c in terminal, or strg + c gor germans
+## carefull robot will lose poer in 5 seconds to hold the robot
+
+
+
