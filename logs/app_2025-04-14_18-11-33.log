@@ -1,0 +1,30 @@
+2025-04-14 18:11:35,655 - INFO - Distance Error is 4.565084884205341
+2025-04-14 18:11:37,682 - INFO - Distance Error is 2.79105714739058
+2025-04-14 18:11:40,804 - WARNING - Distance Error is 7.259476565152598
+2025-04-14 18:11:40,842 - INFO - Moving inside LN2
+2025-04-14 18:11:42,866 - WARNING - Distance Error is 6.1106464469808754
+2025-04-14 18:11:46,013 - INFO - Outside LN2
+2025-04-14 18:11:48,067 - INFO - Distance Error is 4.323193264243445
+2025-04-14 18:11:50,138 - WARNING - Distance Error is 13.42721117730707
+2025-04-14 18:11:50,138 - INFO - Moving Inside Water Bath
+2025-04-14 18:11:52,226 - WARNING - Distance Error is 5.600892785976188
+2025-04-14 18:11:55,414 - INFO - Moving outside Water Bath
+2025-04-14 18:11:57,510 - WARNING - Distance Error is 13.273658124270039
+2025-04-14 18:11:57,510 - INFO - Waiting
+2025-04-14 18:11:59,651 - INFO - ###################################### Cycle Completed: 1 ####################################################
+2025-04-14 18:11:59,652 - INFO - LN2 Time = {-5.170022625999991} 
+2025-04-14 18:11:59,652 - INFO - Water Bath = -5.275293034000015 
+2025-04-14 18:11:59,652 - INFO - ######################################################################################################################
+2025-04-14 18:12:01,721 - INFO - Distance Error is 1.2206555615733712
+2025-04-14 18:12:03,750 - INFO - Distance Error is 4.050925820105819
+2025-04-14 18:12:04,251 - INFO - Completed and relesed motors
+2025-04-14 18:12:58,071 - INFO - Distance Error is 4.526588119102509
+2025-04-14 18:13:00,100 - INFO - Distance Error is 2.805352027821081
+2025-04-14 18:13:03,302 - WARNING - Distance Error is 7.259476565152598
+2025-04-14 18:13:03,346 - INFO - Moving inside LN2
+2025-04-14 18:13:05,373 - WARNING - Distance Error is 6.110646446980866
+2025-04-14 18:14:03,480 - INFO - Outside LN2
+2025-04-14 18:14:05,545 - INFO - Distance Error is 4.718050444834162
+2025-04-14 18:14:07,616 - WARNING - Distance Error is 13.691603266235814
+2025-04-14 18:14:07,616 - INFO - Moving Inside Water Bath
+2025-04-14 18:14:09,687 - WARNING - Distance Error is 5.8137767414994475

@@ -1,0 +1,1289 @@
+2025-04-14 17:46:57,915 - WARNING - Distance Error is 7.9981247802219375
+2025-04-14 17:46:59,942 - INFO - Distance Error is 1.8708286933869698
+2025-04-14 17:47:02,984 - WARNING - Distance Error is 7.932843122109497
+2025-04-14 17:47:03,066 - INFO - Moving inside LN2
+2025-04-14 17:47:05,094 - WARNING - Distance Error is 5.555177764932463
+2025-04-14 17:48:03,148 - INFO - Outside LN2
+2025-04-14 17:48:05,204 - WARNING - Distance Error is 7.000714249274839
+2025-04-14 17:48:07,266 - WARNING - Distance Error is 14.914422550001714
+2025-04-14 17:48:07,266 - INFO - Moving Inside Water Bath
+2025-04-14 17:48:09,336 - INFO - Distance Error is 3.987480407475373
+2025-04-14 17:50:07,344 - INFO - Moving outside Water Bath
+2025-04-14 17:50:09,408 - WARNING - Distance Error is 13.289469515371927
+2025-04-14 17:50:09,408 - INFO - Waiting
+2025-04-14 17:50:16,509 - INFO - Distance Error is 4.6281745861624515
+2025-04-14 17:50:16,509 - INFO - ###################################### Cycle Completed: 1 ####################################################
+2025-04-14 17:50:16,510 - INFO - LN2 Time = {-60.08117318699999} 
+2025-04-14 17:50:16,510 - INFO - Water Bath = -120.07723839200003 
+2025-04-14 17:50:16,510 - INFO - ######################################################################################################################
+2025-04-14 17:50:19,550 - WARNING - Distance Error is 7.302739212103912
+2025-04-14 17:50:19,586 - INFO - Moving inside LN2
+2025-04-14 17:50:21,611 - INFO - Distance Error is 4.237924020083413
+2025-04-14 17:51:19,668 - INFO - Outside LN2
+2025-04-14 17:51:21,733 - WARNING - Distance Error is 8.548684109264993
+2025-04-14 17:51:23,804 - ERROR - Distance Error is 15.82150435325287
+2025-04-14 17:51:23,813 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 17:51:24,044 - ERROR - Distance Error is 15.842032697857922
+2025-04-14 17:51:24,053 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 17:51:24,130 - ERROR - Distance Error is 15.842032697857922
+2025-04-14 17:51:24,140 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 17:51:24,171 - ERROR - Distance Error is 15.824348327814311
+2025-04-14 17:51:24,279 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-14 17:51:24,355 - ERROR - Distance Error is 15.824348327814311
+2025-04-14 17:51:24,365 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 17:51:24,396 - ERROR - Distance Error is 15.756585924622115
+2025-04-14 17:51:24,504 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-14 17:51:24,580 - ERROR - Distance Error is 15.628499608087784
+2025-04-14 17:51:24,590 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 17:51:24,621 - ERROR - Distance Error is 15.628499608087784
+2025-04-14 17:51:24,729 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-14 17:51:24,806 - ERROR - Distance Error is 15.628499608087784
+2025-04-14 17:51:24,815 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 17:51:24,846 - ERROR - Distance Error is 15.523530526268804
+2025-04-14 17:51:24,954 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-14 17:51:25,030 - ERROR - Distance Error is 15.523530526268804
+2025-04-14 17:51:25,040 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 17:51:25,071 - ERROR - Distance Error is 15.547025438970614
+2025-04-14 17:51:25,179 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-14 17:51:25,255 - ERROR - Distance Error is 15.547025438970614
+2025-04-14 17:51:25,265 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 17:51:25,296 - ERROR - Distance Error is 15.419792475905753
+2025-04-14 17:51:25,404 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-14 17:51:25,480 - ERROR - Distance Error is 15.419792475905753
+2025-04-14 17:51:25,490 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 17:51:25,521 - ERROR - Distance Error is 15.444092721814373
+2025-04-14 17:51:25,632 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-14 17:51:25,706 - ERROR - Distance Error is 15.317310468877999
+2025-04-14 17:51:25,717 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 17:51:25,747 - ERROR - Distance Error is 15.190786681406587
+2025-04-14 17:51:25,757 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 17:51:25,787 - ERROR - Distance Error is 15.190786681406587
+2025-04-14 17:51:25,796 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 17:51:25,831 - WARNING - Distance Error is 14.629764181284667
+2025-04-14 17:51:25,831 - INFO - Moving Inside Water Bath
+2025-04-14 17:51:27,892 - INFO - Distance Error is 3.6633318168028404
+2025-04-14 17:53:25,992 - INFO - Moving outside Water Bath
+2025-04-14 17:53:28,063 - WARNING - Distance Error is 14.011780757633906
+2025-04-14 17:53:28,063 - INFO - Waiting
+2025-04-14 17:53:35,165 - INFO - Distance Error is 4.487761134463373
+2025-04-14 17:53:35,166 - INFO - ###################################### Cycle Completed: 2 ####################################################
+2025-04-14 17:53:35,166 - INFO - LN2 Time = {-60.08119409400001} 
+2025-04-14 17:53:35,166 - INFO - Water Bath = -120.16081961399993 
+2025-04-14 17:53:35,167 - INFO - ######################################################################################################################
+2025-04-14 17:53:38,205 - WARNING - Distance Error is 7.302739212103912
+2025-04-14 17:53:38,243 - INFO - Moving inside LN2
+2025-04-14 17:53:40,275 - INFO - Distance Error is 4.284857057125703
+2025-04-14 17:54:38,332 - INFO - Outside LN2
+2025-04-14 17:54:40,397 - WARNING - Distance Error is 8.929725639682324
+2025-04-14 17:54:42,467 - ERROR - Distance Error is 15.907231060118525
+2025-04-14 17:54:42,477 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 17:54:42,554 - ERROR - Distance Error is 15.907231060118525
+2025-04-14 17:54:42,563 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 17:54:42,594 - ERROR - Distance Error is 15.907231060118525
+2025-04-14 17:54:42,701 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-14 17:54:42,779 - ERROR - Distance Error is 15.930160074525288
+2025-04-14 17:54:42,789 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 17:54:42,822 - ERROR - Distance Error is 15.802215034608274
+2025-04-14 17:54:42,926 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-14 17:54:42,956 - WARNING - Distance Error is 14.629764181284667
+2025-04-14 17:54:42,956 - INFO - Moving Inside Water Bath
+2025-04-14 17:54:45,027 - INFO - Distance Error is 4.047221268969621
+2025-04-14 17:56:43,128 - INFO - Moving outside Water Bath
+2025-04-14 17:56:45,189 - WARNING - Distance Error is 13.139634698118497
+2025-04-14 17:56:45,189 - INFO - Waiting
+2025-04-14 17:56:52,301 - INFO - Distance Error is 4.3886216514983305
+2025-04-14 17:56:52,301 - INFO - ###################################### Cycle Completed: 3 ####################################################
+2025-04-14 17:56:52,301 - INFO - LN2 Time = {-60.088373353000065} 
+2025-04-14 17:56:52,302 - INFO - Water Bath = -120.17126431700001 
+2025-04-14 17:56:52,302 - INFO - ######################################################################################################################
+2025-04-14 17:56:55,342 - WARNING - Distance Error is 7.302739212103912
+2025-04-14 17:56:55,381 - INFO - Moving inside LN2
+2025-04-14 17:56:57,413 - WARNING - Distance Error is 5.7280013966478815
+2025-04-14 17:57:55,471 - INFO - Outside LN2
+2025-04-14 17:57:57,544 - INFO - Distance Error is 4.387482193696066
+2025-04-14 17:57:59,605 - WARNING - Distance Error is 13.220438721918411
+2025-04-14 17:57:59,606 - INFO - Moving Inside Water Bath
+2025-04-14 17:58:01,676 - WARNING - Distance Error is 5.6550862062394796
+2025-04-14 17:59:59,777 - INFO - Moving outside Water Bath
+2025-04-14 18:00:01,849 - WARNING - Distance Error is 13.40522286275015
+2025-04-14 18:00:01,849 - INFO - Waiting
+2025-04-14 18:00:08,960 - WARNING - Distance Error is 5.131276644267002
+2025-04-14 18:00:08,960 - INFO - ###################################### Cycle Completed: 4 ####################################################
+2025-04-14 18:00:08,961 - INFO - LN2 Time = {-60.09009139} 
+2025-04-14 18:00:08,961 - INFO - Water Bath = -120.17099552100012 
+2025-04-14 18:00:08,961 - INFO - ######################################################################################################################
+2025-04-14 18:00:12,010 - WARNING - Distance Error is 7.751128950030445
+2025-04-14 18:00:12,047 - INFO - Moving inside LN2
+2025-04-14 18:00:14,071 - WARNING - Distance Error is 5.915234568468092
+2025-04-14 18:01:12,081 - INFO - Outside LN2
+2025-04-14 18:01:14,161 - WARNING - Distance Error is 5.478138369920938
+2025-04-14 18:01:16,233 - WARNING - Distance Error is 13.166624472506214
+2025-04-14 18:01:16,233 - INFO - Moving Inside Water Bath
+2025-04-14 18:01:18,293 - WARNING - Distance Error is 5.915234568468092
+2025-04-14 18:03:16,387 - INFO - Moving outside Water Bath
+2025-04-14 18:03:18,456 - WARNING - Distance Error is 13.251792331605563
+2025-04-14 18:03:18,456 - INFO - Waiting
+2025-04-14 18:03:25,567 - INFO - Distance Error is 4.517742799230605
+2025-04-14 18:03:25,567 - INFO - ###################################### Cycle Completed: 5 ####################################################
+2025-04-14 18:03:25,568 - INFO - LN2 Time = {-60.03402287199992} 
+2025-04-14 18:03:25,568 - INFO - Water Bath = -120.15366350199997 
+2025-04-14 18:03:25,568 - INFO - ######################################################################################################################
+2025-04-14 18:03:28,607 - WARNING - Distance Error is 7.687002016391049
+2025-04-14 18:03:28,648 - INFO - Moving inside LN2
+2025-04-14 18:03:30,678 - WARNING - Distance Error is 5.5145262715849075
+2025-04-14 18:04:28,733 - INFO - Outside LN2
+2025-04-14 18:04:30,799 - INFO - Distance Error is 4.846648326421058
+2025-04-14 18:04:32,870 - WARNING - Distance Error is 13.42348687934694
+2025-04-14 18:04:32,870 - INFO - Moving Inside Water Bath
+2025-04-14 18:04:34,940 - WARNING - Distance Error is 6.12209114600559
+2025-04-14 18:06:33,020 - INFO - Moving outside Water Bath
+2025-04-14 18:06:35,092 - WARNING - Distance Error is 12.981525334104612
+2025-04-14 18:06:35,093 - INFO - Waiting
+2025-04-14 18:06:42,203 - INFO - Distance Error is 4.495553358597806
+2025-04-14 18:06:42,204 - INFO - ###################################### Cycle Completed: 6 ####################################################
+2025-04-14 18:06:42,204 - INFO - LN2 Time = {-60.08452174199988} 
+2025-04-14 18:06:42,204 - INFO - Water Bath = -120.14956529899996 
+2025-04-14 18:06:42,205 - INFO - ######################################################################################################################
+2025-04-14 18:06:45,244 - WARNING - Distance Error is 7.705193054038298
+2025-04-14 18:06:45,282 - INFO - Moving inside LN2
+2025-04-14 18:06:47,304 - WARNING - Distance Error is 6.407027391856549
+2025-04-14 18:07:45,363 - INFO - Outside LN2
+2025-04-14 18:07:47,435 - WARNING - Distance Error is 5.560575509783135
+2025-04-14 18:07:49,516 - WARNING - Distance Error is 12.174152947946713
+2025-04-14 18:07:49,517 - INFO - Moving Inside Water Bath
+2025-04-14 18:07:51,577 - WARNING - Distance Error is 5.895761189193466
+2025-04-14 18:09:49,677 - INFO - Moving outside Water Bath
+2025-04-14 18:09:51,749 - WARNING - Distance Error is 13.020368658375219
+2025-04-14 18:09:51,749 - INFO - Waiting
+2025-04-14 18:09:58,860 - INFO - Distance Error is 4.841487374764071
+2025-04-14 18:09:58,860 - INFO - ###################################### Cycle Completed: 7 ####################################################
+2025-04-14 18:09:58,860 - INFO - LN2 Time = {-60.08062274200006} 
+2025-04-14 18:09:58,861 - INFO - Water Bath = -120.15997244699997 
+2025-04-14 18:09:58,861 - INFO - ######################################################################################################################
+2025-04-14 18:10:01,900 - WARNING - Distance Error is 7.765307463326873
+2025-04-14 18:10:01,939 - INFO - Moving inside LN2
+2025-04-14 18:10:03,971 - WARNING - Distance Error is 5.916924876994803
+2025-04-14 18:11:02,029 - INFO - Outside LN2
+2025-04-14 18:11:04,111 - INFO - Distance Error is 4.8270073544588525
+2025-04-14 18:11:06,233 - WARNING - Distance Error is 13.273281433014219
+2025-04-14 18:11:06,233 - INFO - Moving Inside Water Bath
+2025-04-14 18:11:08,303 - WARNING - Distance Error is 6.335613624582854
+2025-04-14 18:13:06,400 - INFO - Moving outside Water Bath
+2025-04-14 18:13:08,505 - WARNING - Distance Error is 12.92826361117378
+2025-04-14 18:13:08,505 - INFO - Waiting
+2025-04-14 18:13:15,626 - INFO - Distance Error is 4.841487374764071
+2025-04-14 18:13:15,626 - INFO - ###################################### Cycle Completed: 8 ####################################################
+2025-04-14 18:13:15,627 - INFO - LN2 Time = {-60.08959979699989} 
+2025-04-14 18:13:15,627 - INFO - Water Bath = -120.16677635399992 
+2025-04-14 18:13:15,627 - INFO - ######################################################################################################################
+2025-04-14 18:13:18,666 - WARNING - Distance Error is 7.765307463326873
+2025-04-14 18:13:18,706 - INFO - Moving inside LN2
+2025-04-14 18:13:20,737 - WARNING - Distance Error is 5.239274758971895
+2025-04-14 18:14:18,739 - INFO - Outside LN2
+2025-04-14 18:14:20,808 - INFO - Distance Error is 4.836320915737481
+2025-04-14 18:14:22,879 - WARNING - Distance Error is 13.331916591398244
+2025-04-14 18:14:22,880 - INFO - Moving Inside Water Bath
+2025-04-14 18:14:24,949 - WARNING - Distance Error is 6.042350536008326
+2025-04-14 18:16:23,048 - INFO - Moving outside Water Bath
+2025-04-14 18:16:25,122 - WARNING - Distance Error is 13.396268137059643
+2025-04-14 18:16:25,122 - INFO - Waiting
+2025-04-14 18:16:32,232 - INFO - Distance Error is 4.85901224530254
+2025-04-14 18:16:32,233 - INFO - ###################################### Cycle Completed: 9 ####################################################
+2025-04-14 18:16:32,233 - INFO - LN2 Time = {-60.032372242000065} 
+2025-04-14 18:16:32,233 - INFO - Water Bath = -120.16794274299991 
+2025-04-14 18:16:32,233 - INFO - ######################################################################################################################
+2025-04-14 18:16:35,274 - WARNING - Distance Error is 7.687002016391049
+2025-04-14 18:16:35,313 - INFO - Moving inside LN2
+2025-04-14 18:16:37,343 - WARNING - Distance Error is 5.8352377843580605
+2025-04-14 18:17:35,402 - INFO - Outside LN2
+2025-04-14 18:17:37,475 - INFO - Distance Error is 4.851803788283264
+2025-04-14 18:17:39,546 - WARNING - Distance Error is 13.331916591398244
+2025-04-14 18:17:39,547 - INFO - Moving Inside Water Bath
+2025-04-14 18:17:41,616 - WARNING - Distance Error is 6.335613624582854
+2025-04-14 18:19:39,652 - INFO - Moving outside Water Bath
+2025-04-14 18:19:41,709 - WARNING - Distance Error is 13.396268137059643
+2025-04-14 18:19:41,709 - INFO - Waiting
+2025-04-14 18:19:48,830 - INFO - Distance Error is 4.821825380496483
+2025-04-14 18:19:48,830 - INFO - ###################################### Cycle Completed: 10 ####################################################
+2025-04-14 18:19:48,830 - INFO - LN2 Time = {-60.0888888720001} 
+2025-04-14 18:19:48,831 - INFO - Water Bath = -120.10464259499986 
+2025-04-14 18:19:48,831 - INFO - ######################################################################################################################
+2025-04-14 18:19:50,901 - INFO - Distance Error is 0.8774964387392072
+2025-04-14 18:19:52,930 - WARNING - Distance Error is 5.822370651203857
+2025-04-14 18:19:53,431 - INFO - Completed and relesed motors
+2025-04-14 18:24:23,887 - WARNING - Distance Error is 7.775602870517506
+2025-04-14 18:24:25,914 - INFO - Distance Error is 2.7586228448267565
+2025-04-14 18:24:28,954 - WARNING - Distance Error is 8.053570636680336
+2025-04-14 18:24:28,994 - INFO - Moving inside LN2
+2025-04-14 18:24:31,024 - WARNING - Distance Error is 6.458327956987019
+2025-04-14 18:25:29,080 - INFO - Outside LN2
+2025-04-14 18:25:31,146 - INFO - Distance Error is 4.733920151417838
+2025-04-14 18:25:33,216 - WARNING - Distance Error is 13.18218494787568
+2025-04-14 18:25:33,216 - INFO - Moving Inside Water Bath
+2025-04-14 18:25:35,277 - WARNING - Distance Error is 6.384355879804937
+2025-04-14 18:27:33,290 - INFO - Moving outside Water Bath
+2025-04-14 18:27:35,359 - WARNING - Distance Error is 13.571293232407854
+2025-04-14 18:27:35,359 - INFO - Waiting
+2025-04-14 18:27:42,480 - WARNING - Distance Error is 5.273518749374078
+2025-04-14 18:27:42,481 - INFO - ###################################### Cycle Completed: 1 ####################################################
+2025-04-14 18:27:42,481 - INFO - LN2 Time = {-60.085583056999894} 
+2025-04-14 18:27:42,481 - INFO - Water Bath = -120.07367244699981 
+2025-04-14 18:27:42,481 - INFO - ######################################################################################################################
+2025-04-14 18:27:45,523 - WARNING - Distance Error is 8.310836299675264
+2025-04-14 18:27:45,560 - INFO - Moving inside LN2
+2025-04-14 18:27:47,592 - WARNING - Distance Error is 6.22334315300065
+2025-04-14 18:28:45,651 - INFO - Outside LN2
+2025-04-14 18:28:47,724 - WARNING - Distance Error is 5.033885179461295
+2025-04-14 18:28:49,785 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 18:28:49,786 - INFO - Moving Inside Water Bath
+2025-04-14 18:28:51,856 - WARNING - Distance Error is 6.3733821476512675
+2025-04-14 18:30:49,894 - INFO - Moving outside Water Bath
+2025-04-14 18:30:51,959 - WARNING - Distance Error is 13.571293232407854
+2025-04-14 18:30:51,959 - INFO - Waiting
+2025-04-14 18:30:59,070 - WARNING - Distance Error is 5.127377497317701
+2025-04-14 18:30:59,070 - INFO - ###################################### Cycle Completed: 2 ####################################################
+2025-04-14 18:30:59,070 - INFO - LN2 Time = {-60.09030861200017} 
+2025-04-14 18:30:59,071 - INFO - Water Bath = -120.10807761299975 
+2025-04-14 18:30:59,071 - INFO - ######################################################################################################################
+2025-04-14 18:31:02,111 - WARNING - Distance Error is 8.240145629781068
+2025-04-14 18:31:02,149 - INFO - Moving inside LN2
+2025-04-14 18:31:04,181 - WARNING - Distance Error is 6.923871749245507
+2025-04-14 18:32:02,239 - INFO - Outside LN2
+2025-04-14 18:32:04,312 - INFO - Distance Error is 4.747630988187675
+2025-04-14 18:32:06,383 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 18:32:06,383 - INFO - Moving Inside Water Bath
+2025-04-14 18:32:08,454 - WARNING - Distance Error is 6.384355879804937
+2025-04-14 18:34:06,552 - INFO - Moving outside Water Bath
+2025-04-14 18:34:08,606 - WARNING - Distance Error is 13.012686117785215
+2025-04-14 18:34:08,606 - INFO - Waiting
+2025-04-14 18:34:15,717 - INFO - Distance Error is 4.969909455915675
+2025-04-14 18:34:15,717 - INFO - ###################################### Cycle Completed: 3 ####################################################
+2025-04-14 18:34:15,718 - INFO - LN2 Time = {-60.09010922300013} 
+2025-04-14 18:34:15,718 - INFO - Water Bath = -120.16856357699999 
+2025-04-14 18:34:15,718 - INFO - ######################################################################################################################
+2025-04-14 18:34:18,757 - WARNING - Distance Error is 8.240145629781068
+2025-04-14 18:34:18,795 - INFO - Moving inside LN2
+2025-04-14 18:34:20,828 - WARNING - Distance Error is 6.140032573203506
+2025-04-14 18:35:18,887 - INFO - Outside LN2
+2025-04-14 18:35:20,959 - WARNING - Distance Error is 5.1117511676528125
+2025-04-14 18:35:23,040 - WARNING - Distance Error is 13.327415353323387
+2025-04-14 18:35:23,040 - INFO - Moving Inside Water Bath
+2025-04-14 18:35:25,110 - WARNING - Distance Error is 6.460650122085251
+2025-04-14 18:37:23,206 - INFO - Moving outside Water Bath
+2025-04-14 18:37:25,272 - WARNING - Distance Error is 13.012686117785215
+2025-04-14 18:37:25,273 - INFO - Waiting
+2025-04-14 18:37:32,383 - WARNING - Distance Error is 5.0862559904118125
+2025-04-14 18:37:32,384 - INFO - ###################################### Cycle Completed: 4 ####################################################
+2025-04-14 18:37:32,384 - INFO - LN2 Time = {-60.09082400099987} 
+2025-04-14 18:37:32,384 - INFO - Water Bath = -120.16549555799975 
+2025-04-14 18:37:32,385 - INFO - ######################################################################################################################
+2025-04-14 18:37:35,425 - WARNING - Distance Error is 8.789197915623474
+2025-04-14 18:37:35,467 - INFO - Moving inside LN2
+2025-04-14 18:37:37,494 - WARNING - Distance Error is 6.568104749469218
+2025-04-14 18:38:35,552 - INFO - Outside LN2
+2025-04-14 18:38:37,615 - WARNING - Distance Error is 5.0099900199501475
+2025-04-14 18:38:39,687 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 18:38:39,687 - INFO - Moving Inside Water Bath
+2025-04-14 18:38:41,766 - WARNING - Distance Error is 6.384355879804937
+2025-04-14 18:40:39,806 - INFO - Moving outside Water Bath
+2025-04-14 18:40:41,889 - WARNING - Distance Error is 12.92826361117378
+2025-04-14 18:40:41,889 - INFO - Waiting
+2025-04-14 18:40:49,000 - INFO - Distance Error is 4.969909455915675
+2025-04-14 18:40:49,000 - INFO - ###################################### Cycle Completed: 5 ####################################################
+2025-04-14 18:40:49,001 - INFO - LN2 Time = {-60.0844415939996} 
+2025-04-14 18:40:49,001 - INFO - Water Bath = -120.11884803900011 
+2025-04-14 18:40:49,001 - INFO - ######################################################################################################################
+2025-04-14 18:40:52,041 - WARNING - Distance Error is 8.73155198117723
+2025-04-14 18:40:52,079 - INFO - Moving inside LN2
+2025-04-14 18:40:54,102 - WARNING - Distance Error is 6.394528911499257
+2025-04-14 18:41:52,160 - INFO - Outside LN2
+2025-04-14 18:41:54,234 - WARNING - Distance Error is 5.186520991955965
+2025-04-14 18:41:56,315 - WARNING - Distance Error is 13.450650541888292
+2025-04-14 18:41:56,315 - INFO - Moving Inside Water Bath
+2025-04-14 18:41:58,386 - WARNING - Distance Error is 6.460650122085251
+2025-04-14 18:43:56,441 - INFO - Moving outside Water Bath
+2025-04-14 18:43:58,508 - WARNING - Distance Error is 12.983836104942178
+2025-04-14 18:43:58,509 - INFO - Waiting
+2025-04-14 18:44:05,620 - INFO - Distance Error is 4.969909455915675
+2025-04-14 18:44:05,621 - INFO - ###################################### Cycle Completed: 6 ####################################################
+2025-04-14 18:44:05,621 - INFO - LN2 Time = {-60.081262500999856} 
+2025-04-14 18:44:05,621 - INFO - Water Bath = -120.12552431799986 
+2025-04-14 18:44:05,621 - INFO - ######################################################################################################################
+2025-04-14 18:44:08,661 - WARNING - Distance Error is 7.765307463326873
+2025-04-14 18:44:08,700 - INFO - Moving inside LN2
+2025-04-14 18:44:10,732 - WARNING - Distance Error is 6.65807780068692
+2025-04-14 18:45:08,788 - INFO - Outside LN2
+2025-04-14 18:45:10,854 - INFO - Distance Error is 4.923413450036481
+2025-04-14 18:45:12,924 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 18:45:12,925 - INFO - Moving Inside Water Bath
+2025-04-14 18:45:14,985 - WARNING - Distance Error is 6.384355879804937
+2025-04-14 18:47:13,000 - INFO - Moving outside Water Bath
+2025-04-14 18:47:15,057 - WARNING - Distance Error is 12.889142717807095
+2025-04-14 18:47:15,057 - INFO - Waiting
+2025-04-14 18:47:22,189 - INFO - Distance Error is 4.934571916590135
+2025-04-14 18:47:22,189 - INFO - ###################################### Cycle Completed: 7 ####################################################
+2025-04-14 18:47:22,189 - INFO - LN2 Time = {-60.0876352790001} 
+2025-04-14 18:47:22,190 - INFO - Water Bath = -120.07537213200021 
+2025-04-14 18:47:22,190 - INFO - ######################################################################################################################
+2025-04-14 18:47:25,229 - WARNING - Distance Error is 8.240145629781068
+2025-04-14 18:47:25,267 - INFO - Moving inside LN2
+2025-04-14 18:47:27,300 - WARNING - Distance Error is 6.646803743153544
+2025-04-14 18:48:25,307 - INFO - Outside LN2
+2025-04-14 18:48:27,371 - WARNING - Distance Error is 5.311308689955792
+2025-04-14 18:48:29,442 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 18:48:29,442 - INFO - Moving Inside Water Bath
+2025-04-14 18:48:31,503 - WARNING - Distance Error is 6.707458535093601
+2025-04-14 18:50:29,552 - INFO - Moving outside Water Bath
+2025-04-14 18:50:31,605 - WARNING - Distance Error is 12.983836104942178
+2025-04-14 18:50:31,605 - INFO - Waiting
+2025-04-14 18:50:38,716 - INFO - Distance Error is 4.969909455915675
+2025-04-14 18:50:38,717 - INFO - ###################################### Cycle Completed: 8 ####################################################
+2025-04-14 18:50:38,717 - INFO - LN2 Time = {-60.039533724000194} 
+2025-04-14 18:50:38,717 - INFO - Water Bath = -120.1091631510003 
+2025-04-14 18:50:38,718 - INFO - ######################################################################################################################
+2025-04-14 18:50:41,756 - WARNING - Distance Error is 8.73155198117723
+2025-04-14 18:50:41,797 - INFO - Moving inside LN2
+2025-04-14 18:50:43,827 - WARNING - Distance Error is 5.714892824891817
+2025-04-14 18:51:41,884 - INFO - Outside LN2
+2025-04-14 18:51:43,948 - WARNING - Distance Error is 7.354590403278747
+2025-04-14 18:51:46,019 - ERROR - Distance Error is 15.089400253157828
+2025-04-14 18:51:46,029 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 18:51:46,270 - ERROR - Distance Error is 15.089400253157828
+2025-04-14 18:51:46,280 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 18:51:46,510 - ERROR - Distance Error is 15.089400253157828
+2025-04-14 18:51:46,520 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 18:51:46,597 - ERROR - Distance Error is 15.089400253157828
+2025-04-14 18:51:46,607 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 18:51:46,637 - ERROR - Distance Error is 15.089400253157828
+2025-04-14 18:51:46,749 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-14 18:51:46,822 - ERROR - Distance Error is 15.089400253157828
+2025-04-14 18:51:46,832 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 18:51:46,862 - ERROR - Distance Error is 15.089400253157828
+2025-04-14 18:51:46,872 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 18:51:46,902 - ERROR - Distance Error is 15.089400253157828
+2025-04-14 18:51:47,012 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-14 18:51:47,088 - ERROR - Distance Error is 15.089400253157828
+2025-04-14 18:51:47,098 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 18:51:47,128 - ERROR - Distance Error is 15.089400253157828
+2025-04-14 18:51:47,237 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-14 18:51:47,313 - ERROR - Distance Error is 15.089400253157828
+2025-04-14 18:51:47,323 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 18:51:47,353 - ERROR - Distance Error is 15.089400253157828
+2025-04-14 18:51:47,461 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-14 18:51:47,538 - ERROR - Distance Error is 15.089400253157828
+2025-04-14 18:51:47,548 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 18:51:47,578 - ERROR - Distance Error is 15.089400253157828
+2025-04-14 18:51:47,686 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-14 18:51:47,763 - ERROR - Distance Error is 15.089400253157828
+2025-04-14 18:51:47,773 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 18:51:47,803 - ERROR - Distance Error is 15.089400253157828
+2025-04-14 18:51:47,911 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-14 18:51:47,988 - ERROR - Distance Error is 15.089400253157828
+2025-04-14 18:51:47,998 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 18:51:48,028 - ERROR - Distance Error is 15.089400253157828
+2025-04-14 18:51:48,136 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-14 18:51:48,213 - ERROR - Distance Error is 15.089400253157828
+2025-04-14 18:51:48,223 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 18:51:48,253 - ERROR - Distance Error is 15.089400253157828
+2025-04-14 18:51:48,362 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-14 18:51:48,438 - ERROR - Distance Error is 15.089400253157828
+2025-04-14 18:51:48,448 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 18:51:48,478 - ERROR - Distance Error is 15.089400253157828
+2025-04-14 18:51:48,586 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-14 18:51:48,663 - ERROR - Distance Error is 15.089400253157828
+2025-04-14 18:51:48,673 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 18:51:48,703 - ERROR - Distance Error is 15.089400253157828
+2025-04-14 18:51:48,814 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-14 18:51:48,847 - ERROR - Distance Error is 15.089400253157828
+2025-04-14 18:51:48,855 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 18:51:48,932 - ERROR - Distance Error is 15.089400253157828
+2025-04-14 18:51:48,942 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 18:51:48,974 - WARNING - Distance Error is 14.929835899968884
+2025-04-14 18:51:48,975 - INFO - Moving Inside Water Bath
+2025-04-14 18:51:51,134 - INFO - Distance Error is 3.1968734726291594
+2025-04-14 18:53:49,198 - INFO - Moving outside Water Bath
+2025-04-14 18:53:51,257 - WARNING - Distance Error is 13.960659010232987
+2025-04-14 18:53:51,257 - INFO - Waiting
+2025-04-14 18:53:58,367 - WARNING - Distance Error is 5.178802950489619
+2025-04-14 18:53:58,367 - INFO - ###################################### Cycle Completed: 9 ####################################################
+2025-04-14 18:53:58,367 - INFO - LN2 Time = {-60.086762556000394} 
+2025-04-14 18:53:58,368 - INFO - Water Bath = -120.22290861299916 
+2025-04-14 18:53:58,368 - INFO - ######################################################################################################################
+2025-04-14 18:54:01,409 - WARNING - Distance Error is 8.462269199216012
+2025-04-14 18:54:01,447 - INFO - Moving inside LN2
+2025-04-14 18:54:03,479 - INFO - Distance Error is 4.960846701924996
+2025-04-14 18:55:01,480 - INFO - Outside LN2
+2025-04-14 18:55:03,550 - WARNING - Distance Error is 7.916438593205918
+2025-04-14 18:55:05,620 - ERROR - Distance Error is 15.298692754611402
+2025-04-14 18:55:05,629 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 18:55:05,869 - ERROR - Distance Error is 15.211180098861481
+2025-04-14 18:55:05,879 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 18:55:05,909 - ERROR - Distance Error is 15.211180098861481
+2025-04-14 18:55:05,919 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 18:55:05,949 - ERROR - Distance Error is 15.211180098861481
+2025-04-14 18:55:05,958 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 18:55:05,990 - ERROR - Distance Error is 15.211180098861481
+2025-04-14 18:55:06,095 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-14 18:55:06,123 - ERROR - Distance Error is 15.211180098861481
+2025-04-14 18:55:06,226 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-14 18:55:06,256 - WARNING - Distance Error is 14.629764181284667
+2025-04-14 18:55:06,257 - INFO - Moving Inside Water Bath
+2025-04-14 18:55:08,328 - INFO - Distance Error is 4.073082370883256
+2025-04-14 18:57:06,372 - INFO - Moving outside Water Bath
+2025-04-14 18:57:08,439 - WARNING - Distance Error is 13.117926665445253
+2025-04-14 18:57:08,439 - INFO - Waiting
+2025-04-14 18:57:15,549 - INFO - Distance Error is 4.796873982084593
+2025-04-14 18:57:15,550 - INFO - ###################################### Cycle Completed: 10 ####################################################
+2025-04-14 18:57:15,550 - INFO - LN2 Time = {-60.03297244500027} 
+2025-04-14 18:57:15,550 - INFO - Water Bath = -120.11489663199973 
+2025-04-14 18:57:15,551 - INFO - ######################################################################################################################
+2025-04-14 18:57:18,590 - WARNING - Distance Error is 8.493526947034416
+2025-04-14 18:57:18,630 - INFO - Moving inside LN2
+2025-04-14 18:57:20,661 - WARNING - Distance Error is 7.08801805866775
+2025-04-14 18:58:18,710 - INFO - Outside LN2
+2025-04-14 18:58:20,782 - INFO - Distance Error is 4.752893855326458
+2025-04-14 18:58:22,853 - WARNING - Distance Error is 13.155227098001767
+2025-04-14 18:58:22,853 - INFO - Moving Inside Water Bath
+2025-04-14 18:58:24,924 - WARNING - Distance Error is 6.707458535093601
+2025-04-14 19:00:23,024 - INFO - Moving outside Water Bath
+2025-04-14 19:00:25,096 - WARNING - Distance Error is 12.901550294441366
+2025-04-14 19:00:25,097 - INFO - Waiting
+2025-04-14 19:00:32,209 - INFO - Distance Error is 4.969909455915675
+2025-04-14 19:00:32,209 - INFO - ###################################### Cycle Completed: 11 ####################################################
+2025-04-14 19:00:32,209 - INFO - LN2 Time = {-60.0796590380005} 
+2025-04-14 19:00:32,210 - INFO - Water Bath = -120.17058329799966 
+2025-04-14 19:00:32,210 - INFO - ######################################################################################################################
+2025-04-14 19:00:35,250 - WARNING - Distance Error is 8.605811989580047
+2025-04-14 19:00:35,288 - INFO - Moving inside LN2
+2025-04-14 19:00:37,321 - WARNING - Distance Error is 7.123201527403254
+2025-04-14 19:01:35,379 - INFO - Outside LN2
+2025-04-14 19:01:37,452 - INFO - Distance Error is 4.839421453025137
+2025-04-14 19:01:39,513 - WARNING - Distance Error is 13.057181931795226
+2025-04-14 19:01:39,514 - INFO - Moving Inside Water Bath
+2025-04-14 19:01:41,583 - WARNING - Distance Error is 6.384355879804937
+2025-04-14 19:03:39,628 - INFO - Moving outside Water Bath
+2025-04-14 19:03:41,685 - WARNING - Distance Error is 12.983836104942178
+2025-04-14 19:03:41,685 - INFO - Waiting
+2025-04-14 19:03:48,797 - INFO - Distance Error is 4.969909455915675
+2025-04-14 19:03:48,797 - INFO - ###################################### Cycle Completed: 12 ####################################################
+2025-04-14 19:03:48,798 - INFO - LN2 Time = {-60.09083016800014} 
+2025-04-14 19:03:48,798 - INFO - Water Bath = -120.11410366899963 
+2025-04-14 19:03:48,798 - INFO - ######################################################################################################################
+2025-04-14 19:03:51,837 - WARNING - Distance Error is 7.751128950030445
+2025-04-14 19:03:51,875 - INFO - Moving inside LN2
+2025-04-14 19:03:53,908 - WARNING - Distance Error is 7.058328414008522
+2025-04-14 19:04:51,967 - INFO - Outside LN2
+2025-04-14 19:04:54,039 - INFO - Distance Error is 4.830113870293321
+2025-04-14 19:04:56,110 - WARNING - Distance Error is 13.155227098001767
+2025-04-14 19:04:56,110 - INFO - Moving Inside Water Bath
+2025-04-14 19:04:58,181 - WARNING - Distance Error is 6.707458535093601
+2025-04-14 19:06:56,271 - INFO - Moving outside Water Bath
+2025-04-14 19:06:58,343 - WARNING - Distance Error is 12.92826361117378
+2025-04-14 19:06:58,343 - INFO - Waiting
+2025-04-14 19:07:05,454 - INFO - Distance Error is 4.969909455915675
+2025-04-14 19:07:05,455 - INFO - ###################################### Cycle Completed: 13 ####################################################
+2025-04-14 19:07:05,455 - INFO - LN2 Time = {-60.09087972399993} 
+2025-04-14 19:07:05,455 - INFO - Water Bath = -120.160554262 
+2025-04-14 19:07:05,456 - INFO - ######################################################################################################################
+2025-04-14 19:07:08,495 - WARNING - Distance Error is 9.041017641836547
+2025-04-14 19:07:08,535 - INFO - Moving inside LN2
+2025-04-14 19:07:10,565 - WARNING - Distance Error is 7.123201527403254
+2025-04-14 19:08:08,587 - INFO - Outside LN2
+2025-04-14 19:08:10,657 - INFO - Distance Error is 4.830113870293321
+2025-04-14 19:08:12,728 - WARNING - Distance Error is 13.057181931795226
+2025-04-14 19:08:12,729 - INFO - Moving Inside Water Bath
+2025-04-14 19:08:14,789 - WARNING - Distance Error is 6.707458535093601
+2025-04-14 19:10:12,872 - INFO - Moving outside Water Bath
+2025-04-14 19:10:14,930 - WARNING - Distance Error is 12.958780806850617
+2025-04-14 19:10:14,930 - INFO - Waiting
+2025-04-14 19:10:22,041 - INFO - Distance Error is 4.969909455915675
+2025-04-14 19:10:22,042 - INFO - ###################################### Cycle Completed: 14 ####################################################
+2025-04-14 19:10:22,042 - INFO - LN2 Time = {-60.05191800100056} 
+2025-04-14 19:10:22,042 - INFO - Water Bath = -120.14305915000023 
+2025-04-14 19:10:22,043 - INFO - ######################################################################################################################
+2025-04-14 19:10:25,082 - WARNING - Distance Error is 9.041017641836547
+2025-04-14 19:10:25,119 - INFO - Moving inside LN2
+2025-04-14 19:10:27,153 - WARNING - Distance Error is 7.058328414008522
+2025-04-14 19:11:25,211 - INFO - Outside LN2
+2025-04-14 19:11:27,284 - INFO - Distance Error is 4.839421453025137
+2025-04-14 19:11:29,346 - WARNING - Distance Error is 13.057181931795226
+2025-04-14 19:11:29,346 - INFO - Moving Inside Water Bath
+2025-04-14 19:11:31,416 - WARNING - Distance Error is 6.707458535093601
+2025-04-14 19:13:29,490 - INFO - Moving outside Water Bath
+2025-04-14 19:13:31,559 - WARNING - Distance Error is 13.509256086106275
+2025-04-14 19:13:31,560 - INFO - Waiting
+2025-04-14 19:13:38,671 - WARNING - Distance Error is 5.289612462175285
+2025-04-14 19:13:38,671 - INFO - ###################################### Cycle Completed: 15 ####################################################
+2025-04-14 19:13:38,672 - INFO - LN2 Time = {-60.091680982999605} 
+2025-04-14 19:13:38,672 - INFO - Water Bath = -120.14367350200064 
+2025-04-14 19:13:38,672 - INFO - ######################################################################################################################
+2025-04-14 19:13:41,720 - WARNING - Distance Error is 9.041017641836547
+2025-04-14 19:13:41,758 - INFO - Moving inside LN2
+2025-04-14 19:13:43,781 - WARNING - Distance Error is 5.68858506133116
+2025-04-14 19:14:41,840 - INFO - Outside LN2
+2025-04-14 19:14:43,912 - WARNING - Distance Error is 5.156549233741482
+2025-04-14 19:14:46,003 - WARNING - Distance Error is 13.327415353323387
+2025-04-14 19:14:46,003 - INFO - Moving Inside Water Bath
+2025-04-14 19:14:48,073 - WARNING - Distance Error is 6.783067152844644
+2025-04-14 19:16:46,088 - INFO - Moving outside Water Bath
+2025-04-14 19:16:48,155 - WARNING - Distance Error is 13.419761547807017
+2025-04-14 19:16:48,156 - INFO - Waiting
+2025-04-14 19:16:55,266 - WARNING - Distance Error is 5.25832673005397
+2025-04-14 19:16:55,267 - INFO - ###################################### Cycle Completed: 16 ####################################################
+2025-04-14 19:16:55,267 - INFO - LN2 Time = {-60.08091972300008} 
+2025-04-14 19:16:55,267 - INFO - Water Bath = -120.08444724400033 
+2025-04-14 19:16:55,268 - INFO - ######################################################################################################################
+2025-04-14 19:16:58,307 - WARNING - Distance Error is 9.041017641836547
+2025-04-14 19:16:58,343 - INFO - Moving inside LN2
+2025-04-14 19:17:00,367 - WARNING - Distance Error is 6.868769904429762
+2025-04-14 19:17:58,372 - INFO - Outside LN2
+2025-04-14 19:18:00,437 - INFO - Distance Error is 4.923413450036481
+2025-04-14 19:18:02,507 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 19:18:02,508 - INFO - Moving Inside Water Bath
+2025-04-14 19:18:04,569 - WARNING - Distance Error is 6.384355879804937
+2025-04-14 19:20:02,664 - INFO - Moving outside Water Bath
+2025-04-14 19:20:04,730 - WARNING - Distance Error is 12.851459061133868
+2025-04-14 19:20:04,730 - INFO - Waiting
+2025-04-14 19:20:11,842 - INFO - Distance Error is 4.969909455915675
+2025-04-14 19:20:11,842 - INFO - ###################################### Cycle Completed: 17 ####################################################
+2025-04-14 19:20:11,843 - INFO - LN2 Time = {-60.02886457600016} 
+2025-04-14 19:20:11,843 - INFO - Water Bath = -120.15630324299946 
+2025-04-14 19:20:11,843 - INFO - ######################################################################################################################
+2025-04-14 19:20:14,882 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 19:20:14,920 - INFO - Moving inside LN2
+2025-04-14 19:20:16,953 - WARNING - Distance Error is 6.685057965343305
+2025-04-14 19:21:15,011 - INFO - Outside LN2
+2025-04-14 19:21:17,083 - WARNING - Distance Error is 5.408326913195986
+2025-04-14 19:21:19,145 - WARNING - Distance Error is 13.479243302203567
+2025-04-14 19:21:19,146 - INFO - Moving Inside Water Bath
+2025-04-14 19:21:21,216 - WARNING - Distance Error is 6.783067152844644
+2025-04-14 19:23:19,316 - INFO - Moving outside Water Bath
+2025-04-14 19:23:21,388 - WARNING - Distance Error is 12.973048986263773
+2025-04-14 19:23:21,389 - INFO - Waiting
+2025-04-14 19:23:28,499 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 19:23:28,500 - INFO - ###################################### Cycle Completed: 18 ####################################################
+2025-04-14 19:23:28,500 - INFO - LN2 Time = {-60.09124898299979} 
+2025-04-14 19:23:28,500 - INFO - Water Bath = -120.17028711300009 
+2025-04-14 19:23:28,500 - INFO - ######################################################################################################################
+2025-04-14 19:23:31,539 - WARNING - Distance Error is 9.041017641836547
+2025-04-14 19:23:31,578 - INFO - Moving inside LN2
+2025-04-14 19:23:33,601 - WARNING - Distance Error is 6.60681466366358
+2025-04-14 19:24:31,614 - INFO - Outside LN2
+2025-04-14 19:24:33,681 - WARNING - Distance Error is 5.040833264451436
+2025-04-14 19:24:35,752 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 19:24:35,753 - INFO - Moving Inside Water Bath
+2025-04-14 19:24:37,822 - WARNING - Distance Error is 6.707458535093601
+2025-04-14 19:26:35,923 - INFO - Moving outside Water Bath
+2025-04-14 19:26:37,993 - WARNING - Distance Error is 13.423486879346939
+2025-04-14 19:26:37,993 - INFO - Waiting
+2025-04-14 19:26:45,104 - WARNING - Distance Error is 5.460769176590416
+2025-04-14 19:26:45,105 - INFO - ###################################### Cycle Completed: 19 ####################################################
+2025-04-14 19:26:45,105 - INFO - LN2 Time = {-60.035136094000336} 
+2025-04-14 19:26:45,105 - INFO - Water Bath = -120.16958677999992 
+2025-04-14 19:26:45,106 - INFO - ######################################################################################################################
+2025-04-14 19:26:48,145 - WARNING - Distance Error is 9.041017641836547
+2025-04-14 19:26:48,181 - INFO - Moving inside LN2
+2025-04-14 19:26:50,206 - WARNING - Distance Error is 6.685057965343305
+2025-04-14 19:27:48,264 - INFO - Outside LN2
+2025-04-14 19:27:50,337 - INFO - Distance Error is 4.944694126030459
+2025-04-14 19:27:52,398 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 19:27:52,398 - INFO - Moving Inside Water Bath
+2025-04-14 19:27:54,468 - WARNING - Distance Error is 6.707458535093601
+2025-04-14 19:29:52,496 - INFO - Moving outside Water Bath
+2025-04-14 19:29:54,561 - WARNING - Distance Error is 13.028430450365054
+2025-04-14 19:29:54,562 - INFO - Waiting
+2025-04-14 19:30:01,673 - INFO - Distance Error is 4.969909455915675
+2025-04-14 19:30:01,673 - INFO - ###################################### Cycle Completed: 20 ####################################################
+2025-04-14 19:30:01,674 - INFO - LN2 Time = {-60.082336648999444} 
+2025-04-14 19:30:01,674 - INFO - Water Bath = -120.09730550200038 
+2025-04-14 19:30:01,674 - INFO - ######################################################################################################################
+2025-04-14 19:30:04,713 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 19:30:04,751 - INFO - Moving inside LN2
+2025-04-14 19:30:06,784 - WARNING - Distance Error is 6.0671245248470145
+2025-04-14 19:31:04,840 - INFO - Outside LN2
+2025-04-14 19:31:06,895 - INFO - Distance Error is 4.965883607174065
+2025-04-14 19:31:08,966 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 19:31:08,967 - INFO - Moving Inside Water Bath
+2025-04-14 19:31:11,037 - WARNING - Distance Error is 6.384355879804937
+2025-04-14 19:33:09,133 - INFO - Moving outside Water Bath
+2025-04-14 19:33:11,198 - WARNING - Distance Error is 13.012686117785215
+2025-04-14 19:33:11,199 - INFO - Waiting
+2025-04-14 19:33:18,310 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 19:33:18,311 - INFO - ###################################### Cycle Completed: 21 ####################################################
+2025-04-14 19:33:18,311 - INFO - LN2 Time = {-60.08906926100008} 
+2025-04-14 19:33:18,311 - INFO - Water Bath = -120.16638615099964 
+2025-04-14 19:33:18,311 - INFO - ######################################################################################################################
+2025-04-14 19:33:21,350 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 19:33:21,386 - INFO - Moving inside LN2
+2025-04-14 19:33:23,411 - WARNING - Distance Error is 6.646803743153544
+2025-04-14 19:34:21,414 - INFO - Outside LN2
+2025-04-14 19:34:23,482 - WARNING - Distance Error is 5.000999900020007
+2025-04-14 19:34:25,553 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 19:34:25,554 - INFO - Moving Inside Water Bath
+2025-04-14 19:34:27,623 - WARNING - Distance Error is 6.880406964707819
+2025-04-14 19:36:25,720 - INFO - Moving outside Water Bath
+2025-04-14 19:36:27,786 - WARNING - Distance Error is 13.012686117785215
+2025-04-14 19:36:27,787 - INFO - Waiting
+2025-04-14 19:36:34,907 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 19:36:34,907 - INFO - ###################################### Cycle Completed: 22 ####################################################
+2025-04-14 19:36:34,908 - INFO - LN2 Time = {-60.02807685300013} 
+2025-04-14 19:36:34,908 - INFO - Water Bath = -120.16624939199937 
+2025-04-14 19:36:34,908 - INFO - ######################################################################################################################
+2025-04-14 19:36:37,947 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 19:36:37,987 - INFO - Moving inside LN2
+2025-04-14 19:36:40,018 - WARNING - Distance Error is 6.568104749469218
+2025-04-14 19:37:38,024 - INFO - Outside LN2
+2025-04-14 19:37:40,089 - INFO - Distance Error is 4.944694126030459
+2025-04-14 19:37:42,160 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 19:37:42,160 - INFO - Moving Inside Water Bath
+2025-04-14 19:37:44,229 - WARNING - Distance Error is 7.340980860893172
+2025-04-14 19:39:42,329 - INFO - Moving outside Water Bath
+2025-04-14 19:39:44,401 - WARNING - Distance Error is 12.879829191413982
+2025-04-14 19:39:44,402 - INFO - Waiting
+2025-04-14 19:39:51,512 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 19:39:51,513 - INFO - ###################################### Cycle Completed: 23 ####################################################
+2025-04-14 19:39:51,513 - INFO - LN2 Time = {-60.036429001000215} 
+2025-04-14 19:39:51,513 - INFO - Water Bath = -120.16891831700013 
+2025-04-14 19:39:51,513 - INFO - ######################################################################################################################
+2025-04-14 19:39:54,552 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 19:39:54,594 - INFO - Moving inside LN2
+2025-04-14 19:39:56,624 - WARNING - Distance Error is 6.940461079784262
+2025-04-14 19:40:54,624 - INFO - Outside LN2
+2025-04-14 19:40:56,694 - WARNING - Distance Error is 5.088221693283433
+2025-04-14 19:40:58,765 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 19:40:58,766 - INFO - Moving Inside Water Bath
+2025-04-14 19:41:00,835 - WARNING - Distance Error is 6.880406964707819
+2025-04-14 19:42:58,936 - INFO - Moving outside Water Bath
+2025-04-14 19:43:01,008 - WARNING - Distance Error is 12.879829191413982
+2025-04-14 19:43:01,008 - INFO - Waiting
+2025-04-14 19:43:08,109 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 19:43:08,109 - INFO - ###################################### Cycle Completed: 24 ####################################################
+2025-04-14 19:43:08,110 - INFO - LN2 Time = {-60.02934100099992} 
+2025-04-14 19:43:08,110 - INFO - Water Bath = -120.16985722499976 
+2025-04-14 19:43:08,110 - INFO - ######################################################################################################################
+2025-04-14 19:43:11,151 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 19:43:11,188 - INFO - Moving inside LN2
+2025-04-14 19:43:13,221 - WARNING - Distance Error is 6.22334315300065
+2025-04-14 19:44:11,273 - INFO - Outside LN2
+2025-04-14 19:44:13,342 - WARNING - Distance Error is 5.033885179461295
+2025-04-14 19:44:15,414 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 19:44:15,414 - INFO - Moving Inside Water Bath
+2025-04-14 19:44:17,484 - WARNING - Distance Error is 6.880406964707819
+2025-04-14 19:46:15,560 - INFO - Moving outside Water Bath
+2025-04-14 19:46:17,626 - WARNING - Distance Error is 12.796874618437103
+2025-04-14 19:46:17,627 - INFO - Waiting
+2025-04-14 19:46:24,737 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 19:46:24,738 - INFO - ###################################### Cycle Completed: 25 ####################################################
+2025-04-14 19:46:24,738 - INFO - LN2 Time = {-60.08450018700023} 
+2025-04-14 19:46:24,738 - INFO - Water Bath = -120.14581424300013 
+2025-04-14 19:46:24,739 - INFO - ######################################################################################################################
+2025-04-14 19:46:27,778 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 19:46:27,818 - INFO - Moving inside LN2
+2025-04-14 19:46:29,849 - WARNING - Distance Error is 6.977105417004972
+2025-04-14 19:47:27,872 - INFO - Outside LN2
+2025-04-14 19:47:29,941 - INFO - Distance Error is 4.923413450036481
+2025-04-14 19:47:32,012 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 19:47:32,012 - INFO - Moving Inside Water Bath
+2025-04-14 19:47:34,073 - WARNING - Distance Error is 7.340980860893172
+2025-04-14 19:49:32,132 - INFO - Moving outside Water Bath
+2025-04-14 19:49:34,205 - WARNING - Distance Error is 12.760485884166
+2025-04-14 19:49:34,205 - INFO - Waiting
+2025-04-14 19:49:41,316 - WARNING - Distance Error is 5.030904491242102
+2025-04-14 19:49:41,317 - INFO - ###################################### Cycle Completed: 26 ####################################################
+2025-04-14 19:49:41,317 - INFO - LN2 Time = {-60.054105908000565} 
+2025-04-14 19:49:41,317 - INFO - Water Bath = -120.11942326200005 
+2025-04-14 19:49:41,317 - INFO - ######################################################################################################################
+2025-04-14 19:49:44,357 - WARNING - Distance Error is 9.041017641836547
+2025-04-14 19:49:44,398 - INFO - Moving inside LN2
+2025-04-14 19:49:46,428 - WARNING - Distance Error is 7.02210794562431
+2025-04-14 19:50:44,443 - INFO - Outside LN2
+2025-04-14 19:50:46,499 - WARNING - Distance Error is 5.088221693283433
+2025-04-14 19:50:48,570 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 19:50:48,570 - INFO - Moving Inside Water Bath
+2025-04-14 19:50:50,639 - WARNING - Distance Error is 6.880406964707819
+2025-04-14 19:52:48,739 - INFO - Moving outside Water Bath
+2025-04-14 19:52:50,811 - WARNING - Distance Error is 12.917430084966563
+2025-04-14 19:52:50,812 - INFO - Waiting
+2025-04-14 19:52:57,922 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 19:52:57,923 - INFO - ###################################### Cycle Completed: 27 ####################################################
+2025-04-14 19:52:57,923 - INFO - LN2 Time = {-60.04517418600062} 
+2025-04-14 19:52:57,923 - INFO - Water Bath = -120.16857250300018 
+2025-04-14 19:52:57,924 - INFO - ######################################################################################################################
+2025-04-14 19:53:00,964 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 19:53:01,003 - INFO - Moving inside LN2
+2025-04-14 19:53:03,025 - WARNING - Distance Error is 7.02210794562431
+2025-04-14 19:54:01,084 - INFO - Outside LN2
+2025-04-14 19:54:03,157 - WARNING - Distance Error is 5.669215113223357
+2025-04-14 19:54:05,228 - WARNING - Distance Error is 13.600367642089672
+2025-04-14 19:54:05,229 - INFO - Moving Inside Water Bath
+2025-04-14 19:54:07,298 - WARNING - Distance Error is 7.3171032519706785
+2025-04-14 19:56:05,323 - INFO - Moving outside Water Bath
+2025-04-14 19:56:07,390 - WARNING - Distance Error is 12.879829191413982
+2025-04-14 19:56:07,391 - INFO - Waiting
+2025-04-14 19:56:14,502 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 19:56:14,502 - INFO - ###################################### Cycle Completed: 28 ####################################################
+2025-04-14 19:56:14,502 - INFO - LN2 Time = {-60.08043570500013} 
+2025-04-14 19:56:14,503 - INFO - Water Bath = -120.09385142800056 
+2025-04-14 19:56:14,503 - INFO - ######################################################################################################################
+2025-04-14 19:56:17,543 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 19:56:17,581 - INFO - Moving inside LN2
+2025-04-14 19:56:19,614 - WARNING - Distance Error is 6.940461079784262
+2025-04-14 19:57:17,616 - INFO - Outside LN2
+2025-04-14 19:57:19,684 - WARNING - Distance Error is 5.088221693283433
+2025-04-14 19:57:21,745 - WARNING - Distance Error is 13.18218494787568
+2025-04-14 19:57:21,746 - INFO - Moving Inside Water Bath
+2025-04-14 19:57:23,815 - WARNING - Distance Error is 6.880406964707819
+2025-04-14 19:59:21,916 - INFO - Moving outside Water Bath
+2025-04-14 19:59:23,988 - WARNING - Distance Error is 12.879829191413982
+2025-04-14 19:59:23,988 - INFO - Waiting
+2025-04-14 19:59:31,088 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 19:59:31,089 - INFO - ###################################### Cycle Completed: 29 ####################################################
+2025-04-14 19:59:31,089 - INFO - LN2 Time = {-60.03399301900026} 
+2025-04-14 19:59:31,089 - INFO - Water Bath = -120.16976744699969 
+2025-04-14 19:59:31,089 - INFO - ######################################################################################################################
+2025-04-14 19:59:34,129 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 19:59:34,166 - INFO - Moving inside LN2
+2025-04-14 19:59:36,189 - WARNING - Distance Error is 6.977105417004972
+2025-04-14 20:00:34,199 - INFO - Outside LN2
+2025-04-14 20:00:36,271 - WARNING - Distance Error is 5.063595560468878
+2025-04-14 20:00:38,342 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 20:00:38,343 - INFO - Moving Inside Water Bath
+2025-04-14 20:00:40,412 - WARNING - Distance Error is 7.340980860893172
+2025-04-14 20:02:38,505 - INFO - Moving outside Water Bath
+2025-04-14 20:02:40,575 - WARNING - Distance Error is 12.676750372236558
+2025-04-14 20:02:40,575 - INFO - Waiting
+2025-04-14 20:02:47,684 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 20:02:47,685 - INFO - ###################################### Cycle Completed: 30 ####################################################
+2025-04-14 20:02:47,685 - INFO - LN2 Time = {-60.031594001000485} 
+2025-04-14 20:02:47,685 - INFO - Water Bath = -120.1616487249994 
+2025-04-14 20:02:47,686 - INFO - ######################################################################################################################
+2025-04-14 20:02:49,745 - INFO - Distance Error is 1.2688577540449444
+2025-04-14 20:02:51,775 - WARNING - Distance Error is 6.090976933136421
+2025-04-14 20:02:52,276 - INFO - Completed and relesed motors
+2025-04-14 20:07:28,999 - WARNING - Distance Error is 8.234682750416082
+2025-04-14 20:07:31,028 - INFO - Distance Error is 1.9209372712298387
+2025-04-14 20:07:34,068 - WARNING - Distance Error is 9.262828941527527
+2025-04-14 20:07:34,107 - INFO - Moving inside LN2
+2025-04-14 20:07:36,139 - WARNING - Distance Error is 6.797793759742929
+2025-04-14 20:08:34,142 - INFO - Outside LN2
+2025-04-14 20:08:36,210 - WARNING - Distance Error is 5.644466316668026
+2025-04-14 20:08:38,280 - WARNING - Distance Error is 13.628646301082126
+2025-04-14 20:08:38,281 - INFO - Moving Inside Water Bath
+2025-04-14 20:08:40,350 - WARNING - Distance Error is 7.271863585079125
+2025-04-14 20:10:38,448 - INFO - Moving outside Water Bath
+2025-04-14 20:10:40,513 - WARNING - Distance Error is 12.810152223919877
+2025-04-14 20:10:40,514 - INFO - Waiting
+2025-04-14 20:10:47,625 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 20:10:47,625 - INFO - ###################################### Cycle Completed: 1 ####################################################
+2025-04-14 20:10:47,626 - INFO - LN2 Time = {-60.03464450200045} 
+2025-04-14 20:10:47,626 - INFO - Water Bath = -120.16707568700076 
+2025-04-14 20:10:47,626 - INFO - ######################################################################################################################
+2025-04-14 20:10:50,664 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 20:10:50,704 - INFO - Moving inside LN2
+2025-04-14 20:10:52,735 - WARNING - Distance Error is 6.5795136598384
+2025-04-14 20:11:50,760 - INFO - Outside LN2
+2025-04-14 20:11:52,826 - WARNING - Distance Error is 5.088221693283433
+2025-04-14 20:11:54,897 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 20:11:54,897 - INFO - Moving Inside Water Bath
+2025-04-14 20:11:56,957 - WARNING - Distance Error is 6.413267497929599
+2025-04-14 20:13:55,056 - INFO - Moving outside Water Bath
+2025-04-14 20:13:57,110 - WARNING - Distance Error is 12.810152223919877
+2025-04-14 20:13:57,110 - INFO - Waiting
+2025-04-14 20:14:04,221 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 20:14:04,221 - INFO - ###################################### Cycle Completed: 2 ####################################################
+2025-04-14 20:14:04,221 - INFO - LN2 Time = {-60.055406278999726} 
+2025-04-14 20:14:04,222 - INFO - Water Bath = -120.15851198400014 
+2025-04-14 20:14:04,222 - INFO - ######################################################################################################################
+2025-04-14 20:14:07,261 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 20:14:07,303 - INFO - Moving inside LN2
+2025-04-14 20:14:09,342 - WARNING - Distance Error is 6.923871749245515
+2025-04-14 20:15:07,396 - INFO - Outside LN2
+2025-04-14 20:15:09,473 - WARNING - Distance Error is 5.088221693283433
+2025-04-14 20:15:11,543 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 20:15:11,544 - INFO - Moving Inside Water Bath
+2025-04-14 20:15:13,604 - WARNING - Distance Error is 6.880406964707819
+2025-04-14 20:17:11,651 - INFO - Moving outside Water Bath
+2025-04-14 20:17:13,706 - WARNING - Distance Error is 12.879829191413982
+2025-04-14 20:17:13,706 - INFO - Waiting
+2025-04-14 20:17:20,817 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 20:17:20,817 - INFO - ###################################### Cycle Completed: 3 ####################################################
+2025-04-14 20:17:20,818 - INFO - LN2 Time = {-60.092516446000445} 
+2025-04-14 20:17:20,818 - INFO - Water Bath = -120.10734177999984 
+2025-04-14 20:17:20,818 - INFO - ######################################################################################################################
+2025-04-14 20:17:23,857 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 20:17:23,898 - INFO - Moving inside LN2
+2025-04-14 20:17:25,928 - WARNING - Distance Error is 6.568104749469218
+2025-04-14 20:18:23,976 - INFO - Outside LN2
+2025-04-14 20:18:26,039 - WARNING - Distance Error is 5.0099900199501475
+2025-04-14 20:18:28,110 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 20:18:28,110 - INFO - Moving Inside Water Bath
+2025-04-14 20:18:30,171 - WARNING - Distance Error is 6.707458535093601
+2025-04-14 20:20:28,219 - INFO - Moving outside Water Bath
+2025-04-14 20:20:30,283 - WARNING - Distance Error is 12.937155792522548
+2025-04-14 20:20:30,284 - INFO - Waiting
+2025-04-14 20:20:37,395 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 20:20:37,396 - INFO - ###################################### Cycle Completed: 4 ####################################################
+2025-04-14 20:20:37,396 - INFO - LN2 Time = {-60.07735725999919} 
+2025-04-14 20:20:37,396 - INFO - Water Bath = -120.10870724300003 
+2025-04-14 20:20:37,397 - INFO - ######################################################################################################################
+2025-04-14 20:20:40,436 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 20:20:40,474 - INFO - Moving inside LN2
+2025-04-14 20:20:42,496 - WARNING - Distance Error is 6.940461079784262
+2025-04-14 20:21:40,555 - INFO - Outside LN2
+2025-04-14 20:21:42,637 - WARNING - Distance Error is 5.040833264451436
+2025-04-14 20:21:44,718 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 20:21:44,719 - INFO - Moving Inside Water Bath
+2025-04-14 20:21:46,810 - WARNING - Distance Error is 6.3733821476512675
+2025-04-14 20:23:44,882 - INFO - Moving outside Water Bath
+2025-04-14 20:23:46,952 - WARNING - Distance Error is 13.012686117785215
+2025-04-14 20:23:46,952 - INFO - Waiting
+2025-04-14 20:23:54,064 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 20:23:54,064 - INFO - ###################################### Cycle Completed: 5 ####################################################
+2025-04-14 20:23:54,065 - INFO - LN2 Time = {-60.08064053900125} 
+2025-04-14 20:23:54,065 - INFO - Water Bath = -120.16256950199931 
+2025-04-14 20:23:54,065 - INFO - ######################################################################################################################
+2025-04-14 20:23:57,104 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 20:23:57,144 - INFO - Moving inside LN2
+2025-04-14 20:23:59,175 - WARNING - Distance Error is 6.923871749245515
+2025-04-14 20:24:57,203 - INFO - Outside LN2
+2025-04-14 20:24:59,266 - WARNING - Distance Error is 5.34883164812653
+2025-04-14 20:25:01,337 - WARNING - Distance Error is 13.18218494787568
+2025-04-14 20:25:01,337 - INFO - Moving Inside Water Bath
+2025-04-14 20:25:03,397 - WARNING - Distance Error is 6.707458535093601
+2025-04-14 20:27:01,467 - INFO - Moving outside Water Bath
+2025-04-14 20:27:03,539 - WARNING - Distance Error is 12.879829191413982
+2025-04-14 20:27:03,540 - INFO - Waiting
+2025-04-14 20:27:10,640 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 20:27:10,641 - INFO - ###################################### Cycle Completed: 6 ####################################################
+2025-04-14 20:27:10,641 - INFO - LN2 Time = {-60.05842894600028} 
+2025-04-14 20:27:10,641 - INFO - Water Bath = -120.12932989099863 
+2025-04-14 20:27:10,642 - INFO - ######################################################################################################################
+2025-04-14 20:27:13,681 - WARNING - Distance Error is 9.041017641836547
+2025-04-14 20:27:13,719 - INFO - Moving inside LN2
+2025-04-14 20:27:15,751 - WARNING - Distance Error is 6.568104749469218
+2025-04-14 20:28:13,810 - INFO - Outside LN2
+2025-04-14 20:28:15,882 - WARNING - Distance Error is 5.063595560468878
+2025-04-14 20:28:17,943 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 20:28:17,944 - INFO - Moving Inside Water Bath
+2025-04-14 20:28:20,013 - WARNING - Distance Error is 6.707458535093601
+2025-04-14 20:30:18,114 - INFO - Moving outside Water Bath
+2025-04-14 20:30:20,186 - WARNING - Distance Error is 12.937155792522548
+2025-04-14 20:30:20,186 - INFO - Waiting
+2025-04-14 20:30:27,277 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 20:30:27,277 - INFO - ###################################### Cycle Completed: 7 ####################################################
+2025-04-14 20:30:27,277 - INFO - LN2 Time = {-60.09002418599994} 
+2025-04-14 20:30:27,277 - INFO - Water Bath = -120.16963802099963 
+2025-04-14 20:30:27,278 - INFO - ######################################################################################################################
+2025-04-14 20:30:30,317 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 20:30:30,355 - INFO - Moving inside LN2
+2025-04-14 20:30:32,378 - WARNING - Distance Error is 7.026378868236478
+2025-04-14 20:31:30,436 - INFO - Outside LN2
+2025-04-14 20:31:32,509 - INFO - Distance Error is 4.923413450036481
+2025-04-14 20:31:34,570 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 20:31:34,570 - INFO - Moving Inside Water Bath
+2025-04-14 20:31:36,640 - WARNING - Distance Error is 7.349829930005174
+2025-04-14 20:33:34,710 - INFO - Moving outside Water Bath
+2025-04-14 20:33:36,782 - WARNING - Distance Error is 12.908911650483931
+2025-04-14 20:33:36,782 - INFO - Waiting
+2025-04-14 20:33:43,893 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 20:33:43,894 - INFO - ###################################### Cycle Completed: 8 ####################################################
+2025-04-14 20:33:43,894 - INFO - LN2 Time = {-60.0808035379996} 
+2025-04-14 20:33:43,894 - INFO - Water Bath = -120.13932726199891 
+2025-04-14 20:33:43,894 - INFO - ######################################################################################################################
+2025-04-14 20:33:46,933 - WARNING - Distance Error is 9.041017641836547
+2025-04-14 20:33:46,970 - INFO - Moving inside LN2
+2025-04-14 20:33:48,993 - WARNING - Distance Error is 6.5795136598384
+2025-04-14 20:34:47,048 - INFO - Outside LN2
+2025-04-14 20:34:49,114 - INFO - Distance Error is 4.9839743177508575
+2025-04-14 20:34:51,185 - WARNING - Distance Error is 13.18218494787568
+2025-04-14 20:34:51,185 - INFO - Moving Inside Water Bath
+2025-04-14 20:34:53,245 - WARNING - Distance Error is 7.349829930005174
+2025-04-14 20:36:51,316 - INFO - Moving outside Water Bath
+2025-04-14 20:36:53,398 - WARNING - Distance Error is 12.966109670984574
+2025-04-14 20:36:53,398 - INFO - Waiting
+2025-04-14 20:37:00,529 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 20:37:00,529 - INFO - ###################################### Cycle Completed: 9 ####################################################
+2025-04-14 20:37:00,529 - INFO - LN2 Time = {-60.077397002} 
+2025-04-14 20:37:00,529 - INFO - Water Bath = -120.13059196500035 
+2025-04-14 20:37:00,530 - INFO - ######################################################################################################################
+2025-04-14 20:37:03,569 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 20:37:03,618 - INFO - Moving inside LN2
+2025-04-14 20:37:05,650 - WARNING - Distance Error is 6.940461079784262
+2025-04-14 20:38:03,660 - INFO - Outside LN2
+2025-04-14 20:38:05,730 - INFO - Distance Error is 4.9839743177508575
+2025-04-14 20:38:07,801 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 20:38:07,802 - INFO - Moving Inside Water Bath
+2025-04-14 20:38:09,871 - WARNING - Distance Error is 6.880406964707819
+2025-04-14 20:40:07,939 - INFO - Moving outside Water Bath
+2025-04-14 20:40:10,003 - WARNING - Distance Error is 12.937155792522548
+2025-04-14 20:40:10,003 - INFO - Waiting
+2025-04-14 20:40:17,104 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 20:40:17,105 - INFO - ###################################### Cycle Completed: 10 ####################################################
+2025-04-14 20:40:17,105 - INFO - LN2 Time = {-60.04134633399917} 
+2025-04-14 20:40:17,105 - INFO - Water Bath = -120.13649924299898 
+2025-04-14 20:40:17,106 - INFO - ######################################################################################################################
+2025-04-14 20:40:20,144 - WARNING - Distance Error is 9.041017641836547
+2025-04-14 20:40:20,186 - INFO - Moving inside LN2
+2025-04-14 20:40:22,215 - WARNING - Distance Error is 6.940461079784262
+2025-04-14 20:41:20,216 - INFO - Outside LN2
+2025-04-14 20:41:22,286 - WARNING - Distance Error is 5.391660226683424
+2025-04-14 20:41:24,347 - WARNING - Distance Error is 13.18218494787568
+2025-04-14 20:41:24,347 - INFO - Moving Inside Water Bath
+2025-04-14 20:41:26,417 - WARNING - Distance Error is 6.707458535093601
+2025-04-14 20:43:24,517 - INFO - Moving outside Water Bath
+2025-04-14 20:43:26,589 - WARNING - Distance Error is 12.888366847665356
+2025-04-14 20:43:26,590 - INFO - Waiting
+2025-04-14 20:43:33,702 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 20:43:33,702 - INFO - ###################################### Cycle Completed: 11 ####################################################
+2025-04-14 20:43:33,702 - INFO - LN2 Time = {-60.02922107499944} 
+2025-04-14 20:43:33,703 - INFO - Water Bath = -120.16977527999916 
+2025-04-14 20:43:33,703 - INFO - ######################################################################################################################
+2025-04-14 20:43:36,742 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 20:43:36,784 - INFO - Moving inside LN2
+2025-04-14 20:43:38,813 - WARNING - Distance Error is 7.02210794562431
+2025-04-14 20:44:36,820 - INFO - Outside LN2
+2025-04-14 20:44:38,883 - WARNING - Distance Error is 5.34883164812653
+2025-04-14 20:44:40,945 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 20:44:40,945 - INFO - Moving Inside Water Bath
+2025-04-14 20:44:43,015 - WARNING - Distance Error is 6.880406964707819
+2025-04-14 20:46:41,065 - INFO - Moving outside Water Bath
+2025-04-14 20:46:43,136 - WARNING - Distance Error is 12.937155792522548
+2025-04-14 20:46:43,137 - INFO - Waiting
+2025-04-14 20:46:50,248 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 20:46:50,249 - INFO - ###################################### Cycle Completed: 12 ####################################################
+2025-04-14 20:46:50,250 - INFO - LN2 Time = {-60.03531170499991} 
+2025-04-14 20:46:50,250 - INFO - Water Bath = -120.11967222500061 
+2025-04-14 20:46:50,250 - INFO - ######################################################################################################################
+2025-04-14 20:46:53,288 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 20:46:53,330 - INFO - Moving inside LN2
+2025-04-14 20:46:55,359 - WARNING - Distance Error is 7.02210794562431
+2025-04-14 20:47:53,372 - INFO - Outside LN2
+2025-04-14 20:47:55,440 - INFO - Distance Error is 4.913247398615289
+2025-04-14 20:47:57,501 - WARNING - Distance Error is 13.057181931795226
+2025-04-14 20:47:57,502 - INFO - Moving Inside Water Bath
+2025-04-14 20:47:59,573 - WARNING - Distance Error is 6.880406964707819
+2025-04-14 20:49:57,674 - INFO - Moving outside Water Bath
+2025-04-14 20:49:59,734 - WARNING - Distance Error is 12.937155792522548
+2025-04-14 20:49:59,734 - INFO - Waiting
+2025-04-14 20:50:06,844 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 20:50:06,845 - INFO - ###################################### Cycle Completed: 13 ####################################################
+2025-04-14 20:50:06,845 - INFO - LN2 Time = {-60.04192485400017} 
+2025-04-14 20:50:06,845 - INFO - Water Bath = -120.17176661399935 
+2025-04-14 20:50:06,846 - INFO - ######################################################################################################################
+2025-04-14 20:50:09,887 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 20:50:09,924 - INFO - Moving inside LN2
+2025-04-14 20:50:11,955 - WARNING - Distance Error is 7.02210794562431
+2025-04-14 20:51:10,014 - INFO - Outside LN2
+2025-04-14 20:51:12,086 - WARNING - Distance Error is 5.0019996001599125
+2025-04-14 20:51:14,158 - WARNING - Distance Error is 13.057181931795226
+2025-04-14 20:51:14,158 - INFO - Moving Inside Water Bath
+2025-04-14 20:51:16,227 - WARNING - Distance Error is 6.880406964707819
+2025-04-14 20:53:14,236 - INFO - Moving outside Water Bath
+2025-04-14 20:53:16,300 - WARNING - Distance Error is 12.816785868539727
+2025-04-14 20:53:16,300 - INFO - Waiting
+2025-04-14 20:53:23,411 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 20:53:23,411 - INFO - ###################################### Cycle Completed: 14 ####################################################
+2025-04-14 20:53:23,412 - INFO - LN2 Time = {-60.08946405699862} 
+2025-04-14 20:53:23,412 - INFO - Water Bath = -120.07779679799933 
+2025-04-14 20:53:23,412 - INFO - ######################################################################################################################
+2025-04-14 20:53:26,453 - WARNING - Distance Error is 9.041017641836547
+2025-04-14 20:53:26,494 - INFO - Moving inside LN2
+2025-04-14 20:53:28,523 - WARNING - Distance Error is 6.1457302251237875
+2025-04-14 20:54:26,581 - INFO - Outside LN2
+2025-04-14 20:54:28,655 - INFO - Distance Error is 4.944694126030459
+2025-04-14 20:54:30,726 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 20:54:30,726 - INFO - Moving Inside Water Bath
+2025-04-14 20:54:32,796 - WARNING - Distance Error is 6.707458535093601
+2025-04-14 20:56:30,808 - INFO - Moving outside Water Bath
+2025-04-14 20:56:32,878 - WARNING - Distance Error is 12.937155792522548
+2025-04-14 20:56:32,879 - INFO - Waiting
+2025-04-14 20:56:39,989 - WARNING - Distance Error is 5.164300533470138
+2025-04-14 20:56:39,990 - INFO - ###################################### Cycle Completed: 15 ####################################################
+2025-04-14 20:56:39,990 - INFO - LN2 Time = {-60.087114427000415} 
+2025-04-14 20:56:39,990 - INFO - Water Bath = -120.0816069650009 
+2025-04-14 20:56:39,990 - INFO - ######################################################################################################################
+2025-04-14 20:56:43,030 - WARNING - Distance Error is 9.041017641836547
+2025-04-14 20:56:43,067 - INFO - Moving inside LN2
+2025-04-14 20:56:45,099 - WARNING - Distance Error is 6.940461079784262
+2025-04-14 20:57:43,148 - INFO - Outside LN2
+2025-04-14 20:57:45,220 - WARNING - Distance Error is 5.412023651093916
+2025-04-14 20:57:47,291 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 20:57:47,292 - INFO - Moving Inside Water Bath
+2025-04-14 20:57:49,360 - WARNING - Distance Error is 6.661080993352357
+2025-04-14 20:59:47,460 - INFO - Moving outside Water Bath
+2025-04-14 20:59:49,543 - WARNING - Distance Error is 13.448419981544287
+2025-04-14 20:59:49,544 - INFO - Waiting
+2025-04-14 20:59:56,653 - WARNING - Distance Error is 5.375872022286248
+2025-04-14 20:59:56,653 - INFO - ###################################### Cycle Completed: 16 ####################################################
+2025-04-14 20:59:56,653 - INFO - LN2 Time = {-60.08050989000003} 
+2025-04-14 20:59:56,654 - INFO - Water Bath = -120.16819702000066 
+2025-04-14 20:59:56,654 - INFO - ######################################################################################################################
+2025-04-14 20:59:59,695 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 20:59:59,734 - INFO - Moving inside LN2
+2025-04-14 21:00:01,765 - WARNING - Distance Error is 6.22334315300065
+2025-04-14 21:00:59,823 - INFO - Outside LN2
+2025-04-14 21:01:01,897 - INFO - Distance Error is 4.973932046178366
+2025-04-14 21:01:03,968 - WARNING - Distance Error is 13.18218494787568
+2025-04-14 21:01:03,968 - INFO - Moving Inside Water Bath
+2025-04-14 21:01:06,029 - WARNING - Distance Error is 6.707458535093601
+2025-04-14 21:03:04,052 - INFO - Moving outside Water Bath
+2025-04-14 21:03:06,121 - WARNING - Distance Error is 12.879829191413982
+2025-04-14 21:03:06,122 - INFO - Waiting
+2025-04-14 21:03:13,233 - INFO - Distance Error is 4.969909455915675
+2025-04-14 21:03:13,234 - INFO - ###################################### Cycle Completed: 17 ####################################################
+2025-04-14 21:03:13,234 - INFO - LN2 Time = {-60.08921779800039} 
+2025-04-14 21:03:13,234 - INFO - Water Bath = -120.08334139200088 
+2025-04-14 21:03:13,234 - INFO - ######################################################################################################################
+2025-04-14 21:03:16,274 - WARNING - Distance Error is 9.041017641836547
+2025-04-14 21:03:16,312 - INFO - Moving inside LN2
+2025-04-14 21:03:18,344 - WARNING - Distance Error is 6.646803743153544
+2025-04-14 21:04:16,358 - INFO - Outside LN2
+2025-04-14 21:04:18,417 - WARNING - Distance Error is 5.353503525729662
+2025-04-14 21:04:20,486 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 21:04:20,486 - INFO - Moving Inside Water Bath
+2025-04-14 21:04:22,557 - WARNING - Distance Error is 6.707458535093601
+2025-04-14 21:06:20,612 - INFO - Moving outside Water Bath
+2025-04-14 21:06:22,679 - WARNING - Distance Error is 12.937155792522548
+2025-04-14 21:06:22,679 - INFO - Waiting
+2025-04-14 21:06:29,791 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 21:06:29,791 - INFO - ###################################### Cycle Completed: 18 ####################################################
+2025-04-14 21:06:29,791 - INFO - LN2 Time = {-60.0448847610005} 
+2025-04-14 21:06:29,792 - INFO - Water Bath = -120.12499820599987 
+2025-04-14 21:06:29,792 - INFO - ######################################################################################################################
+2025-04-14 21:06:32,831 - WARNING - Distance Error is 9.041017641836547
+2025-04-14 21:06:32,869 - INFO - Moving inside LN2
+2025-04-14 21:06:34,892 - WARNING - Distance Error is 5.348831648126521
+2025-04-14 21:07:32,951 - INFO - Outside LN2
+2025-04-14 21:07:35,034 - WARNING - Distance Error is 5.224940191045242
+2025-04-14 21:07:37,104 - WARNING - Distance Error is 13.327415353323387
+2025-04-14 21:07:37,105 - INFO - Moving Inside Water Bath
+2025-04-14 21:07:39,166 - WARNING - Distance Error is 6.783067152844644
+2025-04-14 21:09:37,216 - INFO - Moving outside Water Bath
+2025-04-14 21:09:39,297 - WARNING - Distance Error is 12.879829191413982
+2025-04-14 21:09:39,298 - INFO - Waiting
+2025-04-14 21:09:46,408 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 21:09:46,409 - INFO - ###################################### Cycle Completed: 19 ####################################################
+2025-04-14 21:09:46,409 - INFO - LN2 Time = {-60.0806874639984} 
+2025-04-14 21:09:46,409 - INFO - Water Bath = -120.11049431700121 
+2025-04-14 21:09:46,409 - INFO - ######################################################################################################################
+2025-04-14 21:09:49,448 - WARNING - Distance Error is 9.041017641836547
+2025-04-14 21:09:49,484 - INFO - Moving inside LN2
+2025-04-14 21:09:51,509 - WARNING - Distance Error is 6.940461079784262
+2025-04-14 21:10:49,564 - INFO - Outside LN2
+2025-04-14 21:10:51,621 - WARNING - Distance Error is 5.412023651093916
+2025-04-14 21:10:53,681 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 21:10:53,682 - INFO - Moving Inside Water Bath
+2025-04-14 21:10:55,751 - WARNING - Distance Error is 6.707458535093601
+2025-04-14 21:12:53,832 - INFO - Moving outside Water Bath
+2025-04-14 21:12:55,894 - WARNING - Distance Error is 12.937155792522548
+2025-04-14 21:12:55,894 - INFO - Waiting
+2025-04-14 21:13:03,005 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 21:13:03,005 - INFO - ###################################### Cycle Completed: 20 ####################################################
+2025-04-14 21:13:03,005 - INFO - LN2 Time = {-60.07947590800177} 
+2025-04-14 21:13:03,006 - INFO - Water Bath = -120.15025437300028 
+2025-04-14 21:13:03,006 - INFO - ######################################################################################################################
+2025-04-14 21:13:06,045 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 21:13:06,085 - INFO - Moving inside LN2
+2025-04-14 21:13:08,116 - WARNING - Distance Error is 7.026378868236478
+2025-04-14 21:14:06,172 - INFO - Outside LN2
+2025-04-14 21:14:08,236 - INFO - Distance Error is 4.923413450036481
+2025-04-14 21:14:10,297 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 21:14:10,298 - INFO - Moving Inside Water Bath
+2025-04-14 21:14:12,359 - WARNING - Distance Error is 6.707458535093601
+2025-04-14 21:16:10,447 - INFO - Moving outside Water Bath
+2025-04-14 21:16:12,510 - WARNING - Distance Error is 12.966109670984574
+2025-04-14 21:16:12,511 - INFO - Waiting
+2025-04-14 21:16:19,611 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 21:16:19,612 - INFO - ###################################### Cycle Completed: 21 ####################################################
+2025-04-14 21:16:19,612 - INFO - LN2 Time = {-60.08652383499975} 
+2025-04-14 21:16:19,612 - INFO - Water Bath = -120.14881339100066 
+2025-04-14 21:16:19,613 - INFO - ######################################################################################################################
+2025-04-14 21:16:22,652 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 21:16:22,688 - INFO - Moving inside LN2
+2025-04-14 21:16:24,713 - WARNING - Distance Error is 6.568104749469218
+2025-04-14 21:17:22,728 - INFO - Outside LN2
+2025-04-14 21:17:24,793 - WARNING - Distance Error is 5.353503525729662
+2025-04-14 21:17:26,867 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 21:17:26,872 - INFO - Moving Inside Water Bath
+2025-04-14 21:17:28,994 - WARNING - Distance Error is 6.753517601961214
+2025-04-14 21:19:27,085 - INFO - Moving outside Water Bath
+2025-04-14 21:19:29,157 - WARNING - Distance Error is 12.966109670984574
+2025-04-14 21:19:29,157 - INFO - Waiting
+2025-04-14 21:19:36,258 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 21:19:36,258 - INFO - ###################################### Cycle Completed: 22 ####################################################
+2025-04-14 21:19:36,259 - INFO - LN2 Time = {-60.03947935299948} 
+2025-04-14 21:19:36,259 - INFO - Water Bath = -120.21171342800153 
+2025-04-14 21:19:36,259 - INFO - ######################################################################################################################
+2025-04-14 21:19:39,298 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 21:19:39,335 - INFO - Moving inside LN2
+2025-04-14 21:19:41,359 - WARNING - Distance Error is 6.940461079784262
+2025-04-14 21:20:39,368 - INFO - Outside LN2
+2025-04-14 21:20:41,439 - WARNING - Distance Error is 5.391660226683424
+2025-04-14 21:20:43,500 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 21:20:43,501 - INFO - Moving Inside Water Bath
+2025-04-14 21:20:45,571 - WARNING - Distance Error is 6.707458535093601
+2025-04-14 21:22:43,668 - INFO - Moving outside Water Bath
+2025-04-14 21:22:45,723 - WARNING - Distance Error is 12.966109670984574
+2025-04-14 21:22:45,723 - INFO - Waiting
+2025-04-14 21:22:52,834 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 21:22:52,835 - INFO - ###################################### Cycle Completed: 23 ####################################################
+2025-04-14 21:22:52,835 - INFO - LN2 Time = {-60.03313255699868} 
+2025-04-14 21:22:52,835 - INFO - Water Bath = -120.1672407799997 
+2025-04-14 21:22:52,836 - INFO - ######################################################################################################################
+2025-04-14 21:22:55,876 - WARNING - Distance Error is 9.041017641836547
+2025-04-14 21:22:55,915 - INFO - Moving inside LN2
+2025-04-14 21:22:57,937 - WARNING - Distance Error is 6.60681466366358
+2025-04-14 21:23:55,995 - INFO - Outside LN2
+2025-04-14 21:23:58,067 - WARNING - Distance Error is 5.323532661682458
+2025-04-14 21:24:00,198 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 21:24:00,199 - INFO - Moving Inside Water Bath
+2025-04-14 21:24:02,277 - WARNING - Distance Error is 6.460650122085251
+2025-04-14 21:26:00,340 - INFO - Moving outside Water Bath
+2025-04-14 21:26:02,410 - WARNING - Distance Error is 12.816785868539727
+2025-04-14 21:26:02,410 - INFO - Waiting
+2025-04-14 21:26:09,521 - INFO - Distance Error is 4.969909455915675
+2025-04-14 21:26:09,521 - INFO - ###################################### Cycle Completed: 24 ####################################################
+2025-04-14 21:26:09,521 - INFO - LN2 Time = {-60.08001814900126} 
+2025-04-14 21:26:09,522 - INFO - Water Bath = -120.14148463200036 
+2025-04-14 21:26:09,522 - INFO - ######################################################################################################################
+2025-04-14 21:26:12,561 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 21:26:12,599 - INFO - Moving inside LN2
+2025-04-14 21:26:14,632 - WARNING - Distance Error is 6.394528911499257
+2025-04-14 21:27:12,648 - INFO - Outside LN2
+2025-04-14 21:27:14,712 - WARNING - Distance Error is 5.592852581643832
+2025-04-14 21:27:16,783 - WARNING - Distance Error is 13.327415353323387
+2025-04-14 21:27:16,784 - INFO - Moving Inside Water Bath
+2025-04-14 21:27:18,845 - WARNING - Distance Error is 6.783067152844644
+2025-04-14 21:29:16,896 - INFO - Moving outside Water Bath
+2025-04-14 21:29:18,967 - WARNING - Distance Error is 12.937155792522548
+2025-04-14 21:29:18,967 - INFO - Waiting
+2025-04-14 21:29:26,078 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 21:29:26,079 - INFO - ###################################### Cycle Completed: 25 ####################################################
+2025-04-14 21:29:26,079 - INFO - LN2 Time = {-60.04822207500001} 
+2025-04-14 21:29:26,080 - INFO - Water Bath = -120.11173107700051 
+2025-04-14 21:29:26,080 - INFO - ######################################################################################################################
+2025-04-14 21:29:29,119 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 21:29:29,157 - INFO - Moving inside LN2
+2025-04-14 21:29:31,189 - WARNING - Distance Error is 6.104096984812748
+2025-04-14 21:30:29,200 - INFO - Outside LN2
+2025-04-14 21:30:31,270 - WARNING - Distance Error is 5.300943312279421
+2025-04-14 21:30:33,341 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 21:30:33,342 - INFO - Moving Inside Water Bath
+2025-04-14 21:30:35,411 - WARNING - Distance Error is 6.758698099486316
+2025-04-14 21:32:33,437 - INFO - Moving outside Water Bath
+2025-04-14 21:32:35,494 - WARNING - Distance Error is 12.760485884166
+2025-04-14 21:32:35,494 - INFO - Waiting
+2025-04-14 21:32:42,605 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 21:32:42,605 - INFO - ###################################### Cycle Completed: 26 ####################################################
+2025-04-14 21:32:42,606 - INFO - LN2 Time = {-60.042301761001} 
+2025-04-14 21:32:42,606 - INFO - Water Bath = -120.09529027999997 
+2025-04-14 21:32:42,606 - INFO - ######################################################################################################################
+2025-04-14 21:32:45,645 - WARNING - Distance Error is 9.041017641836547
+2025-04-14 21:32:45,686 - INFO - Moving inside LN2
+2025-04-14 21:32:47,716 - WARNING - Distance Error is 6.646803743153544
+2025-04-14 21:33:45,760 - INFO - Outside LN2
+2025-04-14 21:33:47,826 - WARNING - Distance Error is 5.323532661682458
+2025-04-14 21:33:49,898 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 21:33:49,898 - INFO - Moving Inside Water Bath
+2025-04-14 21:33:51,957 - WARNING - Distance Error is 6.707458535093601
+2025-04-14 21:35:49,967 - INFO - Moving outside Water Bath
+2025-04-14 21:35:52,059 - WARNING - Distance Error is 12.816785868539727
+2025-04-14 21:35:52,060 - INFO - Waiting
+2025-04-14 21:35:59,210 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 21:35:59,211 - INFO - ###################################### Cycle Completed: 27 ####################################################
+2025-04-14 21:35:59,211 - INFO - LN2 Time = {-60.07315726100023} 
+2025-04-14 21:35:59,212 - INFO - Water Bath = -120.06805087300017 
+2025-04-14 21:35:59,212 - INFO - ######################################################################################################################
+2025-04-14 21:36:02,251 - WARNING - Distance Error is 9.041017641836547
+2025-04-14 21:36:02,292 - INFO - Moving inside LN2
+2025-04-14 21:36:04,321 - WARNING - Distance Error is 6.940461079784262
+2025-04-14 21:37:02,380 - INFO - Outside LN2
+2025-04-14 21:37:04,462 - WARNING - Distance Error is 5.412023651093916
+2025-04-14 21:37:06,533 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 21:37:06,533 - INFO - Moving Inside Water Bath
+2025-04-14 21:37:08,593 - WARNING - Distance Error is 6.783067152844644
+2025-04-14 21:39:06,600 - INFO - Moving outside Water Bath
+2025-04-14 21:39:08,665 - WARNING - Distance Error is 13.420506696842706
+2025-04-14 21:39:08,666 - INFO - Waiting
+2025-04-14 21:39:15,817 - WARNING - Distance Error is 5.375872022286248
+2025-04-14 21:39:15,817 - INFO - ###################################### Cycle Completed: 28 ####################################################
+2025-04-14 21:39:15,817 - INFO - LN2 Time = {-60.08674931600035} 
+2025-04-14 21:39:15,818 - INFO - Water Bath = -120.0665394839998 
+2025-04-14 21:39:15,818 - INFO - ######################################################################################################################
+2025-04-14 21:39:18,858 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 21:39:18,896 - INFO - Moving inside LN2
+2025-04-14 21:39:20,928 - WARNING - Distance Error is 6.759437846448466
+2025-04-14 21:40:18,936 - INFO - Outside LN2
+2025-04-14 21:40:21,019 - WARNING - Distance Error is 5.10881590977791
+2025-04-14 21:40:23,081 - WARNING - Distance Error is 13.327415353323387
+2025-04-14 21:40:23,081 - INFO - Moving Inside Water Bath
+2025-04-14 21:40:25,150 - WARNING - Distance Error is 6.783067152844644
+2025-04-14 21:42:23,248 - INFO - Moving outside Water Bath
+2025-04-14 21:42:25,312 - WARNING - Distance Error is 12.917430084966563
+2025-04-14 21:42:25,313 - INFO - Waiting
+2025-04-14 21:42:32,422 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 21:42:32,423 - INFO - ###################################### Cycle Completed: 29 ####################################################
+2025-04-14 21:42:32,423 - INFO - LN2 Time = {-60.039770315999704} 
+2025-04-14 21:42:32,423 - INFO - Water Bath = -120.16693572500117 
+2025-04-14 21:42:32,423 - INFO - ######################################################################################################################
+2025-04-14 21:42:35,463 - WARNING - Distance Error is 9.061456836513633
+2025-04-14 21:42:35,503 - INFO - Moving inside LN2
+2025-04-14 21:42:37,533 - WARNING - Distance Error is 6.940461079784262
+2025-04-14 21:43:35,588 - INFO - Outside LN2
+2025-04-14 21:43:37,654 - WARNING - Distance Error is 5.063595560468878
+2025-04-14 21:43:39,725 - WARNING - Distance Error is 13.176873680809088
+2025-04-14 21:43:39,725 - INFO - Moving Inside Water Bath
+2025-04-14 21:43:41,795 - WARNING - Distance Error is 7.004284403134992
+2025-04-14 21:45:39,826 - INFO - Moving outside Water Bath
+2025-04-14 21:45:41,898 - WARNING - Distance Error is 12.834718539960246
+2025-04-14 21:45:41,898 - INFO - Waiting
+2025-04-14 21:45:49,008 - WARNING - Distance Error is 5.128352561983229
+2025-04-14 21:45:49,008 - INFO - ###################################### Cycle Completed: 30 ####################################################
+2025-04-14 21:45:49,009 - INFO - LN2 Time = {-60.084637371999634} 
+2025-04-14 21:45:49,009 - INFO - Water Bath = -120.10073111400015 
+2025-04-14 21:45:49,009 - INFO - ######################################################################################################################
+2025-04-14 21:45:51,069 - INFO - Distance Error is 1.0344080432788616
+2025-04-14 21:45:53,099 - WARNING - Distance Error is 6.016643582596552
+2025-04-14 21:45:53,601 - INFO - Completed and relesed motors
+2025-04-14 22:13:26,419 - WARNING - Distance Error is 7.349149610669253
+2025-04-14 22:13:28,449 - INFO - Distance Error is 2.874021572639964
+2025-04-14 22:13:31,489 - WARNING - Distance Error is 7.398648525237562
+2025-04-14 22:13:31,533 - INFO - Moving inside LN2
+2025-04-14 22:13:33,569 - WARNING - Distance Error is 6.060528029800693
+2025-04-14 22:13:36,572 - INFO - Outside LN2
+2025-04-14 22:13:38,662 - INFO - Distance Error is 4.372642221815079
+2025-04-14 22:13:40,744 - WARNING - Distance Error is 13.334166640626623
+2025-04-14 22:13:40,747 - INFO - Moving Inside Water Bath
+2025-04-14 22:13:42,883 - WARNING - Distance Error is 5.543464620614089
+2025-04-14 22:13:45,885 - INFO - Moving outside Water Bath
+2025-04-14 22:13:47,955 - WARNING - Distance Error is 13.404849868610986
+2025-04-14 22:13:47,956 - INFO - Waiting
+2025-04-14 22:13:52,108 - INFO - Distance Error is 4.742362280551746
+2025-04-14 22:13:52,110 - INFO - ###################################### Cycle Completed: 1 ####################################################
+2025-04-14 22:13:52,111 - INFO - LN2 Time = {-5.039216256000145} 
+2025-04-14 22:13:52,113 - INFO - Water Bath = -5.13628694199906 
+2025-04-14 22:13:52,114 - INFO - ######################################################################################################################
+2025-04-14 22:13:54,246 - INFO - Distance Error is 1.0198039027185513
+2025-04-14 22:13:56,276 - WARNING - Distance Error is 5.583905443325484
+2025-04-14 22:13:56,777 - INFO - Completed and relesed motors
+2025-04-14 22:26:27,963 - WARNING - Distance Error is 7.593418202627869
+2025-04-14 22:26:29,987 - INFO - Distance Error is 2.167948338867878
+2025-04-14 22:26:33,027 - WARNING - Distance Error is 7.126008700527932
+2025-04-14 22:26:33,072 - INFO - Moving inside LN2
+2025-04-14 22:26:35,097 - WARNING - Distance Error is 5.797413216254289
+2025-04-14 22:26:38,101 - INFO - Outside LN2
+2025-04-14 22:26:40,168 - INFO - Distance Error is 4.369210454990705
+2025-04-14 22:26:42,238 - WARNING - Distance Error is 13.215899515356488
+2025-04-14 22:26:42,238 - INFO - Moving Inside Water Bath
+2025-04-14 22:26:44,309 - WARNING - Distance Error is 5.662155066756837
+2025-04-14 22:26:47,312 - INFO - Moving outside Water Bath
+2025-04-14 22:26:49,379 - WARNING - Distance Error is 13.333416666406254
+2025-04-14 22:26:49,380 - INFO - Waiting
+2025-04-14 22:26:53,491 - INFO - Distance Error is 4.3977266854592
+2025-04-14 22:26:53,492 - INFO - ###################################### Cycle Completed: 1 ####################################################
+2025-04-14 22:26:53,493 - INFO - LN2 Time = {-5.027788719002274} 
+2025-04-14 22:26:53,493 - INFO - Water Bath = -5.073808756002109 
+2025-04-14 22:26:53,493 - INFO - ######################################################################################################################
+2025-04-14 22:26:55,561 - INFO - Distance Error is 1.1445523142259606
+2025-04-14 22:26:57,591 - WARNING - Distance Error is 5.247856705360772
+2025-04-14 22:26:58,093 - INFO - Completed and relesed motors
