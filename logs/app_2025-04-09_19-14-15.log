@@ -1,0 +1,55 @@
+2025-04-09 19:14:15,619 - INFO - Starting Experiment
+2025-04-09 19:14:15,619 - INFO - Experiment Parameters
+2025-04-09 19:14:15,620 - INFO - Experiment Name: Error_Testing
+2025-04-09 19:14:15,620 - INFO - Person Responsible: Akshit
+2025-04-09 19:14:15,620 - INFO - Thermomixer Time: 5
+2025-04-09 19:14:15,620 - INFO - Liquid Nitrogen Time: 5
+2025-04-09 19:14:15,620 - INFO - Waiting Time 5
+2025-04-09 19:14:15,621 - INFO - Number of Cycles 5
+2025-04-09 19:14:15,621 - INFO - Robot Speed 100
+2025-04-09 19:14:15,621 - INFO - Run Number 1
+2025-04-09 19:14:18,661 - WARNING - Distance Error is 10.691117808723282
+2025-04-09 19:14:18,661 - INFO - Moving inside LN2
+2025-04-09 19:14:20,689 - WARNING - Distance Error is 7.097887009526157
+2025-04-09 19:14:23,692 - INFO - Outside LN2
+2025-04-09 19:14:25,715 - INFO - Distance Error is 4.382921400162207
+2025-04-09 19:14:27,741 - WARNING - Distance Error is 13.251792331605563
+2025-04-09 19:14:27,741 - INFO - Moving Inside Water Bath
+2025-04-09 19:14:29,767 - WARNING - Distance Error is 6.445153217728822
+2025-04-09 19:14:32,770 - INFO - Moving outside Water Bath
+2025-04-09 19:14:34,793 - WARNING - Distance Error is 13.238579984273212
+2025-04-09 19:14:34,793 - INFO - Waiting
+2025-04-09 19:14:41,819 - WARNING - Distance Error is 5.363767332761554
+2025-04-09 19:14:41,819 - INFO - ###################################### Cycle Completed: 1 ####################################################
+2025-04-09 19:14:41,820 - INFO - LN2 Time = {-5.030504108000002} 
+2025-04-09 19:14:41,820 - INFO - Water Bath = -5.028902459999983 
+2025-04-09 19:14:41,820 - INFO - ######################################################################################################################
+2025-04-09 19:14:44,857 - WARNING - Distance Error is 10.536128321162376
+2025-04-09 19:14:44,857 - INFO - Moving inside LN2
+2025-04-09 19:14:46,882 - WARNING - Distance Error is 6.98212002188447
+2025-04-09 19:14:49,885 - INFO - Outside LN2
+2025-04-09 19:14:51,908 - INFO - Distance Error is 4.315089802078282
+2025-04-09 19:14:53,934 - WARNING - Distance Error is 13.21892582625381
+2025-04-09 19:14:53,934 - INFO - Moving Inside Water Bath
+2025-04-09 19:14:55,960 - WARNING - Distance Error is 6.445153217728822
+2025-04-09 19:14:58,964 - INFO - Moving outside Water Bath
+2025-04-09 19:15:00,986 - WARNING - Distance Error is 13.285706605220495
+2025-04-09 19:15:00,987 - INFO - Waiting
+2025-04-09 19:15:08,022 - INFO - Distance Error is 4.628174586162452
+2025-04-09 19:15:08,023 - INFO - ###################################### Cycle Completed: 2 ####################################################
+2025-04-09 19:15:08,023 - INFO - LN2 Time = {-5.028164218999962} 
+2025-04-09 19:15:08,023 - INFO - Water Bath = -5.028852182000037 
+2025-04-09 19:15:08,023 - INFO - ######################################################################################################################
+2025-04-09 19:15:11,059 - WARNING - Distance Error is 10.536128321162376
+2025-04-09 19:15:11,060 - INFO - Moving inside LN2
+2025-04-09 19:15:13,085 - WARNING - Distance Error is 7.102816342831903
+2025-04-09 19:15:16,089 - INFO - Outside LN2
+2025-04-09 19:15:18,111 - INFO - Distance Error is 4.430575583375147
+2025-04-09 19:15:20,137 - WARNING - Distance Error is 13.251792331605563
+2025-04-09 19:15:20,138 - INFO - Moving Inside Water Bath
+2025-04-09 19:15:22,163 - WARNING - Distance Error is 6.4583279569870236
+2025-04-09 19:15:25,167 - INFO - Moving outside Water Bath
+2025-04-09 19:15:27,189 - WARNING - Distance Error is 13.018832512940616
+2025-04-09 19:15:27,190 - INFO - Waiting
+2025-04-09 19:15:28,558 - ERROR - Experiment manually stooped with Keyboard Interrupt (crtl + c)
+2025-04-09 19:15:33,564 - INFO - Programmed execution completed
