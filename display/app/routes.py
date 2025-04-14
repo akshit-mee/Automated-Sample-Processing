@@ -136,16 +136,20 @@ def start():
             #     cycle_number=0
             # )
             # db.session.add(cur_active)
-            # db.session.commit()
+            db.session.commit()
  
 
             
             current_experiment_id = settings.experiment_id
             current_robot_log_id = log.id
             robot_control['running'] = True
-            experiment_start_robot_log_id = current_experiment_id
+            experiment_start_robot_log_id = log.id
+            print("#####################################################################")
+            print(experiment_start_robot_log_id)
             flash('Experiment started successfully!', 'success')
         
+        print("#####################################################################")
+        print(experiment_start_robot_log_id)
         return redirect(url_for('home'))
 
 
