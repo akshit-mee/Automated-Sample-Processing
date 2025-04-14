@@ -9,6 +9,9 @@ import logger
 setting_flag = 0
 log = logger.setup_logger()
 
+class StopCycleException(Exception):
+    pass
+
 robot_actions = ['Innitial Setting Updated',
                  'Wainting', 
                  'Place Sample in Thermomixer', 
@@ -22,13 +25,14 @@ robot_actions = ['Innitial Setting Updated',
                  'Restarted by User']
 
 mc = MyCobot("/dev/ttyAMA0", 1000000)
-
-# p1 = [113.2, -65.3, -28.56, 4.04, -2.81, 57.39]
-# p2 = [113.2, -27.07, -28.47, -28.3, 1.31, 68.99]
-# p3 = [161.71, -30.32, -28.56, -25.92, -1.31, 129.46]
-# p4 = [162.15, -63.54, -28.56, 7.2, 1.93, 136.23]
-
 cobot_speed = 100
+
+
+
+###################################################################################################################################################
+######################################################## GRIPPER ##################################################################################
+###################################################################################################################################################
+
 
 gripper_pin = 19 #Change for different pin for make a config file
 gripper_open = 6.5 #Completle open, can change for less opening
@@ -41,6 +45,7 @@ pwm = GPIO.PWM(gripper_pin, 50)
 
 gripper_state = "STOP" #Possible values "STOP" "CLOSE" "OPEN"
 gripper_lock = threading.Lock()
+
 def manage_gripper():
     global gripper_state
     pwm.start(0)
@@ -63,7 +68,7 @@ def manage_gripper():
 gripper_thread = threading.Thread(target=manage_gripper, daemon = True)
 gripper_thread.start()
 
-
+###################################################################################################################################################
 
 display_url = "http://127.0.0.1:5000/"
 
@@ -116,6 +121,7 @@ def get_experiment_settings():
 class RobotActions:
 
     global gripper_state, cobot_speed
+    
 
     def __init__(self, mc):
         self.thermomixer = [0,0,0]   #add coordinates of thermomixer
@@ -130,21 +136,26 @@ class RobotActions:
         # self.p3 = [161.71, -30.32, -28.56, -25.92, -1.31, 129.46] #above liquid nitrogen
         # self.p4 = [162.15, -63.54, -28.56, 7.2, 1.93, 136.23] #in liquid nitrogen
 
-        self.c1 = [181.0, -161.8, 210, 176.08, 0, 45.13]             #LN2 (Fully sumbersed is [181.0, -161.8, 180, 176.08, 0, 45.13])
-        self.c2 = [181.0, -161.8, 235, 176.08, 0, 45.13]             #Above LN2
+        self.c1 = [-18.0, -207.0, 210.0, -175.0, -5.0, -144.08]             #LN2 (Fully sumbersed is [181.0, -161.8, 180, 176.08, 0, 45.13])
+        self.c2 = [-2.7, -206.6, 253.6, -175.6, -5.0, -144.88]            #Above LN2
+        self.a2 = [-70.92, -27.24, -19.59, -41.39, -6.5, 45.35]
+        
+        self.c3 = [205.2, -16.0, 260, 178.65, -6.81, -64.68]
+        self.c4 = [205.2, -16.0, 215, 180.0, 0.0, -64.68]
+        self.a4 = [15.11, -11.42, -71.1, -3.51, -5.71, -10.81]
+
+        self.cm = [103.0, -24.2, 286.2, 175.16, -2.62, -20.54]
+        self.cr = [104.0, 187.1, 245.3, -175.69, -0.98, -52.58]   
+        # self.cm2 = [134.4, -1.3, 298.7, 170.73, -8.85, 55.61]        #Above Water-Bath
 
 
-        self.cm = [152.7, -81.7, 267.2, 167.92, -3.03, 59.48]        #Between c2 and cm2 to prevent collision
-        self.cm2 = [134.4, -1.3, 298.7, 170.73, -8.85, 55.61]        #Above Water-Bath
+        # self.cn = [151.1, 7.3, 238, 172.35, -6.58, 56.28]          #Water Bath [151.4, 7.7, 238.3, 172.22, -6.34, 56.17]
+        # self.an = [29.79, 20.74, -103.97, 2.1, -3.6, -116.45]
+        # self.an = [29.61, 17.22, -83.93, -14.5, -4.13, -116.45]      #Water Bath !! Uee this as the adjecent solution form coordinates has different robot pose 
 
-
-        self.cn = [151.1, 7.3, 238, 172.35, -6.58, 56.28]          #Water Bath [151.4, 7.7, 238.3, 172.22, -6.34, 56.17]
-        #self.an = [29.79, 20.74, -103.97, 2.1, -3.6, -116.45]
-        self.an = [29.61, 17.22, -83.93, -14.5, -4.13, -116.45]      #Water Bath !! Uee this as the adjecent solution form coordinates has different robot pose 
-
-        self.ce1 = [97.7, -125.6, 298.1, 167.36, -6.7, 14.91]        #Between 
-        self.ce2 = [-34.7, -145.0, 260, 172.11, -1.88, -10.06]       #Stop position after experiment to easily remove vial
-        self.ce3 = [-43.8, -104.1, 216.9, -149.82, 13.39, -4.63]
+        # self.ce1 = [97.7, -125.6, 298.1, 167.36, -6.7, 14.91]        #Between 
+        # self.ce2 = [-34.7, -145.0, 260, 172.11, -1.88, -10.06]       #Stop position after experiment to easily remove vial
+        # self.ce3 = [-43.8, -104.1, 216.9, -149.82, 13.39, -4.63]
         
     def update_settings(self, settings):
         global setting_flag
@@ -216,6 +227,25 @@ class RobotActions:
 
     def wait(self, time):
         pass
+    
+        
+    def _check_staus(self):
+        control = get_robot_control()
+        print(control)
+        if not control['running']:
+            print("inside _check_status")
+            print(control['running'])
+            raise StopCycleException("Stopped Manually using Webapp")
+        
+    
+    def delay(self, delay, interval = 0.2):
+        start_time = time.monotonic()
+        while (time.monotonic() - start_time) < delay:
+            print("inside delay")
+            self._check_staus()
+            time.sleep(interval)
+            
+            
 
     # def pick_up_sample_from(self, location):
     #     global gripper_state
@@ -298,35 +328,84 @@ class RobotActions:
 
     def init_experiment(self):
         update_robot_log("Start", self.current_cycle, gripper_state, mc.get_error_information())
-        self.move(self.ce2)
-        time.sleep(1)    
-        self.move(self.ce1)
-        time.sleep(1)
+        self.move(self.cr)    
+        self.move(self.cm)
 
     def end_experiment(self):
         # update_robot_log("End of Experiment", self.current_cycle, gripper_state)
         update_robot_log("Completed", self.current_cycle-1, gripper_state, mc.get_error_information())
-        self.move(self.ce1)
-        time.sleep(1)
-        self.move(self.ce2)
+        self.move(self.cm)
+        self.move(self.cr)
+        mc.release_all_servos()
         time.sleep(0.5)
-        self.move(self.ce3, 20)
-        time.sleep(1)
         mc.release_all_servos()
         log.info ("Completed and relesed motors")
         
-
+    def closest_point(self, position = mc.get_coords()):
+        d1 = self.distance(position, self.c2)
+        d2 = self.distance(position, self.c3)
+        d3 = self.distance(position, self.cr)
+    
+        if d1 <= d2 and d1 <= d3:
+            return self.c2
+        
+        if d2 <= d3 and d2 <= d1:
+            return self.c3
+    
+        if d3 <= d1 and d3 <= d1:
+            return self.cr
+    
+    def manual_stop(self, timeout = 5):
+        
+        close_point = None
+        position_value_flag = False
+        start_time = time.monotonic() 
+        
+        update_robot_log("Manually Stopped", self.current_cycle-1, gripper_state, mc.get_error_information())
+        
+        while(time.monotonic() - start_time) < timeout:
+            current_position = mc.get_coords()
+            if len(current_position) == 6:
+                position_value_flag = True
+                break
+            time.sleep(0.1)
+        print(time.monotonic() - start_time)
+        
+        if position_value_flag:
+            print(current_position)
+            print(self.closest_point(current_position))
+            close_point = self.closest_point(current_position)
+        
+            self.move(close_point)
+            if close_point != self.cr:
+                self.move(self.cm)
+            log.info("Moving to rest position")
+            self.move(self.cr)
+            log.info("releasing all servos")
+            mc.release_all_servos()
+            time.sleep(0.5)
+            mc.release_all_servos()
+            update_robot_log("Completed", self.current_cycle-1, gripper_state, mc.get_error_information())
+        
+        else:
+            log.error("Timeout, cannot detect current position")
+            log.error(f"Error Function returns {mc.get_error_information() =}")
+            update_robot_log("Error: Can't return to home", self.current_cycle-1, gripper_state, mc.get_error_information())
+            update_robot_log("Completed", self.current_cycle-1, gripper_state, mc.get_error_information())
 
 
     def run_cycle(self):
-
-        while self.current_cycle-1 < self.number_of_cycles:   
-            self.move(self.c2)
+        
+        while self.current_cycle-1 < self.number_of_cycles:
+            mc.send_angles(self.a2, 100)
+            self.delay(1)
+            update_robot_log("Moving to Liuid Nitrogen", self.current_cycle, gripper_state, mc.get_error_information())   
+            self.move(self.c2)          #Lower Speed to prevent splashing
             update_robot_log("Moving inside LN2", self.current_cycle, gripper_state, mc.get_error_information())
             log.info("Moving inside LN2")
             start_ln2_time = time.monotonic()
-            self.move(self.c1)
-            time.sleep(self.liquid_nitrogen_time - 2)
+            self.move(self.c1, 30)
+            self.delay(self.liquid_nitrogen_time - 2)
             end_ln2_time = time.monotonic()
             ln2_time = {start_ln2_time - end_ln2_time}
             log.info("Outside LN2")
@@ -334,28 +413,21 @@ class RobotActions:
             update_robot_log("Outside outside LN2", self.current_cycle, gripper_state, mc.get_error_information())
             self.move(self.c2)
             update_robot_log("Moving sample to Water Bath", self.current_cycle, gripper_state, mc.get_error_information())
-            self.move(self.cm)
-            self.move(self.cm2)
+            self.move(self.c3)
             log.info("Moving Inside Water Bath")
             start_water_bath_time = time.monotonic()
             update_robot_log("Moving Inside Water Bath", self.current_cycle, gripper_state, mc.get_error_information())
-            mc.send_angles(self.an, cobot_speed)
-            time.sleep(1)
-            while( not self.is_correct_position(self.cn) and time.monotonic() - start_water_bath_time < 5):
-                mc.send_angles(self.an, cobot_speed)
-            time.sleep(self.thermomixer_time -1)
+            self.move(self.c4)
+            self.delay(self.thermomixer_time -2)
             end_water_bath_time = time.monotonic()
             water_bath_time = start_water_bath_time - end_water_bath_time
             log.info("Moving outside Water Bath")
             print(f"Water Bath time = {water_bath_time}")
             update_robot_log("Moving outside Water Bath", self.current_cycle, gripper_state, mc.get_error_information())
-            self.move(self.cm2)
-            self.move(self.cm)
+            self.move(self.c3)
             log.info("Waiting")
             update_robot_log("Waiting", self.current_cycle, gripper_state, mc.get_error_information())
-            time.sleep(self.waiting_time)
-            update_robot_log("Moving to Liuid Nitrogen", self.current_cycle, gripper_state, mc.get_error_information())
-            self.move(self.c2)
+            self.delay(self.waiting_time)
             log.info(f"###################################### Cycle Completed: {self.current_cycle} ####################################################" )
             log.info(f"LN2 Time = {ln2_time} ")
             log.info(f"Water Bath = {water_bath_time} ")
@@ -393,8 +465,10 @@ class RobotActions:
             self.current_cycle += 1
         
 if __name__ == "__main__":
-    settings = get_experiment_settings()
+    
     ra = RobotActions(mc)
+    settings = get_experiment_settings()
+    
     while True:
         controll = get_robot_control()
         settings = get_experiment_settings()
@@ -405,7 +479,10 @@ if __name__ == "__main__":
         
         while controll['running'] and setting_flag:
             ra.init_experiment()
-            ra.run_cycle()
+            try:
+                ra.run_cycle()
+            except StopCycleException:
+                ra.manual_stop()
             ra.complete()
             break
             
