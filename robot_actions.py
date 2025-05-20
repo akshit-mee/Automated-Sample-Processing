@@ -378,6 +378,7 @@ class RobotActions:
         
 if __name__ == "__main__":
     
+    print("Runing")
     ra = RobotActions(mc)
     settings_old = get_experiment_settings()
     settings = get_experiment_settings()
