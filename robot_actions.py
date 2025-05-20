@@ -70,7 +70,7 @@ gripper_thread.start()
 
 ###################################################################################################################################################
 
-display_url = "http://127.0.0.1:5000/"
+display_url = "http://0.0.0.0:8000/"
 
 def update_robot_log(action, cycle_number, gripper_status, error=None):
     message = {
