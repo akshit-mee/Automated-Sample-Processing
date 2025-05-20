@@ -8,6 +8,7 @@ import logger
 
 setting_flag = 0
 log = logger.setup_logger()
+log.info("Starting Robot Actions")
 
 class StopCycleException(Exception):
     pass
@@ -91,21 +92,28 @@ def update_robot_log(action, cycle_number, gripper_status, error=None):
 
 get_robot_control_flag_1 = False
 get_robot_control_flag_2 = False
+get_robot_control_flag_3 = False
 def get_robot_control():
     try:
         response = requests.get(display_url + "get_robot_control")
         if response.status_code == 200:
             get_robot_control_flag_1 = True
             get_robot_control_flag_2 = True
-            log.info("Robot control retrieved successfully")
+            if not get_robot_control_flag_3:
+                log.info("Robot control retrieved successfully")
+                get_robot_control_flag_3 = True
             return response.json()
         else:
             log.info("Failed to get robot control", response.json())
+            get_robot_control_flag_2 = True
+            get_robot_control_flag_3 = True
             if not get_robot_control_flag_1:
                 log.info("Failed to get robot control", response.json())
                 get_robot_control_flag_1 = True
             return None
     except requests.exceptions.RequestException as e:
+        get_robot_control_flag_1 = True
+        get_robot_control_flag_3 = True
         if not get_robot_control_flag_2:
             log.info("Error connecting to the server", e)
             get_robot_control_flag_2 = True
@@ -369,13 +377,16 @@ class RobotActions:
 if __name__ == "__main__":
     
     ra = RobotActions(mc)
+    settings_old = get_experiment_settings()
     settings = get_experiment_settings()
     
     while True:
         controll = get_robot_control()
-        settings = get_experiment_settings()
-        ra.update_settings(settings)
-        ra.current_cycle = 1       
+        if settings_old != settings:
+            settings_old = settings
+            settings = get_experiment_settings()
+            ra.update_settings(settings)
+            ra.current_cycle = 1       
         
         while controll['running'] and setting_flag:
             ra.init_experiment()
