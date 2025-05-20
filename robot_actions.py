@@ -93,7 +93,9 @@ def update_robot_log(action, cycle_number, gripper_status, error=None):
 get_robot_control_flag_1 = False
 get_robot_control_flag_2 = False
 get_robot_control_flag_3 = False
+
 def get_robot_control():
+    global get_robot_control_flag_1, get_robot_control_flag_2, get_robot_control_flag_3
     try:
         response = requests.get(display_url + "get_robot_control")
         if response.status_code == 200:
@@ -123,7 +125,7 @@ get_experiment_settings_flag_1 = False
 get_experiment_settings_flag_2 = False
 
 def get_experiment_settings():
-    global setting_flag
+    global setting_flag, get_experiment_settings_flag_1, get_experiment_settings_flag_2
     try:
         response = requests.get(display_url + "get_experiment_settings")
         if response.status_code == 200:
