@@ -215,9 +215,12 @@ class RobotActions:
             return False   
                 
     ######################### move function #############################################
-    def move(self, coordinate, speed = cobot_speed, mode = 1, mc = mc):
+    def move(self, coordinate, speed = cobot_speed, mode = 1, mc = mc, exception = True):
         mc.send_coords(coordinate, speed, mode)
-        time.sleep(2)
+        if exception:
+            self.delay(2)
+        if not exception:
+            time.sleep(2)
         while(not self.is_correct_position(coordinate)):
             mc.send_coords(coordinate, speed, mode)
 
@@ -376,11 +379,11 @@ class RobotActions:
             print(self.closest_point(current_position))
             close_point = self.closest_point(current_position)
         
-            self.move(close_point)
+            self.move(close_point, cobot_speed, 1, mc, False)
             if close_point != self.cr:
-                self.move(self.cm)
+                self.move(self.cm, cobot_speed, 1, mc, False)
             log.info("Moving to rest position")
-            self.move(self.cr)
+            self.move(self.cr,cobot_speed, 1, mc, False)
             log.info("releasing all servos")
             mc.release_all_servos()
             time.sleep(0.5)
