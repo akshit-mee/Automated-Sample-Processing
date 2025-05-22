@@ -1,5 +1,6 @@
 __pycache__/
 temp/
 venv/
+mattermost_bot/.env
 migrations/
 *.db
