@@ -70,7 +70,7 @@ gripper_thread = threading.Thread(target=manage_gripper, daemon = True)
 gripper_thread.start()
 
 ###################################################################################################################################################
-
+###################################################################################################################################################
 display_url = "http://0.0.0.0:8000/"
 
 def update_robot_log(action, cycle_number, gripper_status, error=None):
@@ -89,7 +89,7 @@ def update_robot_log(action, cycle_number, gripper_status, error=None):
     except requests.exceptions.RequestException as e:
         log.info("Error connecting to the server", e)
 
-
+################################################################################################################
 get_robot_control_flag_1 = False
 get_robot_control_flag_2 = False
 get_robot_control_flag_3 = False
@@ -121,6 +121,8 @@ def get_robot_control():
             get_robot_control_flag_2 = True
         return None
 
+#################################################################################################################
+
 get_experiment_settings_flag_1 = False
 get_experiment_settings_flag_2 = False
 
@@ -141,7 +143,9 @@ def get_experiment_settings():
             log.info("Error connecting to the server", e)
             get_experiment_settings_flag_2 = True
         return None
-    
+###################################################################################################################################################
+###################################################################################################################################################
+
 class RobotActions:
 
     global gripper_state, cobot_speed
@@ -364,8 +368,9 @@ class RobotActions:
             log.info(f"Water Bath = {water_bath_time} ")
             log.info("######################################################################################################################")
             self.current_cycle += 1
-            
+                
         self.end_experiment()
+        
     ################################################################################
 
 
@@ -378,13 +383,12 @@ class RobotActions:
         
 if __name__ == "__main__":
     
-    print("Runing")
     ra = RobotActions(mc)
-    settings_old = get_experiment_settings()
-    settings = get_experiment_settings()
+    settings_old = None
     
     while True:
         controll = get_robot_control()
+        settings = get_experiment_settings()
         if settings_old != settings:
             settings_old = settings
             settings = get_experiment_settings()
@@ -397,7 +401,6 @@ if __name__ == "__main__":
                 ra.run_cycle()
             except StopCycleException:
                 ra.manual_stop()
-            ra.complete()
             break
             
             
