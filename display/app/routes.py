@@ -42,7 +42,7 @@ def home():
         current_robot_log = RobotLog.query.get(current_robot_log_id)
         if current_robot_log and current_robot_log.time_stamp:
             time_difference = datetime.now() - current_robot_log.time_stamp
-    return render_template('index.html', settings=settings, robot_logs=current_robot_log, time_difference=time_difference, running_status = robot_control)
+    return render_template('index.html', settings=settings, robot_logs=current_robot_log, time_difference=time_difference, robot_control = robot_control)
 
 
 @app.route('/download_experiment_data', methods=['GET'])
