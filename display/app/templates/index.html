@@ -63,12 +63,25 @@
 
 
 
-            {% if True %}
-                <p>Robot Running: <span>{{ running_status.running }}</span></p>
+            {% if running_status %}
+                <p>Robot Running: <span>{{ running_status }}</span></p>
                 <form method="post" action="/control_robot">
                     <button type="submit" name="action" value="stop" class="stop">Stop Robot</button>
                 </form>
+            {% endif %}
+
+
+            {% if not running_status %}
+                <p>Robot Running: <span>{{ running_status }}</span></p>
+                <p>Robot is currently not running. Please start the robot to begin/ repeate last cycle</p>
+                <form method="post" action="/control_robot">
+                    <button type="submit" name="action" value="start" class="start">Start Robot</button>
+                </form>
             {% endif %} 
+
+            {% if error_message %}
+                <p class="error">{{ error_message }}</p>
+            {% endif %}
             
             
         </div>
