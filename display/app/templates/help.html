@@ -2,14 +2,49 @@
 
 {% block content %}
 <div class="container">
-    <h2>How to Use</h2>
+    <h2>Using the Robot</h2>
 
-    <h3>1. Random step </h3>
-        Some more Information
+    <h3>1. Initial Settings </h3>
+        Go to Innitial Settings and fill in the required fields:
+        <ul>
+            <li>Experiment Name</li>
+            <li>Person Responsible</li>
+            <li>Experiment Description</li>
+            <li>Number of Cycles</li>
+            <li>Thermomixer Time</li>
+            <li>LN2 Time</li>
+            <li>Number of Samples</li>
+        </ul>
+        After filling in the fields, click on "Save Settings" to save the experiment settings.
+            
 
-    <h3>2. Step 2 </h3>
-        Instruction about what to do after step 1
+    <h3>2. Loading Samples </h3>
+        DO NOT force the robot to move. It should move easily, if not contact help.
+        <ul>
+            <li>Place the samples in the holder</li>
+            <li>Tighten the top gentally with the screw</li>
+        </ul>
+        
+    <h3>3. Starting the Experiment </h3>
+        After the samples are loaded, go to Start Page. Find the experiment setting in the dropdown menu or enter the experiment id in the search field and select it.
+        If you have just created the experiment, it should be the last one in the list.
+        Confirm the settings and click on "Start Experiment". The robot will start the experiment and you can monitor its progress on the Status Page.
 
+
+    <h3>4. Monitoring the Experiment </h3>
+        Go to Status Page to monitor the progress of the experiment. The page will automatically refresh every 700 milliseconds to show the latest status.
+        You can see the current cycle, last action, and time since the last action.
+
+    <h3>5. Completing the Experiment </h3>
+        If the experiment is completed, you can add post-experiment information in the provided textbox and click "Finish Experiment" to save it.
+        You can also download the experiment data as a JSON file.
+
+    <h3>6. View Experiments </h3>
+        Go to Completed Experiments Page to view all completed experiments.
+        click on the experiment name to view its details, including the settings and robot actions.
+        Json with all the details of the experiment can be downloaded by clicking on "Download JSON".
+
+    
 </div>
 
 {% endblock %}
