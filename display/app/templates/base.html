@@ -25,10 +25,34 @@
             <!-- maybe make a drop down menu to see logs -->
             <a href="{{ url_for('home') }}">Status</a>
             <a href="{{ url_for('settings') }}">Initial Settings</a>
-            <a href="{{ url_for('view_experiment_settings') }}">Experiment Settings</a>
-            <a href="{{ url_for('view_robot_logs') }}">Robot Logs</a>
-            <a href="{{ url_for('view_completed_experiments') }}">Completed Experiments</a>
+            <div class="dropdown" style="display: inline-block; position: relative;">
+                <a href="#" class="dropbtn" style="padding: 8px 16px; text-decoration: none;">Logs &#9662;</a>
+                <div class="dropdown-content" style="display: none; position: absolute; background-color: #f9f9f9; min-width: 300px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;">
+                    <p><a href="{{ url_for('view_experiment_settings') }}">Experiment Settings</a></p>
+                    <p><a href="{{ url_for('view_robot_logs') }}">Robot Logs</a></p>
+                    <p><a href="{{ url_for('view_completed_experiments') }}">Completed Experiments</a></p>
+                </div>
+            </div>
+            <script>
+                // Simple dropdown toggle
+                document.addEventListener('DOMContentLoaded', function() {
+                    var dropdown = document.querySelector('.dropdown');
+                    var btn = dropdown.querySelector('.dropbtn');
+                    var content = dropdown.querySelector('.dropdown-content');
+                    btn.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                    });
+                    // Hide dropdown when clicking outside
+                    document.addEventListener('click', function(e) {
+                        if (!dropdown.contains(e.target)) {
+                            content.style.display = 'none';
+                        }
+                    });
+                });
+            </script>
             <a href="{{ url_for('start') }}">Start</a>
+            <a href="{{ url_for('help') }}">Help</a>
             <a href="{{ url_for('contact') }}">Contact</a>
     
         </nav>
