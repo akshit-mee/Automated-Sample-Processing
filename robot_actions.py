@@ -332,6 +332,7 @@ class RobotActions:
     def run_cycle(self):
         
         while self.current_cycle-1 < self.number_of_cycles:
+            start_cycle_time = time.monotonic()
             mc.send_angles(self.a2, 100)
             self.delay(1)
             update_robot_log("Moving to Liuid Nitrogen", self.current_cycle, gripper_state, mc.get_error_information())   
@@ -363,9 +364,12 @@ class RobotActions:
             log.info("Waiting")
             update_robot_log("Waiting", self.current_cycle, gripper_state, mc.get_error_information())
             self.delay(self.waiting_time)
+            end_cycle_time = time.monotonic()
+            extra_cycle_time = end_cycle_time - start_cycle_time - self.liquid_nitrogen_time - self.thermomixer_time - self.waiting_time
             log.info(f"###################################### Cycle Completed: {self.current_cycle} ####################################################" )
             log.info(f"LN2 Time = {ln2_time} ")
             log.info(f"Water Bath = {water_bath_time} ")
+            log.info(f"Extra Cycle Time = {extra_cycle_time}")
             log.info("######################################################################################################################")
             self.current_cycle += 1
                 
