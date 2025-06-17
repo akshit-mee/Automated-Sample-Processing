@@ -1,0 +1,26 @@
+2025-04-14 16:04:39,961 - INFO - Starting Experiment
+2025-04-14 16:04:39,962 - INFO - Experiment Parameters
+2025-04-14 16:04:39,962 - INFO - Experiment Name: Error_Testing
+2025-04-14 16:04:39,962 - INFO - Person Responsible: Akshit
+2025-04-14 16:04:39,962 - INFO - Thermomixer Time: 120
+2025-04-14 16:04:39,963 - INFO - Liquid Nitrogen Time: 60
+2025-04-14 16:04:39,963 - INFO - Waiting Time 5
+2025-04-14 16:04:39,963 - INFO - Number of Cycles 2
+2025-04-14 16:04:39,963 - INFO - Robot Speed 100
+2025-04-14 16:04:39,963 - INFO - Run Number 1
+2025-04-14 16:04:40,909 - INFO - Starting Experiment
+2025-04-14 16:04:42,939 - WARNING - Distance Error is 6.558963332722653
+2025-04-14 16:04:44,969 - INFO - Distance Error is 3.189043743820386
+2025-04-14 16:04:48,009 - WARNING - Distance Error is 7.5808970445455826
+2025-04-14 16:04:48,010 - INFO - Moving inside LN2
+2025-04-14 16:04:50,039 - WARNING - Distance Error is 5.950630218724732
+2025-04-14 16:04:50,040 - ERROR - Experiment encountered an error: name 'tqdm' is not defined
+Traceback (most recent call last):
+  File "new_setup.py", line 206, in <module>
+    run_cycle(Number_of_Cycles)
+  File "new_setup.py", line 153, in run_cycle
+    sleep_progress(LN2_Time-2, "LN2")
+  File "new_setup.py", line 66, in sleep_progress
+    with tqdm(total = duration_s, desc = cycle_name, unit = "s") as pbar:
+NameError: name 'tqdm' is not defined
+2025-04-14 16:04:50,041 - INFO - Programmed execution completed

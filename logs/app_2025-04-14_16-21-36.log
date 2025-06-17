@@ -1,0 +1,19 @@
+2025-04-14 16:21:36,991 - INFO - Starting Experiment
+2025-04-14 16:21:36,991 - INFO - Experiment Parameters
+2025-04-14 16:21:36,991 - INFO - Experiment Name: Error_Testing
+2025-04-14 16:21:36,992 - INFO - Person Responsible: Akshit
+2025-04-14 16:21:36,992 - INFO - Thermomixer Time: 120
+2025-04-14 16:21:36,992 - INFO - Liquid Nitrogen Time: 60
+2025-04-14 16:21:36,992 - INFO - Waiting Time 5
+2025-04-14 16:21:36,992 - INFO - Number of Cycles 2
+2025-04-14 16:21:36,993 - INFO - Robot Speed 100
+2025-04-14 16:21:36,993 - INFO - Run Number 1
+2025-04-14 16:21:38,840 - INFO - Starting Experiment
+2025-04-14 16:21:40,870 - WARNING - Distance Error is 6.774215821775996
+2025-04-14 16:21:42,896 - INFO - Distance Error is 3.4957116585896975
+2025-04-14 16:21:45,936 - WARNING - Distance Error is 7.560423268574319
+2025-04-14 16:21:45,937 - INFO - Moving inside LN2
+2025-04-14 16:21:47,966 - WARNING - Distance Error is 6.507687761409583
+2025-04-14 16:22:11,245 - ERROR - Experiment manually stooped with Keyboard Interrupt (crtl + c)
+2025-04-14 16:22:11,246 - INFO - servo will release in 5 seconds. hold on to the robot to prevent damage
+2025-04-14 16:22:16,752 - INFO - Programmed execution completed

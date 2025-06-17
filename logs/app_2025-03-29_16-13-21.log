@@ -1,0 +1,17 @@
+2025-03-29 16:13:21,736 - INFO - Starting Experiment
+2025-03-29 16:13:21,736 - INFO - Experiment Parameters
+2025-03-29 16:13:21,737 - INFO - Experiment Name: Name
+2025-03-29 16:13:21,737 - INFO - Person Responsible: Person
+2025-03-29 16:13:21,737 - INFO - Thermomixer Time: 3
+2025-03-29 16:13:21,737 - INFO - Liquid Nitrogen Time: 3
+2025-03-29 16:13:21,738 - INFO - Waiting Time 3
+2025-03-29 16:13:21,738 - INFO - Number of Cycles 1
+2025-03-29 16:13:21,738 - INFO - Robot Speed 100
+2025-03-29 16:13:23,801 - INFO - distance error 3.446737587922808 mm
+2025-03-29 16:13:26,877 - INFO - distance error 1.886796226411343 mm
+2025-03-29 16:13:29,949 - INFO - distance error 13.369367973094313 mm
+2025-03-29 16:13:29,965 - INFO - Moving inside LN2
+2025-03-29 16:13:32,025 - INFO - distance error 4.763402145525821 mm
+2025-03-29 16:13:33,043 - INFO - Outside LN2
+2025-03-29 16:13:34,005 - ERROR - Experiment manually stooped with Keyboard Interrupt (crtl + c)
+2025-03-29 16:13:34,006 - INFO - Programmed execution completed

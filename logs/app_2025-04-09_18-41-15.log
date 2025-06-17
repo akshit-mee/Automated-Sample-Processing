@@ -1,0 +1,12 @@
+2025-04-09 18:41:15,692 - INFO - Starting Experiment
+2025-04-09 18:41:15,693 - INFO - Experiment Parameters
+2025-04-09 18:41:15,693 - INFO - Experiment Name: Error_Testing
+2025-04-09 18:41:15,693 - INFO - Person Responsible: Akshit
+2025-04-09 18:41:15,693 - INFO - Thermomixer Time: 5
+2025-04-09 18:41:15,693 - INFO - Liquid Nitrogen Time: 5
+2025-04-09 18:41:15,694 - INFO - Waiting Time 5
+2025-04-09 18:41:15,694 - INFO - Number of Cycles 10
+2025-04-09 18:41:15,694 - INFO - Robot Speed 100
+2025-04-09 18:41:15,694 - INFO - Run Number 1
+2025-04-09 18:41:16,540 - ERROR - Experiment manually stooped with Keyboard Interrupt (crtl + c)
+2025-04-09 18:41:21,546 - INFO - Programmed execution completed

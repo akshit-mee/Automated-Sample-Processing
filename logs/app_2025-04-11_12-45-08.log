@@ -1,0 +1,19 @@
+2025-04-11 12:45:08,273 - INFO - Starting Experiment
+2025-04-11 12:45:08,274 - INFO - Experiment Parameters
+2025-04-11 12:45:08,274 - INFO - Experiment Name: Error_Testing
+2025-04-11 12:45:08,274 - INFO - Person Responsible: Akshit
+2025-04-11 12:45:08,274 - INFO - Thermomixer Time: 5
+2025-04-11 12:45:08,275 - INFO - Liquid Nitrogen Time: 5
+2025-04-11 12:45:08,275 - INFO - Waiting Time 5
+2025-04-11 12:45:08,275 - INFO - Number of Cycles 5
+2025-04-11 12:45:08,275 - INFO - Robot Speed 100
+2025-04-11 12:45:08,275 - INFO - Run Number 1
+2025-04-11 12:45:10,198 - INFO - Starting Experiment
+2025-04-11 12:45:10,198 - ERROR - Experiment encountered an error: name 'cr' is not defined
+Traceback (most recent call last):
+  File "new_setup.py", line 187, in <module>
+    init_experiment()
+  File "new_setup.py", line 168, in init_experiment
+    move(cr)
+NameError: name 'cr' is not defined
+2025-04-11 12:45:10,200 - INFO - Programmed execution completed

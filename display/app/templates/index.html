@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- 
+    Script to check if there is any update flag is triggered 
+    (currently when SQL entry is added) and if so refreshes this page 
+-->
+<script>
+    setInterval(async () => {
+        const response = await fetch('/status_page_update'); // Call a Flask route
+        const data = await response.json();
+        if (data.reload) {
+            location.reload(); // Reload the page if the server signals a change
+        }
+    }, 700); 
+</script>
+
+
+
+    <div class="container">
+        <h2>Current Status</h2>
+        <div class="status">
+
+
+            {% if settings %}
+                <p>Current Settings: <span> {{settings.experiment_id}} </span></p>
+                <p>Experiment Name: <span> {{settings.experiment_name}} </span></p>
+                <p>Responsible Person: <span>{{settings.person_responsible}} </span></p>
+            {% else %}
+                <p> Currently no settings have been selected</p>
+            {% endif %}
+
+
+            {% if robot_logs %}
+                <p>Experiment Name: <span> {{robot_logs.experiment_name}}</span>  </p>
+                <p>Last Action: <span> {{robot_logs.action_start}} </span></p>
+                <p>Current Cycle: <span> {{robot_logs.cycle_number}} </span></p>
+                <p>Last Updated: <span> {{robot_logs.time_stamp}} </span>  </p>
+                <p>Time Since Last Action: <span> {{ time_difference }} ago</span></p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: {{ (robot_logs.cycle_number/settings.number_of_cycles)*100 }}%;"></div>
+                </div>
+                <br>
+
+                {% if robot_logs.action_start == 'Completed' %}
+                    <form method="post" action="/update_process_details">
+                        <p> The Experiment is now completed. If you would like to add any further details about it to the log, kindly add it to the textbox below</p>
+                        <label for="process_details">Post Experiment Information:</label>
+                        <textarea id="process_details" placeholder="No details to add" name="process_details" rows="4" cols="50"></textarea>
+                        <button type="submit">Finish Experiment</button>
+                        <br>
+                    </form>
+                {% endif %}
+                <form method="get" action="/download_experiment_data">
+                    <button type="submit">Download JSON</button>
+                </form>
+
+            {% else %}
+                <p> Currently no robot actions have been started</p>
+            
+            {% endif %}
+
+
+
+            {% if robot_control['running'] %}
+                <p>Robot Running: <span>{{ robot_control['running'] }}</span></p>
+                <form method="post" action="/control_robot">
+                    <button type="submit" name="action" value="stop" class="stop">Stop Robot</button>
+                </form>
+            {% endif %}
+
+
+            {% if not robot_control['running'] %}
+                <p>Robot Running: <span>{{ robot_control['running'] }}</span></p>
+                <p>Robot is currently not running. Please start the robot to begin/ repeat last cycle</p>
+                <form method="post" action="/control_robot">
+                    <button type="submit" name="action" value="start" class="start">Start Robot</button>
+                </form>
+            {% endif %}
+
+            {% if error_message %}
+                <p class="error">{{ error_message }}</p>
+            {% endif %}
+            
+            
+        </div>
+    </div>
+
+{% endblock %}

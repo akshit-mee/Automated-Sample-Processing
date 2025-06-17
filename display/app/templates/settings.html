@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content%}
+
+    <div class="container">
+        <h2>Modify Initial Conditions</h2>
+        <form method="post" action="{{ url_for('settings') }}">
+            {{ form.hidden_tag() }}
+            
+            {{ form.experiment_name.label }}
+            {{ form.experiment_name }}
+                   
+            {{ form.person_responsible.label }}
+            {{ form.person_responsible }}
+ 
+            {{ form.experiment_description.label }}
+            {{ form.experiment_description(rows=4) }}
+             
+            {{ form.number_of_samples.label }}
+            {{ form.number_of_samples }}
+
+            {{ form.thermomixer_time_s.label }}
+            {{ form.thermomixer_time_s }}
+
+            {{ form.liquid_nitrogen_time_s.label }}
+            {{ form.liquid_nitrogen_time_s }}
+
+            {{ form.waiting_time_s.label}}
+            {{form.waiting_time_s}}
+
+            {{ form.number_of_cycles.label }}
+            {{ form.number_of_cycles }}
+
+            {{ form.additional_notes.label }}
+            {{ form.additional_notes }}
+
+            
+            <button type="submit">Save Settings</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+{% endblock %}

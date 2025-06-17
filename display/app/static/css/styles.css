@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+header {
+    background-color: White;
+    color: black;
+    text-align: center;
+    align-items:normal;
+    padding: 1rem;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #f6f6f6;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    border-radius: 0px;
+}
+h1{
+    text-align: center;
+}
+h2 {
+    text-align: left;
+    font-weight: bold;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    padding-top: 0.8cm;
+    padding-left: 5cm;
+    font-weight: bold;
+}
+header nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+header nav a:hover {
+    color: #00cf70;
+    text-decoration: underline;
+}
+label {
+    font-weight: bold;
+}
+input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid Black;
+    border-radius: 0px;
+}
+
+button {
+    padding: 0.7rem;
+    font-size: 1rem;
+    color: #00cf70;
+    background-color: white;
+    border: 2px solid #00cf70;
+    border-color: #00cf70;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #00cf70;
+    color: White
+}
+.status {
+    text-align: center;
+    margin-top: 1rem;
+}
+.status span {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #4CAF50;
+}
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: #777;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}
+tr.highlight-row {
+    background-color: #1b8101;
+}
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.progress {
+    height: 20px;
+    background-color: #00cf70;
+    width: 0%;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.contact-card {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    background-color: #fff;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+.contact-card h3 {
+    margin-top: 0;
+}
+.contact-card a {
+    color: #00cf70;
+    text-decoration: underline;
+}
+.contact-card a:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    transition: text-underline-offset 0.3s ease-in-out;
+}
+table td a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 0.75rem;
+    margin: -0.75rem;
+}
+
+.flash-messages {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.alert {
+    padding: 0.7rem;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: black;
+    background-color: white;
+    border: 2px solid #00cf70;
+    border-radius: 0px;
+    text-align: center;
+}
+
+.alert:hover {
+    background-color: #00cf70;
+    color: white;
+    transition: all 0.3s ease;
+}

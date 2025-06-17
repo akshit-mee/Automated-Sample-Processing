@@ -1,0 +1,23 @@
+2025-04-01 16:54:15,818 - INFO - Starting Experiment
+2025-04-01 16:54:15,819 - INFO - Experiment Parameters
+2025-04-01 16:54:15,819 - INFO - Experiment Name: MLB-BQ-022-2_15cyc
+2025-04-01 16:54:15,820 - INFO - Person Responsible: Ben Quach
+2025-04-01 16:54:15,820 - INFO - Thermomixer Time: 200
+2025-04-01 16:54:15,820 - INFO - Liquid Nitrogen Time: 4
+2025-04-01 16:54:15,820 - INFO - Waiting Time 3
+2025-04-01 16:54:15,821 - INFO - Number of Cycles 1
+2025-04-01 16:54:15,821 - INFO - Robot Speed 100
+2025-04-01 16:54:15,821 - INFO - Run Number 7
+2025-04-01 16:54:17,890 - INFO - distance error 1.9026297590440409 mm
+2025-04-01 16:54:20,973 - INFO - distance error 2.9580398915498103 mm
+2025-04-01 16:54:24,058 - INFO - distance error 13.034569421350284 mm
+2025-04-01 16:54:24,171 - ERROR - Experiment encountered an error: list index out of range
+Traceback (most recent call last):
+  File "run.py", line 162, in <module>
+    move(c2)
+  File "run.py", line 150, in move
+    return distance(coordinate,mc.get_coords())
+  File "run.py", line 116, in distance
+    sum = sum + (point1[i] - point2[i])**2
+IndexError: list index out of range
+2025-04-01 16:54:24,172 - INFO - Programmed execution completed

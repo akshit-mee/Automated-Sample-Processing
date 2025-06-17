@@ -1,0 +1,2 @@
+2025-04-11 13:29:01,899 - ERROR - Timeout, cannot detect current position
+2025-04-11 13:29:02,002 - ERROR - Error Function returns mc.get_error_information() =-1

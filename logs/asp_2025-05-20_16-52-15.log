@@ -1,0 +1,24 @@
+2025-05-20 16:52:15,161 - INFO - Starting Robot Actions
+2025-05-20 16:52:15,224 - INFO - Robot control retrieved successfully
+2025-05-20 16:52:31,872 - INFO - Robot log updated successfully
+2025-05-20 16:52:33,964 - INFO - Distance Error is 7.485318964479756
+2025-05-20 16:52:36,087 - INFO - Distance Error is 2.8722813232690263
+2025-05-20 16:52:37,182 - INFO - Robot log updated successfully
+2025-05-20 16:52:39,359 - INFO - Distance Error is 7.131619731870156
+2025-05-20 16:52:39,417 - INFO - Robot log updated successfully
+2025-05-20 16:52:39,418 - INFO - Moving inside LN2
+2025-05-20 16:52:41,589 - INFO - Distance Error is 5.817215828899598
+2025-05-20 16:52:41,589 - INFO - Outside LN2
+2025-05-20 16:52:41,646 - INFO - Robot log updated successfully
+2025-05-20 16:52:43,840 - INFO - Distance Error is 4.205948168962608
+2025-05-20 16:52:43,901 - INFO - Robot log updated successfully
+2025-05-20 16:52:45,894 - INFO - Stopping cycle, Raising Exception
+2025-05-20 16:52:45,969 - INFO - Robot log updated successfully
+2025-05-20 16:52:45,982 - INFO - Currently at [192.9, -20.2, 256.6, 177.67, -5.92, -64.5]
+2025-05-20 16:52:45,983 - INFO - Moving to [205.2, -16.0, 260, 178.65, -6.81, -64.68]
+2025-05-20 16:52:48,011 - INFO - Distance Error is 13.434656675925867
+2025-05-20 16:52:50,041 - INFO - Distance Error is 1.220655561573371
+2025-05-20 16:52:50,043 - INFO - Moving to rest position
+2025-05-20 16:52:52,070 - INFO - Distance Error is 4.589117562233515
+2025-05-20 16:52:52,072 - INFO - releasing all servos
+2025-05-20 16:52:52,619 - INFO - Robot log updated successfully

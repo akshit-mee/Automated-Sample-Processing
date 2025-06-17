@@ -1,0 +1,20 @@
+2025-04-04 15:03:19,682 - INFO - Starting Experiment
+2025-04-04 15:03:19,682 - INFO - Experiment Parameters
+2025-04-04 15:03:19,683 - INFO - Experiment Name: Error_Testing
+2025-04-04 15:03:19,683 - INFO - Person Responsible: Akshit
+2025-04-04 15:03:19,683 - INFO - Thermomixer Time: 5
+2025-04-04 15:03:19,683 - INFO - Liquid Nitrogen Time: 5
+2025-04-04 15:03:19,683 - INFO - Waiting Time 5
+2025-04-04 15:03:19,684 - INFO - Number of Cycles 30
+2025-04-04 15:03:19,684 - INFO - Robot Speed 100
+2025-04-04 15:03:19,684 - INFO - Run Number 1
+2025-04-04 15:03:21,695 - ERROR - Experiment encountered an error: unsupported operand type(s) for -: 'builtin_function_or_method' and 'float'
+Traceback (most recent call last):
+  File "test.py", line 129, in <module>
+    move(ce2)
+  File "test.py", line 106, in move
+    is_correct_position(coordinate)
+  File "test.py", line 74, in is_correct_position
+    while(time.monotonic - start_time < timeout):
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'float'
+2025-04-04 15:03:21,696 - INFO - Programmed execution completed

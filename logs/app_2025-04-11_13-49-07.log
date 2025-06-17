@@ -1,0 +1,30 @@
+2025-04-11 13:49:07,219 - INFO - Starting Experiment
+2025-04-11 13:49:07,220 - INFO - Experiment Parameters
+2025-04-11 13:49:07,220 - INFO - Experiment Name: Error_Testing
+2025-04-11 13:49:07,220 - INFO - Person Responsible: Akshit
+2025-04-11 13:49:07,221 - INFO - Thermomixer Time: 5
+2025-04-11 13:49:07,221 - INFO - Liquid Nitrogen Time: 5
+2025-04-11 13:49:07,221 - INFO - Waiting Time 5
+2025-04-11 13:49:07,222 - INFO - Number of Cycles 5
+2025-04-11 13:49:07,222 - INFO - Robot Speed 100
+2025-04-11 13:49:07,222 - INFO - Run Number 1
+2025-04-11 13:49:08,547 - INFO - Starting Experiment
+2025-04-11 13:49:10,572 - ERROR - Distance Error is 103.8061173534585
+2025-04-11 13:49:10,581 - ERROR - Error Function returns mc.get_error_information() =17
+2025-04-11 13:49:10,608 - ERROR - Distance Error is 103.8061173534585
+2025-04-11 13:49:10,718 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-11 13:49:10,746 - ERROR - Distance Error is 203.6594706857503
+2025-04-11 13:49:10,849 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-11 13:49:10,876 - ERROR - Distance Error is 103.87887176899832
+2025-04-11 13:49:10,884 - ERROR - Error Function returns mc.get_error_information() =17
+2025-04-11 13:49:10,912 - ERROR - Distance Error is 103.8061173534585
+2025-04-11 13:49:11,018 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-11 13:49:11,038 - ERROR - Distance Error is 103.87887176899832
+2025-04-11 13:49:11,145 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-11 13:49:11,172 - ERROR - Distance Error is 103.87887176899832
+2025-04-11 13:49:11,182 - ERROR - Error Function returns mc.get_error_information() =17
+2025-04-11 13:49:11,420 - ERROR - Distance Error is 103.87887176899832
+2025-04-11 13:49:11,429 - ERROR - Error Function returns mc.get_error_information() =17
+2025-04-11 13:49:11,604 - ERROR - Experiment manually stooped with Keyboard Interrupt (crtl + c)
+2025-04-11 13:49:11,605 - INFO - servo will release in 5 seconds. hold on to the robot to prevent damage
+2025-04-11 13:49:11,780 - INFO - Programmed execution completed

@@ -1,0 +1,253 @@
+2022-04-21 16:57:15,654 - INFO - Starting Experiment
+2022-04-21 16:57:15,654 - INFO - Experiment Parameters
+2022-04-21 16:57:15,654 - INFO - Experiment Name: Error_Testing
+2022-04-21 16:57:15,655 - INFO - Person Responsible: Akshit
+2022-04-21 16:57:15,655 - INFO - Thermomixer Time: 5
+2022-04-21 16:57:15,655 - INFO - Liquid Nitrogen Time: 5
+2022-04-21 16:57:15,655 - INFO - Waiting Time 5
+2022-04-21 16:57:15,655 - INFO - Number of Cycles 30
+2022-04-21 16:57:15,656 - INFO - Robot Speed 100
+2022-04-21 16:57:15,656 - INFO - Run Number 1
+2022-04-21 16:57:17,684 - INFO - Distance Error is 1.5684387141358132
+2022-04-21 16:57:20,710 - INFO - Distance Error is 3.144837038703302
+2022-04-21 16:57:23,736 - WARNING - Distance Error is 12.931357237351374
+2022-04-21 16:57:23,736 - INFO - Moving inside LN2
+2022-04-21 16:57:25,762 - INFO - Distance Error is 4.750789408087867
+2022-04-21 16:57:28,764 - INFO - Outside LN2
+2022-04-21 16:57:30,788 - WARNING - Distance Error is 13.44358583116871
+2022-04-21 16:57:32,814 - INFO - Distance Error is 2.1400934559032754
+2022-04-21 16:57:34,840 - INFO - Distance Error is 2.1447610589527315
+2022-04-21 16:57:34,840 - INFO - Moving Inside Water Bath
+2022-04-21 16:57:35,865 - INFO - Distance Error is 2.576819745345014
+2022-04-21 16:57:38,869 - INFO - Moving outside Water Bath
+2022-04-21 16:57:40,890 - INFO - Distance Error is 1.0049875621120947
+2022-04-21 16:57:42,915 - INFO - Distance Error is 0.7874007874011869
+2022-04-21 16:57:42,916 - INFO - Waiting
+2022-04-21 16:57:49,941 - WARNING - Distance Error is 11.812705024675761
+2022-04-21 16:57:49,942 - INFO - ###################################### Cycle Completed: 1 ####################################################
+2022-04-21 16:57:51,965 - WARNING - Distance Error is 11.812705024675761
+2022-04-21 16:57:51,966 - INFO - Moving inside LN2
+2022-04-21 16:57:53,991 - WARNING - Distance Error is 7.653757247260994
+2022-04-21 16:57:56,995 - INFO - Outside LN2
+2022-04-21 16:57:59,017 - WARNING - Distance Error is 11.67261752992876
+2022-04-21 16:58:01,043 - INFO - Distance Error is 2.111871208194276
+2022-04-21 16:58:03,069 - INFO - Distance Error is 2.1679483388678866
+2022-04-21 16:58:03,070 - INFO - Moving Inside Water Bath
+2022-04-21 16:58:04,094 - INFO - Distance Error is 1.7349351572897418
+2022-04-21 16:58:07,098 - INFO - Moving outside Water Bath
+2022-04-21 16:58:09,120 - INFO - Distance Error is 1.0049875621120947
+2022-04-21 16:58:11,144 - INFO - Distance Error is 0.6708203932499369
+2022-04-21 16:58:11,145 - INFO - Waiting
+2022-04-21 16:58:18,170 - WARNING - Distance Error is 11.645600027478183
+2022-04-21 16:58:18,170 - INFO - ###################################### Cycle Completed: 2 ####################################################
+2022-04-21 16:58:20,195 - WARNING - Distance Error is 11.71067888723792
+2022-04-21 16:58:20,195 - INFO - Moving inside LN2
+2022-04-21 16:58:22,221 - WARNING - Distance Error is 7.540557008603544
+2022-04-21 16:58:25,224 - INFO - Outside LN2
+2022-04-21 16:58:27,247 - WARNING - Distance Error is 11.62798348812038
+2022-04-21 16:58:29,273 - INFO - Distance Error is 2.1470910553583806
+2022-04-21 16:58:31,299 - INFO - Distance Error is 2.1447610589527315
+2022-04-21 16:58:31,299 - INFO - Moving Inside Water Bath
+2022-04-21 16:58:32,324 - INFO - Distance Error is 1.4491376746189453
+2022-04-21 16:58:35,327 - INFO - Moving outside Water Bath
+2022-04-21 16:58:37,349 - INFO - Distance Error is 0.7280109889280268
+2022-04-21 16:58:39,374 - INFO - Distance Error is 0.787400787401167
+2022-04-21 16:58:39,374 - INFO - Waiting
+2022-04-21 16:58:46,409 - WARNING - Distance Error is 11.71067888723792
+2022-04-21 16:58:46,409 - INFO - ###################################### Cycle Completed: 3 ####################################################
+2022-04-21 16:58:48,434 - WARNING - Distance Error is 11.71067888723792
+2022-04-21 16:58:48,434 - INFO - Moving inside LN2
+2022-04-21 16:58:50,460 - WARNING - Distance Error is 7.540557008603544
+2022-04-21 16:58:53,463 - INFO - Outside LN2
+2022-04-21 16:58:55,486 - WARNING - Distance Error is 11.573677030226833
+2022-04-21 16:58:57,512 - INFO - Distance Error is 2.199999999999996
+2022-04-21 16:58:59,538 - INFO - Distance Error is 2.0124611797498013
+2022-04-21 16:58:59,538 - INFO - Moving Inside Water Bath
+2022-04-21 16:59:00,563 - INFO - Distance Error is 1.6031219541881343
+2022-04-21 16:59:03,567 - INFO - Moving outside Water Bath
+2022-04-21 16:59:05,589 - INFO - Distance Error is 1.0049875621120947
+2022-04-21 16:59:07,613 - INFO - Distance Error is 0.6708203932499369
+2022-04-21 16:59:07,614 - INFO - Waiting
+2022-04-21 16:59:14,638 - WARNING - Distance Error is 11.71067888723792
+2022-04-21 16:59:14,639 - INFO - ###################################### Cycle Completed: 4 ####################################################
+2022-04-21 16:59:16,663 - WARNING - Distance Error is 11.71067888723792
+2022-04-21 16:59:16,664 - INFO - Moving inside LN2
+2022-04-21 16:59:18,689 - WARNING - Distance Error is 7.540557008603544
+2022-04-21 16:59:21,693 - INFO - Outside LN2
+2022-04-21 16:59:23,715 - WARNING - Distance Error is 11.573677030226833
+2022-04-21 16:59:25,741 - INFO - Distance Error is 2.1470910553583806
+2022-04-21 16:59:27,767 - INFO - Distance Error is 2.1447610589527315
+2022-04-21 16:59:27,768 - INFO - Moving Inside Water Bath
+2022-04-21 16:59:28,792 - INFO - Distance Error is 1.4491376746189453
+2022-04-21 16:59:31,796 - INFO - Moving outside Water Bath
+2022-04-21 16:59:33,818 - INFO - Distance Error is 1.063014581273466
+2022-04-21 16:59:35,843 - INFO - Distance Error is 0.6708203932499369
+2022-04-21 16:59:35,843 - INFO - Waiting
+2022-04-21 16:59:42,870 - WARNING - Distance Error is 11.645600027478183
+2022-04-21 16:59:42,870 - INFO - ###################################### Cycle Completed: 5 ####################################################
+2022-04-21 16:59:44,893 - WARNING - Distance Error is 11.71067888723792
+2022-04-21 16:59:44,893 - INFO - Moving inside LN2
+2022-04-21 16:59:46,919 - WARNING - Distance Error is 7.540557008603544
+2022-04-21 16:59:49,922 - INFO - Outside LN2
+2022-04-21 16:59:51,945 - WARNING - Distance Error is 11.573677030226833
+2022-04-21 16:59:53,971 - INFO - Distance Error is 2.199999999999996
+2022-04-21 16:59:55,997 - INFO - Distance Error is 2.1447610589527315
+2022-04-21 16:59:55,997 - INFO - Moving Inside Water Bath
+2022-04-21 16:59:57,022 - INFO - Distance Error is 2.603843313258298
+2022-04-21 17:00:00,023 - INFO - Moving outside Water Bath
+2022-04-21 17:00:02,047 - INFO - Distance Error is 1.063014581273466
+2022-04-21 17:00:04,072 - INFO - Distance Error is 0.6708203932499369
+2022-04-21 17:00:04,072 - INFO - Waiting
+2022-04-21 17:00:11,097 - WARNING - Distance Error is 11.543396380615198
+2022-04-21 17:00:11,097 - INFO - ###################################### Cycle Completed: 6 ####################################################
+2022-04-21 17:00:13,122 - WARNING - Distance Error is 11.741805653305644
+2022-04-21 17:00:13,122 - INFO - Moving inside LN2
+2022-04-21 17:00:15,148 - WARNING - Distance Error is 7.3878278269055615
+2022-04-21 17:00:18,152 - INFO - Outside LN2
+2022-04-21 17:00:20,174 - WARNING - Distance Error is 11.573677030226833
+2022-04-21 17:00:22,200 - INFO - Distance Error is 2.111871208194276
+2022-04-21 17:00:24,226 - INFO - Distance Error is 1.987460691435172
+2022-04-21 17:00:24,226 - INFO - Moving Inside Water Bath
+2022-04-21 17:00:25,251 - INFO - Distance Error is 1.9748417658131538
+2022-04-21 17:00:28,253 - INFO - Moving outside Water Bath
+2022-04-21 17:00:30,276 - INFO - Distance Error is 1.063014581273466
+2022-04-21 17:00:32,301 - INFO - Distance Error is 0.8306623862917979
+2022-04-21 17:00:32,302 - INFO - Waiting
+2022-04-21 17:00:39,326 - WARNING - Distance Error is 11.645600027478183
+2022-04-21 17:00:39,327 - INFO - ###################################### Cycle Completed: 7 ####################################################
+2022-04-21 17:00:41,351 - WARNING - Distance Error is 11.71067888723792
+2022-04-21 17:00:41,352 - INFO - Moving inside LN2
+2022-04-21 17:00:48,548 - ERROR - Timeout, cannot detect current position
+2022-04-21 17:00:48,649 - ERROR - Error Function returns mc.get_error_information() =-1
+2022-04-21 17:00:54,668 - ERROR - Timeout, cannot detect current position
+2022-04-21 17:00:54,770 - ERROR - Error Function returns mc.get_error_information() =-1
+2022-04-21 17:01:00,953 - ERROR - Timeout, cannot detect current position
+2022-04-21 17:01:01,054 - ERROR - Error Function returns mc.get_error_information() =-1
+2022-04-21 17:01:07,236 - ERROR - Timeout, cannot detect current position
+2022-04-21 17:01:07,337 - ERROR - Error Function returns mc.get_error_information() =-1
+2022-04-21 17:01:13,485 - ERROR - Timeout, cannot detect current position
+2022-04-21 17:01:13,586 - ERROR - Error Function returns mc.get_error_information() =-1
+2022-04-21 17:01:19,769 - ERROR - Timeout, cannot detect current position
+2022-04-21 17:01:19,870 - ERROR - Error Function returns mc.get_error_information() =-1
+2022-04-21 17:01:26,017 - ERROR - Timeout, cannot detect current position
+2022-04-21 17:01:26,118 - ERROR - Error Function returns mc.get_error_information() =-1
+2022-04-21 17:01:32,312 - ERROR - Timeout, cannot detect current position
+2022-04-21 17:01:32,413 - ERROR - Error Function returns mc.get_error_information() =-1
+2022-04-21 17:01:38,561 - ERROR - Timeout, cannot detect current position
+2022-04-21 17:01:38,662 - ERROR - Error Function returns mc.get_error_information() =-1
+2022-04-21 17:01:41,548 - WARNING - Distance Error is 7.3252986287249735
+2022-04-21 17:01:44,552 - INFO - Outside LN2
+2022-04-21 17:01:46,574 - WARNING - Distance Error is 11.57842821802684
+2022-04-21 17:01:48,600 - INFO - Distance Error is 2.199999999999996
+2022-04-21 17:01:50,626 - INFO - Distance Error is 1.987460691435172
+2022-04-21 17:01:50,627 - INFO - Moving Inside Water Bath
+2022-04-21 17:01:51,651 - INFO - Distance Error is 1.4352700094407294
+2022-04-21 17:01:54,655 - INFO - Moving outside Water Bath
+2022-04-21 17:01:56,677 - INFO - Distance Error is 0.7280109889280268
+2022-04-21 17:01:58,701 - INFO - Distance Error is 0.7348469228349503
+2022-04-21 17:01:58,702 - INFO - Waiting
+2022-04-21 17:02:05,736 - WARNING - Distance Error is 11.556383517346593
+2022-04-21 17:02:05,737 - INFO - ###################################### Cycle Completed: 8 ####################################################
+2022-04-21 17:02:07,761 - WARNING - Distance Error is 11.695298200559062
+2022-04-21 17:02:07,762 - INFO - Moving inside LN2
+2022-04-21 17:02:09,787 - WARNING - Distance Error is 7.373601562330318
+2022-04-21 17:02:12,791 - INFO - Outside LN2
+2022-04-21 17:02:14,813 - WARNING - Distance Error is 11.590081966923277
+2022-04-21 17:02:16,839 - INFO - Distance Error is 2.111871208194276
+2022-04-21 17:02:18,865 - INFO - Distance Error is 1.987460691435172
+2022-04-21 17:02:18,866 - INFO - Moving Inside Water Bath
+2022-04-21 17:02:19,890 - INFO - Distance Error is 1.9748417658131538
+2022-04-21 17:02:22,894 - INFO - Moving outside Water Bath
+2022-04-21 17:02:24,915 - INFO - Distance Error is 1.063014581273466
+2022-04-21 17:02:26,941 - INFO - Distance Error is 0.8660254037844403
+2022-04-21 17:02:26,941 - INFO - Waiting
+2022-04-21 17:02:33,966 - WARNING - Distance Error is 11.569788243524602
+2022-04-21 17:02:33,966 - INFO - ###################################### Cycle Completed: 9 ####################################################
+2022-04-21 17:02:35,991 - WARNING - Distance Error is 11.766902736064408
+2022-04-21 17:02:35,991 - INFO - Moving inside LN2
+2022-04-21 17:02:38,017 - WARNING - Distance Error is 7.2062472896786005
+2022-04-21 17:02:41,020 - INFO - Outside LN2
+2022-04-21 17:02:48,236 - ERROR - Timeout, cannot detect current position
+2022-04-21 17:02:48,337 - ERROR - Error Function returns mc.get_error_information() =-1
+2022-04-21 17:02:54,485 - ERROR - Timeout, cannot detect current position
+2022-04-21 17:02:54,586 - ERROR - Error Function returns mc.get_error_information() =-1
+2022-04-21 17:02:59,305 - ERROR - Distance Error is 31.290094279180426
+2022-04-21 17:02:59,310 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:00,326 - ERROR - Distance Error is 31.290094279180426
+2022-04-21 17:03:00,335 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:01,351 - ERROR - Distance Error is 31.290094279180426
+2022-04-21 17:03:01,360 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:02,376 - ERROR - Distance Error is 31.290094279180426
+2022-04-21 17:03:02,385 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:03,401 - ERROR - Distance Error is 31.290094279180426
+2022-04-21 17:03:03,410 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:04,427 - ERROR - Distance Error is 31.290094279180426
+2022-04-21 17:03:04,436 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:05,451 - ERROR - Distance Error is 31.290094279180426
+2022-04-21 17:03:05,460 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:06,476 - ERROR - Distance Error is 31.290094279180426
+2022-04-21 17:03:06,485 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:07,501 - ERROR - Distance Error is 31.290094279180426
+2022-04-21 17:03:07,510 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:08,526 - ERROR - Distance Error is 31.290094279180426
+2022-04-21 17:03:08,535 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:09,551 - ERROR - Distance Error is 31.290094279180426
+2022-04-21 17:03:09,560 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:10,576 - ERROR - Distance Error is 31.290094279180426
+2022-04-21 17:03:10,585 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:11,601 - ERROR - Distance Error is 31.290094279180426
+2022-04-21 17:03:11,610 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:12,626 - ERROR - Distance Error is 31.290094279180426
+2022-04-21 17:03:12,635 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:13,651 - ERROR - Distance Error is 31.290094279180426
+2022-04-21 17:03:13,660 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:14,676 - ERROR - Distance Error is 31.290094279180426
+2022-04-21 17:03:14,685 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:15,701 - ERROR - Distance Error is 31.290094279180426
+2022-04-21 17:03:15,710 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:16,726 - ERROR - Distance Error is 31.290094279180426
+2022-04-21 17:03:16,735 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:17,751 - ERROR - Distance Error is 31.290094279180426
+2022-04-21 17:03:17,760 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:18,776 - ERROR - Distance Error is 31.257958986472545
+2022-04-21 17:03:18,785 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:19,801 - ERROR - Distance Error is 31.257958986472545
+2022-04-21 17:03:19,810 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:20,826 - ERROR - Distance Error is 31.257958986472545
+2022-04-21 17:03:20,835 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:21,851 - ERROR - Distance Error is 31.257958986472545
+2022-04-21 17:03:21,860 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:22,876 - ERROR - Distance Error is 31.257958986472545
+2022-04-21 17:03:22,885 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:23,901 - ERROR - Distance Error is 31.257958986472545
+2022-04-21 17:03:23,910 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:24,926 - ERROR - Distance Error is 31.257958986472545
+2022-04-21 17:03:24,935 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:25,951 - ERROR - Distance Error is 31.257958986472545
+2022-04-21 17:03:25,960 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:26,976 - ERROR - Distance Error is 31.257958986472545
+2022-04-21 17:03:26,985 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:28,001 - ERROR - Distance Error is 31.257958986472545
+2022-04-21 17:03:28,010 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:29,026 - ERROR - Distance Error is 31.257958986472545
+2022-04-21 17:03:29,035 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:30,051 - ERROR - Distance Error is 31.257958986472545
+2022-04-21 17:03:30,060 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:31,076 - ERROR - Distance Error is 31.257958986472545
+2022-04-21 17:03:31,085 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:32,101 - ERROR - Distance Error is 31.257958986472545
+2022-04-21 17:03:32,110 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:33,126 - ERROR - Distance Error is 31.257958986472545
+2022-04-21 17:03:33,135 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:34,151 - ERROR - Distance Error is 31.257958986472545
+2022-04-21 17:03:34,161 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:35,176 - ERROR - Distance Error is 31.257958986472545
+2022-04-21 17:03:35,186 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:36,201 - ERROR - Distance Error is 31.257958986472545
+2022-04-21 17:03:36,211 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:37,226 - ERROR - Distance Error is 31.257958986472545
+2022-04-21 17:03:37,236 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:38,251 - ERROR - Distance Error is 31.257958986472545
+2022-04-21 17:03:38,261 - ERROR - Error Function returns mc.get_error_information() =0
+2022-04-21 17:03:38,370 - ERROR - Experiment manually stooped with Keyboard Interrupt (crtl + c)
+2022-04-21 17:03:43,376 - INFO - Programmed execution completed

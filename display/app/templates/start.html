@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <h2>Search Experiment Settings</h2>
+    <form method="get" action="{{ url_for('start') }}">
+        <label for="search">Search by Experiment ID:</label>
+        <input type="text" id="search" name="search" placeholder="Enter Experiment ID">
+        
+        <label for="project">Or Select Experiment Name:</label>
+        <select id="project" name="project">
+            <option value="">Select a project</option>
+            {% for project in projects %}
+            <option value="{{ project.experiment_id }}">{{ project.experiment_name }}</option>
+            {% endfor %}
+        </select>
+        
+        <button type="submit">Search</button> 
+        <p> Can't find your required settings here, add new one using the button below</p>
+    <button type="button" onclick="window.location.href='{{ url_for('settings') }}'">Add Settings</button>
+    </form>
+    
+    {% if settings %}
+    <h2>Experiment Settings</h2>
+    <form method="post" action="{{ url_for('start') }}">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Person Responsible</th>
+                <th>Description</th>
+                <th>Number of Samples</th>
+                <th>Thermomixer Time (s)</th>
+                <th>Liquid Nitrogen Time (s)</th>
+                <th>Number of Cycles</th>
+                <th>Additional Notes</th>
+                <th>Update Time</th>
+            </tr>
+            <tr>
+                <td>{{ settings.experiment_id }}</td>
+                <td>{{ settings.experiment_name }}</td>
+                <td>{{ settings.person_responsible }}</td>
+                <td>{{ settings.experiment_description }}</td>
+                <td>{{ settings.number_of_samples }}</td>
+                <td>{{ settings.thermomixer_time_s }}</td>
+                <td>{{ settings.liquid_nitrogen_time_s }}</td>
+                <td>{{ settings.number_of_cycles }}</td>
+                <td>{{ settings.additional_notes }}</td>
+                <td>{{ settings.update_time }}</td>
+            </tr>
+        </table>
+        <button type="submit" name="action" value="Start">Start Experiment</button>
+        <input type="hidden" name="experiment_id" value="{{ settings.experiment_id }}">
+    </form>
+    {% endif %}
+</div>
+{% endblock %}

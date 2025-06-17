@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+<!-- need to look at different way to show, the row when too high, browser need to wait while jinja is rendering all the row -->
+<!-- check out grid.js -->
+<h2>Robot Logs</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Timestamp</th>
+            <th>Experiment ID</th>
+            <th>Experiment Name</th>
+            <th>Action Start</th>
+            <th>Cycle Number</th>
+            <th>Gripper Status</th>
+            <th>Error</th>
+        </tr>
+        {% for log in robot_logs|reverse %}
+        <tr class="{% if log.action_start == 'Start' %}highlight-row{% endif %}">
+            <td>{{ log.id }}</td>
+            <td>{{ log.time_stamp }}</td>
+            <td>{{ log.experiment_id }}</td>
+            <td>{{ log.experiment_name }}</td>
+            <td>{{ log.action_start }}</td>
+            <td>{{ log.cycle_number }}</td>
+            <td>{{ log.gripper_status }}</td>
+            <td>{{ log.error }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

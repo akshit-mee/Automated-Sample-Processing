@@ -1,0 +1,6 @@
+2025-04-14 18:05:54,017 - ERROR - Distance Error is 172.26035527654062
+2025-04-14 18:05:54,025 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 18:05:54,058 - ERROR - Distance Error is 172.26035527654062
+2025-04-14 18:05:54,163 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-14 18:05:54,192 - INFO - Distance Error is 0.0
+2025-04-14 18:05:56,220 - INFO - Distance Error is 3.138470965295035

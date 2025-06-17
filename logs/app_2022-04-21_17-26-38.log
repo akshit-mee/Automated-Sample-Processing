@@ -1,0 +1,46 @@
+2022-04-21 17:26:38,052 - INFO - Starting Experiment
+2022-04-21 17:26:38,052 - INFO - Experiment Parameters
+2022-04-21 17:26:38,052 - INFO - Experiment Name: Error_Testing
+2022-04-21 17:26:38,053 - INFO - Person Responsible: Akshit
+2022-04-21 17:26:38,053 - INFO - Thermomixer Time: 5
+2022-04-21 17:26:38,053 - INFO - Liquid Nitrogen Time: 5
+2022-04-21 17:26:38,053 - INFO - Waiting Time 5
+2022-04-21 17:26:38,053 - INFO - Number of Cycles 30
+2022-04-21 17:26:38,054 - INFO - Robot Speed 100
+2022-04-21 17:26:38,054 - INFO - Run Number 1
+2022-04-21 17:26:40,077 - ERROR - Distance Error is 198.29697425830784
+2022-04-21 17:26:40,086 - ERROR - Error Function returns mc.get_error_information() =5
+2022-04-21 17:26:40,313 - ERROR - Distance Error is 188.881470769369
+2022-04-21 17:26:40,322 - ERROR - Error Function returns mc.get_error_information() =5
+2022-04-21 17:26:40,352 - ERROR - Distance Error is 347.69748345364826
+2022-04-21 17:26:40,456 - ERROR - Error Function returns mc.get_error_information() =-1
+2022-04-21 17:26:40,478 - ERROR - Distance Error is 176.07262706054
+2022-04-21 17:26:40,585 - ERROR - Error Function returns mc.get_error_information() =-1
+2022-04-21 17:26:40,613 - ERROR - Distance Error is 164.98802986883624
+2022-04-21 17:26:40,623 - ERROR - Error Function returns mc.get_error_information() =5
+2022-04-21 17:26:40,860 - ERROR - Distance Error is 142.29609973572713
+2022-04-21 17:26:40,869 - ERROR - Error Function returns mc.get_error_information() =5
+2022-04-21 17:26:41,106 - ERROR - Distance Error is 120.0375774497303
+2022-04-21 17:26:41,115 - ERROR - Error Function returns mc.get_error_information() =5
+2022-04-21 17:26:41,352 - ERROR - Distance Error is 98.91142502259282
+2022-04-21 17:26:41,361 - ERROR - Error Function returns mc.get_error_information() =5
+2022-04-21 17:26:41,598 - ERROR - Distance Error is 76.78313616934385
+2022-04-21 17:26:41,607 - ERROR - Error Function returns mc.get_error_information() =5
+2022-04-21 17:26:41,844 - ERROR - Distance Error is 54.6981718158843
+2022-04-21 17:26:41,853 - ERROR - Error Function returns mc.get_error_information() =5
+2022-04-21 17:26:42,090 - ERROR - Distance Error is 32.74965648674807
+2022-04-21 17:26:42,099 - ERROR - Error Function returns mc.get_error_information() =5
+2022-04-21 17:26:42,336 - WARNING - Distance Error is 11.47736903649962
+2022-04-21 17:26:45,362 - INFO - Distance Error is 3.238826948140343
+2022-04-21 17:26:48,388 - WARNING - Distance Error is 13.19507483874192
+2022-04-21 17:26:48,388 - INFO - Moving inside LN2
+2022-04-21 17:26:50,414 - INFO - Distance Error is 4.51220566907139
+2022-04-21 17:26:53,417 - INFO - Outside LN2
+2022-04-21 17:26:55,440 - WARNING - Distance Error is 13.44358583116871
+2022-04-21 17:26:57,466 - INFO - Distance Error is 2.7874719729532815
+2022-04-21 17:26:59,492 - INFO - Distance Error is 2.4596747752497596
+2022-04-21 17:26:59,492 - INFO - Moving Inside Water Bath
+2022-04-21 17:27:00,517 - INFO - Distance Error is 2.360084744241188
+2022-04-21 17:27:03,520 - INFO - Moving outside Water Bath
+2022-04-21 17:27:04,628 - ERROR - Experiment manually stooped with Keyboard Interrupt (crtl + c)
+2022-04-21 17:27:09,633 - INFO - Programmed execution completed

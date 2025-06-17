@@ -1,0 +1,38 @@
+2025-05-22 12:32:38,786 - INFO - Starting Robot Actions
+2025-05-22 12:32:38,842 - INFO - Robot control retrieved successfully
+2025-05-22 12:32:53,513 - INFO - Robot log updated successfully
+2025-05-22 12:32:55,604 - INFO - Distance Error is 7.548509786706272
+2025-05-22 12:32:57,717 - INFO - Distance Error is 2.867054237366281
+2025-05-22 12:32:58,802 - INFO - Robot log updated successfully
+2025-05-22 12:33:00,989 - INFO - Distance Error is 7.259476565152598
+2025-05-22 12:33:01,027 - INFO - Robot log updated successfully
+2025-05-22 12:33:01,028 - INFO - Moving inside LN2
+2025-05-22 12:33:03,219 - INFO - Distance Error is 5.731491952362843
+2025-05-22 12:33:03,220 - INFO - Outside LN2
+2025-05-22 12:33:03,256 - INFO - Robot log updated successfully
+2025-05-22 12:33:05,430 - INFO - Distance Error is 4.205948168962608
+2025-05-22 12:33:05,469 - INFO - Robot log updated successfully
+2025-05-22 12:33:07,660 - INFO - Distance Error is 13.589701983487323
+2025-05-22 12:33:07,660 - INFO - Moving Inside Water Bath
+2025-05-22 12:33:07,695 - INFO - Robot log updated successfully
+2025-05-22 12:33:09,871 - INFO - Distance Error is 5.583905443325497
+2025-05-22 12:33:09,872 - INFO - Moving outside Water Bath
+2025-05-22 12:33:09,909 - INFO - Robot log updated successfully
+2025-05-22 12:33:12,092 - INFO - Distance Error is 13.584550047756451
+2025-05-22 12:33:12,093 - INFO - Waiting
+2025-05-22 12:33:12,133 - INFO - Robot log updated successfully
+2025-05-22 12:33:13,220 - INFO - ###################################### Cycle Completed: 1 ####################################################
+2025-05-22 12:33:13,222 - INFO - LN2 Time = {-2.1916051409998545} 
+2025-05-22 12:33:13,223 - INFO - Water Bath = -2.210808213000064 
+2025-05-22 12:33:13,224 - INFO - ######################################################################################################################
+2025-05-22 12:33:13,323 - INFO - Robot log updated successfully
+2025-05-22 12:33:13,367 - INFO - Stopping cycle, Raising Exception
+2025-05-22 12:33:13,408 - INFO - Robot log updated successfully
+2025-05-22 12:33:13,425 - INFO - Currently at [192.5, -20.4, 257.1, 177.76, -5.94, -64.59]
+2025-05-22 12:33:13,426 - INFO - Moving to [205.2, -16.0, 260, 178.65, -6.81, -64.68]
+2025-05-22 12:33:15,454 - INFO - Distance Error is 13.739723432442142
+2025-05-22 12:33:17,483 - INFO - Distance Error is 1.2041594578792325
+2025-05-22 12:33:17,483 - INFO - Moving to rest position
+2025-05-22 12:33:19,513 - INFO - Distance Error is 4.651881339845218
+2025-05-22 12:33:19,513 - INFO - releasing all servos
+2025-05-22 12:33:20,058 - INFO - Robot log updated successfully

@@ -1,0 +1,200 @@
+2025-04-09 18:01:31,895 - INFO - Starting Experiment
+2025-04-09 18:01:31,895 - INFO - Experiment Parameters
+2025-04-09 18:01:31,896 - INFO - Experiment Name: Error_Testing
+2025-04-09 18:01:31,896 - INFO - Person Responsible: Akshit
+2025-04-09 18:01:31,896 - INFO - Thermomixer Time: 5
+2025-04-09 18:01:31,896 - INFO - Liquid Nitrogen Time: 5
+2025-04-09 18:01:31,896 - INFO - Waiting Time 5
+2025-04-09 18:01:31,897 - INFO - Number of Cycles 10
+2025-04-09 18:01:31,897 - INFO - Robot Speed 100
+2025-04-09 18:01:31,897 - INFO - Run Number 1
+2025-04-09 18:01:34,933 - WARNING - Distance Error is 10.264501936285084
+2025-04-09 18:01:34,933 - INFO - Moving inside LN2
+2025-04-09 18:01:36,962 - WARNING - Distance Error is 7.041306696913574
+2025-04-09 18:01:39,965 - INFO - Outside LN2
+2025-04-09 18:01:41,991 - INFO - Distance Error is 3.8170669367984607
+2025-04-09 18:01:44,020 - WARNING - Distance Error is 13.334541611919017
+2025-04-09 18:01:44,020 - INFO - Moving Inside Water Bath
+2025-04-09 18:01:46,050 - INFO - Distance Error is 4.754997371187492
+2025-04-09 18:01:49,055 - INFO - Moving outside Water Bath
+2025-04-09 18:01:51,079 - WARNING - Distance Error is 13.569450983735475
+2025-04-09 18:01:51,079 - INFO - Waiting
+2025-04-09 18:01:58,118 - INFO - Distance Error is 4.597825573029054
+2025-04-09 18:01:58,118 - INFO - ###################################### Cycle Completed: 1 ####################################################
+2025-04-09 18:01:58,119 - INFO - LN2 Time = {-5.031930554001519} 
+2025-04-09 18:01:58,119 - INFO - Water Bath = -5.0338670529999945 
+2025-04-09 18:01:58,119 - INFO - ######################################################################################################################
+2025-04-09 18:02:01,159 - WARNING - Distance Error is 10.230835742987948
+2025-04-09 18:02:01,160 - INFO - Moving inside LN2
+2025-04-09 18:02:08,279 - ERROR - Timeout, cannot detect current position
+2025-04-09 18:02:08,380 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-09 18:02:13,583 - ERROR - Timeout, cannot detect current position
+2025-04-09 18:02:13,684 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-09 18:02:18,811 - ERROR - Timeout, cannot detect current position
+2025-04-09 18:02:18,913 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-09 18:02:24,068 - ERROR - Timeout, cannot detect current position
+2025-04-09 18:02:24,169 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-09 18:02:26,869 - WARNING - Distance Error is 6.870953354520749
+2025-04-09 18:02:29,873 - INFO - Outside LN2
+2025-04-09 18:02:31,898 - INFO - Distance Error is 4.159326868617087
+2025-04-09 18:02:33,928 - WARNING - Distance Error is 13.364505228402589
+2025-04-09 18:02:33,928 - INFO - Moving Inside Water Bath
+2025-04-09 18:02:35,958 - INFO - Distance Error is 4.772839825512685
+2025-04-09 18:02:38,962 - INFO - Moving outside Water Bath
+2025-04-09 18:02:40,987 - WARNING - Distance Error is 13.364505228402589
+2025-04-09 18:02:40,988 - INFO - Waiting
+2025-04-09 18:02:48,017 - INFO - Distance Error is 3.934463114581206
+2025-04-09 18:02:48,017 - INFO - ###################################### Cycle Completed: 2 ####################################################
+2025-04-09 18:02:48,018 - INFO - LN2 Time = {-28.712744157000998} 
+2025-04-09 18:02:48,018 - INFO - Water Bath = -5.032833982999364 
+2025-04-09 18:02:48,018 - INFO - ######################################################################################################################
+2025-04-09 18:02:51,058 - WARNING - Distance Error is 10.132620588969063
+2025-04-09 18:02:51,059 - INFO - Moving inside LN2
+2025-04-09 18:02:53,087 - WARNING - Distance Error is 7.041306696913574
+2025-04-09 18:02:56,091 - INFO - Outside LN2
+2025-04-09 18:02:58,117 - INFO - Distance Error is 4.504442251822066
+2025-04-09 18:03:00,146 - WARNING - Distance Error is 13.440982106974168
+2025-04-09 18:03:00,147 - INFO - Moving Inside Water Bath
+2025-04-09 18:03:02,176 - INFO - Distance Error is 4.814561246884285
+2025-04-09 18:03:05,180 - INFO - Moving outside Water Bath
+2025-04-09 18:03:07,205 - WARNING - Distance Error is 13.41752585240662
+2025-04-09 18:03:07,206 - INFO - Waiting
+2025-04-09 18:03:14,235 - INFO - Distance Error is 4.657252408878002
+2025-04-09 18:03:14,236 - INFO - ###################################### Cycle Completed: 3 ####################################################
+2025-04-09 18:03:14,236 - INFO - LN2 Time = {-5.031865745999312} 
+2025-04-09 18:03:14,236 - INFO - Water Bath = -5.032613563000268 
+2025-04-09 18:03:14,236 - INFO - ######################################################################################################################
+2025-04-09 18:03:17,275 - WARNING - Distance Error is 10.230835742987948
+2025-04-09 18:03:17,276 - INFO - Moving inside LN2
+2025-04-09 18:03:24,435 - ERROR - Timeout, cannot detect current position
+2025-04-09 18:03:24,536 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-09 18:03:29,574 - ERROR - Timeout, cannot detect current position
+2025-04-09 18:03:29,676 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-09 18:03:34,808 - ERROR - Timeout, cannot detect current position
+2025-04-09 18:03:34,909 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-09 18:03:40,044 - ERROR - Timeout, cannot detect current position
+2025-04-09 18:03:40,145 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-09 18:03:41,001 - WARNING - Distance Error is 7.007139216541936
+2025-04-09 18:03:44,005 - INFO - Outside LN2
+2025-04-09 18:03:46,034 - INFO - Distance Error is 4.504442251822066
+2025-04-09 18:03:48,064 - WARNING - Distance Error is 13.364505228402589
+2025-04-09 18:03:48,065 - INFO - Moving Inside Water Bath
+2025-04-09 18:03:50,093 - INFO - Distance Error is 4.8383881613611734
+2025-04-09 18:03:53,097 - INFO - Moving outside Water Bath
+2025-04-09 18:03:55,123 - WARNING - Distance Error is 13.364505228402589
+2025-04-09 18:03:55,124 - INFO - Waiting
+2025-04-09 18:04:02,153 - INFO - Distance Error is 4.1327956639543695
+2025-04-09 18:04:02,154 - INFO - ###################################### Cycle Completed: 4 ####################################################
+2025-04-09 18:04:02,154 - INFO - LN2 Time = {-26.728617626000414} 
+2025-04-09 18:04:02,154 - INFO - Water Bath = -5.031690185998741 
+2025-04-09 18:04:02,155 - INFO - ######################################################################################################################
+2025-04-09 18:04:05,193 - WARNING - Distance Error is 10.155786527886443
+2025-04-09 18:04:05,194 - INFO - Moving inside LN2
+2025-04-09 18:04:07,223 - WARNING - Distance Error is 7.041306696913574
+2025-04-09 18:04:10,227 - INFO - Outside LN2
+2025-04-09 18:04:12,253 - INFO - Distance Error is 3.8170669367984607
+2025-04-09 18:04:14,283 - WARNING - Distance Error is 13.41752585240662
+2025-04-09 18:04:14,283 - INFO - Moving Inside Water Bath
+2025-04-09 18:04:16,313 - INFO - Distance Error is 4.814561246884285
+2025-04-09 18:04:19,316 - INFO - Moving outside Water Bath
+2025-04-09 18:04:21,343 - WARNING - Distance Error is 13.41752585240662
+2025-04-09 18:04:21,343 - INFO - Waiting
+2025-04-09 18:04:28,372 - INFO - Distance Error is 3.6633318168028404
+2025-04-09 18:04:28,372 - INFO - ###################################### Cycle Completed: 5 ####################################################
+2025-04-09 18:04:28,372 - INFO - LN2 Time = {-5.032936010000412} 
+2025-04-09 18:04:28,373 - INFO - Water Bath = -5.03266056999928 
+2025-04-09 18:04:28,373 - INFO - ######################################################################################################################
+2025-04-09 18:04:31,413 - WARNING - Distance Error is 10.264501936285084
+2025-04-09 18:04:31,413 - INFO - Moving inside LN2
+2025-04-09 18:04:38,571 - ERROR - Timeout, cannot detect current position
+2025-04-09 18:04:38,672 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-09 18:04:43,505 - WARNING - Distance Error is 6.691786009728639
+2025-04-09 18:04:46,509 - INFO - Outside LN2
+2025-04-09 18:04:48,532 - INFO - Distance Error is 3.73229152130431
+2025-04-09 18:04:50,562 - WARNING - Distance Error is 13.364505228402589
+2025-04-09 18:04:50,562 - INFO - Moving Inside Water Bath
+2025-04-09 18:04:52,592 - INFO - Distance Error is 4.814561246884285
+2025-04-09 18:04:55,595 - INFO - Moving outside Water Bath
+2025-04-09 18:04:57,621 - WARNING - Distance Error is 13.41752585240662
+2025-04-09 18:04:57,621 - INFO - Waiting
+2025-04-09 18:05:04,651 - INFO - Distance Error is 4.4192759587968755
+2025-04-09 18:05:04,651 - INFO - ###################################### Cycle Completed: 6 ####################################################
+2025-04-09 18:05:04,651 - INFO - LN2 Time = {-15.09536577200015} 
+2025-04-09 18:05:04,651 - INFO - Water Bath = -5.0327358859995 
+2025-04-09 18:05:04,652 - INFO - ######################################################################################################################
+2025-04-09 18:05:07,691 - WARNING - Distance Error is 10.344563789740011
+2025-04-09 18:05:07,691 - INFO - Moving inside LN2
+2025-04-09 18:05:14,863 - ERROR - Timeout, cannot detect current position
+2025-04-09 18:05:14,964 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-09 18:05:20,131 - ERROR - Timeout, cannot detect current position
+2025-04-09 18:05:20,232 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-09 18:05:25,376 - ERROR - Timeout, cannot detect current position
+2025-04-09 18:05:25,381 - ERROR - Error Function returns mc.get_error_information() =2
+2025-04-09 18:05:25,413 - WARNING - Distance Error is 6.691786009728639
+2025-04-09 18:05:28,417 - INFO - Outside LN2
+2025-04-09 18:05:30,443 - INFO - Distance Error is 4.189272013130685
+2025-04-09 18:05:32,473 - WARNING - Distance Error is 13.41752585240662
+2025-04-09 18:05:32,473 - INFO - Moving Inside Water Bath
+2025-04-09 18:05:34,503 - INFO - Distance Error is 4.814561246884285
+2025-04-09 18:05:37,506 - INFO - Moving outside Water Bath
+2025-04-09 18:05:39,532 - WARNING - Distance Error is 13.569450983735475
+2025-04-09 18:05:39,532 - INFO - Waiting
+2025-04-09 18:05:46,572 - INFO - Distance Error is 3.981205847478882
+2025-04-09 18:05:46,572 - INFO - ###################################### Cycle Completed: 7 ####################################################
+2025-04-09 18:05:46,572 - INFO - LN2 Time = {-20.725314480001543} 
+2025-04-09 18:05:46,573 - INFO - Water Bath = -5.032650658000421 
+2025-04-09 18:05:46,573 - INFO - ######################################################################################################################
+2025-04-09 18:05:49,613 - WARNING - Distance Error is 10.290286682109503
+2025-04-09 18:05:49,613 - INFO - Moving inside LN2
+2025-04-09 18:05:51,643 - WARNING - Distance Error is 7.291090453423281
+2025-04-09 18:05:54,646 - INFO - Outside LN2
+2025-04-09 18:05:56,672 - INFO - Distance Error is 3.8496753109840296
+2025-04-09 18:05:58,702 - WARNING - Distance Error is 13.489996293550258
+2025-04-09 18:05:58,702 - INFO - Moving Inside Water Bath
+2025-04-09 18:06:00,732 - WARNING - Distance Error is 5.120546845796849
+2025-04-09 18:06:03,735 - INFO - Moving outside Water Bath
+2025-04-09 18:06:05,761 - WARNING - Distance Error is 13.41752585240662
+2025-04-09 18:06:05,761 - INFO - Waiting
+2025-04-09 18:06:12,791 - INFO - Distance Error is 3.6633318168028404
+2025-04-09 18:06:12,791 - INFO - ###################################### Cycle Completed: 8 ####################################################
+2025-04-09 18:06:12,792 - INFO - LN2 Time = {-5.032811626000694} 
+2025-04-09 18:06:12,792 - INFO - Water Bath = -5.0328237140001875 
+2025-04-09 18:06:12,792 - INFO - ######################################################################################################################
+2025-04-09 18:06:15,831 - WARNING - Distance Error is 10.132620588969063
+2025-04-09 18:06:15,831 - INFO - Moving inside LN2
+2025-04-09 18:06:23,015 - ERROR - Timeout, cannot detect current position
+2025-04-09 18:06:23,116 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-09 18:06:27,701 - WARNING - Distance Error is 7.284229540589729
+2025-04-09 18:06:30,705 - INFO - Outside LN2
+2025-04-09 18:06:32,730 - INFO - Distance Error is 3.4842502780368685
+2025-04-09 18:06:34,760 - WARNING - Distance Error is 13.402238618977062
+2025-04-09 18:06:34,760 - INFO - Moving Inside Water Bath
+2025-04-09 18:06:36,789 - INFO - Distance Error is 4.86415460280612
+2025-04-09 18:06:39,792 - INFO - Moving outside Water Bath
+2025-04-09 18:06:41,819 - WARNING - Distance Error is 13.516286472252643
+2025-04-09 18:06:41,819 - INFO - Waiting
+2025-04-09 18:06:48,848 - INFO - Distance Error is 3.8196858509568554
+2025-04-09 18:06:48,848 - INFO - ###################################### Cycle Completed: 9 ####################################################
+2025-04-09 18:06:48,849 - INFO - LN2 Time = {-14.873191933000271} 
+2025-04-09 18:06:48,849 - INFO - Water Bath = -5.031869509999524 
+2025-04-09 18:06:48,849 - INFO - ######################################################################################################################
+2025-04-09 18:06:51,888 - WARNING - Distance Error is 10.230835742987948
+2025-04-09 18:06:51,888 - INFO - Moving inside LN2
+2025-04-09 18:06:59,011 - ERROR - Timeout, cannot detect current position
+2025-04-09 18:06:59,112 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-09 18:07:02,198 - WARNING - Distance Error is 7.007139216541936
+2025-04-09 18:07:05,202 - INFO - Outside LN2
+2025-04-09 18:07:07,228 - INFO - Distance Error is 3.3970575502925944
+2025-04-09 18:07:09,257 - WARNING - Distance Error is 13.41752585240662
+2025-04-09 18:07:09,257 - INFO - Moving Inside Water Bath
+2025-04-09 18:07:11,287 - INFO - Distance Error is 4.754997371187492
+2025-04-09 18:07:14,291 - INFO - Moving outside Water Bath
+2025-04-09 18:07:16,317 - WARNING - Distance Error is 13.569450983735475
+2025-04-09 18:07:16,318 - INFO - Waiting
+2025-04-09 18:07:23,346 - INFO - Distance Error is 3.8196858509568554
+2025-04-09 18:07:23,347 - INFO - ###################################### Cycle Completed: 10 ####################################################
+2025-04-09 18:07:23,347 - INFO - LN2 Time = {-13.31290698399971} 
+2025-04-09 18:07:23,347 - INFO - Water Bath = -5.0328651840009115 
+2025-04-09 18:07:23,347 - INFO - ######################################################################################################################
+2025-04-09 18:07:23,347 - INFO - Operation Completed Sucessfully
+2025-04-09 18:07:23,348 - INFO - Programmed execution completed

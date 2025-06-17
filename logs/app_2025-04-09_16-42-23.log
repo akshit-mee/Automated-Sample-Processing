@@ -1,0 +1,26 @@
+2025-04-09 16:42:23,330 - INFO - Starting Experiment
+2025-04-09 16:42:23,331 - INFO - Experiment Parameters
+2025-04-09 16:42:23,331 - INFO - Experiment Name: Error_Testing
+2025-04-09 16:42:23,331 - INFO - Person Responsible: Akshit
+2025-04-09 16:42:23,332 - INFO - Thermomixer Time: 5
+2025-04-09 16:42:23,332 - INFO - Liquid Nitrogen Time: 5
+2025-04-09 16:42:23,332 - INFO - Waiting Time 5
+2025-04-09 16:42:23,332 - INFO - Number of Cycles 30
+2025-04-09 16:42:23,332 - INFO - Robot Speed 100
+2025-04-09 16:42:23,333 - INFO - Run Number 1
+2025-04-09 16:42:25,360 - INFO - Distance Error is 4.216633728461597
+2025-04-09 16:42:25,361 - INFO - Moving inside LN2
+2025-04-09 16:42:27,390 - WARNING - Distance Error is 5.916079783099616
+2025-04-09 16:42:30,394 - INFO - Outside LN2
+2025-04-09 16:42:32,419 - INFO - Distance Error is 4.216633728461597
+2025-04-09 16:42:34,448 - WARNING - Distance Error is 13.47182244538577
+2025-04-09 16:42:34,449 - INFO - Moving Inside Water Bath
+2025-04-09 16:42:36,478 - INFO - Distance Error is 4.789572005931219
+2025-04-09 16:42:37,480 - ERROR - Experiment encountered an error: name 'cn' is not defined
+Traceback (most recent call last):
+  File "new_setup.py", line 189, in <module>
+    run_cycle(Number_of_Cycles)
+  File "new_setup.py", line 148, in run_cycle
+    while( not is_correct_position(cn)):
+NameError: name 'cn' is not defined
+2025-04-09 16:42:37,481 - INFO - Programmed execution completed

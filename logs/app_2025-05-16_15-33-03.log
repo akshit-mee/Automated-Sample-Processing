@@ -1,0 +1,70 @@
+2025-05-16 15:33:14,730 - WARNING - Distance Error is 13.17042140555872
+2025-05-16 15:33:16,760 - INFO - Distance Error is 1.558845726811992
+2025-05-16 15:33:18,797 - INFO - Distance Error is 4.124318125460264
+2025-05-16 15:33:20,930 - INFO - Distance Error is 3.9446165846632235
+2025-05-16 15:33:22,960 - INFO - Distance Error is 2.7892651361962675
+2025-05-16 15:33:25,059 - ERROR - Distance Error is 77.28531555217975
+2025-05-16 15:33:25,069 - ERROR - Error Function returns mc.get_error_information() =0
+2025-05-16 15:33:25,299 - ERROR - Distance Error is 71.63993299829359
+2025-05-16 15:33:25,308 - ERROR - Error Function returns mc.get_error_information() =0
+2025-05-16 15:33:25,386 - ERROR - Distance Error is 70.34458045933602
+2025-05-16 15:33:25,396 - ERROR - Error Function returns mc.get_error_information() =0
+2025-05-16 15:33:25,426 - ERROR - Distance Error is 68.67554149768314
+2025-05-16 15:33:25,534 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-05-16 15:33:25,611 - ERROR - Distance Error is 68.67554149768314
+2025-05-16 15:33:25,621 - ERROR - Error Function returns mc.get_error_information() =0
+2025-05-16 15:33:25,651 - ERROR - Distance Error is 63.29936808531346
+2025-05-16 15:33:25,661 - ERROR - Error Function returns mc.get_error_information() =0
+2025-05-16 15:33:25,691 - ERROR - Distance Error is 62.2974317287639
+2025-05-16 15:33:25,799 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-05-16 15:33:25,877 - ERROR - Distance Error is 58.902716405951935
+2025-05-16 15:33:25,886 - ERROR - Error Function returns mc.get_error_information() =0
+2025-05-16 15:33:25,917 - ERROR - Distance Error is 56.996666569195064
+2025-05-16 15:33:26,028 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-05-16 15:33:26,103 - ERROR - Distance Error is 53.58693870711407
+2025-05-16 15:33:26,113 - ERROR - Error Function returns mc.get_error_information() =0
+2025-05-16 15:33:26,143 - ERROR - Distance Error is 51.58798309684144
+2025-05-16 15:33:26,153 - ERROR - Error Function returns mc.get_error_information() =0
+2025-05-16 15:33:26,183 - ERROR - Distance Error is 50.589129267066845
+2025-05-16 15:33:26,292 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-05-16 15:33:26,326 - ERROR - Distance Error is 47.302959738265834
+2025-05-16 15:33:26,333 - ERROR - Error Function returns mc.get_error_information() =0
+2025-05-16 15:33:26,410 - ERROR - Distance Error is 46.30626307531195
+2025-05-16 15:33:26,420 - ERROR - Error Function returns mc.get_error_information() =0
+2025-05-16 15:33:26,450 - ERROR - Distance Error is 44.68702272472402
+2025-05-16 15:33:26,460 - ERROR - Error Function returns mc.get_error_information() =0
+2025-05-16 15:33:26,490 - ERROR - Distance Error is 43.63599431661892
+2025-05-16 15:33:26,598 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-05-16 15:33:26,676 - ERROR - Distance Error is 40.31153681019865
+2025-05-16 15:33:26,685 - ERROR - Error Function returns mc.get_error_information() =0
+2025-05-16 15:33:26,716 - ERROR - Distance Error is 37.86779634465146
+2025-05-16 15:33:26,827 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-05-16 15:33:26,860 - ERROR - Distance Error is 34.80589030609617
+2025-05-16 15:33:26,867 - ERROR - Error Function returns mc.get_error_information() =0
+2025-05-16 15:33:26,900 - ERROR - Distance Error is 33.92653828494736
+2025-05-16 15:33:26,910 - ERROR - Error Function returns mc.get_error_information() =0
+2025-05-16 15:33:26,987 - ERROR - Distance Error is 33.26529723300243
+2025-05-16 15:33:26,997 - ERROR - Error Function returns mc.get_error_information() =0
+2025-05-16 15:33:27,028 - ERROR - Distance Error is 30.740526996133266
+2025-05-16 15:33:27,037 - ERROR - Error Function returns mc.get_error_information() =0
+2025-05-16 15:33:27,067 - ERROR - Distance Error is 30.139011264472487
+2025-05-16 15:33:27,175 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-05-16 15:33:27,208 - ERROR - Distance Error is 26.734621747838514
+2025-05-16 15:33:27,216 - ERROR - Error Function returns mc.get_error_information() =0
+2025-05-16 15:33:27,457 - ERROR - Distance Error is 21.965427380317433
+2025-05-16 15:33:27,468 - ERROR - Error Function returns mc.get_error_information() =0
+2025-05-16 15:33:27,497 - ERROR - Distance Error is 21.114923632350642
+2025-05-16 15:33:27,506 - ERROR - Error Function returns mc.get_error_information() =0
+2025-05-16 15:33:27,526 - ERROR - Distance Error is 20.280039447693383
+2025-05-16 15:33:27,535 - ERROR - Error Function returns mc.get_error_information() =0
+2025-05-16 15:33:27,565 - ERROR - Distance Error is 19.720294115453736
+2025-05-16 15:33:27,575 - ERROR - Error Function returns mc.get_error_information() =0
+2025-05-16 15:33:27,604 - ERROR - Distance Error is 18.917980864775167
+2025-05-16 15:33:27,614 - ERROR - Error Function returns mc.get_error_information() =0
+2025-05-16 15:33:27,647 - ERROR - Distance Error is 18.406792224610978
+2025-05-16 15:33:27,750 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-05-16 15:33:27,780 - WARNING - Distance Error is 14.629764181284667
+2025-05-16 15:33:29,810 - INFO - Distance Error is 1.315294643796586
+2025-05-16 15:33:29,810 - INFO - Moving to rest position
+2025-05-16 15:33:31,840 - INFO - Distance Error is 4.532107677449873
+2025-05-16 15:33:31,840 - INFO - releasing all servos

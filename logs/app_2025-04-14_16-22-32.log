@@ -1,0 +1,28 @@
+2025-04-14 16:22:32,808 - INFO - Starting Experiment
+2025-04-14 16:22:32,809 - INFO - Experiment Parameters
+2025-04-14 16:22:32,809 - INFO - Experiment Name: Error_Testing
+2025-04-14 16:22:32,809 - INFO - Person Responsible: Akshit
+2025-04-14 16:22:32,809 - INFO - Thermomixer Time: 120
+2025-04-14 16:22:32,809 - INFO - Liquid Nitrogen Time: 60
+2025-04-14 16:22:32,810 - INFO - Waiting Time 5
+2025-04-14 16:22:32,810 - INFO - Number of Cycles 2
+2025-04-14 16:22:32,810 - INFO - Robot Speed 100
+2025-04-14 16:22:32,810 - INFO - Run Number 1
+2025-04-14 16:22:33,375 - INFO - Starting Experiment
+2025-04-14 16:22:35,408 - WARNING - Distance Error is 7.551158851461145
+2025-04-14 16:22:37,437 - INFO - Distance Error is 3.37490740613723
+2025-04-14 16:22:40,477 - WARNING - Distance Error is 7.522632517942102
+2025-04-14 16:22:40,477 - INFO - Moving inside LN2
+2025-04-14 16:22:42,507 - ERROR - Distance Error is 18.8600106044509
+2025-04-14 16:22:42,516 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 16:22:42,547 - ERROR - Distance Error is 18.404618985461237
+2025-04-14 16:22:42,557 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 16:22:42,587 - ERROR - Distance Error is 17.557619428612746
+2025-04-14 16:22:42,697 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-04-14 16:22:42,773 - ERROR - Distance Error is 19.428844535895582
+2025-04-14 16:22:42,782 - ERROR - Error Function returns mc.get_error_information() =0
+2025-04-14 16:22:42,816 - WARNING - Distance Error is 14.264992113562498
+2025-04-14 16:23:40,948 - INFO - Outside LN2
+2025-04-14 16:23:42,489 - ERROR - Experiment manually stooped with Keyboard Interrupt (crtl + c)
+2025-04-14 16:23:42,490 - INFO - servo will release in 5 seconds. hold on to the robot to prevent damage
+2025-04-14 16:23:47,997 - INFO - Programmed execution completed

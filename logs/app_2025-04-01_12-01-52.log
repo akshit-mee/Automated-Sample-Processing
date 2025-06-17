@@ -1,0 +1,21 @@
+2025-04-01 12:01:52,623 - INFO - Starting Experiment
+2025-04-01 12:01:52,623 - INFO - Experiment Parameters
+2025-04-01 12:01:52,624 - INFO - Experiment Name: MLB-BQ-022-2_15cyc
+2025-04-01 12:01:52,624 - INFO - Person Responsible: Ben Quach
+2025-04-01 12:01:52,624 - INFO - Thermomixer Time: 1
+2025-04-01 12:01:52,624 - INFO - Liquid Nitrogen Time: 1
+2025-04-01 12:01:52,625 - INFO - Waiting Time 3
+2025-04-01 12:01:52,625 - INFO - Number of Cycles 5
+2025-04-01 12:01:52,625 - INFO - Robot Speed 100
+2025-04-01 12:01:52,625 - INFO - Run Number 5
+2025-04-01 12:01:54,694 - INFO - distance error 2.901723625709397 mm
+2025-04-01 12:01:57,772 - INFO - distance error 1.8841443681416743 mm
+2025-04-01 12:02:00,860 - INFO - distance error 13.28984574778804 mm
+2025-04-01 12:02:00,877 - INFO - Moving inside LN2
+2025-04-01 12:02:02,942 - INFO - distance error 4.601086828130923 mm
+2025-04-01 12:02:02,958 - ERROR - Experiment encountered an error: sleep length must be non-negative
+Traceback (most recent call last):
+  File "run.py", line 165, in <module>
+    time.sleep(LN2_Time - 2)
+ValueError: sleep length must be non-negative
+2025-04-01 12:02:02,960 - INFO - Programmed execution completed

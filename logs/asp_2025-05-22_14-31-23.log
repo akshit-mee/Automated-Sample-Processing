@@ -1,0 +1,44 @@
+2025-05-22 14:31:23,720 - INFO - Starting Robot Actions
+2025-05-22 14:31:23,773 - INFO - Robot control retrieved successfully
+2025-05-22 14:31:23,807 - INFO - Robot log updated successfully
+2025-05-22 14:31:25,946 - INFO - Distance Error is 4.432832051860302
+2025-05-22 14:31:28,056 - INFO - Distance Error is 2.8178005607210794
+2025-05-22 14:31:28,066 - INFO - A
+2025-05-22 14:31:29,111 - INFO - B
+2025-05-22 14:31:29,144 - INFO - Robot log updated successfully
+2025-05-22 14:31:31,267 - INFO - Distance Error is 6.937578828380986
+2025-05-22 14:31:31,303 - INFO - Robot log updated successfully
+2025-05-22 14:31:31,304 - INFO - Moving inside LN2
+2025-05-22 14:31:33,438 - INFO - Distance Error is 5.939696961966995
+2025-05-22 14:31:33,439 - INFO - Outside LN2
+2025-05-22 14:31:33,472 - INFO - Robot log updated successfully
+2025-05-22 14:31:35,658 - INFO - Distance Error is 4.3566041821584
+2025-05-22 14:31:35,699 - INFO - Robot log updated successfully
+2025-05-22 14:31:37,829 - INFO - Distance Error is 13.3787144374936
+2025-05-22 14:31:37,830 - INFO - Moving Inside Water Bath
+2025-05-22 14:31:37,864 - INFO - Robot log updated successfully
+2025-05-22 14:31:40,039 - INFO - Distance Error is 5.640035460881439
+2025-05-22 14:31:40,040 - INFO - Moving outside Water Bath
+2025-05-22 14:31:40,074 - INFO - Robot log updated successfully
+2025-05-22 14:31:42,230 - INFO - Distance Error is 13.682470537150804
+2025-05-22 14:31:42,230 - INFO - Waiting
+2025-05-22 14:31:42,268 - INFO - Robot log updated successfully
+2025-05-22 14:31:43,375 - INFO - ###################################### Cycle Completed: 1 ####################################################
+2025-05-22 14:31:43,375 - INFO - LN2 Time = {-2.1347267080000165} 
+2025-05-22 14:31:43,376 - INFO - Water Bath = -2.209897673999876 
+2025-05-22 14:31:43,376 - INFO - ######################################################################################################################
+2025-05-22 14:31:43,376 - INFO - c
+2025-05-22 14:31:43,376 - INFO - 1
+2025-05-22 14:31:43,377 - INFO - 1
+2025-05-22 14:31:43,377 - INFO - outside loop
+2025-05-22 14:31:43,407 - INFO - Robot log updated successfully
+2025-05-22 14:31:43,430 - INFO - Stopping cycle, Raising Exception
+2025-05-22 14:31:43,458 - INFO - Robot log updated successfully
+2025-05-22 14:31:43,471 - INFO - Currently at [192.5, -20.6, 257.2, 177.85, -5.95, -64.69]
+2025-05-22 14:31:43,472 - INFO - Moving to [205.2, -16.0, 260, 178.65, -6.81, -64.68]
+2025-05-22 14:31:45,500 - INFO - Distance Error is 13.954927445171455
+2025-05-22 14:31:47,530 - INFO - Distance Error is 1.3076696830621968
+2025-05-22 14:31:47,530 - INFO - Moving to rest position
+2025-05-22 14:31:49,560 - INFO - Distance Error is 4.498888751680812
+2025-05-22 14:31:49,561 - INFO - releasing all servos
+2025-05-22 14:31:50,105 - INFO - Robot log updated successfully

@@ -1,0 +1,22 @@
+2025-04-04 15:04:42,034 - INFO - Starting Experiment
+2025-04-04 15:04:42,034 - INFO - Experiment Parameters
+2025-04-04 15:04:42,034 - INFO - Experiment Name: Error_Testing
+2025-04-04 15:04:42,035 - INFO - Person Responsible: Akshit
+2025-04-04 15:04:42,035 - INFO - Thermomixer Time: 5
+2025-04-04 15:04:42,035 - INFO - Liquid Nitrogen Time: 5
+2025-04-04 15:04:42,035 - INFO - Waiting Time 5
+2025-04-04 15:04:42,035 - INFO - Number of Cycles 30
+2025-04-04 15:04:42,036 - INFO - Robot Speed 100
+2025-04-04 15:04:42,036 - INFO - Run Number 1
+2025-04-04 15:04:44,055 - INFO - Distance Error is 3.2140317359976343
+2025-04-04 15:04:47,080 - INFO - Distance Error is 1.5165750888103158
+2025-04-04 15:04:50,107 - ERROR - Experiment encountered an error: 'list' object is not callable
+Traceback (most recent call last):
+  File "test.py", line 136, in <module>
+    move(c2)
+  File "test.py", line 107, in move
+    is_correct_position(coordinate)
+  File "test.py", line 89, in is_correct_position
+    print(f'\033[33m{current_position() = } \033[0m')
+TypeError: 'list' object is not callable
+2025-04-04 15:04:50,108 - INFO - Programmed execution completed

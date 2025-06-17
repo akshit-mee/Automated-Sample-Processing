@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%if title%}
+    <title>{{ title }} </title>
+    {% else %}
+    <title>Robot Controller</title>
+    {% endif %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div style="display: flex; align-items: center; justify-content: center; position: relative; padding-bottom: 0.8cm; padding-top: 0.1cm; padding-right: 2.5cm;">
+                <img src="{{ url_for('static', filename='dwi_logo.svg') }}" alt="DWI Logo" style="position: absolute; left: 0;">
+                <!-- {%if title%}
+                    <h1 style="margin: 0 auto;">{{ title }} </h1>
+                {% else %}
+                    <h1 style="margin: 0 auto;">Robot Controller</h1>
+                {% endif %} -->
+            </div>
+
+            <!-- maybe make a drop down menu to see logs -->
+            <a href="{{ url_for('home') }}">Status</a>
+            <a href="{{ url_for('settings') }}">Initial Settings</a>
+            <a href="{{ url_for('view_experiment_settings') }}">Experiment Settings</a>
+            <a href="{{ url_for('view_robot_logs') }}">Robot Logs</a>
+            <a href="{{ url_for('view_completed_experiments') }}">Completed Experiments</a>
+            <a href="{{ url_for('start') }}">Start</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+    
+        </nav>
+    </header>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="container">
+                {% for category, message in messages %}
+                    <div class="alert">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+
+    {% block content %} {% endblock%}
+
+    <footer>
+        &copy; 2025 Robot Control and Monitoring System
+    </footer>
+</body>
+</html>
