@@ -1,0 +1,10 @@
+2025-06-03 11:49:25,806 - INFO - Starting Robot Actions
+2025-06-03 11:49:25,833 - INFO - Robot control retrieved successfully
+2025-06-03 11:49:25,857 - INFO - Updated settings
+2025-06-03 11:49:25,857 - INFO - Thermomixer time: 5
+2025-06-03 11:49:25,858 - INFO - Liquid Nitrogen time: 5
+2025-06-03 11:49:25,858 - INFO - Waiting time: 2
+2025-06-03 11:49:25,858 - INFO - Number of cycles: 1
+2025-06-03 11:49:53,755 - INFO - Robot log updated successfully
+2025-06-03 11:49:55,809 - INFO - Distance Error is 4.259107887809384
+2025-06-03 11:49:57,511 - INFO - Stopping cycle, Raising Exception

@@ -1,0 +1,9 @@
+2025-06-03 11:49:59,167 - INFO - Starting Robot Actions
+2025-06-03 11:49:59,200 - INFO - Robot control retrieved successfully
+2025-06-03 11:49:59,227 - INFO - Updated settings
+2025-06-03 11:49:59,227 - INFO - Thermomixer time: 5
+2025-06-03 11:49:59,228 - INFO - Liquid Nitrogen time: 5
+2025-06-03 11:49:59,228 - INFO - Waiting time: 2
+2025-06-03 11:49:59,228 - INFO - Number of cycles: 1
+2025-06-03 11:50:01,677 - INFO - Robot log updated successfully
+2025-06-03 11:50:03,315 - INFO - Stopping cycle, Raising Exception

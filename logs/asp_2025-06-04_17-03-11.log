@@ -1,0 +1,322 @@
+2025-06-04 17:03:11,387 - INFO - Starting Robot Actions
+2025-06-04 17:03:12,334 - INFO - Robot control retrieved successfully
+2025-06-04 17:03:12,347 - INFO - Failed to get experiment settings
+2025-06-05 16:54:15,224 - INFO - Updated settings
+2025-06-05 16:54:15,225 - INFO - Thermomixer time: 5
+2025-06-05 16:54:15,226 - INFO - Liquid Nitrogen time: 5
+2025-06-05 16:54:15,226 - INFO - Waiting time: 2
+2025-06-05 16:54:15,226 - INFO - Number of cycles: 1
+2025-06-05 16:54:15,335 - INFO - Robot log updated successfully
+2025-06-05 16:54:17,446 - INFO - Distance Error is 6.061352984276717
+2025-06-05 16:54:19,557 - INFO - Distance Error is 3.088689042296106
+2025-06-05 16:54:20,651 - INFO - Robot log updated successfully
+2025-06-05 16:54:22,838 - INFO - Distance Error is 7.175653280364092
+2025-06-05 16:54:22,880 - INFO - Robot log updated successfully
+2025-06-05 16:54:22,881 - INFO - Moving inside LN2
+2025-06-05 16:54:25,059 - INFO - Distance Error is 5.56596802003029
+2025-06-05 16:54:28,188 - INFO - Outside LN2
+2025-06-05 16:54:28,225 - INFO - Robot log updated successfully
+2025-06-05 16:54:30,409 - INFO - Distance Error is 4.356604182158399
+2025-06-05 16:54:30,507 - INFO - Robot log updated successfully
+2025-06-05 16:54:32,690 - INFO - Distance Error is 13.4655115016103
+2025-06-05 16:54:32,691 - INFO - Moving Inside Water Bath
+2025-06-05 16:54:32,752 - INFO - Robot log updated successfully
+2025-06-05 16:54:34,940 - INFO - Distance Error is 5.115662224971478
+2025-06-05 16:54:38,070 - INFO - Moving outside Water Bath
+2025-06-05 16:54:38,113 - INFO - Robot log updated successfully
+2025-06-05 16:54:40,291 - INFO - Distance Error is 13.472935834479431
+2025-06-05 16:54:40,292 - INFO - Waiting
+2025-06-05 16:54:40,329 - INFO - Robot log updated successfully
+2025-06-05 16:54:42,479 - INFO - ###################################### Cycle Completed: 1 ####################################################
+2025-06-05 16:54:42,480 - INFO - LN2 Time = {-5.306447426999512} 
+2025-06-05 16:54:42,480 - INFO - Water Bath = -5.379041493000841 
+2025-06-05 16:54:42,480 - INFO - Extra Cycle Time = 10.921252603999164
+2025-06-05 16:54:42,480 - INFO - ######################################################################################################################
+2025-06-05 16:54:42,524 - INFO - Robot log updated successfully
+2025-06-05 16:54:42,544 - INFO - Stopping cycle, Raising Exception
+2025-06-05 16:54:42,680 - INFO - Robot log updated successfully
+2025-06-05 16:54:42,692 - INFO - Currently at [189.0, -13.8, 256.7, 175.89, -5.67, -60.1]
+2025-06-05 16:54:42,693 - INFO - Moving to [205.2, -16.0, 260, 178.65, -6.81, -64.68]
+2025-06-05 16:54:44,721 - INFO - Distance Error is 13.557654664432192
+2025-06-05 16:54:46,751 - INFO - Distance Error is 1.1090536506409332
+2025-06-05 16:54:46,751 - INFO - Moving to rest position
+2025-06-05 16:54:48,781 - INFO - Distance Error is 4.204759208325737
+2025-06-05 16:54:48,782 - INFO - releasing all servos
+2025-06-05 16:54:49,425 - INFO - Robot log updated successfully
+2025-06-05 17:19:44,595 - INFO - Robot log updated successfully
+2025-06-05 17:19:46,705 - INFO - Distance Error is 5.772347875864749
+2025-06-05 17:19:48,811 - INFO - Distance Error is 3.176476034853702
+2025-06-05 17:19:48,855 - INFO - Robot log updated successfully
+2025-06-05 17:19:48,881 - INFO - Stopping cycle, Raising Exception
+2025-06-05 17:19:48,916 - INFO - Robot log updated successfully
+2025-06-05 17:19:48,932 - INFO - Currently at [104.2, -22.5, 283.8, 174.4, -1.06, -21.07]
+2025-06-05 17:19:48,932 - INFO - Moving to [205.2, -16.0, 260, 178.65, -6.81, -64.68]
+2025-06-05 17:19:50,961 - INFO - Distance Error is 13.875878350576567
+2025-06-05 17:19:52,991 - INFO - Distance Error is 0.8246211251235266
+2025-06-05 17:19:52,992 - INFO - Moving to rest position
+2025-06-05 17:19:55,021 - INFO - Distance Error is 4.393176527297763
+2025-06-05 17:19:55,021 - INFO - releasing all servos
+2025-06-05 17:19:55,661 - INFO - Robot log updated successfully
+2025-06-05 17:39:54,290 - INFO - Updated settings
+2025-06-05 17:39:54,291 - INFO - Thermomixer time: 5
+2025-06-05 17:39:54,292 - INFO - Liquid Nitrogen time: 5
+2025-06-05 17:39:54,293 - INFO - Waiting time: 5
+2025-06-05 17:39:54,293 - INFO - Number of cycles: 10
+2025-06-05 17:39:54,338 - INFO - Robot log updated successfully
+2025-06-05 17:39:56,408 - INFO - Distance Error is 6.900000000000022
+2025-06-05 17:39:58,518 - INFO - Distance Error is 3.0870698080866057
+2025-06-05 17:39:59,604 - INFO - Robot log updated successfully
+2025-06-05 17:40:01,788 - INFO - Distance Error is 7.2814833653590085
+2025-06-05 17:40:01,829 - INFO - Robot log updated successfully
+2025-06-05 17:40:01,829 - INFO - Moving inside LN2
+2025-06-05 17:40:04,009 - INFO - Distance Error is 5.7157676649773075
+2025-06-05 17:40:07,134 - INFO - Outside LN2
+2025-06-05 17:40:07,166 - INFO - Robot log updated successfully
+2025-06-05 17:40:09,350 - INFO - Distance Error is 4.352011029397798
+2025-06-05 17:40:09,389 - INFO - Robot log updated successfully
+2025-06-05 17:40:11,591 - INFO - Distance Error is 13.197348218486917
+2025-06-05 17:40:11,591 - INFO - Moving Inside Water Bath
+2025-06-05 17:40:11,632 - INFO - Robot log updated successfully
+2025-06-05 17:40:13,821 - INFO - Distance Error is 5.4571054598569155
+2025-06-05 17:40:16,945 - INFO - Moving outside Water Bath
+2025-06-05 17:40:16,992 - INFO - Robot log updated successfully
+2025-06-05 17:40:19,161 - INFO - Distance Error is 13.321035995747481
+2025-06-05 17:40:19,162 - INFO - Waiting
+2025-06-05 17:40:19,201 - INFO - Robot log updated successfully
+2025-06-05 17:40:24,277 - INFO - ###################################### Cycle Completed: 1 ####################################################
+2025-06-05 17:40:24,277 - INFO - LN2 Time = {-5.303896165001788} 
+2025-06-05 17:40:24,277 - INFO - Water Bath = -5.353452392999316 
+2025-06-05 17:40:24,278 - INFO - Extra Cycle Time = 10.7586203259998
+2025-06-05 17:40:24,278 - INFO - ######################################################################################################################
+2025-06-05 17:40:25,362 - INFO - Robot log updated successfully
+2025-06-05 17:40:27,573 - INFO - Distance Error is 7.150524456289907
+2025-06-05 17:40:27,613 - INFO - Robot log updated successfully
+2025-06-05 17:40:27,614 - INFO - Moving inside LN2
+2025-06-05 17:40:29,794 - INFO - Distance Error is 5.446099521676037
+2025-06-05 17:40:32,921 - INFO - Outside LN2
+2025-06-05 17:40:32,951 - INFO - Robot log updated successfully
+2025-06-05 17:40:35,135 - INFO - Distance Error is 4.30000000000001
+2025-06-05 17:40:35,174 - INFO - Robot log updated successfully
+2025-06-05 17:40:37,355 - INFO - Distance Error is 13.26159869698973
+2025-06-05 17:40:37,355 - INFO - Moving Inside Water Bath
+2025-06-05 17:40:37,397 - INFO - Robot log updated successfully
+2025-06-05 17:40:39,575 - INFO - Distance Error is 5.467174773134673
+2025-06-05 17:40:42,703 - INFO - Moving outside Water Bath
+2025-06-05 17:40:42,731 - INFO - Robot log updated successfully
+2025-06-05 17:40:44,946 - INFO - Distance Error is 13.321035995747481
+2025-06-05 17:40:44,946 - INFO - Waiting
+2025-06-05 17:40:44,984 - INFO - Robot log updated successfully
+2025-06-05 17:40:50,051 - INFO - ###################################### Cycle Completed: 2 ####################################################
+2025-06-05 17:40:50,052 - INFO - LN2 Time = {-5.306629092003277} 
+2025-06-05 17:40:50,052 - INFO - Water Bath = -5.347404621999885 
+2025-06-05 17:40:50,052 - INFO - Extra Cycle Time = 10.772966476000875
+2025-06-05 17:40:50,053 - INFO - ######################################################################################################################
+2025-06-05 17:40:51,133 - INFO - Robot log updated successfully
+2025-06-05 17:40:53,309 - INFO - Distance Error is 7.150524456289907
+2025-06-05 17:40:53,349 - INFO - Robot log updated successfully
+2025-06-05 17:40:53,349 - INFO - Moving inside LN2
+2025-06-05 17:40:55,540 - INFO - Distance Error is 5.446099521676037
+2025-06-05 17:40:58,665 - INFO - Outside LN2
+2025-06-05 17:40:58,695 - INFO - Robot log updated successfully
+2025-06-05 17:41:00,860 - INFO - Distance Error is 4.305810028322207
+2025-06-05 17:41:00,901 - INFO - Robot log updated successfully
+2025-06-05 17:41:03,080 - INFO - Distance Error is 13.3787144374936
+2025-06-05 17:41:03,080 - INFO - Moving Inside Water Bath
+2025-06-05 17:41:03,127 - INFO - Robot log updated successfully
+2025-06-05 17:41:05,301 - ERROR - Distance Error is 18.318569813170473
+2025-06-05 17:41:05,310 - ERROR - Error Function returns mc.get_error_information() =0
+2025-06-05 17:41:05,552 - ERROR - Distance Error is 18.318569813170473
+2025-06-05 17:41:05,561 - ERROR - Error Function returns mc.get_error_information() =0
+2025-06-05 17:41:05,802 - ERROR - Distance Error is 18.018878988438765
+2025-06-05 17:41:05,811 - ERROR - Error Function returns mc.get_error_information() =0
+2025-06-05 17:41:05,843 - ERROR - Distance Error is 18.018878988438765
+2025-06-05 17:41:05,851 - ERROR - Error Function returns mc.get_error_information() =0
+2025-06-05 17:41:05,886 - ERROR - Distance Error is 18.018878988438765
+2025-06-05 17:41:05,889 - ERROR - Error Function returns mc.get_error_information() =0
+2025-06-05 17:41:05,921 - ERROR - Distance Error is 18.018878988438765
+2025-06-05 17:41:06,027 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-06-05 17:41:06,055 - ERROR - Distance Error is 18.20686683644387
+2025-06-05 17:41:06,064 - ERROR - Error Function returns mc.get_error_information() =0
+2025-06-05 17:41:06,098 - INFO - Distance Error is 0.09999999999999964
+2025-06-05 17:41:09,222 - INFO - Moving outside Water Bath
+2025-06-05 17:41:09,254 - INFO - Robot log updated successfully
+2025-06-05 17:41:11,450 - INFO - Distance Error is 14.758387445788232
+2025-06-05 17:41:11,450 - INFO - Waiting
+2025-06-05 17:41:11,489 - INFO - Robot log updated successfully
+2025-06-05 17:41:16,556 - INFO - ###################################### Cycle Completed: 3 ####################################################
+2025-06-05 17:41:16,557 - INFO - LN2 Time = {-5.314828087000933} 
+2025-06-05 17:41:16,754 - INFO - Water Bath = -6.141722213000321 
+2025-06-05 17:41:16,754 - INFO - Extra Cycle Time = 11.503237786000682
+2025-06-05 17:41:16,754 - INFO - ######################################################################################################################
+2025-06-05 17:41:17,838 - INFO - Robot log updated successfully
+2025-06-05 17:41:20,012 - INFO - Distance Error is 7.024243731534366
+2025-06-05 17:41:20,051 - INFO - Robot log updated successfully
+2025-06-05 17:41:20,052 - INFO - Moving inside LN2
+2025-06-05 17:41:22,233 - INFO - Distance Error is 5.617828762075243
+2025-06-05 17:41:25,358 - INFO - Outside LN2
+2025-06-05 17:41:25,387 - INFO - Robot log updated successfully
+2025-06-05 17:41:27,564 - INFO - Distance Error is 4.223742416388565
+2025-06-05 17:41:27,603 - INFO - Robot log updated successfully
+2025-06-05 17:41:29,785 - INFO - Distance Error is 13.348408144793883
+2025-06-05 17:41:29,785 - INFO - Moving Inside Water Bath
+2025-06-05 17:41:29,823 - INFO - Robot log updated successfully
+2025-06-05 17:41:32,016 - INFO - Distance Error is 5.543464620614089
+2025-06-05 17:41:35,141 - INFO - Moving outside Water Bath
+2025-06-05 17:41:35,172 - INFO - Robot log updated successfully
+2025-06-05 17:41:37,356 - INFO - Distance Error is 13.321035995747481
+2025-06-05 17:41:37,356 - INFO - Waiting
+2025-06-05 17:41:37,392 - INFO - Robot log updated successfully
+2025-06-05 17:41:42,463 - INFO - ###################################### Cycle Completed: 4 ####################################################
+2025-06-05 17:41:42,464 - INFO - LN2 Time = {-5.305705705002765} 
+2025-06-05 17:41:42,464 - INFO - Water Bath = -5.355797703999997 
+2025-06-05 17:41:42,464 - INFO - Extra Cycle Time = 10.708373997000308
+2025-06-05 17:41:42,465 - INFO - ######################################################################################################################
+2025-06-05 17:41:43,551 - INFO - Robot log updated successfully
+2025-06-05 17:41:45,738 - INFO - Distance Error is 7.150524456289907
+2025-06-05 17:41:45,777 - INFO - Robot log updated successfully
+2025-06-05 17:41:45,778 - INFO - Moving inside LN2
+2025-06-05 17:41:47,959 - INFO - Distance Error is 5.776677245614477
+2025-06-05 17:41:51,089 - INFO - Outside LN2
+2025-06-05 17:41:51,121 - INFO - Robot log updated successfully
+2025-06-05 17:41:53,300 - INFO - Distance Error is 4.205948168962608
+2025-06-05 17:41:53,340 - INFO - Robot log updated successfully
+2025-06-05 17:41:55,520 - INFO - Distance Error is 13.348408144793883
+2025-06-05 17:41:55,520 - INFO - Moving Inside Water Bath
+2025-06-05 17:41:55,560 - INFO - Robot log updated successfully
+2025-06-05 17:41:57,741 - INFO - Distance Error is 5.543464620614089
+2025-06-05 17:42:00,865 - INFO - Moving outside Water Bath
+2025-06-05 17:42:00,903 - INFO - Robot log updated successfully
+2025-06-05 17:42:03,081 - INFO - Distance Error is 13.321035995747481
+2025-06-05 17:42:03,081 - INFO - Waiting
+2025-06-05 17:42:03,118 - INFO - Robot log updated successfully
+2025-06-05 17:42:08,192 - INFO - ###################################### Cycle Completed: 5 ####################################################
+2025-06-05 17:42:08,192 - INFO - LN2 Time = {-5.311013529000775} 
+2025-06-05 17:42:08,203 - INFO - Water Bath = -5.3443096470000455 
+2025-06-05 17:42:08,204 - INFO - Extra Cycle Time = 10.72707137800171
+2025-06-05 17:42:08,204 - INFO - ######################################################################################################################
+2025-06-05 17:42:09,289 - INFO - Robot log updated successfully
+2025-06-05 17:42:11,484 - INFO - Distance Error is 7.150524456289907
+2025-06-05 17:42:11,569 - INFO - Robot log updated successfully
+2025-06-05 17:42:11,569 - INFO - Moving inside LN2
+2025-06-05 17:42:13,764 - INFO - Distance Error is 5.776677245614477
+2025-06-05 17:42:16,891 - INFO - Outside LN2
+2025-06-05 17:42:16,917 - INFO - Robot log updated successfully
+2025-06-05 17:42:19,095 - INFO - Distance Error is 4.205948168962608
+2025-06-05 17:42:19,135 - INFO - Robot log updated successfully
+2025-06-05 17:42:21,315 - INFO - Distance Error is 13.307516672918345
+2025-06-05 17:42:21,316 - INFO - Moving Inside Water Bath
+2025-06-05 17:42:21,354 - INFO - Robot log updated successfully
+2025-06-05 17:42:23,526 - INFO - Distance Error is 5.543464620614089
+2025-06-05 17:42:26,652 - INFO - Moving outside Water Bath
+2025-06-05 17:42:26,682 - INFO - Robot log updated successfully
+2025-06-05 17:42:28,846 - INFO - Distance Error is 13.321035995747481
+2025-06-05 17:42:28,847 - INFO - Waiting
+2025-06-05 17:42:28,886 - INFO - Robot log updated successfully
+2025-06-05 17:42:33,947 - INFO - ###################################### Cycle Completed: 6 ####################################################
+2025-06-05 17:42:33,948 - INFO - LN2 Time = {-5.32075931700092} 
+2025-06-05 17:42:33,958 - INFO - Water Bath = -5.336085748000187 
+2025-06-05 17:42:33,958 - INFO - Extra Cycle Time = 10.743348373001936
+2025-06-05 17:42:33,958 - INFO - ######################################################################################################################
+2025-06-05 17:42:35,044 - INFO - Robot log updated successfully
+2025-06-05 17:42:37,229 - INFO - Distance Error is 7.1133676975115
+2025-06-05 17:42:37,269 - INFO - Robot log updated successfully
+2025-06-05 17:42:37,270 - INFO - Moving inside LN2
+2025-06-05 17:42:39,439 - INFO - Distance Error is 5.776677245614477
+2025-06-05 17:42:42,567 - INFO - Outside LN2
+2025-06-05 17:42:42,593 - INFO - Robot log updated successfully
+2025-06-05 17:42:44,770 - INFO - Distance Error is 4.209513035969827
+2025-06-05 17:42:44,810 - INFO - Robot log updated successfully
+2025-06-05 17:42:46,980 - INFO - Distance Error is 13.307516672918345
+2025-06-05 17:42:46,980 - INFO - Moving Inside Water Bath
+2025-06-05 17:42:47,018 - INFO - Robot log updated successfully
+2025-06-05 17:42:49,199 - INFO - Distance Error is 5.50817574156818
+2025-06-05 17:42:52,324 - INFO - Moving outside Water Bath
+2025-06-05 17:42:52,354 - INFO - Robot log updated successfully
+2025-06-05 17:42:54,530 - INFO - Distance Error is 13.472935834479431
+2025-06-05 17:42:54,531 - INFO - Waiting
+2025-06-05 17:42:54,568 - INFO - Robot log updated successfully
+2025-06-05 17:42:59,630 - INFO - ###################################### Cycle Completed: 7 ####################################################
+2025-06-05 17:42:59,631 - INFO - LN2 Time = {-5.296067515999312} 
+2025-06-05 17:42:59,632 - INFO - Water Bath = -5.343296939998254 
+2025-06-05 17:42:59,632 - INFO - Extra Cycle Time = 10.67169064799964
+2025-06-05 17:42:59,632 - INFO - ######################################################################################################################
+2025-06-05 17:43:00,719 - INFO - Robot log updated successfully
+2025-06-05 17:43:02,902 - INFO - Distance Error is 7.150524456289907
+2025-06-05 17:43:02,941 - INFO - Robot log updated successfully
+2025-06-05 17:43:02,942 - INFO - Moving inside LN2
+2025-06-05 17:43:05,114 - INFO - Distance Error is 5.776677245614477
+2025-06-05 17:43:08,240 - INFO - Outside LN2
+2025-06-05 17:43:08,315 - INFO - Robot log updated successfully
+2025-06-05 17:43:10,513 - INFO - Distance Error is 4.209513035969827
+2025-06-05 17:43:10,554 - INFO - Robot log updated successfully
+2025-06-05 17:43:12,724 - INFO - Distance Error is 13.307516672918345
+2025-06-05 17:43:12,725 - INFO - Moving Inside Water Bath
+2025-06-05 17:43:12,763 - INFO - Robot log updated successfully
+2025-06-05 17:43:14,934 - INFO - Distance Error is 5.583905443325497
+2025-06-05 17:43:18,063 - INFO - Moving outside Water Bath
+2025-06-05 17:43:18,099 - INFO - Robot log updated successfully
+2025-06-05 17:43:20,314 - INFO - Distance Error is 13.321035995747481
+2025-06-05 17:43:20,315 - INFO - Waiting
+2025-06-05 17:43:20,355 - INFO - Robot log updated successfully
+2025-06-05 17:43:25,430 - INFO - ###################################### Cycle Completed: 8 ####################################################
+2025-06-05 17:43:25,431 - INFO - LN2 Time = {-5.298023409999587} 
+2025-06-05 17:43:25,431 - INFO - Water Bath = -5.337599906997639 
+2025-06-05 17:43:25,431 - INFO - Extra Cycle Time = 10.797722200000862
+2025-06-05 17:43:25,432 - INFO - ######################################################################################################################
+2025-06-05 17:43:26,522 - INFO - Robot log updated successfully
+2025-06-05 17:43:28,696 - INFO - Distance Error is 7.150524456289907
+2025-06-05 17:43:28,734 - INFO - Robot log updated successfully
+2025-06-05 17:43:28,734 - INFO - Moving inside LN2
+2025-06-05 17:43:30,926 - INFO - Distance Error is 5.776677245614477
+2025-06-05 17:43:34,052 - INFO - Outside LN2
+2025-06-05 17:43:34,084 - INFO - Robot log updated successfully
+2025-06-05 17:43:36,277 - INFO - Distance Error is 4.205948168962608
+2025-06-05 17:43:36,319 - INFO - Robot log updated successfully
+2025-06-05 17:43:38,497 - INFO - Distance Error is 13.307516672918345
+2025-06-05 17:43:38,498 - INFO - Moving Inside Water Bath
+2025-06-05 17:43:38,535 - INFO - Robot log updated successfully
+2025-06-05 17:43:40,729 - INFO - Distance Error is 5.583905443325497
+2025-06-05 17:43:43,855 - INFO - Moving outside Water Bath
+2025-06-05 17:43:43,883 - INFO - Robot log updated successfully
+2025-06-05 17:43:46,058 - INFO - Distance Error is 13.597058505426824
+2025-06-05 17:43:46,059 - INFO - Waiting
+2025-06-05 17:43:46,097 - INFO - Robot log updated successfully
+2025-06-05 17:43:51,165 - INFO - ###################################### Cycle Completed: 9 ####################################################
+2025-06-05 17:43:51,165 - INFO - LN2 Time = {-5.317395177000435} 
+2025-06-05 17:43:51,173 - INFO - Water Bath = -5.357184041000437 
+2025-06-05 17:43:51,173 - INFO - Extra Cycle Time = 10.732818806998694
+2025-06-05 17:43:51,174 - INFO - ######################################################################################################################
+2025-06-05 17:43:52,257 - INFO - Robot log updated successfully
+2025-06-05 17:43:54,442 - INFO - Distance Error is 7.150524456289907
+2025-06-05 17:43:54,481 - INFO - Robot log updated successfully
+2025-06-05 17:43:54,481 - INFO - Moving inside LN2
+2025-06-05 17:43:56,651 - INFO - Distance Error is 5.939696961966995
+2025-06-05 17:43:59,776 - INFO - Outside LN2
+2025-06-05 17:43:59,805 - INFO - Robot log updated successfully
+2025-06-05 17:44:01,992 - INFO - Distance Error is 4.205948168962608
+2025-06-05 17:44:02,033 - INFO - Robot log updated successfully
+2025-06-05 17:44:04,203 - INFO - Distance Error is 13.307516672918345
+2025-06-05 17:44:04,203 - INFO - Moving Inside Water Bath
+2025-06-05 17:44:04,240 - INFO - Robot log updated successfully
+2025-06-05 17:44:06,433 - INFO - Distance Error is 5.50817574156818
+2025-06-05 17:44:09,571 - INFO - Moving outside Water Bath
+2025-06-05 17:44:09,602 - INFO - Robot log updated successfully
+2025-06-05 17:44:11,774 - INFO - Distance Error is 13.597058505426824
+2025-06-05 17:44:11,774 - INFO - Waiting
+2025-06-05 17:44:11,813 - INFO - Robot log updated successfully
+2025-06-05 17:44:16,885 - INFO - ###################################### Cycle Completed: 10 ####################################################
+2025-06-05 17:44:16,885 - INFO - LN2 Time = {-5.294227893002244} 
+2025-06-05 17:44:16,896 - INFO - Water Bath = -5.367825756999082 
+2025-06-05 17:44:16,896 - INFO - Extra Cycle Time = 10.71079618800286
+2025-06-05 17:44:16,896 - INFO - ######################################################################################################################
+2025-06-05 17:44:16,926 - INFO - Robot log updated successfully
+2025-06-05 17:44:16,944 - INFO - Stopping cycle, Raising Exception
+2025-06-05 17:44:16,973 - INFO - Robot log updated successfully
+2025-06-05 17:44:16,987 - INFO - Currently at [192.5, -20.8, 257.2, 177.84, -6.13, -64.86]
+2025-06-05 17:44:16,987 - INFO - Moving to [205.2, -16.0, 260, 178.65, -6.81, -64.68]
+2025-06-05 17:44:19,016 - INFO - Distance Error is 13.888844444373326
+2025-06-05 17:44:21,045 - INFO - Distance Error is 1.4456832294801
+2025-06-05 17:44:21,045 - INFO - Moving to rest position
+2025-06-05 17:44:23,075 - INFO - Distance Error is 4.789572005931226
+2025-06-05 17:44:23,075 - INFO - releasing all servos
+2025-06-05 17:44:23,622 - INFO - Robot log updated successfully
