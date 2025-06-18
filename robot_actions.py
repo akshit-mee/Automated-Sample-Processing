@@ -7,6 +7,7 @@ import numpy
 import config
 import utils
 
+gripper_state = "Not Attached" 
 setting_flag = 0
 log = utils.setup_logger()
 log.info("Starting Robot Actions")
@@ -15,52 +16,9 @@ class StopCycleException(Exception):
     pass
 
 mc = MyCobot("/dev/ttyAMA0", 1000000)
-cobot_speed = 100
+cobot_speed = config.speed
 
-
-
-###################################################################################################################################################
-######################################################## GRIPPER ##################################################################################
-###################################################################################################################################################
-
-
-gripper_pin = 19 #Change for different pin for make a config file
-gripper_open = 6.5 #Completle open, can change for less opening
-gripper_closed = 12
-
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(gripper_pin, GPIO.OUT)
-
-pwm = GPIO.PWM(gripper_pin, 50)
-
-gripper_state = "STOP" #Possible values "STOP" "CLOSE" "OPEN"
-gripper_lock = threading.Lock()
-
-def manage_gripper():
-    global gripper_state
-    pwm.start(0)
-    
-    try:
-        while True:
-            if gripper_state == "GRIP":
-                pwm.ChangeDutyCycle(gripper_closed) 
-            if gripper_state == "OPEN":
-                pwm.ChangeDutyCycle(gripper_open) 
-            if gripper_state == "STOP":
-                pwm.ChangeDutyCycle(0)
-                
-            time.sleep(0.1)
-            
-    except KeyboardInterrupt:
-        pwm.stop()
-        GPIO.cleanup()
-        
-gripper_thread = threading.Thread(target=manage_gripper, daemon = True)
-gripper_thread.start()
-
-###################################################################################################################################################
-###################################################################################################################################################
-
+############################ Webapp Requests ########################################
 display_url = config.webapp_url
 
 def update_robot_log(action, cycle_number, gripper_status, error=None):
@@ -167,7 +125,7 @@ class RobotActions:
             self.liquid_nitrogen_time = settings['liquid_nitrogen_time_s']
             self.waiting_time = settings['waiting_time_s']
             self.number_of_cycles = settings['number_of_cycles']
-            
+
             log.info('Updated settings')
             log.info(f"Thermomixer time: {self.thermomixer_time}")
             log.info(f"Liquid Nitrogen time: {self.liquid_nitrogen_time}")
@@ -293,9 +251,10 @@ class RobotActions:
         
         while self.current_cycle-1 < self.number_of_cycles:
             start_cycle_time = time.monotonic()
+            
             mc.send_angles(self.a2, 100)
             self.delay(1)
-            update_robot_log("Moving to Liuid Nitrogen", self.current_cycle, gripper_state, mc.get_error_information())   
+            update_robot_log("Moving to Liquid Nitrogen", self.current_cycle, gripper_state, mc.get_error_information())
             self.move(self.c2)          #Lower Speed to prevent splashing
             update_robot_log("Moving inside LN2", self.current_cycle, gripper_state, mc.get_error_information())
             log.info("Moving inside LN2")
@@ -306,8 +265,10 @@ class RobotActions:
             ln2_time = {start_ln2_time - end_ln2_time}
             log.info("Outside LN2")
             # print(f"LN2 time = {ln2_time}")
-            update_robot_log("Outside outside LN2", self.current_cycle, gripper_state, mc.get_error_information())
+            update_robot_log("Moving outside LN2", self.current_cycle, gripper_state, mc.get_error_information())
             self.move(self.c2)
+
+
             update_robot_log("Moving sample to Water Bath", self.current_cycle, gripper_state, mc.get_error_information())
             self.move(self.c3)
             log.info("Moving Inside Water Bath")
@@ -320,12 +281,13 @@ class RobotActions:
             water_bath_time = start_water_bath_time - end_water_bath_time
             log.info(f"Water Temperature = {utils.read_temp()}")
             log.info("Moving outside Water Bath")
-            # print(f"Water Bath time = {water_bath_time}")
             update_robot_log("Moving outside Water Bath", self.current_cycle, gripper_state, mc.get_error_information())
             self.move(self.c3)
+
             log.info("Waiting")
             update_robot_log("Waiting", self.current_cycle, gripper_state, mc.get_error_information())
             self.delay(self.waiting_time)
+
             end_cycle_time = time.monotonic()
             extra_cycle_time = end_cycle_time - start_cycle_time - self.liquid_nitrogen_time - self.thermomixer_time - self.waiting_time
             log.info(f"###################################### Cycle Completed: {self.current_cycle} ####################################################" )
