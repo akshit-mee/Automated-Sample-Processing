@@ -167,6 +167,7 @@ class RobotActions:
             self.liquid_nitrogen_time = settings['liquid_nitrogen_time_s']
             self.waiting_time = settings['waiting_time_s']
             self.number_of_cycles = settings['number_of_cycles']
+            
             log.info('Updated settings')
             log.info(f"Thermomixer time: {self.thermomixer_time}")
             log.info(f"Liquid Nitrogen time: {self.liquid_nitrogen_time}")
