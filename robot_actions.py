@@ -1,3 +1,4 @@
+from pymycobot.mycobot import MyCobot
 import time
 import threading
 import requests
@@ -14,7 +15,7 @@ class StopCycleException(Exception):
     pass
 
 mc = MyCobot("/dev/ttyAMA0", 1000000)
-cobot_speed = config.speed
+cobot_speed = 100
 
 
 
