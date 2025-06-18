@@ -1,5 +1,9 @@
 #!/user/bin/env python3
 
+######### Webapp Configuration ##############
+webapp_url = "http://0.0.0.0:8000/"
+
+
 ######### Cordinates for Robot Movement ##############
 ##### LN2 #####
 c1 = [-18.0, -207.0, 210.0, -175.0, -5.0, -144.08]             #LN2 (Fully sumbersed is [181.0, -161.8, 180, 176.08, 0, 45.13])
@@ -15,4 +19,3 @@ cr = [104.0, 187.1, 245.3, -175.69, -0.98, -52.58]
 
 ######### Robot Configuration ##############
 speed = 100
-
