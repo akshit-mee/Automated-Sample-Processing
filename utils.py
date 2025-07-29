@@ -42,7 +42,7 @@ def setup_logger(log_dir = '/home/er/Desktop/Code/logs'):
 
 
 ################################ Basic Coordinate Distance ##########################
-def distance(self, point1, point2):
+def distance(point1, point2):
     sum = 0
     for i in range(3):
         sum = sum + (point1[i] - point2[i])**2
@@ -74,10 +74,12 @@ def read_temp():
         temp_strings = lines[1][equal_pos+2:]
         temp_c = float(temp_strings)/1000.0
         return temp_c
+    else:
+        return "Sensor Error"
 
 
 ################################ Closest Point Functionality ##########################
-def closest_point(self, position):
+def closest_point(position):
     d1 = distance(position, config.c2)
     d2 = distance(position, config.c3)
     d3 = distance(position, config.cr)
