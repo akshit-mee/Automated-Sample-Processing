@@ -5,6 +5,7 @@ import os
 import time
 import numpy
 import glob
+import pygame
 
 import config
 
@@ -77,9 +78,9 @@ def read_temp():
 
 ################################ Closest Point Functionality ##########################
 def closest_point(self, position):
-    d1 = self.distance(position, config.c2)
-    d2 = self.distance(position, config.c3)
-    d3 = self.distance(position, config.cr)
+    d1 = distance(position, config.c2)
+    d2 = distance(position, config.c3)
+    d3 = distance(position, config.cr)
 
     if d1 <= d2 and d1 <= d3:
         return config.c2
@@ -89,3 +90,11 @@ def closest_point(self, position):
 
     if d3 <= d1 and d3 <= d2:
         return config.cr
+    
+    
+################################ Sound Functionality ##########################
+def play_notification_sound():
+    pygame.mixer.init()
+    beep_sound = pygame.mixer.Sound('/usr/share/sounds/alsa/Front_Center.wav')
+    beep_sound.play()
+    # pygame.time.wait(2000)  # Uncomment this line if you want to wait for the sound to finish
