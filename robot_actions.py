@@ -15,10 +15,12 @@ log.info("Starting Robot Actions")
 class StopCycleException(Exception):
     pass
 
+
 mc = MyCobot("/dev/ttyAMA0", 1000000)
 cobot_speed = config.speed
 
-############################ Webapp Requests ########################################
+###################################################################################################################################################
+###################################################################################################################################################
 display_url = config.webapp_url
 
 def update_robot_log(action, cycle_number, gripper_status, error=None):
@@ -125,13 +127,11 @@ class RobotActions:
             self.liquid_nitrogen_time = settings['liquid_nitrogen_time_s']
             self.waiting_time = settings['waiting_time_s']
             self.number_of_cycles = settings['number_of_cycles']
-
             log.info('Updated settings')
             log.info(f"Thermomixer time: {self.thermomixer_time}")
             log.info(f"Liquid Nitrogen time: {self.liquid_nitrogen_time}")
             log.info(f"Waiting time: {self.waiting_time}")
             log.info(f"Number of cycles: {self.number_of_cycles}")
-
 
     ############################ check loction error ###################################
 
@@ -202,8 +202,8 @@ class RobotActions:
     def end_experiment(self):
         # update_robot_log("End of Experiment", self.current_cycle, gripper_state)
         update_robot_log("Completed", self.current_cycle-1, gripper_state, mc.get_error_information())
-        self.move(self.cm)
-        self.move(self.cr)
+        self.move(self.cm, cobot_speed, 1, mc, False)
+        self.move(self.cr, cobot_speed, 1, mc, False)
         mc.release_all_servos()
         time.sleep(0.5)
         mc.release_all_servos()
@@ -242,6 +242,7 @@ class RobotActions:
         
         else:
             log.error("Timeout, cannot detect current position")
+            utils.play_notification_sound()
             log.error(f"Error Function returns {mc.get_error_information() =}")
             update_robot_log("Error: Can't return to home", self.current_cycle-1, gripper_state, mc.get_error_information())
             update_robot_log("Completed", self.current_cycle-1, gripper_state, mc.get_error_information())
@@ -267,27 +268,25 @@ class RobotActions:
             # print(f"LN2 time = {ln2_time}")
             update_robot_log("Moving outside LN2", self.current_cycle, gripper_state, mc.get_error_information())
             self.move(self.c2)
-
-
             update_robot_log("Moving sample to Water Bath", self.current_cycle, gripper_state, mc.get_error_information())
             self.move(self.c3)
+            log.info(f"Current Water Temperature: {utils.read_temp()} C")
             log.info("Moving Inside Water Bath")
-            log.info(f"Water Temperature = {utils.read_temp()}")
             start_water_bath_time = time.monotonic()
             update_robot_log("Moving Inside Water Bath", self.current_cycle, gripper_state, mc.get_error_information())
             self.move(self.c4)
             self.delay(self.thermomixer_time -2)
             end_water_bath_time = time.monotonic()
             water_bath_time = start_water_bath_time - end_water_bath_time
-            log.info(f"Water Temperature = {utils.read_temp()}")
             log.info("Moving outside Water Bath")
+            log.info(f"Current Water Temperature: {utils.read_temp()} C")
+            if abs(water_bath_time - self.water_bath_time) > 1 :
+                log.error(f"Water Bath time = {water_bath_time}")
             update_robot_log("Moving outside Water Bath", self.current_cycle, gripper_state, mc.get_error_information())
             self.move(self.c3)
-
             log.info("Waiting")
             update_robot_log("Waiting", self.current_cycle, gripper_state, mc.get_error_information())
             self.delay(self.waiting_time)
-
             end_cycle_time = time.monotonic()
             extra_cycle_time = end_cycle_time - start_cycle_time - self.liquid_nitrogen_time - self.thermomixer_time - self.waiting_time
             log.info(f"###################################### Cycle Completed: {self.current_cycle} ####################################################" )
@@ -324,8 +323,9 @@ if __name__ == "__main__":
             ra.init_experiment()
             try:
                 ra.run_cycle()
+                ra.current_cycle = 1
             except StopCycleException:
-                ra.manual_stop()
+                ra.manual_stop()                
             break
             
             
