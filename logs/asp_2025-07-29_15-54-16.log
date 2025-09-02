@@ -1,0 +1,25 @@
+2025-07-29 15:54:16,029 - INFO - Starting Robot Actions
+2025-07-29 15:54:16,544 - INFO - Robot control retrieved successfully
+2025-07-29 15:54:16,568 - INFO - Updated settings
+2025-07-29 15:54:16,569 - INFO - Thermomixer time: 5
+2025-07-29 15:54:16,569 - INFO - Liquid Nitrogen time: 5
+2025-07-29 15:54:16,569 - INFO - Waiting time: 2
+2025-07-29 15:54:16,570 - INFO - Number of cycles: 1
+2025-07-29 15:54:16,600 - INFO - Robot log updated successfully
+2025-07-29 15:54:18,783 - INFO - Distance Error is 5.278257288158681
+2025-07-29 15:54:20,893 - INFO - Distance Error is 3.088689042296106
+2025-07-29 15:54:21,978 - INFO - Robot log updated successfully
+2025-07-29 15:54:24,154 - INFO - Distance Error is 5.36749476012785
+2025-07-29 15:54:24,191 - INFO - Robot log updated successfully
+2025-07-29 15:54:24,191 - INFO - Moving inside LN2
+2025-07-29 15:54:26,365 - INFO - Distance Error is 5.7157676649773075
+2025-07-29 15:54:27,007 - INFO - Stopping cycle, Raising Exception
+2025-07-29 15:54:27,052 - INFO - Robot log updated successfully
+2025-07-29 15:54:27,065 - INFO - Currently at [-16.2, -208.4, 204.8, -176.77, -4.7, -143.96]
+2025-07-29 15:54:27,066 - INFO - Moving to [-2.7, -206.6, 253.6, -175.6, -5.0, -144.88]
+2025-07-29 15:54:29,093 - INFO - Distance Error is 3.3436506994601016
+2025-07-29 15:54:31,122 - INFO - Distance Error is 2.0976176963403006
+2025-07-29 15:54:31,123 - INFO - Moving to rest position
+2025-07-29 15:54:33,152 - INFO - Distance Error is 2.8195744359743355
+2025-07-29 15:54:33,153 - INFO - releasing all servos
+2025-07-29 15:54:33,698 - INFO - Robot log updated successfully

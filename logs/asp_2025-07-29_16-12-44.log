@@ -1,0 +1,32 @@
+2025-07-29 16:12:44,031 - INFO - Starting Robot Actions
+2025-07-29 16:12:44,547 - INFO - Robot control retrieved successfully
+2025-07-29 16:12:44,571 - INFO - Updated settings
+2025-07-29 16:12:44,571 - INFO - Thermomixer time: 5
+2025-07-29 16:12:44,572 - INFO - Liquid Nitrogen time: 5
+2025-07-29 16:12:44,572 - INFO - Waiting time: 5
+2025-07-29 16:12:44,572 - INFO - Number of cycles: 1
+2025-07-29 16:12:44,612 - INFO - Robot log updated successfully
+2025-07-29 16:12:46,788 - INFO - Distance Error is 6.993568473962353
+2025-07-29 16:12:48,907 - INFO - Distance Error is 3.088689042296106
+2025-07-29 16:12:49,160 - INFO - Stopping cycle, Raising Exception
+2025-07-29 16:12:49,222 - INFO - Robot log updated successfully
+2025-07-29 16:12:49,236 - INFO - Currently at [130.5, -41.8, 278.7, 174.87, -3.91, -52.14]
+2025-07-29 16:12:49,238 - INFO - Moving to [205.2, -16.0, 260, 178.65, -6.81, -64.68]
+2025-07-29 16:12:51,264 - ERROR - Distance Error is 38.4552987246231
+2025-07-29 16:12:51,274 - ERROR - Error Function returns mc.get_error_information() =0
+2025-07-29 16:12:51,514 - ERROR - Distance Error is 32.89346439644203
+2025-07-29 16:12:51,524 - ERROR - Error Function returns mc.get_error_information() =0
+2025-07-29 16:12:51,554 - ERROR - Distance Error is 31.777507768860666
+2025-07-29 16:12:51,564 - ERROR - Error Function returns mc.get_error_information() =0
+2025-07-29 16:12:51,595 - ERROR - Distance Error is 31.184130579511105
+2025-07-29 16:12:51,602 - ERROR - Error Function returns mc.get_error_information() =0
+2025-07-29 16:12:51,633 - ERROR - Distance Error is 30.428112001897187
+2025-07-29 16:12:51,739 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-07-29 16:12:51,769 - ERROR - Distance Error is 27.52053778544306
+2025-07-29 16:12:51,777 - ERROR - Error Function returns mc.get_error_information() =0
+2025-07-29 16:12:51,811 - INFO - Distance Error is 14.629764181284667
+2025-07-29 16:12:53,841 - INFO - Distance Error is 1.7578395831246878
+2025-07-29 16:12:53,841 - INFO - Moving to rest position
+2025-07-29 16:12:56,088 - INFO - Distance Error is 3.379349049743174
+2025-07-29 16:12:56,088 - INFO - releasing all servos
+2025-07-29 16:12:56,636 - INFO - Robot log updated successfully

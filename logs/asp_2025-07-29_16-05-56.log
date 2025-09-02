@@ -1,0 +1,69 @@
+2025-07-29 16:05:56,477 - INFO - Starting Robot Actions
+2025-07-29 16:05:56,992 - INFO - Robot control retrieved successfully
+2025-07-29 16:05:57,017 - INFO - Updated settings
+2025-07-29 16:05:57,017 - INFO - Thermomixer time: 5
+2025-07-29 16:05:57,018 - INFO - Liquid Nitrogen time: 5
+2025-07-29 16:05:57,018 - INFO - Waiting time: 2
+2025-07-29 16:05:57,018 - INFO - Number of cycles: 1
+2025-07-29 16:06:04,874 - INFO - Updated settings
+2025-07-29 16:06:04,874 - INFO - Thermomixer time: 5
+2025-07-29 16:06:04,875 - INFO - Liquid Nitrogen time: 5
+2025-07-29 16:06:04,875 - INFO - Waiting time: 5
+2025-07-29 16:06:04,875 - INFO - Number of cycles: 5
+2025-07-29 16:06:04,966 - INFO - Robot log updated successfully
+2025-07-29 16:06:07,050 - INFO - Distance Error is 5.346026561849467
+2025-07-29 16:06:09,168 - INFO - Distance Error is 3.026549190084294
+2025-07-29 16:06:09,407 - INFO - Stopping cycle, Raising Exception
+2025-07-29 16:06:09,476 - INFO - Robot log updated successfully
+2025-07-29 16:06:09,499 - INFO - Currently at [131.9, -47.2, 278.3, 175.46, -4.12, -57.62]
+2025-07-29 16:06:09,501 - INFO - Moving to [205.2, -16.0, 260, 178.65, -6.81, -64.68]
+2025-07-29 16:06:11,535 - ERROR - Distance Error is 38.02578072834271
+2025-07-29 16:06:11,545 - ERROR - Error Function returns mc.get_error_information() =0
+2025-07-29 16:06:11,577 - ERROR - Distance Error is 37.1490242132953
+2025-07-29 16:06:11,584 - ERROR - Error Function returns mc.get_error_information() =0
+2025-07-29 16:06:11,615 - ERROR - Distance Error is 36.25051723768919
+2025-07-29 16:06:11,623 - ERROR - Error Function returns mc.get_error_information() =0
+2025-07-29 16:06:11,653 - ERROR - Distance Error is 35.22201016410051
+2025-07-29 16:06:11,760 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-07-29 16:06:11,789 - ERROR - Distance Error is 32.13782817802099
+2025-07-29 16:06:11,793 - ERROR - Error Function returns mc.get_error_information() =0
+2025-07-29 16:06:11,826 - INFO - Distance Error is 14.629764181284667
+2025-07-29 16:06:13,855 - ERROR - Distance Error is 93.771317576325
+2025-07-29 16:06:13,865 - ERROR - Error Function returns mc.get_error_information() =0
+2025-07-29 16:06:13,897 - ERROR - Distance Error is 93.771317576325
+2025-07-29 16:06:14,006 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-07-29 16:06:14,039 - ERROR - Distance Error is 91.9783670218166
+2025-07-29 16:06:14,046 - ERROR - Error Function returns mc.get_error_information() =0
+2025-07-29 16:06:14,123 - ERROR - Distance Error is 87.11785121316984
+2025-07-29 16:06:14,133 - ERROR - Error Function returns mc.get_error_information() =0
+2025-07-29 16:06:14,165 - ERROR - Distance Error is 70.1400028514399
+2025-07-29 16:06:14,271 - ERROR - Error Function returns mc.get_error_information() =-1
+2025-07-29 16:06:14,301 - INFO - Distance Error is 0.09999999999999432
+2025-07-29 16:06:14,301 - INFO - Moving to rest position
+2025-07-29 16:06:16,328 - INFO - Distance Error is 2.9342801502242484
+2025-07-29 16:06:16,329 - INFO - releasing all servos
+2025-07-29 16:06:16,877 - INFO - Robot log updated successfully
+2025-07-29 16:06:25,213 - INFO - Updated settings
+2025-07-29 16:06:25,213 - INFO - Thermomixer time: 5
+2025-07-29 16:06:25,216 - INFO - Liquid Nitrogen time: 5
+2025-07-29 16:06:25,216 - INFO - Waiting time: 2
+2025-07-29 16:06:25,217 - INFO - Number of cycles: 1
+2025-07-29 16:06:25,265 - INFO - Robot log updated successfully
+2025-07-29 16:06:27,331 - INFO - Distance Error is 7.736278174936586
+2025-07-29 16:06:29,440 - INFO - Distance Error is 2.5099800796022316
+2025-07-29 16:06:30,523 - INFO - Robot log updated successfully
+2025-07-29 16:06:32,713 - INFO - Distance Error is 5.573149917237092
+2025-07-29 16:06:32,747 - INFO - Robot log updated successfully
+2025-07-29 16:06:32,748 - INFO - Moving inside LN2
+2025-07-29 16:06:34,932 - INFO - Distance Error is 5.8472215624174995
+2025-07-29 16:06:38,057 - INFO - Outside LN2
+2025-07-29 16:06:38,091 - INFO - Robot log updated successfully
+2025-07-29 16:06:40,263 - INFO - Distance Error is 3.303028912982758
+2025-07-29 16:06:40,304 - INFO - Robot log updated successfully
+2025-07-29 16:06:42,483 - INFO - Distance Error is 13.379461872586647
+2025-07-29 16:06:43,293 - INFO - Current Water Temperature: 22.187 C
+2025-07-29 16:06:43,293 - INFO - Moving Inside Water Bath
+2025-07-29 16:06:43,332 - INFO - Robot log updated successfully
+2025-07-29 16:06:45,504 - INFO - Distance Error is 4.593473631142336
+2025-07-29 16:06:48,633 - INFO - Moving outside Water Bath
+2025-07-29 16:06:49,437 - INFO - Current Water Temperature: 22.187 C

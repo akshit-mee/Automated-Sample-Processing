@@ -1,0 +1,32 @@
+2025-08-08 14:46:11,618 - INFO - Starting Robot Actions
+2025-08-08 14:46:12,154 - INFO - Robot control retrieved successfully
+2025-08-08 14:46:12,178 - INFO - Updated settings
+2025-08-08 14:46:12,179 - INFO - Thermomixer time: 5
+2025-08-08 14:46:12,179 - INFO - Liquid Nitrogen time: 5
+2025-08-08 14:46:12,179 - INFO - Waiting time: 2
+2025-08-08 14:46:12,179 - INFO - Number of cycles: 1
+2025-08-08 14:46:15,194 - INFO - Robot log updated successfully
+2025-08-08 14:46:17,233 - INFO - Distance Error is 4.781213235152768
+2025-08-08 14:46:19,347 - INFO - Distance Error is 3.0740852297878627
+2025-08-08 14:46:20,435 - INFO - Robot log updated successfully
+2025-08-08 14:46:22,618 - INFO - Distance Error is 7.111258679024407
+2025-08-08 14:46:22,664 - INFO - Robot log updated successfully
+2025-08-08 14:46:22,664 - INFO - Moving inside LN2
+2025-08-08 14:46:24,849 - INFO - Distance Error is 5.97829407105405
+2025-08-08 14:46:27,976 - INFO - Outside LN2
+2025-08-08 14:46:28,006 - INFO - Robot log updated successfully
+2025-08-08 14:46:30,229 - INFO - Distance Error is 4.374928570845478
+2025-08-08 14:46:30,266 - INFO - Robot log updated successfully
+2025-08-08 14:46:32,439 - INFO - Distance Error is 13.348408144793883
+2025-08-08 14:46:32,440 - INFO - Moving Inside Water Bath
+2025-08-08 14:46:32,478 - INFO - Robot log updated successfully
+2025-08-08 14:46:32,743 - INFO - Stopping cycle, Raising Exception
+2025-08-08 14:46:32,792 - INFO - Robot log updated successfully
+2025-08-08 14:46:32,812 - INFO - Currently at [194.1, -16.9, 268.8, -172.7, -3.75, -65.35]
+2025-08-08 14:46:32,813 - INFO - Moving to [205.2, -16.0, 260, 178.65, -6.81, -64.68]
+2025-08-08 14:46:34,840 - INFO - Distance Error is 13.343912469736882
+2025-08-08 14:46:36,870 - INFO - Distance Error is 1.1575836902790153
+2025-08-08 14:46:36,871 - INFO - Moving to rest position
+2025-08-08 14:46:39,335 - INFO - Distance Error is 4.477722635447642
+2025-08-08 14:46:39,335 - INFO - releasing all servos
+2025-08-08 14:46:39,977 - INFO - Robot log updated successfully

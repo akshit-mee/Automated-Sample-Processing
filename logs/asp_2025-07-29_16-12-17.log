@@ -1,0 +1,26 @@
+2025-07-29 16:12:17,785 - INFO - Starting Robot Actions
+2025-07-29 16:12:18,301 - INFO - Robot control retrieved successfully
+2025-07-29 16:12:18,325 - INFO - Updated settings
+2025-07-29 16:12:18,325 - INFO - Thermomixer time: 5
+2025-07-29 16:12:18,325 - INFO - Liquid Nitrogen time: 5
+2025-07-29 16:12:18,326 - INFO - Waiting time: 5
+2025-07-29 16:12:18,326 - INFO - Number of cycles: 1
+2025-07-29 16:12:18,355 - INFO - Robot log updated successfully
+2025-07-29 16:12:20,530 - INFO - Distance Error is 5.205766033928169
+2025-07-29 16:12:22,641 - INFO - Distance Error is 3.008321791298259
+2025-07-29 16:12:23,737 - INFO - Robot log updated successfully
+2025-07-29 16:12:25,911 - INFO - Distance Error is 5.526300751859237
+2025-07-29 16:12:25,953 - INFO - Robot log updated successfully
+2025-07-29 16:12:25,954 - INFO - Moving inside LN2
+2025-07-29 16:12:28,152 - INFO - Distance Error is 5.7157676649773075
+2025-07-29 16:12:31,284 - INFO - Outside LN2
+2025-07-29 16:12:31,320 - INFO - Robot log updated successfully
+2025-07-29 16:12:33,502 - INFO - Distance Error is 3.2341923257592553
+2025-07-29 16:12:33,544 - INFO - Robot log updated successfully
+2025-07-29 16:12:35,723 - INFO - Distance Error is 13.399999999999997
+2025-07-29 16:12:36,541 - INFO - Current Water Temperature: 22.187 C
+2025-07-29 16:12:36,541 - INFO - Moving Inside Water Bath
+2025-07-29 16:12:36,580 - INFO - Robot log updated successfully
+2025-07-29 16:12:38,764 - INFO - Distance Error is 4.593473631142336
+2025-07-29 16:12:41,898 - INFO - Moving outside Water Bath
+2025-07-29 16:12:42,717 - INFO - Current Water Temperature: 22.187 C
